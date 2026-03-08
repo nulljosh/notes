@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 180" font-family="-apple-system, system-ui, sans-serif">
+  <defs>
+    <style>
+      .box { fill: #1a1a1a; stroke: #6b7280; stroke-width: 2; }
+      .label { fill: #e0e0e0; font-size: 13px; text-anchor: middle; }
+      .sub { fill: #888; font-size: 10px; text-anchor: middle; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="180" fill="#111"/>
+
+  <!-- Markdown Files -->
+  <rect x="20" y="65" width="120" height="50" rx="8" class="box"/>
+  <text x="80" y="87" class="label">Markdown Files</text>
+  <text x="80" y="103" class="sub">*.md notes</text>
+
+  <!-- Arrow -->
+  <line x1="142" y1="90" x2="178" y2="90" class="arrow"/>
+
+  <!-- GitHub Repo -->
+  <rect x="180" y="65" width="140" height="50" rx="8" class="box"/>
+  <text x="250" y="87" class="label">GitHub Repo</text>
+  <text x="250" y="103" class="sub">nulljosh/notes</text>
+
+  <!-- Arrow -->
+  <line x1="322" y1="90" x2="358" y2="90" class="arrow"/>
+
+  <!-- GitHub Pages -->
+  <rect x="360" y="65" width="140" height="50" rx="8" class="box"/>
+  <text x="430" y="87" class="label">GitHub Pages</text>
+  <text x="430" y="103" class="sub">static deploy</text>
+
+  <!-- Arrow -->
+  <line x1="502" y1="90" x2="538" y2="90" class="arrow"/>
+
+  <!-- Cloudflare DNS -->
+  <rect x="540" y="65" width="140" height="50" rx="8" class="box"/>
+  <text x="610" y="87" class="label">Cloudflare DNS</text>
+  <text x="610" y="103" class="sub">notes.heyitsmejosh.com</text>
+
+  <!-- index.html label -->
+  <rect x="180" y="15" width="140" height="35" rx="8" class="box" style="stroke: #f59e0b;"/>
+  <text x="250" y="37" class="label">index.html</text>
+  <line x1="250" y1="52" x2="250" y2="63" class="arrow"/>
+</svg>

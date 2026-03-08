@@ -1,6 +1,18 @@
+<div align="center">
+
 # Notes
 
+<img src="icon.svg" alt="Notes" width="120" />
+
 Personal notes repo. Converted from PDF brain dumps, maintained as markdown.
+
+[notes.heyitsmejosh.com](https://notes.heyitsmejosh.com)
+
+</div>
+
+## Architecture
+
+![Architecture](architecture.svg)
 
 ## Structure
 ```
@@ -18,3 +30,7 @@ notes/
 - Keep notes concise -- bullet points over paragraphs
 - TODOs use `- [ ]` checkbox format
 - Completed items use `- [x]` -- prune periodically
+
+## License
+
+MIT 2026, Joshua Trommel
