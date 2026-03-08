@@ -12,6 +12,7 @@ notes/
   pixelmator.md   # Pixelmator + Claude AppleScript workflow
   health.md       # GlyNAC supplement stack, blood work, sinus care
   index.html      # Apple Liquid Glass dashboard
+  *.html          # styled note routes (health.html, school.html, etc.)
 ```
 
 ## Conventions
@@ -69,6 +70,7 @@ notes/
 ## Journal
 - [x] Today's entry exists (2026-03-08-full-audit.md)
 - [x] Theme dummy posts already cleaned (private/ removed, .gitignore updated)
+- [x] Notes UI update: files list now routes to styled HTML note pages; added global light/dark toggle; dropped file extensions from displayed names
 
 ## Portfolio
 - [x] Skills section language simplified
