@@ -113,3 +113,9 @@ notes/
 - [ ] NullOS: custom AI OS concept
 - [ ] Hardware: PCB design + fab
 - [ ] 2026-2030 roadmap refresh
+
+## Quick Commands
+- `./scripts/simplify.sh`
+- `./scripts/monetize.sh . --write`
+- `./scripts/audit.sh .`
+- `./scripts/ship.sh .`
