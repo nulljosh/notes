@@ -1,0 +1,184 @@
+:root {
+  --bg-primary: #09090b;
+  --bg-secondary: #18181b;
+  --bg-tertiary: #1c1c1f;
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #71717a;
+  --blue: #3b82f6;
+  --blue-light: #60a5fa;
+  --border: rgba(255, 255, 255, 0.08);
+  --radius: 16px;
+}
+html[data-theme="light"] {
+  --bg-primary: #f6f7fb;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f8fafc;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-tertiary: #6b7280;
+  --blue: #2563eb;
+  --blue-light: #1d4ed8;
+  --border: rgba(15, 23, 42, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(1000px 400px at 50% -120px, #1a2235 0%, var(--bg-primary) 65%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-radius: 999px;
+  padding: 0.42rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--blue-light);
+  border-color: rgba(59, 130, 246, 0.35);
+  background: var(--bg-tertiary);
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  padding-top: clamp(2rem, 5vw, 4rem);
+  padding-bottom: 3rem;
+}
+
+.header {
+  margin-bottom: 1.25rem;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.82rem;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--blue-light);
+  border-color: rgba(96, 165, 250, 0.35);
+  background: rgba(59, 130, 246, 0.09);
+}
+
+.note-shell {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.note-meta {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(24, 24, 27, 0.75);
+}
+
+.note-title {
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.note-file {
+  margin-top: 0.2rem;
+  color: var(--text-tertiary);
+  font-size: 0.82rem;
+}
+
+.note-content {
+  padding: 1.2rem 1.25rem 1.35rem;
+  line-height: 1.62;
+}
+
+.note-content h1,
+.note-content h2,
+.note-content h3 {
+  line-height: 1.3;
+  margin-top: 1.3rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: -0.02em;
+}
+
+.note-content h1 { font-size: 1.45rem; }
+.note-content h2 { font-size: 1.2rem; }
+.note-content h3 { font-size: 1.05rem; }
+
+.note-content p,
+.note-content ul,
+.note-content ol,
+.note-content pre,
+.note-content blockquote {
+  margin: 0.72rem 0;
+}
+
+.note-content ul,
+.note-content ol {
+  padding-left: 1.3rem;
+}
+
+.note-content li {
+  margin: 0.24rem 0;
+  color: var(--text-secondary);
+}
+
+.note-content p { color: var(--text-secondary); }
+
+.note-content a {
+  color: var(--blue-light);
+  text-decoration: none;
+}
+
+.note-content a:hover { text-decoration: underline; }
+
+.note-content code {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 0.08rem 0.32rem;
+  font-size: 0.9em;
+}
+
+.note-content pre {
+  background: #111217;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 0.9rem;
+  overflow-x: auto;
+}
+
+.note-content pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.error {
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+}
