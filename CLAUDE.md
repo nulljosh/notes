@@ -5,14 +5,14 @@ Personal notes repo. Converted from PDF brain dumps, maintained as markdown.
 ## Structure
 ```
 notes/
-  CLAUDE.md       # this file (project instructions + brain dump)
-  tally.md        # PWD/DTC disability benefits, contacts, tax credit
-  timeline.md     # 5-year roadmap: college, career, projects
-  school.md       # UVIC CS transfer reqs, deadlines, prereqs
-  pixelmator.md   # Pixelmator + Claude AppleScript workflow
-  health.md       # GlyNAC supplement stack, blood work, sinus care
-  index.html      # Apple Liquid Glass dashboard
-  *.html          # styled note routes (health.html, school.html, etc.)
+  CLAUDE.md                # project instructions + brain dump
+  index.html               # dashboard
+  notes/                   # markdown content files
+  pages/                   # styled note routes
+  assets/css/              # shared styles
+  assets/js/               # shared scripts + theme toggle
+  assets/img/              # visuals
+  scripts/simplify.sh      # repo cleanup command
 ```
 
 ## Conventions
@@ -71,6 +71,7 @@ notes/
 - [x] Today's entry exists (2026-03-08-full-audit.md)
 - [x] Theme dummy posts already cleaned (private/ removed, .gitignore updated)
 - [x] Notes UI update: files list now routes to styled HTML note pages; added global light/dark toggle; dropped file extensions from displayed names
+- [x] Added simplify command: reorganizes repo into pages/ notes/ and assets/ with path rewrites
 
 ## Portfolio
 - [x] Skills section language simplified

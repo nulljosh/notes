@@ -2,7 +2,7 @@
 
 # Notes
 
-<img src="icon.svg" alt="Notes" width="120" />
+<img src="assets/img/icon.svg" alt="Notes" width="120" />
 
 Personal notes repo. Converted from PDF brain dumps, maintained as markdown.
 
@@ -12,7 +12,7 @@ Personal notes repo. Converted from PDF brain dumps, maintained as markdown.
 
 ## Architecture
 
-![Architecture](architecture.svg)
+![Architecture](assets/img/architecture.svg)
 
 ## Structure
 ```
