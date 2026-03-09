@@ -17,12 +17,13 @@ Personal notes repo. Converted from PDF brain dumps, maintained as markdown.
 ## Structure
 ```
 notes/
+  master.md       # All notes combined -- tasks, health, timeline, school, benefits, pixelmator
   tally.md        # PWD/DTC disability benefits, contacts, tax credit
   timeline.md     # 5-year roadmap: college, career, projects
   school.md       # UVIC CS transfer reqs, deadlines, prereqs
   pixelmator.md   # Pixelmator + Claude AppleScript workflow
   health.md       # GlyNAC supplement stack, blood work, sinus care
-  index.html      # Apple Liquid Glass dashboard
+  index.html      # Dashboard
 ```
 
 ## Conventions

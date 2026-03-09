@@ -270,6 +270,7 @@
   .file-row:nth-child(5) { animation-delay: 0.16s; }
   .file-row:nth-child(6) { animation-delay: 0.2s; }
   .file-row:nth-child(7) { animation-delay: 0.24s; }
+  .file-row:nth-child(8) { animation-delay: 0.28s; }
 
   @media (max-width: 480px) {
     .file-meta { display: none; }
@@ -283,12 +284,21 @@
 <div class="container">
   <header class="animate__animated animate__fadeIn">
     <h1>notes</h1>
-    <p>Personal notes and brain dumps.</p>
+    <p>Personal notes and reference.</p>
   </header>
 
   <div class="section-label">Files</div>
 
   <ul class="file-list">
+    <a href="pages/master.html" class="file-row animate__animated animate__fadeInUp" data-cat="planning">
+      <div class="file-icon md">MD</div>
+      <div class="file-info">
+        <div class="file-name">master</div>
+        <div class="file-desc">All notes combined -- tasks, health, timeline, school, benefits, pixelmator</div>
+      </div>
+      <div class="file-meta">4.2 KB</div>
+    </a>
+
     <a href="pages/CLAUDE.html" class="file-row animate__animated animate__fadeInUp" data-cat="config">
       <div class="file-icon claude">MD</div>
       <div class="file-info">
@@ -360,7 +370,7 @@
 
   <footer>
     <span><span class="dot"></span>nulljosh/notes</span>
-    <span>7 items</span>
+    <span>8 items</span>
   </footer>
 </div>
 <script src="assets/js/theme-toggle.js"></script>
