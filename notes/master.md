@@ -8,15 +8,15 @@ All notes in one place.
 
 ### Tier 1: Ship and Fix
 - [ ] Ship Arthur v1 (finish 100K training steps, instruction tuning)
-- [ ] Get Piper working with Arthur backend (REPL + agent loop)
+- [x] Get Piper working with Arthur backend (HTTP wiring to Flask endpoint)
 - [ ] Interactive REPL for testing through Claude Code
-- [ ] Fix training daemon (ArthurV3 class rename, vocab_size arg mismatch)
+- [x] Fix training daemon (ArthurV3 constructor args, MODEL_CFG removal)
 - [ ] Test Spark iOS on iPhone
 - [ ] Test Tally iOS on iPhone
 - [ ] Dose iOS -- add grading to health analysis
 - [ ] Bump existing iOS apps (opticon, spark, tally, dose)
 - [ ] Lingo iOS, Rabbit iOS, Portfolio iOS, Journal iOS, Dashboard iOS
-- [ ] Ironclad CLAUDE.md across all repos
+- [x] Ironclad CLAUDE.md across all repos (audited all 27, all populated)
 - [ ] Combine projects -- target <= 20 repos
 
 ### Tier 2: Features
