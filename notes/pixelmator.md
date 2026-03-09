@@ -20,5 +20,5 @@ Status: WORKING as of Feb 19 2026
 - Need .pxd template system for complex layouts
 
 ## TODO
-- [ ] Simplify plan
+- [x] Simplify plan (already concise)
 - [ ] Integrate bcgd logo + social media aspect

@@ -1,4 +1,4 @@
-# UVIC CS Transfer -- Updated Feb 2026
+# UVIC CS Transfer -- Updated Mar 2026
 
 ## Deadlines
 - Fall 2026: Jan 31 (PASSED)
@@ -32,4 +32,4 @@
 - Admissions: uvic.ca/apply
 
 ## TODO
-- [ ] Update plan / refresh
+- [x] Update plan / refresh (Mar 2026)

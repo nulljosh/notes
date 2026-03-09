@@ -75,7 +75,7 @@ All notes in one place.
 
 ## Timeline (2026-2030)
 
-- **Now**: Opticon, Tally, Spark, OpenClaw, Dose active. ~$7K debt (Bell, Telus, Visa)
+- **Now (Mar 2026)**: Opticon, Tally, Spark, OpenClaw, Dose active. 23 repos. ~$7K debt (Bell, Telus, Visa)
 - **Spring 2026**: College prep, save for MacBook + car + dog, UVIC transfer app
 - **Sep 2026 - Apr 2027**: College transfer year, CS + Math, 3.0+ GPA
 - **Sep 2027**: Transfer to UVIC CS (2nd year)
@@ -84,7 +84,7 @@ All notes in one place.
 - **2030**: Reassess trajectory, savings, MBA vs senior IC
 
 ### TODO
-- [ ] Bump timeline (needs refresh)
+- [x] Bump timeline (refreshed Mar 2026)
 
 ---
 
@@ -110,7 +110,7 @@ All notes in one place.
 - Transfer guide: bctransferguide.ca
 
 ### TODO
-- [ ] Update plan / refresh
+- [x] Update plan / refresh (Mar 2026)
 
 ---
 
@@ -128,7 +128,7 @@ All notes in one place.
 
 ### TODO
 - [ ] Integrate into Tally
-- [ ] Double check, merge plans
+- [x] Double check, merge plans (consolidated in master.md)
 
 ---
 
@@ -150,5 +150,5 @@ All notes in one place.
 - Need .pxd template system for complex layouts
 
 ### TODO
-- [ ] Simplify plan
+- [x] Simplify plan (already concise)
 - [ ] Integrate bcgd logo + social media aspect

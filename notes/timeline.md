@@ -1,9 +1,9 @@
-# Timeline -- Feb 2026 to 2030
+# Timeline -- Mar 2026 to 2030
 
-## Now (Feb 2026)
+## Now (Mar 2026)
 - **Active projects**: Opticon (financial terminal), Tally (benefits tracker), Spark (idea platform), OpenClaw (AI gateway), Dose (health app)
-- **Infrastructure**: 16 repos consolidated, Vercel deployments live, Supabase integrated (Spark)
-- **iOS**: Scaffolding companion apps for Opticon, Spark, Tally
+- **Infrastructure**: 23 repos, Vercel deployments live, Supabase integrated (Spark)
+- **iOS**: Companion apps for Opticon, Spark, Tally, Dose
 - **Finance**: ~$1000 Bell debt, ~$1000 Telus debt, $5000 Visa
 
 ## Spring 2026 (Mar-May)
@@ -43,5 +43,5 @@
 - Reassess: career trajectory, savings, life goals, MBA vs senior IC track
 
 ## TODO
-- [ ] Bump timeline (needs refresh)
-- [ ] Merge with iOS notes where applicable
+- [x] Bump timeline (refreshed Mar 2026)
+- [x] Merge with iOS notes where applicable (consolidated in master.md)

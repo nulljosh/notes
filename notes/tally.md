@@ -17,4 +17,4 @@
 
 ## TODO
 - [ ] Integrate into Tally
-- [ ] Double check, merge plans
+- [x] Double check, merge plans (consolidated in master.md)

@@ -9,6 +9,9 @@
   --blue-light: #60a5fa;
   --border: rgba(255, 255, 255, 0.08);
   --radius: 16px;
+  --code-bg: rgba(255, 255, 255, 0.05);
+  --code-border: rgba(255, 255, 255, 0.08);
+  --gradient-accent: #1a2235;
 }
 html[data-theme="light"] {
   --bg-primary: #f6f7fb;
@@ -20,13 +23,16 @@ html[data-theme="light"] {
   --blue: #2563eb;
   --blue-light: #1d4ed8;
   --border: rgba(15, 23, 42, 0.12);
+  --code-bg: rgba(0, 0, 0, 0.05);
+  --code-border: rgba(0, 0, 0, 0.08);
+  --gradient-accent: #dbe4f0;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: radial-gradient(1000px 400px at 50% -120px, #1a2235 0%, var(--bg-primary) 65%);
+  background: radial-gradient(1000px 400px at 50% -120px, var(--gradient-accent) 0%, var(--bg-primary) 65%);
   color: var(--text-primary);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -84,7 +90,7 @@ body {
 }
 
 .note-shell {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -93,7 +99,7 @@ body {
 .note-meta {
   padding: 1.1rem 1.25rem;
   border-bottom: 1px solid var(--border);
-  background: rgba(24, 24, 27, 0.75);
+  background: var(--bg-tertiary);
 }
 
 .note-title {
@@ -154,16 +160,16 @@ body {
 .note-content a:hover { text-decoration: underline; }
 
 .note-content code {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
   border-radius: 6px;
   padding: 0.08rem 0.32rem;
   font-size: 0.9em;
 }
 
 .note-content pre {
-  background: #111217;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 0.9rem;
   overflow-x: auto;
@@ -181,4 +187,43 @@ body {
   border: 1px solid rgba(239, 68, 68, 0.25);
   border-radius: 10px;
   padding: 0.7rem 0.85rem;
+}
+
+/* Checkboxes */
+.note-content input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-tertiary);
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  position: relative;
+  top: -1px;
+  cursor: default;
+}
+
+.note-content input[type="checkbox"]:checked {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.note-content input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 5px;
+  height: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Horizontal rules */
+.note-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
 }

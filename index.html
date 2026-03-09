@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>notes</title>
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -118,6 +119,10 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+  }
+
+  .file-list li {
+    list-style: none;
   }
 
   .file-row {
@@ -263,14 +268,13 @@
   }
 
   /* Staggered entrance */
-  .file-row:nth-child(1) { animation-delay: 0s; }
-  .file-row:nth-child(2) { animation-delay: 0.04s; }
-  .file-row:nth-child(3) { animation-delay: 0.08s; }
-  .file-row:nth-child(4) { animation-delay: 0.12s; }
-  .file-row:nth-child(5) { animation-delay: 0.16s; }
-  .file-row:nth-child(6) { animation-delay: 0.2s; }
-  .file-row:nth-child(7) { animation-delay: 0.24s; }
-  .file-row:nth-child(8) { animation-delay: 0.28s; }
+  .file-list li:nth-child(1) .file-row { animation-delay: 0s; }
+  .file-list li:nth-child(2) .file-row { animation-delay: 0.04s; }
+  .file-list li:nth-child(3) .file-row { animation-delay: 0.08s; }
+  .file-list li:nth-child(4) .file-row { animation-delay: 0.12s; }
+  .file-list li:nth-child(5) .file-row { animation-delay: 0.16s; }
+  .file-list li:nth-child(6) .file-row { animation-delay: 0.2s; }
+  .file-list li:nth-child(7) .file-row { animation-delay: 0.24s; }
 
   @media (max-width: 480px) {
     .file-meta { display: none; }
@@ -290,77 +294,68 @@
   <div class="section-label">Files</div>
 
   <ul class="file-list">
-    <a href="pages/master.html" class="file-row animate__animated animate__fadeInUp" data-cat="planning">
-      <div class="file-icon md">MD</div>
-      <div class="file-info">
-        <div class="file-name">master</div>
-        <div class="file-desc">All notes combined -- tasks, health, timeline, school, benefits, pixelmator</div>
-      </div>
-      <div class="file-meta">4.2 KB</div>
-    </a>
-
-    <a href="pages/CLAUDE.html" class="file-row animate__animated animate__fadeInUp" data-cat="config">
-      <div class="file-icon claude">MD</div>
-      <div class="file-info">
-        <div class="file-name">CLAUDE</div>
-        <div class="file-desc">Project instructions and brain dump checklist</div>
-      </div>
-      <div class="file-meta">3.2 KB</div>
-    </a>
-
-    <a href="pages/health.html" class="file-row animate__animated animate__fadeInUp" data-cat="health">
+    <li><a href="pages/health.html" class="file-row animate__animated animate__fadeInUp" data-cat="health">
       <div class="file-icon md">MD</div>
       <div class="file-info">
         <div class="file-name">health</div>
         <div class="file-desc">GlyNAC supplement stack, dosage, blood work, sinus care</div>
       </div>
       <div class="file-meta">2.9 KB</div>
-    </a>
+    </a></li>
 
-    <a href="pages/pixelmator.html" class="file-row animate__animated animate__fadeInUp" data-cat="automation">
+    <li><a href="pages/pixelmator.html" class="file-row animate__animated animate__fadeInUp" data-cat="automation">
       <div class="file-icon md">MD</div>
       <div class="file-info">
         <div class="file-name">pixelmator</div>
         <div class="file-desc">Pixelmator + Claude AppleScript automation workflow</div>
       </div>
       <div class="file-meta">762 B</div>
-    </a>
+    </a></li>
 
-    <a href="pages/school.html" class="file-row animate__animated animate__fadeInUp" data-cat="education">
-      <div class="file-icon md">MD</div>
-      <div class="file-info">
-        <div class="file-name">school</div>
-        <div class="file-desc">UVIC CS transfer requirements, deadlines, prerequisites</div>
-      </div>
-      <div class="file-meta">866 B</div>
-    </a>
-
-    <a href="pages/tally.html" class="file-row animate__animated animate__fadeInUp" data-cat="benefits">
+    <li><a href="pages/tally.html" class="file-row animate__animated animate__fadeInUp" data-cat="benefits">
       <div class="file-icon md">MD</div>
       <div class="file-info">
         <div class="file-name">tally</div>
         <div class="file-desc">PWD/DTC disability benefits, ombudsperson contacts, tax credit</div>
       </div>
       <div class="file-meta">776 B</div>
-    </a>
+    </a></li>
 
-    <a href="pages/timeline.html" class="file-row animate__animated animate__fadeInUp" data-cat="planning">
+    <li><a href="pages/school.html" class="file-row animate__animated animate__fadeInUp" data-cat="education">
+      <div class="file-icon md">MD</div>
+      <div class="file-info">
+        <div class="file-name">school</div>
+        <div class="file-desc">UVIC CS transfer requirements, deadlines, prerequisites</div>
+      </div>
+      <div class="file-meta">866 B</div>
+    </a></li>
+
+    <li><a href="pages/CLAUDE.html" class="file-row animate__animated animate__fadeInUp" data-cat="config">
+      <div class="file-icon claude">MD</div>
+      <div class="file-info">
+        <div class="file-name">CLAUDE</div>
+        <div class="file-desc">Project instructions and brain dump checklist</div>
+      </div>
+      <div class="file-meta">3.2 KB</div>
+    </a></li>
+
+    <li><a href="pages/master.html" class="file-row animate__animated animate__fadeInUp" data-cat="planning">
+      <div class="file-icon md">MD</div>
+      <div class="file-info">
+        <div class="file-name">master</div>
+        <div class="file-desc">All notes combined -- tasks, health, timeline, school, benefits, pixelmator</div>
+      </div>
+      <div class="file-meta">4.2 KB</div>
+    </a></li>
+
+    <li><a href="pages/timeline.html" class="file-row animate__animated animate__fadeInUp" data-cat="planning">
       <div class="file-icon md">MD</div>
       <div class="file-info">
         <div class="file-name">timeline</div>
         <div class="file-desc">5-year roadmap: college, career, projects</div>
       </div>
       <div class="file-meta">1.5 KB</div>
-    </a>
-
-    <a href="index.html" class="file-row animate__animated animate__fadeInUp" data-cat="ui">
-      <div class="file-icon html">HTML</div>
-      <div class="file-info">
-        <div class="file-name">index</div>
-        <div class="file-desc">This page</div>
-      </div>
-      <div class="file-meta">5.8 KB</div>
-    </a>
+    </a></li>
   </ul>
 
   <div class="links">
@@ -370,7 +365,7 @@
 
   <footer>
     <span><span class="dot"></span>nulljosh/notes</span>
-    <span>8 items</span>
+    <span>7 items</span>
   </footer>
 </div>
 <script src="assets/js/theme-toggle.js"></script>
