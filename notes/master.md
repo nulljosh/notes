@@ -7,28 +7,24 @@ All notes in one place.
 ## Tasks
 
 ### Tier 1: Ship and Fix
-- [ ] Ship Arthur v1
-- [ ] Interactive REPL for testing through Claude Code
+- [x] Ship Arthur v3.0.0 (archived as educational showcase)
 - [x] Get Piper working with Arthur backend
 - [x] Fix Arthur training daemon
 - [ ] Test Spark iOS on iPhone
 - [ ] Test Tally iOS on iPhone
 - [ ] Add health grading to Dose iOS
 - [ ] Bump Opticon, Spark, Tally, and Dose iOS
-- [ ] Start Lingo, Rabbit, Portfolio, Journal, and Dashboard iOS
+- [ ] Start Rabbit, Portfolio, Journal, and Dashboard iOS
 - [x] Standardize CLAUDE.md across all repos
-- [ ] Consolidate repos to 20 or fewer
+- [x] Consolidate repos (23 standalone + 4 monorepos)
 
 ### Tier 2: Features
 - [ ] Add events, flights, news, sports, maps, and nav to Opticon
 - [ ] Expand Tally reports and sync iOS Notes contacts
 - [ ] Import iOS health data into Dose
 - [ ] Reorder Dose entries by relevance
-- [ ] Lingo: rebuild deleted artifact
-- [ ] Siftly: auto-scrape bookmarks, workflow automation
 
 ### Tier 3: New Projects
-- [ ] Twitter clone
 - [ ] Usage tracker (Claude + ChatGPT)
 - [ ] OpenClaw pin caching fix
 
