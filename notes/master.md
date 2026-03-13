@@ -7,22 +7,23 @@ All notes in one place.
 ## Tasks
 
 ### Tier 1: Ship and Fix
-- [ ] Ship Arthur v1 (finish 100K training steps, instruction tuning)
-- [x] Get Piper working with Arthur backend (HTTP wiring to Flask endpoint)
+- [ ] Ship Arthur v1
 - [ ] Interactive REPL for testing through Claude Code
-- [x] Fix training daemon (ArthurV3 constructor args, MODEL_CFG removal)
+- [x] Get Piper working with Arthur backend
+- [x] Fix Arthur training daemon
 - [ ] Test Spark iOS on iPhone
 - [ ] Test Tally iOS on iPhone
-- [ ] Dose iOS -- add grading to health analysis
-- [ ] Bump existing iOS apps (opticon, spark, tally, dose)
-- [ ] Lingo iOS, Rabbit iOS, Portfolio iOS, Journal iOS, Dashboard iOS
-- [x] Ironclad CLAUDE.md across all repos (audited all 27, all populated)
-- [ ] Combine projects -- target <= 20 repos
+- [ ] Add health grading to Dose iOS
+- [ ] Bump Opticon, Spark, Tally, and Dose iOS
+- [ ] Start Lingo, Rabbit, Portfolio, Journal, and Dashboard iOS
+- [x] Standardize CLAUDE.md across all repos
+- [ ] Consolidate repos to 20 or fewer
 
 ### Tier 2: Features
-- [ ] Opticon: events, flight API, news feed, sports, maps, nav
-- [ ] Tally: monthly reports full question set, iOS Notes contacts
-- [ ] Dose: upload health data from iOS, reorder by relevancy
+- [ ] Add events, flights, news, sports, maps, and nav to Opticon
+- [ ] Expand Tally reports and sync iOS Notes contacts
+- [ ] Import iOS health data into Dose
+- [ ] Reorder Dose entries by relevance
 - [ ] Lingo: rebuild deleted artifact
 - [ ] Siftly: auto-scrape bookmarks, workflow automation
 
@@ -43,40 +44,41 @@ All notes in one place.
 ## Health
 
 ### GlyNAC Stack
-- NAC + Glycine replenish glutathione (master antioxidant)
-- Research: Baylor College of Medicine -- reversed aging biomarkers
-- ADHD/Autism: both conditions have elevated oxidative stress, lower glutathione
+- NAC + glycine support glutathione
+- Baylor research showed improved aging biomarkers
+- ADHD and autism may involve higher oxidative stress and lower glutathione
 
 ### Dosage
-- NAC: 3g/day (split 1.5g morning + 1.5g evening)
-- Glycine: 6g/day (split doses or all at night)
-- Cost: ~$30/month
+- NAC: 3 g/day
+- Glycine: 6 g/day
+- Cost: about $30/month
 
 ### Where to Buy (Canada)
 - NAC: Amazon.ca, Now Foods, Shoppers Drug Mart
 - Glycine: Canadian Protein, AOR, BulkSupplements
 
 ### Tips
-- NAC on empty stomach or with vitamin C
-- Glycine mixes into water/coffee (slightly sweet)
+- NAC on an empty stomach or with vitamin C
+- Glycine mixes into water or coffee
 - Start lower, ramp up over a week
 
 ### Blood Work
-- Health Card (BC): [REDACTED]
-- Lab Visit: 08-Jan-2026
-- Check with doctor March 2
+- BC health card: [REDACTED]
+- Lab visit: 2026-01-08
+- Check with doctor: 2026-03-02
 
 ### Sinus Care
-- NeilMed Sinus Rinse ($15), NAC 600mg ($20), Guaifenesin ($12), Xylitol spray ($10)
+- NeilMed Sinus Rinse ($15), NAC 600 mg ($20), guaifenesin ($12), xylitol spray ($10)
 - Optional: Flonase ($15)
-- Total: ~$60-70, improvement in 2-4 weeks
+- Total: about $60-70
+- Expected improvement: 2-4 weeks
 
 ---
 
 ## Timeline (2026-2030)
 
-- **Now (Mar 2026)**: Opticon, Tally, Spark, OpenClaw, Dose active. 23 repos. ~$7K debt (Bell, Telus, Visa)
-- **Spring 2026**: College prep, save for MacBook + car + dog, UVIC transfer app
+- **Now (Mar 2026)**: Active projects are Opticon, Tally, Spark, OpenClaw, and Dose. 23 repos. About $7K debt.
+- **Spring 2026**: Prepare for college, save for a MacBook, car, and dog, and apply for UVIC transfer
 - **Sep 2026 - Apr 2027**: College transfer year, CS + Math, 3.0+ GPA
 - **Sep 2027**: Transfer to UVIC CS (2nd year)
 - **2027-2029**: Complete degree, co-op internships
@@ -91,19 +93,21 @@ All notes in one place.
 ## School (UVIC CS Transfer)
 
 ### Deadlines
-- May entry: Apr 15
-- Jan 2027 entry: Sep 30
+- May entry: April 15
+- January 2027 entry: September 30
 
 ### Prerequisites
 - CSC 110/111, CSC 115/116, MATH 100/109, MATH 101
 
 ### GPA
-- Min C+ average (3.0/9.0) on most recent 12 units
+- Minimum: C+ average on the most recent 12 units
 - Competitive: 80-85%
 
 ### Discovery Studies (21+)
-- No formal admission, max 3 units/term, 12 units total
-- Still need prereqs + GPA for CS
+- No formal admission
+- Max 3 units per term
+- Max 12 units total
+- Still need CS prerequisites and GPA
 
 ### Contacts
 - CS advisor: cscadvisor2@uvic.ca
@@ -117,14 +121,15 @@ All notes in one place.
 ## Benefits (PWD/DTC)
 
 ### Action Items
-- Call Ombudsperson: 1-800-567-3247 (9am-4pm)
+- Call Ombudsperson: 1-800-567-3247 (9 AM-4 PM)
 - Backup: Disability Alliance BC: 1-800-663-1278
 - Poverty Law Advocate: 604-534-7921
 - DABC DTC guide: dtc@dabc.ca
 
 ### DTC (Disability Tax Credit)
 - Retroactive up to 10 years
-- Adults ~$9k/year (non-refundable, offsets taxes)
+- Adults: about $9K/year
+- Non-refundable, offsets taxes
 
 ### TODO
 - [ ] Integrate into Tally
@@ -141,13 +146,13 @@ All notes in one place.
 
 ### Workflow
 1. Drop logo in known folder
-2. Tell Claude: biz name, tagline, colors
-3. AppleScript runs, Pixelmator generates, PNG exported
+2. Tell Claude the business name, tagline, and colors
+3. AppleScript runs, Pixelmator builds the image, and exports PNG
 4. Claude sends via iMessage
 
 ### Limitations
 - Font family styling flaky
-- Need .pxd template system for complex layouts
+- Need `.pxd` templates for complex layouts
 
 ### TODO
 - [x] Simplify plan (already concise)
