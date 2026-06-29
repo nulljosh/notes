@@ -1,155 +1,94 @@
 # Master Note
 
-All notes in one place.
+All notes in one place. Updated 2026-06-29.
 
 ---
 
-## Tasks
+## Roadmap
 
-### Tier 1: Ship and Fix
-- [x] Ship Arthur v3.0.0 (archived as educational showcase)
-- [x] Get Piper working with Arthur backend
-- [x] Fix Arthur training daemon
-- [ ] Test Spark iOS on iPhone
-- [ ] Test Tally iOS on iPhone
-- [ ] Add health grading to Dose iOS
-- [ ] Bump Monica, Spark, Tally, and Dose iOS
-- [ ] Start Rabbit, Portfolio, Journal, and Dashboard iOS
-- [x] Standardize CLAUDE.md across all repos
-- [x] Consolidate repos (23 standalone + 4 monorepos)
+### Ship Now
+- [ ] epiphany: fix SnapTrade phantom holdings/bad math (post-launch bug, real users hit it)
+- [ ] spark: 4 more screenshots, PrivacyInfo.xcprivacy, fastlane metadata, archive+upload
+- [ ] lingo: LingoBox Mac missing description/keywords/support URL — blocks submission
+- [ ] talli: confirm PWD deadline status (was June 18)
+- [ ] echo: waiting on $99 Apple Developer enrollment
+- [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
+- [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
+- [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
-### Tier 2: Features
-- [ ] Add events, flights, news, sports, maps, and nav to Monica
-- [ ] Expand Tally reports and sync iOS Notes contacts
-- [ ] Import iOS health data into Dose
-- [ ] Reorder Dose entries by relevance
+### Active Projects
+| Repo | Status | Next |
+|---|---|---|
+| epiphany | Live (App Store) | SnapTrade fix |
+| spark | Live (web) | App Store submission |
+| lingo | Built, not submitted | Mac metadata |
+| talli | Live | PWD status |
+| echo | Built | Dev enrollment |
+| dose | Live | Mobile nav, health grading |
+| notes | Live + iOS | Content refresh |
+| journal | Automated | Running |
+| brief | Private | CASE-0001/CASE-0002 |
+| nyc | Local | Sound/haptics |
+| life | Local | 32 sections |
 
-### Tier 3: New Projects
-- [ ] Usage tracker (Claude + ChatGPT)
-- [ ] OpenClaw pin caching fix
-
-### Tier 4: Future
-- [ ] HN + X monitor, Josh Code, Vibe clone, Browser, Langs, NullOS, Hardware
-
-### Commands + Bots
-- [ ] /safety, /security, /simplify NL suggestions
-- [ ] Starbot iOS note, bot dashboard GUI
+### Backlog
+- [ ] cadence, charters (deleted accidentally, Vercel live — recover)
+- [ ] Supabase free tier maxed (2/2) — upgrade to Pro or pause epiphany if inactive
+- [ ] labs repos (wiretext, grapher, roost, canlii-app) — publish changes via nulljosh/labs
 
 ---
 
 ## Health
 
 ### GlyNAC Stack
-- NAC + glycine support glutathione
-- Baylor research showed improved aging biomarkers
-- ADHD and autism may involve higher oxidative stress and lower glutathione
-
-### Dosage
-- NAC: 3 g/day
-- Glycine: 6 g/day
-- Cost: about $30/month
-
-### Where to Buy (Canada)
-- NAC: Amazon.ca, Now Foods, Shoppers Drug Mart
-- Glycine: Canadian Protein, AOR, BulkSupplements
-
-### Tips
-- NAC on an empty stomach or with vitamin C
-- Glycine mixes into water or coffee
-- Start lower, ramp up over a week
-
-### Blood Work
-- BC health card: [REDACTED]
-- Lab visit: 2026-01-08
-- Check with doctor: 2026-03-02
+- NAC 3 g/day + Glycine 6 g/day
+- Supports glutathione, ADHD/autism oxidative stress
+- ~$30/month (Amazon.ca, AOR, Canadian Protein)
+- NAC on empty stomach or with vitamin C
 
 ### Sinus Care
-- NeilMed Sinus Rinse ($15), NAC 600 mg ($20), guaifenesin ($12), xylitol spray ($10)
-- Optional: Flonase ($15)
-- Total: about $60-70
-- Expected improvement: 2-4 weeks
+- NeilMed Sinus Rinse + NAC 600mg + guaifenesin + xylitol spray + Flonase
+- ~$60-70 total, 2-4 week improvement window
 
 ---
 
-## Timeline (2026-2030)
+## Timeline
 
-- **Now (Mar 2026)**: Active projects are Monica, Tally, Spark, OpenClaw, and Dose. 23 repos. About $7K debt.
-- **Spring 2026**: Prepare for college, save for a MacBook, car, and dog, and apply for UVIC transfer
-- **Sep 2026 - Apr 2027**: College transfer year, CS + Math, 3.0+ GPA
+- **2026**: College prep, save for MacBook/car, UVIC transfer app (May entry: Apr 15, Jan 2027 entry: Sep 30)
+- **Sep 2026 – Apr 2027**: College transfer year, CS + Math, 3.0+ GPA
 - **Sep 2027**: Transfer to UVIC CS (2nd year)
-- **2027-2029**: Complete degree, co-op internships
-- **2029**: First software role or grad school (UVIC MSc, UBC, SFU)
-- **2030**: Reassess trajectory, savings, MBA vs senior IC
+- **2027–2029**: Degree + co-op
+- **2029**: First software role or grad school
+- **2030**: Reassess
 
-### TODO
-- [x] Bump timeline (refreshed Mar 2026)
-
----
-
-## School (UVIC CS Transfer)
-
-### Deadlines
-- May entry: April 15
-- January 2027 entry: September 30
-
-### Prerequisites
-- CSC 110/111, CSC 115/116, MATH 100/109, MATH 101
-
-### GPA
-- Minimum: C+ average on the most recent 12 units
-- Competitive: 80-85%
-
-### Discovery Studies (21+)
-- No formal admission
-- Max 3 units per term
-- Max 12 units total
-- Still need CS prerequisites and GPA
-
-### Contacts
+### UVIC CS Transfer
+- Prerequisites: CSC 110/111, CSC 115/116, MATH 100/109, MATH 101
+- Competitive GPA: 80-85%
+- Discovery Studies (21+): no formal admission, max 12 units total
 - CS advisor: cscadvisor2@uvic.ca
-- Transfer guide: bctransferguide.ca
-
-### TODO
-- [x] Update plan / refresh (Mar 2026)
 
 ---
 
 ## Benefits (PWD/DTC)
 
-### Action Items
-- Call Ombudsperson: 1-800-567-3247 (9 AM-4 PM)
-- Backup: Disability Alliance BC: 1-800-663-1278
+- Ombudsperson: 1-800-567-3247 (9 AM–4 PM)
+- Disability Alliance BC: 1-800-663-1278
 - Poverty Law Advocate: 604-534-7921
-- DABC DTC guide: dtc@dabc.ca
-
-### DTC (Disability Tax Credit)
-- Retroactive up to 10 years
-- Adults: about $9K/year
-- Non-refundable, offsets taxes
-
-### TODO
-- [ ] Integrate into Tally
-- [x] Double check, merge plans (consolidated in master.md)
+- DTC retroactive 10 years, ~$9K/year non-refundable
 
 ---
 
-## Pixelmator
+## Pixelmator Automation
 
-### What Works
-- Create any canvas size, fill background, add text layers
-- Place logo/image from disk, resize, reposition
-- Export PNG headlessly
+- Create canvas, fill bg, add text layers, place logos, export PNG headlessly
+- Workflow: drop logo → tell Claude → AppleScript builds → sends via iMessage
+- Limitations: font family styling flaky, needs .pxd templates for complex layouts
 
-### Workflow
-1. Drop logo in known folder
-2. Tell Claude the business name, tagline, and colors
-3. AppleScript runs, Pixelmator builds the image, and exports PNG
-4. Claude sends via iMessage
+---
 
-### Limitations
-- Font family styling flaky
-- Need `.pxd` templates for complex layouts
+## Infrastructure
 
-### TODO
-- [x] Simplify plan (already concise)
-- [ ] Integrate bcgd logo + social media aspect
+- Cloudflare API token: `source ~/.openclaw/.openclaw.bak/.secure/cloudflare.env`
+- Supabase: 2 projects (spark + epiphany), free tier maxed
+- OpenClaw: iMessage → Claude routing at `~/.openclaw/`
+- Security rotations pending: Upstash Redis (epiphany)
