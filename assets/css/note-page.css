@@ -1,43 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,900&family=DM+Sans:wght@400;500&display=swap');
-
-:root {
-  --bg-primary: #1A1A1A;
-  --bg-secondary: #2a2118;
-  --bg-tertiary: #332920;
-  --text-primary: #FFF8F0;
-  --text-secondary: rgba(255,248,240,0.65);
-  --text-tertiary: rgba(255,248,240,0.3);
-  --accent: #E4002B;
-  --accent-light: #F9C31F;
-  --border: rgba(255, 248, 240, 0.1);
-  --radius: 14px;
-  --code-bg: rgba(255, 248, 240, 0.05);
-  --code-border: rgba(255, 248, 240, 0.08);
-  --gradient-accent: #2a1a15;
-}
-html[data-theme="light"] {
-  --bg-primary: #FFF8F0;
-  --bg-secondary: #f0e6d8;
-  --bg-tertiary: #ede0d0;
-  --text-primary: #1A1A1A;
-  --text-secondary: #4a3f38;
-  --text-tertiary: rgba(26,26,26,0.4);
-  --accent: #E4002B;
-  --accent-light: #F9C31F;
-  --border: rgba(26, 26, 26, 0.1);
-  --code-bg: rgba(26, 26, 26, 0.05);
-  --code-border: rgba(26, 26, 26, 0.08);
-  --gradient-accent: #ffe8d4;
-}
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: radial-gradient(1000px 400px at 50% -120px, var(--gradient-accent) 0%, var(--bg-primary) 65%);
-  color: var(--text-primary);
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .theme-toggle {
@@ -46,21 +16,17 @@ body {
   right: 1rem;
   z-index: 20;
   border: 1px solid var(--border);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  border-radius: 999px;
+  background: var(--bg2);
+  color: var(--text2);
+  border-radius: var(--radius-pill);
   padding: 0.42rem 0.8rem;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-family: var(--font);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.theme-toggle:hover {
-  color: var(--accent-light);
-  border-color: rgba(228, 0, 43, 0.35);
-  background: var(--bg-tertiary);
-}
+.theme-toggle:hover { color: var(--text); border-color: var(--accent); }
 
 .container {
   max-width: 760px;
@@ -70,49 +36,38 @@ body {
   padding-bottom: 3rem;
 }
 
-.header {
-  margin-bottom: 1.25rem;
-}
+.header { margin-bottom: 1.25rem; }
 
 .back-link {
   display: inline-block;
   text-decoration: none;
-  color: var(--text-secondary);
+  color: var(--text2);
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   padding: 0.35rem 0.8rem;
   font-size: 0.82rem;
   transition: all 0.2s ease;
 }
 
-.back-link:hover {
-  color: var(--accent-light);
-  border-color: rgba(96, 165, 250, 0.35);
-  background: rgba(228, 0, 43, 0.09);
-}
+.back-link:hover { color: var(--text); border-color: var(--accent); }
 
 .note-shell {
-  background: var(--bg-secondary);
+  background: var(--bg2);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   overflow: hidden;
 }
 
 .note-meta {
   padding: 1.1rem 1.25rem;
   border-bottom: 1px solid var(--border);
-  background: var(--bg-tertiary);
 }
 
-.note-title {
-  font-size: 1.05rem;
-  letter-spacing: -0.02em;
-  font-weight: 600;
-}
+.note-title { font-size: 1.05rem; font-weight: 600; }
 
 .note-file {
   margin-top: 0.2rem;
-  color: var(--text-tertiary);
+  color: var(--text3);
   font-size: 0.82rem;
 }
 
@@ -127,7 +82,6 @@ body {
   line-height: 1.3;
   margin-top: 1.3rem;
   margin-bottom: 0.7rem;
-  letter-spacing: -0.02em;
 }
 
 .note-content h1 { font-size: 1.45rem; }
@@ -138,66 +92,50 @@ body {
 .note-content ul,
 .note-content ol,
 .note-content pre,
-.note-content blockquote {
-  margin: 0.72rem 0;
-}
+.note-content blockquote { margin: 0.72rem 0; }
 
 .note-content ul,
-.note-content ol {
-  padding-left: 1.3rem;
-}
+.note-content ol { padding-left: 1.3rem; }
 
-.note-content li {
-  margin: 0.24rem 0;
-  color: var(--text-secondary);
-}
+.note-content li { margin: 0.24rem 0; color: var(--text2); }
+.note-content p { color: var(--text2); }
 
-.note-content p { color: var(--text-secondary); }
-
-.note-content a {
-  color: var(--accent-light);
-  text-decoration: none;
-}
-
+.note-content a { color: var(--accent); text-decoration: none; }
 .note-content a:hover { text-decoration: underline; }
 
 .note-content code {
-  background: var(--code-bg);
-  border: 1px solid var(--code-border);
-  border-radius: 6px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
   padding: 0.08rem 0.32rem;
   font-size: 0.9em;
+  font-family: var(--font);
 }
 
 .note-content pre {
-  background: var(--bg-secondary);
+  background: var(--bg2);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 0.9rem;
   overflow-x: auto;
 }
 
-.note-content pre code {
-  background: transparent;
-  border: 0;
-  padding: 0;
-}
+.note-content pre code { background: transparent; border: 0; padding: 0; }
 
 .error {
-  color: #fca5a5;
-  background: rgba(239, 68, 68, 0.08);
-  border: 1px solid rgba(239, 68, 68, 0.25);
-  border-radius: 10px;
+  color: #e55;
+  background: rgba(200,0,0,0.06);
+  border: 1px solid rgba(200,0,0,0.2);
+  border-radius: var(--radius-sm);
   padding: 0.7rem 0.85rem;
 }
 
-/* Checkboxes */
 .note-content input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--text-tertiary);
+  border: 2px solid var(--border);
   border-radius: 4px;
   vertical-align: middle;
   margin-right: 0.4rem;
@@ -223,7 +161,6 @@ body {
   transform: rotate(45deg);
 }
 
-/* Horizontal rules */
 .note-content hr {
   border: none;
   border-top: 1px solid var(--border);

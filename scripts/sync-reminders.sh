@@ -1,21 +1,34 @@
 #!/bin/sh
-# Sync the "Reminders" list from Apple Reminders → notes/reminders.md
-# ponytail: AppleScript dump; run manually, no daemon needed
-
+# Merge Apple Reminders → notes/reminders.md, preserving existing checkboxes and checking off completed items.
 OUT="$(dirname "$0")/../notes/reminders.md"
 
-osascript <<'APPLESCRIPT' > "$OUT"
+# Get live reminders as "STATUS|NAME" lines
+LIVE=$(osascript <<'AS'
 tell application "Reminders"
-  set output to "# Reminders" & linefeed & linefeed
+  set out to ""
   repeat with r in reminders of list "Reminders"
     if completed of r then
-      set output to output & "- [x] " & name of r & linefeed
+      set out to out & "done|" & name of r & linefeed
     else
-      set output to output & "- [ ] " & name of r & linefeed
+      set out to out & "todo|" & name of r & linefeed
     end if
   end repeat
-  return output
+  return out
 end tell
-APPLESCRIPT
+AS)
 
-echo "Synced to $OUT"
+# Build merged markdown
+{
+  echo "# Reminders"
+  echo ""
+  echo "$LIVE" | while IFS='|' read -r status name; do
+    [ -z "$name" ] && continue
+    if [ "$status" = "done" ]; then
+      echo "- [x] $name"
+    else
+      echo "- [ ] $name"
+    fi
+  done
+} > "$OUT"
+
+echo "Synced $(echo "$LIVE" | grep -c '|') items to $OUT"
