@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-01.
+All notes in one place. Updated 2026-07-02.
 
 ---
 
@@ -21,7 +21,7 @@ All notes in one place. Updated 2026-07-01.
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded | SnapTrade fix |
 | spark | v2.1.0 live, Mac ASC record done | iOS screenshots + upload |
 | lexly | Live at lexly.heyitsmejosh.com | Screenshots + metadata |
-| talli | v3.5.1 Waiting for Review, Mac build 2 uploaded | Review |
+| talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review | Verify v3.5.3, review |
 | echo | Built, tokens synced | Mac build + upload |
 | healstack (dose) | v2.2.0 live | Mobile nav, health grading |
 | quotable | v1.3.0, 143 quotes, settings panel | Running |
@@ -31,10 +31,12 @@ All notes in one place. Updated 2026-07-01.
 | nyc | Local, Mac build uploaded | iOS app |
 | life | Local | 32 sections |
 
-### Recent (2026-07-01)
-- Parlay renamed to Lexly across repo + ASC
+### Recent (2026-07-02)
+- Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated
+- Talli v3.5.3: blue accent, report banner + avatar fixes, messages refresh, Swift 6 widget build
+- Portfolio 1930s rubber-hose theme (tokens-30s.css + brush mascot); readability + rollout pending
 - Design tokens synced from portfolio tokens.css into echo, grapher, spark, wiretext
-- Talli Swift 6 widget concurrency fix
+- Epiphany iOS 2.5.2 build 7 uploaded after widget Info.plist fix
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
