@@ -19,7 +19,7 @@ All notes in one place. Updated 2026-07-02.
 | Repo | Status | Next |
 |---|---|---|
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded | SnapTrade fix |
-| spark | v2.1.0 live, Mac ASC record done | iOS screenshots + upload |
+| spark | v2.1.0 live, Mac ASC record done, auth consolidated (10/12 fns) | iOS screenshots + upload |
 | lexly | Live at lexly.heyitsmejosh.com | Screenshots + metadata |
 | talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review | Verify v3.5.3, review |
 | echo | Built, tokens synced | Mac build + upload |
@@ -30,6 +30,7 @@ All notes in one place. Updated 2026-07-02.
 | brief | Private | CASE-0001/CASE-0002 |
 | nyc | Local, Mac build uploaded | iOS app |
 | life | Local | 32 sections |
+| root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-02)
 - Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated
@@ -37,6 +38,9 @@ All notes in one place. Updated 2026-07-02.
 - Portfolio 1930s rubber-hose theme (tokens-30s.css + brush mascot); readability + rollout pending
 - Design tokens synced from portfolio tokens.css into echo, grapher, spark, wiretext
 - Epiphany iOS 2.5.2 build 7 uploaded after widget Info.plist fix
+- root etymology app scaffolded: Wiktionary parse pipeline v0 (inh/der/bor + root templates), SwiftUI + web stubs
+- Spark auth routes consolidated into one function (Vercel Hobby 12-fn cap, now 10/12)
+- Wiretext dropped unused Fraunces/DM Sans font links (tokens come from portfolio)
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
