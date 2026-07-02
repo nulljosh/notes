@@ -7,7 +7,6 @@ All notes in one place. Updated 2026-07-02.
 ## Roadmap
 
 ### Ship Now
-- [ ] epiphany: fix SnapTrade phantom holdings/bad math (post-launch bug, real users hit it)
 - [ ] spark: 4 iOS screenshots + archive/upload (Mac ASC record created 2026-07-01: 6786482755)
 - [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + Mac screenshots, description, keywords, support URL
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
@@ -18,7 +17,7 @@ All notes in one place. Updated 2026-07-02.
 ### Active Projects
 | Repo | Status | Next |
 |---|---|---|
-| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded | SnapTrade fix |
+| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed | Autopilot broker logic |
 | spark | v2.1.0 live, Mac ASC record done, auth consolidated (10/12 fns) | iOS screenshots + upload |
 | lexly | Live at lexly.heyitsmejosh.com | Screenshots + metadata |
 | talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review | Verify v3.5.3, review |
@@ -33,15 +32,16 @@ All notes in one place. Updated 2026-07-02.
 | root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-02)
-- Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated
+- Epiphany SnapTrade phantom holdings fixed: account deduplication, holdings merge on account id; empty response bodies tolerated; autopilot broker plan documented (IBKR for stocks, WS read-only, Kraken parked)
+- Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated; sign-in hang fixed with auto-profile creation
 - Talli v3.5.3: blue accent, report banner + avatar fixes, messages refresh, Swift 6 widget build; verification complete
 - Portfolio 1930s rubber-hose theme (tokens-30s.css + brush mascot); readability + rollout pending
 - Design tokens synced from portfolio tokens.css into echo, grapher, spark, wiretext
 - Epiphany iOS 2.5.2 build 7 uploaded after widget Info.plist fix
-- root etymology app scaffolded: Wiktionary parse pipeline v0 (inh/der/bor/inh+/der+/bor+ + root templates), SwiftUI + web stubs
+- root etymology app scaffolded: Wiktionary parse pipeline v0 (inh/der/bor/inh+/der+/bor+ + root templates), SwiftUI + web stubs; parser refined for inh+/der+/bor+ variants
 - Spark auth routes consolidated into one function (Vercel Hobby 12-fn cap, now 10/12)
-- Wiretext dropped unused Fraunces/DM Sans font links (tokens come from portfolio)
-- NYC polish: HUD/tutorial hit-testing fixed, building sprites refreshed (detail + Retina @2x/@3x), controls reference expanded, autoplay removed
+- Wiretext v1.1.0: first-run tutorial overlay; dropped unused Fraunces/DM Sans font links (tokens come from portfolio)
+- NYC polish: web game source recovered from Vercel; HUD/tutorial hit-testing fixed; building sprites refreshed (detail + Retina @2x/@3x); controls reference expanded; autoplay removed (directive engine deleted)
 - Echo adopted portfolio vibe tokens
 
 ### Backlog
