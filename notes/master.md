@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-06-29.
+All notes in one place. Updated 2026-07-01.
 
 ---
 
@@ -8,10 +8,9 @@ All notes in one place. Updated 2026-06-29.
 
 ### Ship Now
 - [ ] epiphany: fix SnapTrade phantom holdings/bad math (post-launch bug, real users hit it)
-- [ ] spark: 4 more screenshots, PrivacyInfo.xcprivacy, fastlane metadata, archive+upload
-- [ ] lingo: LingoBox Mac missing description/keywords/support URL — blocks submission
-- [ ] talli: confirm PWD deadline status (was June 18)
-- [ ] echo: waiting on $99 Apple Developer enrollment
+- [ ] spark: 4 iOS screenshots + archive/upload (Mac ASC record created 2026-07-01: 6786482755)
+- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + Mac screenshots, description, keywords, support URL
+- [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
@@ -19,17 +18,23 @@ All notes in one place. Updated 2026-06-29.
 ### Active Projects
 | Repo | Status | Next |
 |---|---|---|
-| epiphany | Live (App Store) | SnapTrade fix |
-| spark | Live (web) | App Store submission |
-| lingo | Built, not submitted | Mac metadata |
-| talli | Live | PWD status |
-| echo | Built | Dev enrollment |
-| dose | Live | Mobile nav, health grading |
+| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded | SnapTrade fix |
+| spark | v2.1.0 live, Mac ASC record done | iOS screenshots + upload |
+| lexly | Live at lexly.heyitsmejosh.com | Screenshots + metadata |
+| talli | v3.5.1 Waiting for Review, Mac build 2 uploaded | Review |
+| echo | Built, tokens synced | Mac build + upload |
+| healstack (dose) | v2.2.0 live | Mobile nav, health grading |
+| quotable | v1.3.0, 143 quotes, settings panel | Running |
 | notes | Live + iOS | Content refresh |
 | journal | Automated | Running |
 | brief | Private | CASE-0001/CASE-0002 |
-| nyc | Local | Sound/haptics |
+| nyc | Local, Mac build uploaded | iOS app |
 | life | Local | 32 sections |
+
+### Recent (2026-07-01)
+- Parlay renamed to Lexly across repo + ASC
+- Design tokens synced from portfolio tokens.css into echo, grapher, spark, wiretext
+- Talli Swift 6 widget concurrency fix
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
