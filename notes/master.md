@@ -34,13 +34,15 @@ All notes in one place. Updated 2026-07-02.
 
 ### Recent (2026-07-02)
 - Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated
-- Talli v3.5.3: blue accent, report banner + avatar fixes, messages refresh, Swift 6 widget build
+- Talli v3.5.3: blue accent, report banner + avatar fixes, messages refresh, Swift 6 widget build; verification complete
 - Portfolio 1930s rubber-hose theme (tokens-30s.css + brush mascot); readability + rollout pending
 - Design tokens synced from portfolio tokens.css into echo, grapher, spark, wiretext
 - Epiphany iOS 2.5.2 build 7 uploaded after widget Info.plist fix
-- root etymology app scaffolded: Wiktionary parse pipeline v0 (inh/der/bor + root templates), SwiftUI + web stubs
+- root etymology app scaffolded: Wiktionary parse pipeline v0 (inh/der/bor/inh+/der+/bor+ + root templates), SwiftUI + web stubs
 - Spark auth routes consolidated into one function (Vercel Hobby 12-fn cap, now 10/12)
 - Wiretext dropped unused Fraunces/DM Sans font links (tokens come from portfolio)
+- NYC polish: HUD/tutorial hit-testing fixed, building sprites refreshed (detail + Retina @2x/@3x), controls reference expanded, autoplay removed
+- Echo adopted portfolio vibe tokens
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
