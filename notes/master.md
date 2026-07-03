@@ -7,8 +7,8 @@ All notes in one place. Updated 2026-07-02.
 ## Roadmap
 
 ### Ship Now
-- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): submit blocked on 2FA availability + App Privacy completion (iOS + Mac metadata + screenshots filled 2026-07-02)
-- [ ] spark: 4 iOS screenshots + archive/upload (Mac ASC record created 2026-07-01: 6786482755)
+- [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
+- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
@@ -18,8 +18,8 @@ All notes in one place. Updated 2026-07-02.
 | Repo | Status | Next |
 |---|---|---|
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed | Autopilot broker logic |
-| spark | v2.1.0 live, Mac ASC record done, auth consolidated (10/12 fns) | iOS screenshots + upload |
-| lexly | Live at lexly.heyitsmejosh.com, metadata + screenshots done (iOS + Mac) | Submit (blocked on 2FA + App Privacy) |
+| spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns) | iOS screenshots + metadata + submit |
+| lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done | Submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review | Verify v3.5.3, review |
 | echo | Built, tokens synced | Mac build + upload |
 | healstack (dose) | v2.2.0 live | Mobile nav, health grading |
@@ -32,6 +32,8 @@ All notes in one place. Updated 2026-07-02.
 | root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-02)
+- Spark Mac build 1.0.0 archived, exported, uploaded to App Store Connect (provisioning fixed via xcodebuild -allowProvisioningUpdates)
+- Lexly iOS and macOS builds confirmed valid in App Store build pipeline
 - Epiphany SnapTrade phantom holdings fixed: account deduplication, holdings merge on account id; empty response bodies tolerated; autopilot broker plan documented (IBKR for stocks, WS read-only, Kraken parked)
 - Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated; sign-in hang fixed with auto-profile creation; avatar step removed from signup; iOS + macOS icons regenerated to fill the canvas (was ~60%, Apple icon grid, 824px rounded rect); iOS + macOS App Store metadata and screenshots filled via asc (submit blocked on 2FA + App Privacy)
 - Talli v3.5.3: blue accent, report banner + avatar fixes, messages refresh, Swift 6 widget build; verification complete
