@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-03 (Friday evening).
+All notes in one place. Updated 2026-07-03 (Friday night).
 
 ---
 
@@ -10,6 +10,7 @@ All notes in one place. Updated 2026-07-03 (Friday evening).
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid, icon artwork zoom applied, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
+- [ ] nyc: macOS 1.0 validates, iOS 1.0.0 uploaded, 1 macOS validation error remaining (free pricing set)
 - [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
@@ -27,7 +28,7 @@ All notes in one place. Updated 2026-07-03 (Friday evening).
 | notes | Live + iOS | Content refresh |
 | journal | Automated | Running |
 | brief | Private (Supabase env-var crash fixed, What's New sheet dismiss, portfolio vibe tokens on web) | CASE-0001/CASE-0002 |
-| nyc | Local, Mac build uploaded | iOS app |
+| nyc | macOS 1.0 valid, iOS 1.0.0 build uploaded, 5 macOS blockers fixed (category, review contact, encryption, content rights, age rating), free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | life | Local | 32 sections |
 | root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
 
@@ -55,6 +56,7 @@ All notes in one place. Updated 2026-07-03 (Friday evening).
 - Created /progress skill: whole-codebase time/cost estimation tool (~67 open items ≈ 155 hours)
 - Talli Xcode Cloud build failures (50+ jobs) resolved: diagnosed missing iOS Distribution certificate, created via `asc certificates create --certificate-type IOS_DISTRIBUTION`
 - Monthly-report submission code path reviewed: confirmed real end-to-end filing to BC Self-Serve (all form fields intact), flagged weak success-detection logic in scraper.js needing hardening before next filing window (days 1-5)
+- NYC App Store submission: iOS bundle ID + provisioning profile + support URL registered; iOS distribution certificate generated and exported for IPA builds; iOS + macOS metadata filled via asc CLI; 5 macOS submission blockers fixed via ASC API (category, review contact, encryption, content rights, age rating); free pricing set; first iOS build uploaded to ASC; both macOS 1.0 and iOS 1.0.0 validate cleanly (1 macOS validation error remaining)
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
