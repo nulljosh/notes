@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-03.
+All notes in one place. Updated 2026-07-03 (Friday evening).
 
 ---
 
@@ -17,21 +17,25 @@ All notes in one place. Updated 2026-07-03.
 ### Active Projects
 | Repo | Status | Next |
 |---|---|---|
-| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed | Autopilot broker logic |
+| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed | Autopilot broker logic |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns) | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done | Submit (blocked on 2FA + App Privacy) |
-| talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review, Xcode Cloud signing fixed, monthly-report success-detection hardened | Submit v3.5.3 |
-| echo | Built, tokens synced | Mac build + upload |
+| talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened), v3.5.1 Waiting for Review, Xcode Cloud signing fixed | Submit v3.5.3 |
+| echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live | Mobile nav, health grading |
 | quotable | v1.3.0, 143 quotes, settings panel | Running |
 | notes | Live + iOS | Content refresh |
 | journal | Automated | Running |
-| brief | Private | CASE-0001/CASE-0002 |
+| brief | Private (Supabase env-var crash fixed, What's New sheet dismiss, portfolio vibe tokens on web) | CASE-0001/CASE-0002 |
 | nyc | Local, Mac build uploaded | iOS app |
 | life | Local | 32 sections |
 | root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-03)
+- Epiphany: scan-local statements endpoint locked to dev-only, iOS splash screen fixed (was showing old grey wireframe icon)
+- Talli: Mac widget provider Swift 6 concurrency errors fixed, appearance settings added to Talli Mac
+- Echo: App Store screenshots regenerated and What's New copy updated, Voice Memos import added with file transcription progress bar and animation polish
+- Brief: Supabase env-var crash fixed, What's New sheet dismiss logic added, web adopted portfolio design tokens
 - Lexly macOS app icons regenerated to fill canvas (was ~60% of tile size), all scales updated
 - Nulljosh.github.io updated UVic timeline: returning for Computer Science, retaking Pre-Calc 12
 - Talli monthly-report success-detection hardened to avoid false positives on form re-renders
