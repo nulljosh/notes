@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-02.
+All notes in one place. Updated 2026-07-03.
 
 ---
 
@@ -8,11 +8,10 @@ All notes in one place. Updated 2026-07-02.
 
 ### Ship Now
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
-- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid, submit blocked on 2FA availability + App Privacy completion
+- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid, icon artwork zoom applied, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
-- [ ] talli: harden monthly-report submit success-detection (scraper.js) before next filing window (days 1-5)
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
 ### Active Projects
@@ -21,7 +20,7 @@ All notes in one place. Updated 2026-07-02.
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed | Autopilot broker logic |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns) | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done | Submit (blocked on 2FA + App Privacy) |
-| talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review, Xcode Cloud signing fixed (missing iOS Distribution cert, now created via asc) | Verify v3.5.3, harden monthly-report success-detection |
+| talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review, Xcode Cloud signing fixed, monthly-report success-detection hardened | Submit v3.5.3 |
 | echo | Built, tokens synced | Mac build + upload |
 | healstack (dose) | v2.2.0 live | Mobile nav, health grading |
 | quotable | v1.3.0, 143 quotes, settings panel | Running |
@@ -32,7 +31,10 @@ All notes in one place. Updated 2026-07-02.
 | life | Local | 32 sections |
 | root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
 
-### Recent (2026-07-02)
+### Recent (2026-07-03)
+- Lexly macOS app icons regenerated to fill canvas (was ~60% of tile size), all scales updated
+- Nulljosh.github.io updated UVic timeline: returning for Computer Science, retaking Pre-Calc 12
+- Talli monthly-report success-detection hardened to avoid false positives on form re-renders
 - Spark Mac build 1.0.0 archived, exported, uploaded to App Store Connect (provisioning fixed via xcodebuild -allowProvisioningUpdates)
 - Lexly iOS and macOS builds confirmed valid in App Store build pipeline
 - Epiphany SnapTrade phantom holdings fixed: account deduplication, holdings merge on account id; empty response bodies tolerated; autopilot broker plan documented (IBKR for stocks, WS read-only, Kraken parked)
