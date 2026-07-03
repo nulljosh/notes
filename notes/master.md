@@ -7,8 +7,8 @@ All notes in one place. Updated 2026-07-02.
 ## Roadmap
 
 ### Ship Now
+- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): submit blocked on 2FA availability + App Privacy completion (iOS + Mac metadata + screenshots filled 2026-07-02)
 - [ ] spark: 4 iOS screenshots + archive/upload (Mac ASC record created 2026-07-01: 6786482755)
-- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + Mac screenshots, description, keywords, support URL
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
@@ -19,7 +19,7 @@ All notes in one place. Updated 2026-07-02.
 |---|---|---|
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed | Autopilot broker logic |
 | spark | v2.1.0 live, Mac ASC record done, auth consolidated (10/12 fns) | iOS screenshots + upload |
-| lexly | Live at lexly.heyitsmejosh.com | Screenshots + metadata |
+| lexly | Live at lexly.heyitsmejosh.com, metadata + screenshots done (iOS + Mac) | Submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review | Verify v3.5.3, review |
 | echo | Built, tokens synced | Mac build + upload |
 | healstack (dose) | v2.2.0 live | Mobile nav, health grading |
@@ -33,7 +33,7 @@ All notes in one place. Updated 2026-07-02.
 
 ### Recent (2026-07-02)
 - Epiphany SnapTrade phantom holdings fixed: account deduplication, holdings merge on account id; empty response bodies tolerated; autopilot broker plan documented (IBKR for stocks, WS read-only, Kraken parked)
-- Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated; sign-in hang fixed with auto-profile creation
+- Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated; sign-in hang fixed with auto-profile creation; avatar step removed from signup; macOS icon regenerated on Apple icon grid (824px rounded rect); iOS + macOS App Store metadata and screenshots filled via asc (submit blocked on 2FA + App Privacy)
 - Talli v3.5.3: blue accent, report banner + avatar fixes, messages refresh, Swift 6 widget build; verification complete
 - Portfolio 1930s rubber-hose theme (tokens-30s.css + brush mascot); readability + rollout pending
 - Design tokens synced from portfolio tokens.css into echo, grapher, spark, wiretext
@@ -43,6 +43,7 @@ All notes in one place. Updated 2026-07-02.
 - Wiretext v1.1.0: first-run tutorial overlay; dropped unused Fraunces/DM Sans font links (tokens come from portfolio)
 - NYC polish: web game source recovered from Vercel; HUD/tutorial hit-testing fixed; building sprites refreshed (detail + Retina @2x/@3x); controls reference expanded; autoplay removed (directive engine deleted)
 - Echo adopted portfolio vibe tokens
+- Created /progress skill: whole-codebase time/cost estimation tool (~67 open items ≈ 155 hours)
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
