@@ -12,6 +12,7 @@ All notes in one place. Updated 2026-07-02.
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
+- [ ] talli: harden monthly-report submit success-detection (scraper.js) before next filing window (days 1-5)
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
 ### Active Projects
@@ -20,7 +21,7 @@ All notes in one place. Updated 2026-07-02.
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed | Autopilot broker logic |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns) | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done | Submit (blocked on 2FA + App Privacy) |
-| talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review | Verify v3.5.3, review |
+| talli | v3.5.3 (blue accent, report/avatar fixes), v3.5.1 Waiting for Review, Xcode Cloud signing fixed (missing iOS Distribution cert, now created via asc) | Verify v3.5.3, harden monthly-report success-detection |
 | echo | Built, tokens synced | Mac build + upload |
 | healstack (dose) | v2.2.0 live | Mobile nav, health grading |
 | quotable | v1.3.0, 143 quotes, settings panel | Running |
@@ -46,6 +47,8 @@ All notes in one place. Updated 2026-07-02.
 - NYC polish: web game source recovered from Vercel; HUD/tutorial hit-testing fixed; building sprites refreshed (detail + Retina @2x/@3x); controls reference expanded; autoplay removed (directive engine deleted)
 - Echo adopted portfolio vibe tokens
 - Created /progress skill: whole-codebase time/cost estimation tool (~67 open items ≈ 155 hours)
+- Talli Xcode Cloud build failures (50+ jobs) resolved: diagnosed missing iOS Distribution certificate, created via `asc certificates create --certificate-type IOS_DISTRIBUTION`
+- Monthly-report submission code path reviewed: confirmed real end-to-end filing to BC Self-Serve (all form fields intact), flagged weak success-detection logic in scraper.js needing hardening before next filing window (days 1-5)
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
