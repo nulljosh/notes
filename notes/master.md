@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-04 (Saturday, nightly wrap).
+All notes in one place. Updated 2026-07-04 (Saturday, evening nightly wrap).
 
 ---
 
@@ -30,6 +30,7 @@ All notes in one place. Updated 2026-07-04 (Saturday, nightly wrap).
 | journal | Automated | Running |
 | brief | Private (Supabase env-var crash fixed, What's New sheet dismiss, portfolio vibe tokens on web) | CASE-0001/CASE-0002 |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
+| books | Web live at books.heyitsmejosh.com, iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
@@ -89,6 +90,9 @@ All notes in one place. Updated 2026-07-04 (Saturday, nightly wrap).
 
 ### Recent (2026-07-04, deep night)
 - Talli Xcode Cloud investigation: root cause identified as App Store Connect Paid Apps Agreement stuck in "Pending User Info" (missing bank account, Canadian GST/HST Form 506, US Tax Questionnaire) — blocks automatic-signing export account-wide, affecting free apps despite earlier successful builds (13–39); requires CRA Business Number registration for full resolution. Workaround deployed: local `fastlane beta` build/sign/upload workflow successfully uploaded new build to TestFlight.
+
+### Recent (2026-07-04, evening)
+- Books: library due-date refreshed to Jul 14, iOS + macOS WKWebView wrapper apps built (target sharing verified), app icon generated from icon.svg, automatic code signing enabled (provisioning profiles auto-managed), two ASC app records created (Books iOS 6787499076, Books Mac 6787499349), two bundle IDs registered (com.heyitsmejosh.books, com.heyitsmejosh.books.mac), verified both iOS and macOS targets build cleanly and run in simulator/locally; TestFlight archive and upload deferred to next session
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
