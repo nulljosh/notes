@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-03 (Friday).
+All notes in one place. Updated 2026-07-04 (Saturday).
 
 ---
 
@@ -31,6 +31,16 @@ All notes in one place. Updated 2026-07-03 (Friday).
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | life | Local | 32 sections |
 | root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
+
+### Recent (2026-07-04)
+- Spark: dark-mode text variables fixed (--text/--bg/--text3 defined locally, not relying on cross-origin @import timing)
+- Talli: App Group rename completed for Xcode Cloud signing, resolving 50+ job failures
+- Epiphany: landing page screenshots refreshed, screenshot pipeline bugs fixed, iOS App Store screenshots updated
+- Echo: IAP product ID mismatch fixed, web landing page split from app build, icon stale-build resolved
+- Brief: iOS + macOS signup matched to web's public multi-user auth, self-serve signup modal added, README genericized for multi-user audience
+- NYC: iOS orientation + bundle ID constraints fixed, 3 App Store rejection items addressed (icon asset bundling, iPad orientations, launch screen), iOS build bumped to 3
+- Books: Apple: The First 50 Years + Exercise Science For Dummies summaries added (photographed chapters)
+- BCGD: broken icon link in root README fixed
 
 ### Recent (2026-07-03)
 - Epiphany: scan-local statements endpoint locked to dev-only, iOS splash screen fixed (was showing old grey wireframe icon)
