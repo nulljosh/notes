@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-04 (Saturday, later night).
+All notes in one place. Updated 2026-07-04 (Saturday, nightly).
 
 ---
 
@@ -8,6 +8,7 @@ All notes in one place. Updated 2026-07-04 (Saturday, later night).
 
 ### Ship Now
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
+- [ ] talli: v3.5.3 (entitlements debugging complete — App Group identifier fixed, project.yml root cause resolved, widget extension NSExtension config fixed, device names corrected, UI test tab detection fixed for FloatingTabBar, iOS App Store screenshots regenerated). Ready for submission.
 - [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions + builds attached), icon artwork zoom applied, masterclass courses surfaced as normal cards, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
@@ -21,7 +22,7 @@ All notes in one place. Updated 2026-07-04 (Saturday, later night).
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented | Autopilot broker logic |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget added, masterclass courses surfaced as normal cards, ASC versions bumped to 1.1.0 with builds attached | Submit (blocked on 2FA + App Privacy) |
-| talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened), v3.5.1 Waiting for Review, Xcode Cloud signing fixed | Submit v3.5.3 |
+| talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete with all App Group/project.yml/widget/device/UI test/screenshot fixes), v3.5.1 Waiting for Review | Submit v3.5.3 |
 | echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
@@ -31,6 +32,9 @@ All notes in one place. Updated 2026-07-04 (Saturday, later night).
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
+
+### Recent (2026-07-04, nightly)
+- Talli: entitlements debugging complete — traced Xcode Cloud signing failures (50+ jobs) back to project.yml hardcoding old App Group identifier (group.com.jt.talli instead of group.com.heyitsmejosh.talli), fixed root cause to prevent xcodegen from silently reverting entitlements on each build, resolved widget extension missing NSExtension/NSExtensionPointIdentifier config causing simulator install failures, corrected stale device names in screenshot scripts (iPhone 17 Pro to iPhone 14 Plus), fixed UI test tab detection by switching from app.tabBars.firstMatch.buttons[name] to app.buttons[name] after custom FloatingTabBar replaced native TabView chrome, regenerated all iOS App Store README screenshots on both device sizes
 
 ### Recent (2026-07-04, later night)
 - Quotable: added music trivia mode (50 lyric-to-artist questions across pop/rock/hiphop/rnb/country), renamed `movie` field to `answer` so one schema covers movies + music, genre picker now builds itself from quotes.json; header rebuilt into a sticky full-width top nav with wordmark dropped (icon already renders "QUOTE" as text); README brought in line with other repos' badge style + roadmap section on App Store shipping and future quote sourcing
