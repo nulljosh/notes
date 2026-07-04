@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-04 (Saturday, nightly).
+All notes in one place. Updated 2026-07-04 (Saturday, late night).
 
 ---
 
@@ -41,6 +41,9 @@ All notes in one place. Updated 2026-07-04 (Saturday, nightly).
 
 ### Recent (2026-07-04 night)
 - Nimble: iOS icon scaling fixed (content fills canvas, no white/transparent bleed), search placeholder text visibility fixed (dark text on dark background), What's New sheet squish-under-keyboard race condition fixed, iOS AppIcon set added, README screenshot cleaned (black bars cropped); macOS test suite 26/26 passing, iOS target builds clean; ASC submission blocked
+
+### Recent (2026-07-04, late night)
+- Spark: Supabase database seeded with 10 idea-category posts (Claude HR, Analytics, Marketing, Sales, Legal, Logistics, R&D, Procurement, Accounting, Engineering) via direct SQL insert for demo and testing
 
 ### Recent (2026-07-04)
 - Spark: dark-mode text variables fixed (--text/--bg/--text3 defined locally, not relying on cross-origin @import timing)
