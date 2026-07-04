@@ -8,7 +8,7 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 
 ### Ship Now
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
-- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid, icon artwork zoom applied, submit blocked on 2FA availability + App Privacy completion
+- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions + builds attached), icon artwork zoom applied, masterclass courses surfaced as normal cards, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
 - [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
@@ -20,7 +20,7 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 |---|---|---|
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented | Autopilot broker logic |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
-| lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget (streak + XP) added | Submit (blocked on 2FA + App Privacy) |
+| lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget added, masterclass courses surfaced as normal cards, ASC versions bumped to 1.1.0 with builds attached | Submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened), v3.5.1 Waiting for Review, Xcode Cloud signing fixed | Submit v3.5.3 |
 | echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed | Mobile nav, health grading |
@@ -42,7 +42,7 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 - Books: Apple: The First 50 Years + Exercise Science For Dummies summaries added (photographed chapters)
 - BCGD: broken icon link in root README fixed
 - Healstack: widget last-dose name fixed to sync immediately, added immediate reload
-- Lexly: iOS home screen widget added with streak and XP display
+- Lexly: iOS home screen widget added with streak and XP display; repo cleanup (removed tracked .DS_Store, gitignored build artifacts); roadmap merged into README; GitHub description + homepage URL updated; masterclass courses (Pre-Calc 12, AP Biology) surfaced as normal course cards via url-type subjects in content/catalog.json; ASC versions bumped to 1.1.0 for iOS (6783501611) and macOS (6783501927) with latest build 202607030001 attached; macOS target verified working; iOS app verified building and running on simulator
 - Etyma: renamed from root across code, docs, GitHub; bundle ID/app struct/DB filename/User-Agent all updated; web frontend deployed with search UI over 18-word sample dataset to etyma.heyitsmejosh.com via Vercel + Cloudflare DNS; iOS scaffold confirmed building via xcodebuild
 
 ### Recent (2026-07-03)
