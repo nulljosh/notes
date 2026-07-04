@@ -36,7 +36,7 @@ All notes in one place. Updated 2026-07-03 (Friday).
 - Epiphany: scan-local statements endpoint locked to dev-only, iOS splash screen fixed (was showing old grey wireframe icon)
 - Talli: Mac widget provider Swift 6 concurrency errors fixed, appearance settings added to Talli Mac, Xcode Cloud signing failures resolved by renaming App Group to match bundle ID namespace
 - Echo: App Store screenshots regenerated and What's New copy updated, Voice Memos import added with file transcription progress bar and animation polish
-- Brief: Supabase env-var crash fixed, What's New sheet dismiss logic added, web adopted portfolio design tokens
+- Brief: Supabase env-var crash fixed, What's New sheet dismiss logic added, web adopted portfolio design tokens, added multi-user auth self-serve signup across iOS/macOS/web, README screenshot added, copy genericized for public multi-user app
 - Lexly macOS app icons regenerated to fill canvas (was ~60% of tile size), all scales updated
 - Nulljosh.github.io updated UVic timeline: returning for Computer Science, retaking Pre-Calc 12
 - Talli monthly-report success-detection hardened to avoid false positives on form re-renders
