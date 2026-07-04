@@ -18,12 +18,12 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 ### Active Projects
 | Repo | Status | Next |
 |---|---|---|
-| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed | Autopilot broker logic |
+| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented | Autopilot broker logic |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
-| lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done | Submit (blocked on 2FA + App Privacy) |
+| lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget (streak + XP) added | Submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened), v3.5.1 Waiting for Review, Xcode Cloud signing fixed | Submit v3.5.3 |
 | echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
-| healstack (dose) | v2.2.0 live | Mobile nav, health grading |
+| healstack (dose) | v2.2.0 live, widget last-dose sync fixed | Mobile nav, health grading |
 | quotable | v1.3.0, 143 quotes, settings panel | Running |
 | notes | Live + iOS | Content refresh |
 | journal | Automated | Running |
@@ -35,12 +35,14 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 ### Recent (2026-07-04)
 - Spark: dark-mode text variables fixed (--text/--bg/--text3 defined locally, not relying on cross-origin @import timing)
 - Talli: App Group rename completed for Xcode Cloud signing, resolving 50+ job failures
-- Epiphany: landing page screenshots refreshed, screenshot pipeline bugs fixed, iOS App Store screenshots updated
+- Epiphany: landing page screenshots refreshed, screenshot pipeline bugs fixed, iOS App Store screenshots updated; later wired SNAPSHOT_EMAIL/PASSWORD into UI test scheme and documented screenshot pipeline status, reverted App Store screenshots to last good demo account state
 - Echo: IAP product ID mismatch fixed, web landing page split from app build, icon stale-build resolved
 - Brief: iOS + macOS signup matched to web's public multi-user auth, self-serve signup modal added, README genericized for multi-user audience
 - NYC: iOS orientation + bundle ID constraints fixed, 3 App Store rejection items addressed (icon asset bundling, iPad orientations, launch screen), iOS build bumped to 3
 - Books: Apple: The First 50 Years + Exercise Science For Dummies summaries added (photographed chapters)
 - BCGD: broken icon link in root README fixed
+- Healstack: widget last-dose name fixed to sync immediately, added immediate reload
+- Lexly: iOS home screen widget added with streak and XP display
 
 ### Recent (2026-07-03)
 - Epiphany: scan-local statements endpoint locked to dev-only, iOS splash screen fixed (was showing old grey wireframe icon)
