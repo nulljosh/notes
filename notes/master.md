@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-04 (Saturday, late night).
+All notes in one place. Updated 2026-07-04 (Saturday, deep night).
 
 ---
 
@@ -8,7 +8,7 @@ All notes in one place. Updated 2026-07-04 (Saturday, late night).
 
 ### Ship Now
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
-- [ ] talli: v3.5.3 (entitlements debugging complete — App Group identifier fixed, project.yml root cause resolved, widget extension NSExtension config fixed, device names corrected, UI test tab detection fixed for FloatingTabBar, iOS App Store screenshots regenerated). Ready for submission.
+- [ ] talli: v3.5.3 (entitlements debugging complete — App Group identifier fixed, project.yml root cause resolved, widget extension NSExtension config fixed, device names corrected, UI test tab detection fixed for FloatingTabBar, iOS App Store screenshots regenerated). Xcode Cloud broken due to Paid Apps Agreement stuck in Pending User Info (bank account + GST/HST Form 506 + US Tax Questionnaire required); workaround deployed via local `fastlane beta` (successfully uploaded to TestFlight). Ready for submission.
 - [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions + builds attached), icon artwork zoom applied, masterclass courses surfaced as normal cards, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
@@ -22,7 +22,7 @@ All notes in one place. Updated 2026-07-04 (Saturday, late night).
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented | Autopilot broker logic |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget added, masterclass courses surfaced as normal cards, ASC versions bumped to 1.1.0 with builds attached | Submit (blocked on 2FA + App Privacy) |
-| talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete with all App Group/project.yml/widget/device/UI test/screenshot fixes), v3.5.1 Waiting for Review | Submit v3.5.3 |
+| talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete), v3.5.1 Waiting for Review, Xcode Cloud blocked (Paid Apps Agreement stuck; fastlane workaround deployed) | Submit v3.5.3 |
 | echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
@@ -86,6 +86,9 @@ All notes in one place. Updated 2026-07-04 (Saturday, late night).
 - Spark dark-mode text fix: defined --text/--bg/--text3 locally instead of relying on cross-origin @import timing
 - Shannon pentest skill created (KeygraphHQ's AI pentester); installed Docker Desktop, generated Claude Code OAuth token, wired into .env; first test run against talli dev server (port 3000, injection+XSS scope) failed silently — needs debugging before production use
 - Books project: two new summaries (Apple: The First 50 Years and Exercise Science For Dummies) added from photographed chapters, image files cleared from iCloud, badges added to index.html
+
+### Recent (2026-07-04, deep night)
+- Talli Xcode Cloud investigation: root cause identified as App Store Connect Paid Apps Agreement stuck in "Pending User Info" (missing bank account, Canadian GST/HST Form 506, US Tax Questionnaire) — blocks automatic-signing export account-wide, affecting free apps despite earlier successful builds (13–39); requires CRA Business Number registration for full resolution. Workaround deployed: local `fastlane beta` build/sign/upload workflow successfully uploaded new build to TestFlight.
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
