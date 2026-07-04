@@ -10,7 +10,7 @@ All notes in one place. Updated 2026-07-03 (Friday).
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid, icon artwork zoom applied, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
-- [ ] nyc: macOS 1.0 validates, iOS 1.0.0 uploaded, 1 macOS validation error remaining (free pricing set)
+- [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
 - [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
@@ -19,7 +19,7 @@ All notes in one place. Updated 2026-07-03 (Friday).
 | Repo | Status | Next |
 |---|---|---|
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed | Autopilot broker logic |
-| spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns) | iOS screenshots + metadata + submit |
+| spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done | Submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened), v3.5.1 Waiting for Review, Xcode Cloud signing fixed | Submit v3.5.3 |
 | echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
@@ -28,7 +28,7 @@ All notes in one place. Updated 2026-07-03 (Friday).
 | notes | Live + iOS | Content refresh |
 | journal | Automated | Running |
 | brief | Private (Supabase env-var crash fixed, What's New sheet dismiss, portfolio vibe tokens on web) | CASE-0001/CASE-0002 |
-| nyc | macOS 1.0 valid, iOS 1.0.0 build uploaded, 5 macOS blockers fixed (category, review contact, encryption, content rights, age rating), free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
+| nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | life | Local | 32 sections |
 | root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
 
@@ -56,7 +56,8 @@ All notes in one place. Updated 2026-07-03 (Friday).
 - Created /progress skill: whole-codebase time/cost estimation tool (~67 open items ≈ 155 hours)
 - Talli Xcode Cloud build failures (50+ jobs) resolved: diagnosed missing iOS Distribution certificate, created via `asc certificates create --certificate-type IOS_DISTRIBUTION`
 - Monthly-report submission code path reviewed: confirmed real end-to-end filing to BC Self-Serve (all form fields intact), flagged weak success-detection logic in scraper.js needing hardening before next filing window (days 1-5)
-- NYC App Store submission: iOS bundle ID + provisioning profile + support URL registered; iOS distribution certificate generated and exported for IPA builds; iOS + macOS metadata filled via asc CLI; 5 macOS submission blockers fixed via ASC API (category, review contact, encryption, content rights, age rating); free pricing set; first iOS build uploaded to ASC; both macOS 1.0 and iOS 1.0.0 validate cleanly (1 macOS validation error remaining)
+- NYC App Store submission: iOS bundle ID + provisioning profile + support URL registered; iOS distribution certificate generated and exported for IPA builds; iOS + macOS metadata filled via asc CLI; 5 macOS submission blockers fixed via ASC API (category, review contact, encryption, content rights, age rating); free pricing set; first iOS build uploaded to ASC; both macOS 1.0 and iOS 1.0.0 validate cleanly (1 macOS validation error remaining); iOS App Store rejection fixed (bundle app icon assets, iPad orientations, launch screen), iOS build bumped to 3
+- Spark dark-mode text fix: defined --text/--bg/--text3 locally instead of relying on cross-origin @import timing
 - Shannon pentest skill created (KeygraphHQ's AI pentester); installed Docker Desktop, generated Claude Code OAuth token, wired into .env; first test run against talli dev server (port 3000, injection+XSS scope) failed silently — needs debugging before production use
 
 ### Backlog
