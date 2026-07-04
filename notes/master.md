@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-04 (Saturday).
+All notes in one place. Updated 2026-07-04 (Saturday night).
 
 ---
 
@@ -11,7 +11,7 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 - [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions + builds attached), icon artwork zoom applied, masterclass courses surfaced as normal cards, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
-- [ ] nimble: blocked on macOS Tahoe SDK bug (MenuBarExtra)
+- [ ] nimble: iOS icon scaling, placeholder text, and keyboard sheet-squish bugs fixed; iOS AppIcon set added; README screenshot cleaned; macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission (no app record, bundle ID, signing yet) + macOS Tahoe SDK MenuBarExtra blocker
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
@@ -31,6 +31,9 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
+
+### Recent (2026-07-04 night)
+- Nimble: iOS icon scaling fixed (content fills canvas, no white/transparent bleed), search placeholder text visibility fixed (dark text on dark background), What's New sheet squish-under-keyboard race condition fixed, iOS AppIcon set added, README screenshot cleaned (black bars cropped); macOS test suite 26/26 passing, iOS target builds clean; ASC submission blocked
 
 ### Recent (2026-07-04)
 - Spark: dark-mode text variables fixed (--text/--bg/--text3 defined locally, not relying on cross-origin @import timing)
