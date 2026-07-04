@@ -34,7 +34,7 @@ All notes in one place. Updated 2026-07-03 (Friday).
 
 ### Recent (2026-07-03)
 - Epiphany: scan-local statements endpoint locked to dev-only, iOS splash screen fixed (was showing old grey wireframe icon)
-- Talli: Mac widget provider Swift 6 concurrency errors fixed, appearance settings added to Talli Mac
+- Talli: Mac widget provider Swift 6 concurrency errors fixed, appearance settings added to Talli Mac, Xcode Cloud signing failures resolved by renaming App Group to match bundle ID namespace
 - Echo: App Store screenshots regenerated and What's New copy updated, Voice Memos import added with file transcription progress bar and animation polish
 - Brief: Supabase env-var crash fixed, What's New sheet dismiss logic added, web adopted portfolio design tokens
 - Lexly macOS app icons regenerated to fill canvas (was ~60% of tile size), all scales updated
