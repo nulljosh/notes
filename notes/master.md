@@ -30,7 +30,7 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 | brief | Private (Supabase env-var crash fixed, What's New sheet dismiss, portfolio vibe tokens on web) | CASE-0001/CASE-0002 |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | life | Local | 32 sections |
-| root | Scaffolded 2026-07-02, Wiktionary pipeline v0 | Full dump parse |
+| etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-04)
 - Spark: dark-mode text variables fixed (--text/--bg/--text3 defined locally, not relying on cross-origin @import timing)
@@ -43,6 +43,7 @@ All notes in one place. Updated 2026-07-04 (Saturday).
 - BCGD: broken icon link in root README fixed
 - Healstack: widget last-dose name fixed to sync immediately, added immediate reload
 - Lexly: iOS home screen widget added with streak and XP display
+- Etyma: renamed from root across code, docs, GitHub; bundle ID/app struct/DB filename/User-Agent all updated; web frontend deployed with search UI over 18-word sample dataset to etyma.heyitsmejosh.com via Vercel + Cloudflare DNS; iOS scaffold confirmed building via xcodebuild
 
 ### Recent (2026-07-03)
 - Epiphany: scan-local statements endpoint locked to dev-only, iOS splash screen fixed (was showing old grey wireframe icon)
