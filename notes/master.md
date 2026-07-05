@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-04 (Saturday, evening nightly wrap).
+All notes in one place. Updated 2026-07-05 (Sunday, early morning).
 
 ---
 
@@ -19,7 +19,7 @@ All notes in one place. Updated 2026-07-04 (Saturday, evening nightly wrap).
 ### Active Projects
 | Repo | Status | Next |
 |---|---|---|
-| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented | Autopilot broker logic |
+| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented, dev auto-login fixed, tab bar overlap fixed, autopilot paper-mode fixed (fractional BTC down to $0.01), cleanup complete | Live trading broker, drawer gesture polish |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget added, masterclass courses surfaced as normal cards, ASC versions bumped to 1.1.0 with builds attached | Submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete), v3.5.1 Waiting for Review, Xcode Cloud blocked (Paid Apps Agreement stuck; fastlane workaround deployed) | Submit v3.5.3 |
@@ -93,6 +93,9 @@ All notes in one place. Updated 2026-07-04 (Saturday, evening nightly wrap).
 
 ### Recent (2026-07-04, evening)
 - Books: library due-date refreshed to Jul 14, iOS + macOS WKWebView wrapper apps built (target sharing verified), app icon generated from icon.svg, automatic code signing enabled (provisioning profiles auto-managed), two ASC app records created (Books iOS 6787499076, Books Mac 6787499349), two bundle IDs registered (com.heyitsmejosh.books, com.heyitsmejosh.books.mac), verified both iOS and macOS targets build cleanly and run in simulator/locally; TestFlight archive and upload deferred to next session
+
+### Recent (2026-07-05, early morning)
+- Epiphany: dev auto-login fixed (replaced fragile Xcode scheme override with proper gitignored .xcconfig approach), tab bar overlap bug fixed (Settings/Markets tabs hidden by floating bottom nav), autopilot paper-mode bug fixed (engine was floor()'ing whole shares, blocking fractional BTC trades below ~$150; now handles down to $0.01 test caps), cleanup complete (old Monica app name references removed from iOS widget target, annual Xcode nags tidied)
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
