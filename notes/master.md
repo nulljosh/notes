@@ -12,7 +12,7 @@ All notes in one place. Updated 2026-07-05 (Sunday).
 - [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions + builds attached), icon artwork zoom applied, masterclass courses surfaced as normal cards, submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
-- [ ] nimble: iOS icon scaling, placeholder text, and keyboard sheet-squish bugs fixed; iOS AppIcon set added; README screenshot cleaned; macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission (no app record, bundle ID, signing yet) + macOS Tahoe SDK MenuBarExtra blocker
+- [ ] nimble: iOS icon scaling, placeholder text, and keyboard sheet-squish bugs fixed; iOS AppIcon set added; README screenshot cleaned; app icon upscaled to 1024x1024 marketing size; macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission (no app record, bundle ID, signing yet) + macOS Tahoe SDK MenuBarExtra blocker
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
@@ -24,7 +24,7 @@ All notes in one place. Updated 2026-07-05 (Sunday).
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget added, masterclass courses surfaced as normal cards, ASC versions bumped to 1.1.0 with builds attached | Submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete), v3.5.1 Waiting for Review, Xcode Cloud blocked (Paid Apps Agreement stuck; fastlane workaround deployed) | Submit v3.5.3 |
 | echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
-| healstack (dose) | v2.2.0 live, widget last-dose sync fixed | Mobile nav, health grading |
+| healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
 | journal | Automated | Running |
@@ -100,11 +100,16 @@ All notes in one place. Updated 2026-07-05 (Sunday).
 
 ### Recent (2026-07-05, night)
 - Epiphany: portfolio net-worth math fixed (was dropping uninvested cash sitting inside investment accounts, showed $229 when accounts summed to $415.78; now tallies all balances correctly), "Cash" account subtitle fixed (was double-counting holdings), account name prefix stripped (Wealthsimple Trade TFSA → TFSA), Markets drawer polish complete (pop-free settle by moving drag state to animate with spring instead of snap, list rows clear peek drawer on tap, Fear & Greed row hides at full-open so top ~10% is pure ticker strip mirroring Yahoo Finance), documented commodity/crypto detail data gap (models only carry price + %change, news/chart/ranges UX already present, awaiting backend) and autopilot simulator visibility (paper trades run only during market hours, visible "live failed" rows are stale read-only Wealthsimple probes, real live trading blocked waiting for Alpaca or IBKR with trade permission)
+- Healstack: iOS marketing icon alpha channel stripped (App Store rejects alpha), build ready for resubmit
+- Nimble: app icon upscaled to full 1024x1024 marketing size
+- Labs: wiretext and grapher removed from monorepo (now standalone GitHub repos)
+- Nulljosh.github.io: mobile navigation fixed (squish, font pairing, theme-toggle spacing)
+- Dotfiles: terminal/tmux shortcuts cheatsheet added to notes
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
 - [ ] Supabase free tier maxed (2/2) — upgrade to Pro or pause epiphany if inactive
-- [ ] labs repos (wiretext, grapher, roost, canlii-app) — publish changes via nulljosh/labs
+- [ ] labs repos (roost, canlii-app) — publish changes via nulljosh/labs
 
 ---
 
