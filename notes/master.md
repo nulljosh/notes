@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-05 (Sunday, early morning).
+All notes in one place. Updated 2026-07-05 (Sunday).
 
 ---
 
@@ -19,7 +19,7 @@ All notes in one place. Updated 2026-07-05 (Sunday, early morning).
 ### Active Projects
 | Repo | Status | Next |
 |---|---|---|
-| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented, dev auto-login fixed, tab bar overlap fixed, autopilot paper-mode fixed (fractional BTC down to $0.01), cleanup complete | Live trading broker, drawer gesture polish |
+| epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, portfolio net-worth math fixed (was dropping cash from investment accounts), account name prefix stripped, Markets drawer polished (pop-free settle, list clears peek, Fear & Greed hides at full open), scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented, dev auto-login fixed, tab bar overlap fixed, autopilot paper-mode fixed (fractional BTC down to $0.01), cleanup complete | Commodity/crypto backend data gap (only price + %change, needs news/chart/ranges models), live trading broker (paper trades blocked on market hours + need Alpaca/IBKR) |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget added, masterclass courses surfaced as normal cards, ASC versions bumped to 1.1.0 with builds attached | Submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete), v3.5.1 Waiting for Review, Xcode Cloud blocked (Paid Apps Agreement stuck; fastlane workaround deployed) | Submit v3.5.3 |
@@ -97,6 +97,9 @@ All notes in one place. Updated 2026-07-05 (Sunday, early morning).
 ### Recent (2026-07-05, early morning)
 - Epiphany: dev auto-login fixed (replaced fragile Xcode scheme override with proper gitignored .xcconfig approach), tab bar overlap bug fixed (Settings/Markets tabs hidden by floating bottom nav), autopilot paper-mode bug fixed (engine was floor()'ing whole shares, blocking fractional BTC trades below ~$150; now handles down to $0.01 test caps), cleanup complete (old Monica app name references removed from iOS widget target, annual Xcode nags tidied)
 - Epiphany: Markets news drawer smoothed (removed conflicting animation, gesture now tracks 1:1) and polished with liquid-glass look (.ultraThinMaterial + hairline rim)
+
+### Recent (2026-07-05, night)
+- Epiphany: portfolio net-worth math fixed (was dropping uninvested cash sitting inside investment accounts, showed $229 when accounts summed to $415.78; now tallies all balances correctly), "Cash" account subtitle fixed (was double-counting holdings), account name prefix stripped (Wealthsimple Trade TFSA → TFSA), Markets drawer polish complete (pop-free settle by moving drag state to animate with spring instead of snap, list rows clear peek drawer on tap, Fear & Greed row hides at full-open so top ~10% is pure ticker strip mirroring Yahoo Finance), documented commodity/crypto detail data gap (models only carry price + %change, news/chart/ranges UX already present, awaiting backend) and autopilot simulator visibility (paper trades run only during market hours, visible "live failed" rows are stale read-only Wealthsimple probes, real live trading blocked waiting for Alpaca or IBKR with trade permission)
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
