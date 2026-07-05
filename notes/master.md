@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-05 (Sunday).
+All notes in one place. Updated 2026-07-05 (evening).
 
 ---
 
@@ -105,6 +105,12 @@ All notes in one place. Updated 2026-07-05 (Sunday).
 - Labs: wiretext and grapher removed from monorepo (now standalone GitHub repos)
 - Nulljosh.github.io: mobile navigation fixed (squish, font pairing, theme-toggle spacing)
 - Dotfiles: terminal/tmux shortcuts cheatsheet added to notes
+
+### Recent (2026-07-05, late night)
+- Epiphany: npm audit vulns patched (undici, nodemailer, mathjs, uuid)
+- Grapher: npm audit vulns patched
+- Spark: npm audit vulns patched; roadmap updated with fn-cap consolidation plan
+- Wiretext: npm audit vulns patched
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
