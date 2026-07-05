@@ -96,6 +96,7 @@ All notes in one place. Updated 2026-07-05 (Sunday, early morning).
 
 ### Recent (2026-07-05, early morning)
 - Epiphany: dev auto-login fixed (replaced fragile Xcode scheme override with proper gitignored .xcconfig approach), tab bar overlap bug fixed (Settings/Markets tabs hidden by floating bottom nav), autopilot paper-mode bug fixed (engine was floor()'ing whole shares, blocking fractional BTC trades below ~$150; now handles down to $0.01 test caps), cleanup complete (old Monica app name references removed from iOS widget target, annual Xcode nags tidied)
+- Epiphany: Markets news drawer smoothed (removed conflicting animation, gesture now tracks 1:1) and polished with liquid-glass look (.ultraThinMaterial + hairline rim)
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
