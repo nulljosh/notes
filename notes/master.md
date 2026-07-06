@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-06 (nightly).
+All notes in one place. Updated 2026-07-06 (nightly wrap).
 
 ---
 
@@ -8,12 +8,12 @@ All notes in one place. Updated 2026-07-06 (nightly).
 
 ### Ship Now
 - [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 b3 resubmitted for App Review (dark-mode fix + CDATA parser bug fixed)
-- [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review
+- [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review, case picker clipped-banner fix in production
+- [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
 - [ ] echo: iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0); Mac build + upload pending
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] talli: v3.5.1 Waiting for Review, Xcode Cloud blocked on Paid Apps Agreement (local fastlane workaround deployed)
 - [ ] healstack: v2.3.3 build 2 valid, awaiting submit
-- [ ] lexly: iOS + macOS builds valid (build 202607060001), submit blocked on 2FA + App Privacy completion
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 macOS validation error remaining
 - [ ] nimble: macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission + Tahoe SDK MenuBarExtra
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
@@ -24,17 +24,17 @@ All notes in one place. Updated 2026-07-06 (nightly).
 |---|---|---|
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, portfolio net-worth math fixed (cash in investment accounts now tallied correctly; was $229, actually $415.78), account name prefix stripped (Wealthsimple Trade TFSA → TFSA), Cash account subtitle fixed (was double-counting), Markets drawer polished (gesture 1:1 tracking, liquid-glass look, pop-free settle, list clears peek, Fear & Greed hides at full open mirroring Yahoo Finance), scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented, dev auto-login fixed, tab bar overlap fixed, autopilot paper-mode fixed (fractional BTC down to $0.01), cleanup complete, npm audit vulns patched (undici, nodemailer, mathjs, uuid) | Commodity/crypto backend data gap (only price + %change, needs news/chart/ranges models), live trading broker (paper trades blocked on market hours + need Alpaca/IBKR) |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
-| lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid (v1.1.0, build 202607060001 fixed course loading + Pre-Calc 12 icon), iOS home screen widget added, masterclass courses surfaced as normal cards, metadata + screenshots done, README updated | Mac rebuild + submit (blocked on 2FA + App Privacy) |
+| lexly | Live at lexly.heyitsmejosh.com, v1.1.0 iOS + macOS submitted for review (builds 202607060002 with resource flattening + icon fixes, iOS home screen widget, masterclass courses as normal cards, metadata + screenshots complete) | Monitor review status |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete), v3.5.1 Waiting for Review, Xcode Cloud blocked (Paid Apps Agreement stuck; fastlane workaround deployed) | Submit v3.5.3 |
 | echo | iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0), model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
 | journal | Web automated, iOS app (Inkpress) v1.0.1 b3 resubmitted with dark-mode fix | Monitor iOS review status |
-| casewright (brief renamed) | iOS 1.0.1 Waiting for Review (ASC app 6787857503), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned | Demo screenshots |
+| casewright (brief renamed) | iOS 1.0.1 Waiting for Review (ASC app 6787857503), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned, case picker bug fix in production (clipped-behind-banner layout resolved) | Monitor review status |
 | inkpress (journal renamed) | iOS v1.0.1 b3 resubmitted for App Review (dark-mode CSS fix + CDATA parser bug fixed, app renamed from Journal to avoid Apple collision) | Monitor review status |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
-| books | Web live at books.heyitsmejosh.com, iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
+| books | Web live at books.heyitsmejosh.com (ML for Dummies chapters 13–20 summary complete), iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
@@ -111,6 +111,11 @@ All notes in one place. Updated 2026-07-06 (nightly).
 ### Recent (2026-07-06, nightly wrap)
 - Journal (Inkpress): iOS v1.0.1 b2 submitted for App Review (Atom feed parser bug fixed—empty entries now load CDATA content), app renamed from Journal to Inkpress across ASC and GitHub to resolve Apple Journal collision, GitHub repo renamed to nulljosh/inkpress
 - Brief (Casewright): iOS app and GitHub repo renamed to Casewright, display name set, v1.0.1 Waiting for App Review
+
+### Recent (2026-07-06, late nightly)
+- Lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 uploaded with resource flattening fix and Pre-Calc 12 icon correction)
+- Casewright: iOS 1.0.1 case picker bug fix shipped (clipped-behind-banner layout resolved via inline positioning + deduplication into CasePickerView)
+- Books: ML for Dummies summary complete (chapters 13–20 reading pass finished)
 
 ### Recent (2026-07-05, early morning)
 - Epiphany: dev auto-login fixed (replaced fragile Xcode scheme override with proper gitignored .xcconfig approach), tab bar overlap bug fixed (Settings/Markets tabs hidden by floating bottom nav), autopilot paper-mode bug fixed (engine was floor()'ing whole shares, blocking fractional BTC trades below ~$150; now handles down to $0.01 test caps), cleanup complete (old Monica app name references removed from iOS widget target, annual Xcode nags tidied)
