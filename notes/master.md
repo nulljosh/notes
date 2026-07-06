@@ -113,12 +113,12 @@ All notes in one place. Updated 2026-07-06 (nightly wrap).
 - Brief (Casewright): iOS app and GitHub repo renamed to Casewright, display name set, v1.0.1 Waiting for App Review
 
 ### Recent (2026-07-06, late nightly)
-- Lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 uploaded with resource flattening fix and Pre-Calc 12 icon correction)
+- Lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 uploaded with resource flattening fix and Pre-Calc 12 icon correction); technical whitepaper added
 - Casewright: iOS 1.0.1 case picker bug fix shipped (clipped-behind-banner layout resolved via inline positioning + deduplication into CasePickerView)
 - Books: ML for Dummies summary complete (chapters 13–20 reading pass finished)
 - Talli: technical whitepaper added (use cases + deployment patterns)
 - Wiretext: technical whitepaper added (use cases + deployment patterns)
-- Portfolio (nulljosh.github.io): restyle to sage.me minimal theme (bio section rework, hairline lists, Writing section added, full redesign rollout)
+- Portfolio (nulljosh.github.io): restyle to sage.me minimal theme live (bio section rework, hairline lists, Writing section, full redesign); dark mode added to sage theme with CSS inversion + non-blocking font load + perf improvements live; iOS app scaffolded in nulljosh.github.io/ios mirroring site content + sage theme tokens, building green
 
 ### Recent (2026-07-05, early morning)
 - Epiphany: dev auto-login fixed (replaced fragile Xcode scheme override with proper gitignored .xcconfig approach), tab bar overlap bug fixed (Settings/Markets tabs hidden by floating bottom nav), autopilot paper-mode bug fixed (engine was floor()'ing whole shares, blocking fractional BTC trades below ~$150; now handles down to $0.01 test caps), cleanup complete (old Monica app name references removed from iOS widget target, annual Xcode nags tidied)
