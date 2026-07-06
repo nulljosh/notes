@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-06 (nightly).
+All notes in one place. Updated 2026-07-06 (nightly 2026-07-06).
 
 ---
 
@@ -37,6 +37,14 @@ All notes in one place. Updated 2026-07-06 (nightly).
 | books | Web live at books.heyitsmejosh.com, iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
+
+### Recent (2026-07-06, nightly)
+- Epiphany: expanded ticker universe with MRNA, AI tickers (GOOG, NVDA, MSFT, META, TSLA), and memory-sector stocks (DELL, PENG, DRAM, SNDK, IREN, MU, NBIS, CRDO); all 397 tests passing; Vercel auto-deployed
+- Talli: fixed stale PaidStatus tests after paidMonths refactor, debugged blank Messages tab by decoding actual server {id, text, timestamp} shape
+- Echo: hardened model download with 3-retry loop and watchdog timer, capped iOS auto-model at base version to avoid stalls
+- Lexly: uploaded fixed build 202607060001 to App Store Connect (xcodegen resource flattening fixed, Pre-Calc 12 icon updated, README screenshots added)
+- Deploy concurrency improvements across Quotable, portfolio, and Healstack to cancel superseded Pages runs instead of queueing them
+- Inkpress iOS 1.0.1 b2 submitted for App Review, Casewright iOS 1.0.1 Waiting for Review (both app renames finalized with display names set)
 
 ### Recent (2026-07-04, nightly)
 - Talli: entitlements debugging complete — traced Xcode Cloud signing failures (50+ jobs) back to project.yml hardcoding old App Group identifier (group.com.jt.talli instead of group.com.heyitsmejosh.talli), fixed root cause to prevent xcodegen from silently reverting entitlements on each build, resolved widget extension missing NSExtension/NSExtensionPointIdentifier config causing simulator install failures, corrected stale device names in screenshot scripts (iPhone 17 Pro to iPhone 14 Plus), fixed UI test tab detection by switching from app.tabBars.firstMatch.buttons[name] to app.buttons[name] after custom FloatingTabBar replaced native TabView chrome, regenerated all iOS App Store README screenshots on both device sizes
