@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-05 (nightly wrap).
+All notes in one place. Updated 2026-07-05.
 
 ---
 
@@ -14,6 +14,7 @@ All notes in one place. Updated 2026-07-05 (nightly wrap).
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
 - [ ] nimble: iOS icon scaling, placeholder text, and keyboard sheet-squish bugs fixed; iOS AppIcon set added; README screenshot cleaned; app icon upscaled to 1024x1024 marketing size; macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission (no app record, bundle ID, signing yet) + macOS Tahoe SDK MenuBarExtra blocker
+- [ ] brief: iOS 1.0.1 staged on App Store Connect (ASC app 6787857503), metadata/pricing/age rating/review details set, privacy policy + landing blurb added, case data scrubbed from README/screenshots and git history rewritten — submit for review + demo screenshots pending
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
@@ -29,7 +30,7 @@ All notes in one place. Updated 2026-07-05 (nightly wrap).
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
 | journal | Automated | Running |
-| brief | Private (Supabase env-var crash fixed, What's New sheet dismiss, portfolio vibe tokens on web) | CASE-0001/CASE-0002 |
+| brief | iOS 1.0.1 staged on ASC (app 6787857503), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned | Submit for review + demo screenshots |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | books | Web live at books.heyitsmejosh.com, iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
 | life | Local | 32 sections |
@@ -119,6 +120,7 @@ All notes in one place. Updated 2026-07-05 (nightly wrap).
 
 ### Recent (2026-07-05, nightly)
 - Lexly: iOS build 202607030001 was broken (xcodegen flattened course resource folders, courses showed "Couldn't load"), fixed via ContentStore bundle-root fallback that walks directory tree to find course-data.json files in nested folders, replaced bad Pre-Calc 12 SF Symbol, verified all flows in simulator (login/courses/masterclass), uploaded fixed iOS build 202607060001 to App Store Connect, added README screenshots
+- Brief: iOS 1.0.1 shipped to App Store Connect (ASC app "Brief by Josh" id 6787857503), iPhone-only build uploaded, all metadata/pricing/age rating/review details configured, privacy policy page added to brief.heyitsmejosh.com landing blurb, real case data scrubbed from public README and screenshots, git history rewritten to clean up commit messages leaking personal legal information — submit for review + demo screenshots pending
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
