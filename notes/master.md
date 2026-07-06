@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-05.
+All notes in one place. Updated 2026-07-06.
 
 ---
 
@@ -10,7 +10,7 @@ All notes in one place. Updated 2026-07-05.
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] talli: v3.5.3 (entitlements debugging complete — App Group identifier fixed, project.yml root cause resolved, widget extension NSExtension config fixed, device names corrected, UI test tab detection fixed for FloatingTabBar, iOS App Store screenshots regenerated). Xcode Cloud broken due to Paid Apps Agreement stuck in Pending User Info (bank account + GST/HST Form 506 + US Tax Questionnaire required); workaround deployed via local `fastlane beta` (successfully uploaded to TestFlight). Ready for submission.
 - [ ] healstack: v2.3.3 build 2 iOS (widget alpha fix validated, build number bumped 2026-07-05 for re-upload)
-- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions, build 202607060001 uploaded 2026-07-05 after fixing xcodegen resource flattening + Pre-Calc 12 icon, README screenshots added), submit blocked on 2FA availability + App Privacy completion
+- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions, build 202607060001 uploaded 2026-07-06 after fixing xcodegen resource flattening + Pre-Calc 12 icon, README screenshots added), submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
 - [ ] nimble: iOS icon scaling, placeholder text, and keyboard sheet-squish bugs fixed; iOS AppIcon set added; README screenshot cleaned; app icon upscaled to 1024x1024 marketing size; macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission (no app record, bundle ID, signing yet) + macOS Tahoe SDK MenuBarExtra blocker
@@ -98,6 +98,15 @@ All notes in one place. Updated 2026-07-05.
 
 ### Recent (2026-07-05, early morning)
 - Epiphany: dev auto-login fixed (replaced fragile Xcode scheme override with proper gitignored .xcconfig approach), tab bar overlap bug fixed (Settings/Markets tabs hidden by floating bottom nav), autopilot paper-mode bug fixed (engine was floor()'ing whole shares, blocking fractional BTC trades below ~$150; now handles down to $0.01 test caps), cleanup complete (old Monica app name references removed from iOS widget target, annual Xcode nags tidied)
+
+### Recent (2026-07-06, nightly)
+- Epiphany: added eight new stock tickers (DELL, PENG, DRAM, SNDK, IREN, MU, NBIS, CRDO) to markets list and server DEFAULT_SYMBOLS (rolling out to iOS/macOS/watchOS), all 397 tests passing, deployed to Vercel
+- Lexly: build 202607060001 uploaded to App Store Connect
+- Talli: fixed stale PaidStatus tests after paidMonths refactor, debugged blank Messages tab (server message shape {id, text, timestamp} decoded)
+- Echo: hardened model download (3-retry loop + stall watchdog, iOS auto-model capped at base version to avoid stalls)
+- Quotable: added Pages deploy concurrency (cancel superseded runs instead of queuing)
+- Portfolio (nulljosh.github.io): pointed Nimble at nimble.heyitsmejosh.com, added Healstack + Quotable to projects table, wired Pages deploy cancellation across repos
+- Healstack: Pages deploy concurrency improvements applied
 - Epiphany: Markets news drawer smoothed (removed conflicting animation, gesture now tracks 1:1) and polished with liquid-glass look (.ultraThinMaterial + hairline rim)
 
 ### Recent (2026-07-05, night)
