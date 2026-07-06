@@ -7,7 +7,7 @@ All notes in one place. Updated 2026-07-06 (nightly).
 ## Roadmap
 
 ### Ship Now
-- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 b2 submitted for App Review (CDATA parser bug fixed)
+- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 b3 resubmitted for App Review (dark-mode fix + CDATA parser bug fixed)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review
 - [ ] echo: iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0); Mac build + upload pending
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
@@ -30,9 +30,9 @@ All notes in one place. Updated 2026-07-06 (nightly).
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
-| journal | Web automated, iOS app (Inkpress) v1.0.1 b2 submitted for App Review | Monitor iOS review status |
+| journal | Web automated, iOS app (Inkpress) v1.0.1 b3 resubmitted with dark-mode fix | Monitor iOS review status |
 | casewright (brief renamed) | iOS 1.0.1 Waiting for Review (ASC app 6787857503), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned | Demo screenshots |
-| inkpress (journal renamed) | iOS v1.0.1 b2 submitted for App Review (CDATA parser bug fixed, app renamed from Journal to avoid Apple collision) | Monitor review status |
+| inkpress (journal renamed) | iOS v1.0.1 b3 resubmitted for App Review (dark-mode CSS fix + CDATA parser bug fixed, app renamed from Journal to avoid Apple collision) | Monitor review status |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | books | Web live at books.heyitsmejosh.com, iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
 | life | Local | 32 sections |
@@ -43,7 +43,7 @@ All notes in one place. Updated 2026-07-06 (nightly).
 - Talli: fixed stale PaidStatus tests after paidMonths refactor, debugged blank Messages tab by decoding {id, text, timestamp} shape
 - Echo: hardened model download with 3-retry loop and watchdog timer, capped iOS auto-model at base to avoid stalls; iOS 1.3.3 b8 submitted, WAITING_FOR_REVIEW
 - Lexly: uploaded fixed build 202607060001 to App Store Connect (xcodegen resource flattening + Pre-Calc 12 icon fixed)
-- Inkpress: v1.0.1 b2 submitted for App Review (CDATA parser bug fixed, app renamed from Journal to avoid Apple collision)
+- Inkpress: v1.0.1 b3 resubmitted for App Review (dark-mode CSS fix + CDATA parser bug fixed, app renamed from Journal to avoid Apple collision; b2 submission cancelled)
 - Casewright: iOS 1.0.1 Waiting for Review (app renamed from Brief)
 - Deploy concurrency improvements across Quotable, portfolio, Healstack (cancel superseded Pages runs instead of queueing)
 - Release workflows: added `.asc/workflow.json` to spark, echo, brief, journal, healstack, epiphany, lexly, talli — releases now one command (`asc workflow run ship-ios VERSION:x.y.z`). ExportOptions.plist added to echo, brief, epiphany-iOS, healstack-macOS for automated export/upload.
