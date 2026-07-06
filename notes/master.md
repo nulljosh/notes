@@ -1,12 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-06.
+All notes in one place. Updated 2026-07-06 (nightly).
 
 ---
 
 ## Roadmap
 
 ### Ship Now
+- [x] inkpress (Journal iOS app, renamed 2026-07-06 from "Journal" due to Apple collision): v1.0.1 b2 submitted for App Review (fixed CDATA parser for empty-entry bug)
+- [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] talli: v3.5.3 (entitlements debugging complete — App Group identifier fixed, project.yml root cause resolved, widget extension NSExtension config fixed, device names corrected, UI test tab detection fixed for FloatingTabBar, iOS App Store screenshots regenerated). Xcode Cloud broken due to Paid Apps Agreement stuck in Pending User Info (bank account + GST/HST Form 506 + US Tax Questionnaire required); workaround deployed via local `fastlane beta` (successfully uploaded to TestFlight). Ready for submission.
 - [ ] healstack: v2.3.3 build 2 iOS (widget alpha fix validated, build number bumped 2026-07-05 for re-upload)
@@ -14,7 +16,6 @@ All notes in one place. Updated 2026-07-06.
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
 - [ ] nimble: iOS icon scaling, placeholder text, and keyboard sheet-squish bugs fixed; iOS AppIcon set added; README screenshot cleaned; app icon upscaled to 1024x1024 marketing size; macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission (no app record, bundle ID, signing yet) + macOS Tahoe SDK MenuBarExtra blocker
-- [ ] brief: iOS 1.0.1 staged on App Store Connect (ASC app 6787857503), metadata/pricing/age rating/review details set, privacy policy + landing blurb added, case data scrubbed from README/screenshots and git history rewritten — submit for review + demo screenshots pending
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
@@ -29,8 +30,9 @@ All notes in one place. Updated 2026-07-06.
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
-| journal | Automated | Running |
-| brief | iOS 1.0.1 staged on ASC (app 6787857503), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned | Submit for review + demo screenshots |
+| journal | Web automated, iOS app (Inkpress) v1.0.1 b2 submitted for App Review | Monitor iOS review status |
+| casewright (brief renamed) | iOS 1.0.1 Waiting for Review (ASC app 6787857503), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned | Demo screenshots |
+| inkpress (journal renamed) | iOS v1.0.1 b2 submitted for App Review (CDATA parser bug fixed, app renamed from Journal to avoid Apple collision) | Monitor review status |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | books | Web live at books.heyitsmejosh.com, iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
 | life | Local | 32 sections |
@@ -95,6 +97,10 @@ All notes in one place. Updated 2026-07-06.
 
 ### Recent (2026-07-04, evening)
 - Books: library due-date refreshed to Jul 14, iOS + macOS WKWebView wrapper apps built (target sharing verified), app icon generated from icon.svg, automatic code signing enabled (provisioning profiles auto-managed), two ASC app records created (Books iOS 6787499076, Books Mac 6787499349), two bundle IDs registered (com.heyitsmejosh.books, com.heyitsmejosh.books.mac), verified both iOS and macOS targets build cleanly and run in simulator/locally; TestFlight archive and upload deferred to next session
+
+### Recent (2026-07-06, nightly wrap)
+- Journal (Inkpress): iOS v1.0.1 b2 submitted for App Review (Atom feed parser bug fixed—empty entries now load CDATA content), app renamed from Journal to Inkpress across ASC and GitHub to resolve Apple Journal collision, GitHub repo renamed to nulljosh/inkpress
+- Brief (Casewright): iOS app and GitHub repo renamed to Casewright, display name set, v1.0.1 Waiting for App Review
 
 ### Recent (2026-07-05, early morning)
 - Epiphany: dev auto-login fixed (replaced fragile Xcode scheme override with proper gitignored .xcconfig approach), tab bar overlap bug fixed (Settings/Markets tabs hidden by floating bottom nav), autopilot paper-mode bug fixed (engine was floor()'ing whole shares, blocking fractional BTC trades below ~$150; now handles down to $0.01 test caps), cleanup complete (old Monica app name references removed from iOS widget target, annual Xcode nags tidied)
