@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-06 (nightly 2026-07-06).
+All notes in one place. Updated 2026-07-06 (nightly).
 
 ---
 
@@ -46,6 +46,7 @@ All notes in one place. Updated 2026-07-06 (nightly 2026-07-06).
 - Inkpress: v1.0.1 b2 submitted for App Review (CDATA parser bug fixed, app renamed from Journal to avoid Apple collision)
 - Casewright: iOS 1.0.1 Waiting for Review (app renamed from Brief)
 - Deploy concurrency improvements across Quotable, portfolio, Healstack (cancel superseded Pages runs instead of queueing)
+- Release workflows: added `.asc/workflow.json` to spark, echo, brief, journal, healstack, epiphany, lexly, talli — releases now one command (`asc workflow run ship-ios VERSION:x.y.z`). ExportOptions.plist added to echo, brief, epiphany-iOS, healstack-macOS for automated export/upload.
 
 ### Recent (2026-07-04, nightly)
 - Talli: entitlements debugging complete — traced Xcode Cloud signing failures (50+ jobs) back to project.yml hardcoding old App Group identifier (group.com.jt.talli instead of group.com.heyitsmejosh.talli), fixed root cause to prevent xcodegen from silently reverting entitlements on each build, resolved widget extension missing NSExtension/NSExtensionPointIdentifier config causing simulator install failures, corrected stale device names in screenshot scripts (iPhone 17 Pro to iPhone 14 Plus), fixed UI test tab detection by switching from app.tabBars.firstMatch.buttons[name] to app.buttons[name] after custom FloatingTabBar replaced native TabView chrome, regenerated all iOS App Store README screenshots on both device sizes
