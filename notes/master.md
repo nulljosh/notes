@@ -7,15 +7,15 @@ All notes in one place. Updated 2026-07-06 (nightly 2026-07-06).
 ## Roadmap
 
 ### Ship Now
-- [x] inkpress (Journal iOS app, renamed 2026-07-06 from "Journal" due to Apple collision): v1.0.1 b2 submitted for App Review (fixed CDATA parser for empty-entry bug)
+- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 b2 submitted for App Review (CDATA parser bug fixed)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review
+- [ ] echo: iOS 1.3.3 b8 attached to App Store version record (was rejected 1.3.0), availability config + resubmit one command away; Mac build + upload pending
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
-- [ ] talli: v3.5.3 (entitlements debugging complete — App Group identifier fixed, project.yml root cause resolved, widget extension NSExtension config fixed, device names corrected, UI test tab detection fixed for FloatingTabBar, iOS App Store screenshots regenerated). Xcode Cloud broken due to Paid Apps Agreement stuck in Pending User Info (bank account + GST/HST Form 506 + US Tax Questionnaire required); workaround deployed via local `fastlane beta` (successfully uploaded to TestFlight). Ready for submission.
-- [ ] healstack: v2.3.3 build 2 iOS (widget alpha fix validated, build number bumped 2026-07-05 for re-upload)
-- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions, build 202607060001 uploaded 2026-07-06 after fixing xcodegen resource flattening + Pre-Calc 12 icon, README screenshots added), submit blocked on 2FA availability + App Privacy completion
-- [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
-- [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
-- [ ] nimble: iOS icon scaling, placeholder text, and keyboard sheet-squish bugs fixed; iOS AppIcon set added; README screenshot cleaned; app icon upscaled to 1024x1024 marketing size; macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission (no app record, bundle ID, signing yet) + macOS Tahoe SDK MenuBarExtra blocker
+- [ ] talli: v3.5.1 Waiting for Review, Xcode Cloud blocked on Paid Apps Agreement (local fastlane workaround deployed)
+- [ ] healstack: v2.3.3 build 2 valid, awaiting submit
+- [ ] lexly: iOS + macOS builds valid (build 202607060001), submit blocked on 2FA + App Privacy completion
+- [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 macOS validation error remaining
+- [ ] nimble: macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission + Tahoe SDK MenuBarExtra
 - [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
@@ -26,7 +26,7 @@ All notes in one place. Updated 2026-07-06 (nightly 2026-07-06).
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid (v1.1.0, build 202607060001 fixed course loading + Pre-Calc 12 icon), iOS home screen widget added, masterclass courses surfaced as normal cards, metadata + screenshots done, README updated | Mac rebuild + submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete), v3.5.1 Waiting for Review, Xcode Cloud blocked (Paid Apps Agreement stuck; fastlane workaround deployed) | Submit v3.5.3 |
-| echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
+| echo | iOS 1.3.3 b8 attached to ASC (was rejected 1.3.0), model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar | iOS availability config + resubmit; Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
@@ -39,12 +39,13 @@ All notes in one place. Updated 2026-07-06 (nightly 2026-07-06).
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-06, nightly)
-- Epiphany: expanded ticker universe with MRNA, AI tickers (GOOG, NVDA, MSFT, META, TSLA), and memory-sector stocks (DELL, PENG, DRAM, SNDK, IREN, MU, NBIS, CRDO); all 397 tests passing; Vercel auto-deployed
-- Talli: fixed stale PaidStatus tests after paidMonths refactor, debugged blank Messages tab by decoding actual server {id, text, timestamp} shape
-- Echo: hardened model download with 3-retry loop and watchdog timer, capped iOS auto-model at base version to avoid stalls
-- Lexly: uploaded fixed build 202607060001 to App Store Connect (xcodegen resource flattening fixed, Pre-Calc 12 icon updated, README screenshots added)
-- Deploy concurrency improvements across Quotable, portfolio, and Healstack to cancel superseded Pages runs instead of queueing them
-- Inkpress iOS 1.0.1 b2 submitted for App Review, Casewright iOS 1.0.1 Waiting for Review (both app renames finalized with display names set)
+- Epiphany: expanded ticker universe with MRNA, AI/memory tickers (GOOG, NVDA, MSFT, META, TSLA, DELL, PENG, DRAM, SNDK, IREN, MU, NBIS, CRDO); all 397 tests passing
+- Talli: fixed stale PaidStatus tests after paidMonths refactor, debugged blank Messages tab by decoding {id, text, timestamp} shape
+- Echo: hardened model download with 3-retry loop and watchdog timer, capped iOS auto-model at base to avoid stalls; iOS 1.3.3 b8 attached to ASC (availability config + resubmit pending)
+- Lexly: uploaded fixed build 202607060001 to App Store Connect (xcodegen resource flattening + Pre-Calc 12 icon fixed)
+- Inkpress: v1.0.1 b2 submitted for App Review (CDATA parser bug fixed, app renamed from Journal to avoid Apple collision)
+- Casewright: iOS 1.0.1 Waiting for Review (app renamed from Brief)
+- Deploy concurrency improvements across Quotable, portfolio, Healstack (cancel superseded Pages runs instead of queueing)
 
 ### Recent (2026-07-04, nightly)
 - Talli: entitlements debugging complete — traced Xcode Cloud signing failures (50+ jobs) back to project.yml hardcoding old App Group identifier (group.com.jt.talli instead of group.com.heyitsmejosh.talli), fixed root cause to prevent xcodegen from silently reverting entitlements on each build, resolved widget extension missing NSExtension/NSExtensionPointIdentifier config causing simulator install failures, corrected stale device names in screenshot scripts (iPhone 17 Pro to iPhone 14 Plus), fixed UI test tab detection by switching from app.tabBars.firstMatch.buttons[name] to app.buttons[name] after custom FloatingTabBar replaced native TabView chrome, regenerated all iOS App Store README screenshots on both device sizes
