@@ -10,7 +10,7 @@ All notes in one place. Updated 2026-07-05 (nightly wrap).
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] talli: v3.5.3 (entitlements debugging complete — App Group identifier fixed, project.yml root cause resolved, widget extension NSExtension config fixed, device names corrected, UI test tab detection fixed for FloatingTabBar, iOS App Store screenshots regenerated). Xcode Cloud broken due to Paid Apps Agreement stuck in Pending User Info (bank account + GST/HST Form 506 + US Tax Questionnaire required); workaround deployed via local `fastlane beta` (successfully uploaded to TestFlight). Ready for submission.
 - [ ] healstack: v2.3.3 build 2 iOS (widget alpha fix validated, build number bumped 2026-07-05 for re-upload)
-- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions + builds attached), icon artwork zoom applied, masterclass courses surfaced as normal cards, submit blocked on 2FA availability + App Privacy completion
+- [ ] lexly (was Parlay/Lingo, renamed 2026-07-01): iOS + macOS builds valid (v1.1.0 ASC versions, build 202607060001 uploaded 2026-07-05 after fixing xcodegen resource flattening + Pre-Calc 12 icon, README screenshots added), submit blocked on 2FA availability + App Privacy completion
 - [ ] echo: new Mac build + upload (icon source fixed 2026-06-30)
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3 (App Store rejection fixed), 1 macOS validation error remaining (free pricing set)
 - [ ] nimble: iOS icon scaling, placeholder text, and keyboard sheet-squish bugs fixed; iOS AppIcon set added; README screenshot cleaned; app icon upscaled to 1024x1024 marketing size; macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission (no app record, bundle ID, signing yet) + macOS Tahoe SDK MenuBarExtra blocker
@@ -22,7 +22,7 @@ All notes in one place. Updated 2026-07-05 (nightly wrap).
 |---|---|---|
 | epiphany | Live (web + App Store), iOS 2.5.2 build 7 uploaded, SnapTrade phantom holdings fixed, portfolio net-worth math fixed (cash in investment accounts now tallied correctly; was $229, actually $415.78), account name prefix stripped (Wealthsimple Trade TFSA → TFSA), Cash account subtitle fixed (was double-counting), Markets drawer polished (gesture 1:1 tracking, liquid-glass look, pop-free settle, list clears peek, Fear & Greed hides at full open mirroring Yahoo Finance), scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented, dev auto-login fixed, tab bar overlap fixed, autopilot paper-mode fixed (fractional BTC down to $0.01), cleanup complete, npm audit vulns patched (undici, nodemailer, mathjs, uuid) | Commodity/crypto backend data gap (only price + %change, needs news/chart/ranges models), live trading broker (paper trades blocked on market hours + need Alpaca/IBKR) |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
-| lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid, metadata + screenshots done, iOS home screen widget added, masterclass courses surfaced as normal cards, ASC versions bumped to 1.1.0 with builds attached | Submit (blocked on 2FA + App Privacy) |
+| lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid (v1.1.0, build 202607060001 fixed course loading + Pre-Calc 12 icon), iOS home screen widget added, masterclass courses surfaced as normal cards, metadata + screenshots done, README updated | Mac rebuild + submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete), v3.5.1 Waiting for Review, Xcode Cloud blocked (Paid Apps Agreement stuck; fastlane workaround deployed) | Submit v3.5.3 |
 | echo | Built, tokens synced, App Store screenshots regenerated, What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
@@ -116,6 +116,9 @@ All notes in one place. Updated 2026-07-05 (nightly wrap).
 ### Recent (2026-07-05, nightly wrap)
 - Talli: iOS build number bumped to 2 for v2.3.3 re-upload
 - Healstack: iOS build 2 prepared (icon alpha fix validated, ready for App Store submission)
+
+### Recent (2026-07-05, nightly)
+- Lexly: iOS build 202607030001 was broken (xcodegen flattened course resource folders, courses showed "Couldn't load"), fixed via ContentStore bundle-root fallback that walks directory tree to find course-data.json files in nested folders, replaced bad Pre-Calc 12 SF Symbol, verified all flows in simulator (login/courses/masterclass), uploaded fixed iOS build 202607060001 to App Store Connect, added README screenshots
 
 ### Backlog
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
