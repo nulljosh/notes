@@ -9,7 +9,7 @@ All notes in one place. Updated 2026-07-06 (nightly).
 ### Ship Now
 - [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 b2 submitted for App Review (CDATA parser bug fixed)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review
-- [ ] echo: iOS 1.3.3 b8 attached to App Store version record (was rejected 1.3.0), availability config + resubmit one command away; Mac build + upload pending
+- [ ] echo: iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0); Mac build + upload pending
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] talli: v3.5.1 Waiting for Review, Xcode Cloud blocked on Paid Apps Agreement (local fastlane workaround deployed)
 - [ ] healstack: v2.3.3 build 2 valid, awaiting submit
@@ -26,7 +26,7 @@ All notes in one place. Updated 2026-07-06 (nightly).
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, iOS + macOS builds valid (v1.1.0, build 202607060001 fixed course loading + Pre-Calc 12 icon), iOS home screen widget added, masterclass courses surfaced as normal cards, metadata + screenshots done, README updated | Mac rebuild + submit (blocked on 2FA + App Privacy) |
 | talli | v3.5.3 (blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete), v3.5.1 Waiting for Review, Xcode Cloud blocked (Paid Apps Agreement stuck; fastlane workaround deployed) | Submit v3.5.3 |
-| echo | iOS 1.3.3 b8 attached to ASC (was rejected 1.3.0), model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar | iOS availability config + resubmit; Mac build + upload |
+| echo | iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0), model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
@@ -41,7 +41,7 @@ All notes in one place. Updated 2026-07-06 (nightly).
 ### Recent (2026-07-06, nightly)
 - Epiphany: expanded ticker universe with MRNA, AI/memory tickers (GOOG, NVDA, MSFT, META, TSLA, DELL, PENG, DRAM, SNDK, IREN, MU, NBIS, CRDO); all 397 tests passing
 - Talli: fixed stale PaidStatus tests after paidMonths refactor, debugged blank Messages tab by decoding {id, text, timestamp} shape
-- Echo: hardened model download with 3-retry loop and watchdog timer, capped iOS auto-model at base to avoid stalls; iOS 1.3.3 b8 attached to ASC (availability config + resubmit pending)
+- Echo: hardened model download with 3-retry loop and watchdog timer, capped iOS auto-model at base to avoid stalls; iOS 1.3.3 b8 submitted, WAITING_FOR_REVIEW
 - Lexly: uploaded fixed build 202607060001 to App Store Connect (xcodegen resource flattening + Pre-Calc 12 icon fixed)
 - Inkpress: v1.0.1 b2 submitted for App Review (CDATA parser bug fixed, app renamed from Journal to avoid Apple collision)
 - Casewright: iOS 1.0.1 Waiting for Review (app renamed from Brief)
