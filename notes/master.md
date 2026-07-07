@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday).
+All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday evening).
 
 ---
 
@@ -29,7 +29,7 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday).
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, v1.1.0 iOS + macOS submitted for review (builds 202607060002 with resource flattening + icon fixes, iOS home screen widget, masterclass courses as normal cards, metadata + screenshots complete) | Monitor review status |
 | portfolio (nulljosh.github.io) | Web live at heyitsmejosh.com (sage.me theme dark mode + perf live), iOS v1.0.0 app (Swift mirror of site, same tokens, 9/10 ASC blockers cleared 2026-07-06 nightly, availability pending then ready to submit to App Review, ASC id 6788180394) | Click availability dashboard toggle, then submit to App Review |
-| talli | v2.4.4 Waiting for Review (TestFlight + App Store submission 2026-07-06, replaced stale v2.4.2), blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete, local fastlane workaround deployed for Paid Apps Agreement blocker | Monitor review status |
+| talli | v2.4.4 Waiting for Review (TestFlight + App Store submission 2026-07-06, replaced stale v2.4.2); v2.4.5 kicked off (message parsing fix for entries without date prefix, blue color accessibility improvements), blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete, local fastlane workaround deployed for Paid Apps Agreement blocker | Monitor 2.4.4 review, TestFlight 2.4.5 validation |
 | echo | iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0), model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
@@ -45,7 +45,7 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday).
 ### Recent (2026-07-07, nightly wrap)
 - BCGD: web site rethemed to bcgaragedoors.ca brand (light background, teal accent #1B5959, Barlow Condensed headings, Open Sans body), deployed live on Vercel; iOS companion app scaffolded (4-tab SwiftUI with Dashboard/Services/Inventory/Settings tabs, xcodegen for project generation, CoreData local persistence, builds clean); added portfolio vibe-token reference for theme inheritance
 - Epiphany: expanded asset universe with ten major bank stocks (RY, TD, BMO, BNS, CM for Canada; JPM, BAC, WFC, GS, MS for US) added to DEFAULT_SYMBOLS in server, rolling out to iOS/macOS/watchOS; all 397 tests pass, deployed to Vercel
-- Talli: xcstrings cleanup (removed drifted zh/pa locale entries for report.fileNow identifier)
+- Talli: xcstrings cleanup (removed drifted zh/pa locale entries for report.fileNow identifier); fixed critical Messages tab bug where entries without newline-separated date prefix were silently dropped by src/api.js parser (commit 2d5ab43), causing blank Messages view; new build v2.4.5 kicked off via `asc workflow run ship-ios` to ship message parsing fix plus earlier blue color accessibility improvements
 - Portfolio iOS app: first-submission paperwork completed via asc CLI (App Privacy manifest published, 9/10 blockers cleared, availability pending then ready to submit for review)
 
 ### Recent (2026-07-06, final nightly)
