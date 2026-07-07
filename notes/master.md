@@ -44,6 +44,7 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday).
 
 ### Recent (2026-07-07, nightly wrap)
 - BCGD: web site rethemed to bcgaragedoors.ca brand (light background, teal accent #1B5959, Barlow Condensed headings, Open Sans body), deployed live on Vercel; iOS companion app scaffolded (4-tab SwiftUI with Dashboard/Services/Inventory/Settings tabs, xcodegen for project generation, CoreData local persistence, builds clean); added portfolio vibe-token reference for theme inheritance
+- Epiphany: expanded asset universe with ten major bank stocks (RY, TD, BMO, BNS, CM for Canada; JPM, BAC, WFC, GS, MS for US) added to DEFAULT_SYMBOLS in server, rolling out to iOS/macOS/watchOS; all 397 tests pass, deployed to Vercel
 - Talli: xcstrings cleanup (removed drifted zh/pa locale entries for report.fileNow identifier)
 - Portfolio iOS app: first-submission paperwork completed via asc CLI (App Privacy manifest published, 9/10 blockers cleared, availability pending then ready to submit for review)
 
