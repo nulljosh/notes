@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday late).
+All notes in one place. Updated 2026-07-08 (nightly wrap, Tuesday night).
 
 ---
 
@@ -9,7 +9,7 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday late).
 ### Ship Now
 - [x] epiphany: iOS 2.5.2 Waiting for Review (TestFlight + App Store submission, 2026-07-06)
 - [x] talli: v2.4.4 Waiting for Review (TestFlight + App Store submission, replaced stale v2.4.2, 2026-07-06)
-- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 b3 resubmitted for App Review (dark-mode fix + CDATA parser bug fixed)
+- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.2 iOS build in progress to TestFlight (EntryDetailView styled-content fix: NSAttributedString HTML rendering now wraps content in CSS for system font/heading sizes/paragraph spacing)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review, case picker clipped-banner fix in production
 - [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC id 6788180394, 9/10 blockers cleared 2026-07-06 nightly, availability pending then submit)
@@ -36,7 +36,7 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday late).
 | notes | Live + iOS | Content refresh |
 | journal | Web automated, iOS app (Inkpress) v1.0.1 b3 resubmitted with dark-mode fix | Monitor iOS review status |
 | casewright (brief renamed) | iOS 1.0.1 Waiting for Review (ASC app 6787857503), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned, case picker bug fix in production (clipped-behind-banner layout resolved) | Monitor review status |
-| inkpress (journal renamed) | iOS v1.0.1 b3 resubmitted for App Review (dark-mode CSS fix + CDATA parser bug fixed, app renamed from Journal to avoid Apple collision) | Monitor review status |
+| inkpress (journal renamed) | iOS v1.0.2 build in progress to TestFlight (EntryDetailView styled-content fix: NSAttributedString HTML parsing now wraps content in CSS style block for proper font/heading sizes/paragraph spacing, app renamed from Journal to avoid Apple collision) | TestFlight validation + App Store submission |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | books | Web live at books.heyitsmejosh.com (ML for Dummies chapters 13–20 summary complete), iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
 | life | Local | 32 sections |
@@ -48,6 +48,7 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday late).
 - Epiphany: expanded asset universe with ten major bank stocks (RY, TD, BMO, BNS, CM for Canada; JPM, BAC, WFC, GS, MS for US) added to DEFAULT_SYMBOLS in server, rolling out to iOS/macOS/watchOS; all 397 tests pass, deployed to Vercel; updated TestFlight beta description to real tester-facing copy (was internal QA notes); prepared new App Store screenshot set at ios/fastlane/screenshots/en-US/ (iPhone 11 Pro Max + 14 Plus, 5 screens each) but upload blocked because v2.5.2 WAITING_FOR_REVIEW (ASC locks edits mid-review) — next: cancel submission, upload screenshots, resubmit
 - Talli: xcstrings cleanup (removed drifted zh/pa locale entries for report.fileNow identifier); fixed critical Messages tab bug where entries without newline-separated date prefix were silently dropped by src/api.js parser (commit 2d5ab43), causing blank Messages view; new build v2.4.5 kicked off via `asc workflow run ship-ios` to ship message parsing fix plus earlier blue color accessibility improvements
 - Portfolio iOS app: first-submission paperwork completed via asc CLI (App Privacy manifest published, 9/10 blockers cleared, availability pending then ready to submit for review)
+- Inkpress: v1.0.2 archived + exported + uploaded to TestFlight (VALID on ASC). EntryDetailView styled-content fix completed: NSAttributedString HTML importer was rendering with no CSS (12pt Times, no paragraph spacing); now wraps entry content in a `<style>` block forcing system font + proper heading sizes + paragraph spacing before parsing. Auto-submit for App Store review blocked: 1.0.1 still WAITING_FOR_REVIEW (Apple blocks version submit while one's pending). Next: wait for 1.0.1 review to complete or cancel it and submit 1.0.2 with the fix.
 
 ### Recent (2026-07-06, final nightly)
 - Epiphany: iOS 2.5.2 pushed to TestFlight and submitted for App Store review
