@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-07 (nightly wrap).
+All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday).
 
 ---
 
@@ -18,12 +18,13 @@ All notes in one place. Updated 2026-07-07 (nightly wrap).
 - [ ] healstack: v2.3.3 build 2 valid, awaiting submit
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 macOS validation error remaining
 - [ ] nimble: macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission + Tahoe SDK MenuBarExtra
-- [ ] bcgd: accidentally deleted from disk+GitHub 2026-06-22, Vercel still live — recover
+- [ ] bcgd: web retheme live (light theme, teal #1B5959, Barlow/Open Sans), iOS companion app scaffolded (4-tab SwiftUI, xcodegen, local persistence)
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
 ### Active Projects
 | Repo | Status | Next |
 |---|---|---|
+| bcgd | Web live at bcgd.heyitsmejosh.com (rethemed to bcgaragedoors.ca brand: light background, teal #1B5959, Barlow Condensed + Open Sans), iOS companion app scaffolded (4-tab SwiftUI: Dashboard/Services/Inventory/Settings, xcodegen, CoreData local persistence, builds clean), portfolio vibe-token reference wired | iOS app feature development, product photography + inventory data |
 | epiphany | iOS 2.5.2 Waiting for Review (TestFlight + App Store submission 2026-07-06), web live, SnapTrade phantom holdings fixed, portfolio net-worth math fixed (cash in investment accounts now tallied correctly; was $229, actually $415.78), account name prefix stripped (Wealthsimple Trade TFSA → TFSA), Cash account subtitle fixed (was double-counting), Markets drawer polished (gesture 1:1 tracking, liquid-glass look, pop-free settle, list clears peek, Fear & Greed hides at full open mirroring Yahoo Finance), scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented, dev auto-login fixed, tab bar overlap fixed, autopilot paper-mode fixed (fractional BTC down to $0.01), cleanup complete, npm audit vulns patched (undici, nodemailer, mathjs, uuid) | Monitor review status, commodity/crypto backend data gap (only price + %change, needs news/chart/ranges models), live trading broker (paper trades blocked on market hours + need Alpaca/IBKR) |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, v1.1.0 iOS + macOS submitted for review (builds 202607060002 with resource flattening + icon fixes, iOS home screen widget, masterclass courses as normal cards, metadata + screenshots complete) | Monitor review status |
@@ -42,6 +43,8 @@ All notes in one place. Updated 2026-07-07 (nightly wrap).
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-07, nightly wrap)
+- BCGD: web site rethemed to bcgaragedoors.ca brand (light background, teal accent #1B5959, Barlow Condensed headings, Open Sans body), deployed live on Vercel; iOS companion app scaffolded (4-tab SwiftUI with Dashboard/Services/Inventory/Settings tabs, xcodegen for project generation, CoreData local persistence, builds clean); added portfolio vibe-token reference for theme inheritance
+- Talli: xcstrings cleanup (removed drifted zh/pa locale entries for report.fileNow identifier)
 - Portfolio iOS app: first-submission paperwork completed via asc CLI (App Privacy manifest published, 9/10 blockers cleared, availability pending then ready to submit for review)
 
 ### Recent (2026-07-06, final nightly)
