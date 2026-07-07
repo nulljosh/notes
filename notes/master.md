@@ -40,13 +40,16 @@ All notes in one place. Updated 2026-07-06 (nightly wrap).
 
 ### Recent (2026-07-06, nightly)
 - Epiphany: expanded ticker universe with MRNA, AI/memory tickers (GOOG, NVDA, MSFT, META, TSLA, DELL, PENG, DRAM, SNDK, IREN, MU, NBIS, CRDO); all 397 tests passing
-- Talli: fixed stale PaidStatus tests after paidMonths refactor, debugged blank Messages tab by decoding {id, text, timestamp} shape
+- Talli: fixed stale PaidStatus tests after paidMonths refactor, debugged blank Messages tab by decoding {id, text, timestamp} shape; added missing zh + pa translations (38 keys); added technical whitepaper
 - Echo: hardened model download with 3-retry loop and watchdog timer, capped iOS auto-model at base to avoid stalls; iOS 1.3.3 b8 submitted, WAITING_FOR_REVIEW
-- Lexly: uploaded fixed build 202607060001 to App Store Connect (xcodegen resource flattening + Pre-Calc 12 icon fixed)
+- Lexly: uploaded fixed build 202607060001 to App Store Connect (xcodegen resource flattening + Pre-Calc 12 icon fixed); added technical whitepaper
 - Inkpress: v1.0.1 b3 resubmitted for App Review (dark-mode CSS fix + CDATA parser bug fixed, app renamed from Journal to avoid Apple collision; b2 submission cancelled)
 - Casewright: iOS 1.0.1 Waiting for Review (app renamed from Brief)
 - Deploy concurrency improvements across Quotable, portfolio, Healstack (cancel superseded Pages runs instead of queueing)
 - Release workflows: added `.asc/workflow.json` to spark, echo, brief, journal, healstack, epiphany, lexly, talli — releases now one command (`asc workflow run ship-ios VERSION:x.y.z`). ExportOptions.plist added to echo, brief, epiphany-iOS, healstack-macOS for automated export/upload.
+- Portfolio: dark mode live on sage.me theme (CSS inversion, non-blocking font load, perf tweaks); scaffolded companion iOS app (Swift + same sage theme tokens)
+- Wiretext, Spark, NYC: added technical whitepapers
+- BCGD: fixed hero image on bcgd.heyitsmejosh.com (truck.png was 0 bytes on Vercel; redeployed src/web, image now 664KB)
 
 ### Recent (2026-07-04, nightly)
 - Talli: entitlements debugging complete — traced Xcode Cloud signing failures (50+ jobs) back to project.yml hardcoding old App Group identifier (group.com.jt.talli instead of group.com.heyitsmejosh.talli), fixed root cause to prevent xcodegen from silently reverting entitlements on each build, resolved widget extension missing NSExtension/NSExtensionPointIdentifier config causing simulator install failures, corrected stale device names in screenshot scripts (iPhone 17 Pro to iPhone 14 Plus), fixed UI test tab detection by switching from app.tabBars.firstMatch.buttons[name] to app.buttons[name] after custom FloatingTabBar replaced native TabView chrome, regenerated all iOS App Store README screenshots on both device sizes
