@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday evening).
+All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday late).
 
 ---
 
@@ -43,6 +43,7 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday evening).
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-07, nightly wrap)
+- Era Context: explored personal finance MCP server platform (read+write access to connected third-party accounts, five capability tiers: See/Organize/Automate/Optimize + future). Completed onboarding questionnaire to unlock pending capabilities. Knowledge module supports facts with optional expiry dates for auto-verification. Platform operates MCP-first with shared agent memory across connected tools.
 - BCGD: web site rethemed to bcgaragedoors.ca brand (light background, teal accent #1B5959, Barlow Condensed headings, Open Sans body), deployed live on Vercel; iOS companion app scaffolded (4-tab SwiftUI with Dashboard/Services/Inventory/Settings tabs, xcodegen for project generation, CoreData local persistence, builds clean); added portfolio vibe-token reference for theme inheritance
 - Epiphany: expanded asset universe with ten major bank stocks (RY, TD, BMO, BNS, CM for Canada; JPM, BAC, WFC, GS, MS for US) added to DEFAULT_SYMBOLS in server, rolling out to iOS/macOS/watchOS; all 397 tests pass, deployed to Vercel; updated TestFlight beta description to real tester-facing copy (was internal QA notes); prepared new App Store screenshot set at ios/fastlane/screenshots/en-US/ (iPhone 11 Pro Max + 14 Plus, 5 screens each) but upload blocked because v2.5.2 WAITING_FOR_REVIEW (ASC locks edits mid-review) — next: cancel submission, upload screenshots, resubmit
 - Talli: xcstrings cleanup (removed drifted zh/pa locale entries for report.fileNow identifier); fixed critical Messages tab bug where entries without newline-separated date prefix were silently dropped by src/api.js parser (commit 2d5ab43), causing blank Messages view; new build v2.4.5 kicked off via `asc workflow run ship-ios` to ship message parsing fix plus earlier blue color accessibility improvements
