@@ -8,7 +8,7 @@ All notes in one place. Updated 2026-07-06 (final nightly wrap).
 
 ### Ship Now
 - [x] epiphany: iOS 2.5.2 Waiting for Review (TestFlight + App Store submission, 2026-07-06)
-- [x] talli: v3.5.3 Waiting for Review (TestFlight + App Store submission, replaced stale v2.4.2, 2026-07-06)
+- [x] talli: v2.4.4 Waiting for Review (TestFlight + App Store submission, replaced stale v2.4.2, 2026-07-06)
 - [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 b3 resubmitted for App Review (dark-mode fix + CDATA parser bug fixed)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review, case picker clipped-banner fix in production
 - [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
@@ -26,7 +26,7 @@ All notes in one place. Updated 2026-07-06 (final nightly wrap).
 | epiphany | iOS 2.5.2 Waiting for Review (TestFlight + App Store submission 2026-07-06), web live, SnapTrade phantom holdings fixed, portfolio net-worth math fixed (cash in investment accounts now tallied correctly; was $229, actually $415.78), account name prefix stripped (Wealthsimple Trade TFSA → TFSA), Cash account subtitle fixed (was double-counting), Markets drawer polished (gesture 1:1 tracking, liquid-glass look, pop-free settle, list clears peek, Fear & Greed hides at full open mirroring Yahoo Finance), scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented, dev auto-login fixed, tab bar overlap fixed, autopilot paper-mode fixed (fractional BTC down to $0.01), cleanup complete, npm audit vulns patched (undici, nodemailer, mathjs, uuid) | Monitor review status, commodity/crypto backend data gap (only price + %change, needs news/chart/ranges models), live trading broker (paper trades blocked on market hours + need Alpaca/IBKR) |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, v1.1.0 iOS + macOS submitted for review (builds 202607060002 with resource flattening + icon fixes, iOS home screen widget, masterclass courses as normal cards, metadata + screenshots complete) | Monitor review status |
-| talli | v3.5.3 Waiting for Review (TestFlight + App Store submission 2026-07-06, replaced stale v2.4.2), blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete, local fastlane workaround deployed for Paid Apps Agreement blocker | Monitor review status |
+| talli | v2.4.4 Waiting for Review (TestFlight + App Store submission 2026-07-06, replaced stale v2.4.2), blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete, local fastlane workaround deployed for Paid Apps Agreement blocker | Monitor review status |
 | echo | iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0), model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
@@ -41,7 +41,7 @@ All notes in one place. Updated 2026-07-06 (final nightly wrap).
 
 ### Recent (2026-07-06, final nightly)
 - Epiphany: iOS 2.5.2 pushed to TestFlight and submitted for App Store review
-- Talli: v3.5.3 pushed to TestFlight and submitted for App Store review (replaced stale v2.4.2 submission)
+- Talli: v2.4.4 pushed to TestFlight and submitted for App Store review (replaced stale v2.4.2 submission)
 
 ### Recent (2026-07-06, nightly)
 - Epiphany: expanded ticker universe with MRNA, AI/memory tickers (GOOG, NVDA, MSFT, META, TSLA, DELL, PENG, DRAM, SNDK, IREN, MU, NBIS, CRDO); all 397 tests passing
@@ -93,7 +93,7 @@ All notes in one place. Updated 2026-07-06 (final nightly wrap).
 - Lexly iOS and macOS builds confirmed valid in App Store build pipeline
 - Epiphany SnapTrade phantom holdings fixed: account deduplication, holdings merge on account id; empty response bodies tolerated; autopilot broker plan documented (IBKR for stocks, WS read-only, Kraken parked)
 - Lexly branding sweep: lingo→lexly redirect, avatars, doc name cleanup; portfolio updated; sign-in hang fixed with auto-profile creation; avatar step removed from signup; iOS + macOS icons regenerated to fill the canvas (was ~60%, Apple icon grid, 824px rounded rect); iOS + macOS App Store metadata and screenshots filled via asc (submit blocked on 2FA + App Privacy)
-- Talli v3.5.3: blue accent, report banner + avatar fixes, messages refresh, Swift 6 widget build; verification complete
+- Talli v2.4.4: blue accent, report banner + avatar fixes, messages refresh, Swift 6 widget build; verification complete
 - Portfolio 1930s rubber-hose theme (tokens-30s.css + brush mascot); readability + rollout pending
 - Design tokens synced from portfolio tokens.css into echo, grapher, spark, wiretext
 - Epiphany iOS 2.5.2 build 7 uploaded after widget Info.plist fix
