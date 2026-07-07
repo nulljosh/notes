@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-06 (final nightly wrap).
+All notes in one place. Updated 2026-07-07 (nightly wrap).
 
 ---
 
@@ -12,6 +12,7 @@ All notes in one place. Updated 2026-07-06 (final nightly wrap).
 - [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 b3 resubmitted for App Review (dark-mode fix + CDATA parser bug fixed)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review, case picker clipped-banner fix in production
 - [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
+- [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC id 6788180394, 9/10 blockers cleared 2026-07-06 nightly, availability pending then submit)
 - [ ] echo: iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0); Mac build + upload pending
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] healstack: v2.3.3 build 2 valid, awaiting submit
@@ -26,6 +27,7 @@ All notes in one place. Updated 2026-07-06 (final nightly wrap).
 | epiphany | iOS 2.5.2 Waiting for Review (TestFlight + App Store submission 2026-07-06), web live, SnapTrade phantom holdings fixed, portfolio net-worth math fixed (cash in investment accounts now tallied correctly; was $229, actually $415.78), account name prefix stripped (Wealthsimple Trade TFSA → TFSA), Cash account subtitle fixed (was double-counting), Markets drawer polished (gesture 1:1 tracking, liquid-glass look, pop-free settle, list clears peek, Fear & Greed hides at full open mirroring Yahoo Finance), scan-local endpoint locked to dev-only, splash screen icon fixed, UI test scheme snapshot creds configured, screenshot pipeline documented, dev auto-login fixed, tab bar overlap fixed, autopilot paper-mode fixed (fractional BTC down to $0.01), cleanup complete, npm audit vulns patched (undici, nodemailer, mathjs, uuid) | Monitor review status, commodity/crypto backend data gap (only price + %change, needs news/chart/ranges models), live trading broker (paper trades blocked on market hours + need Alpaca/IBKR) |
 | spark | v2.1.0 live, Mac build 1.0.0 uploaded to ASC (processing), auth consolidated (10/12 fns), dark-mode text fix | iOS screenshots + metadata + submit |
 | lexly | Live at lexly.heyitsmejosh.com, v1.1.0 iOS + macOS submitted for review (builds 202607060002 with resource flattening + icon fixes, iOS home screen widget, masterclass courses as normal cards, metadata + screenshots complete) | Monitor review status |
+| portfolio (nulljosh.github.io) | Web live at heyitsmejosh.com (sage.me theme dark mode + perf live), iOS v1.0.0 app (Swift mirror of site, same tokens, 9/10 ASC blockers cleared 2026-07-06 nightly, availability pending then ready to submit to App Review, ASC id 6788180394) | Click availability dashboard toggle, then submit to App Review |
 | talli | v2.4.4 Waiting for Review (TestFlight + App Store submission 2026-07-06, replaced stale v2.4.2), blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete, local fastlane workaround deployed for Paid Apps Agreement blocker | Monitor review status |
 | echo | iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0), model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
@@ -38,6 +40,9 @@ All notes in one place. Updated 2026-07-06 (final nightly wrap).
 | books | Web live at books.heyitsmejosh.com (ML for Dummies chapters 13–20 summary complete), iOS + macOS WKWebView wrapper apps (builds + auto-signing verified), ASC app records + bundle IDs registered | Archive + upload to TestFlight |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
+
+### Recent (2026-07-07, nightly wrap)
+- Portfolio iOS app: first-submission paperwork completed via asc CLI (App Privacy manifest published, 9/10 blockers cleared, availability pending then ready to submit for review)
 
 ### Recent (2026-07-06, final nightly)
 - Epiphany: iOS 2.5.2 pushed to TestFlight and submitted for App Store review
