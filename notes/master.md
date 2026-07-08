@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-08 (Lexly masterclass styling fixes: blue hover + feedback-loop reword; portfolio link hover animation).
+All notes in one place. Updated 2026-07-08 (Lexly masterclass styling fixes; portfolio link hover animation; Nimble landing page + web app shipped).
 
 ---
 
@@ -52,6 +52,7 @@ All notes in one place. Updated 2026-07-08 (Lexly masterclass styling fixes: blu
 - Lexly masterclass styling fixed: blue hover state had regressed to purple (CSS override somewhere), swapped back to accent blue (#5B9BD5). Also reworded the feedback-loop flashcard prompt for clarity. Changes committed and pushed to production.
 
 ### Recent (2026-07-08, nightly wrap)
+- Nimble: shipped landing page live at nimble.heyitsmejosh.com (GitHub Pages, DNS repointed from Vercel to nulljosh.github.io); rebuilt Nimble web app from scratch as single-file HTML port of the Swift QueryEngine (offline math, DuckDuckGo/Wikipedia, Gemma proxy) after discovering original Next.js source unrecoverable (nulljosh/apps monorepo deleted, Vercel had only minified); deployed to web-one-chi-47.vercel.app and wired landing page "Launch app" CTA at it; nimble repo now consolidates web + iOS + macOS; refreshed README + architecture.svg documenting Gemma proxy flow; set GitHub repo description + homepage
 - App Store submission verification (2026-07-08): Verified Echo iOS 1.3.3 correctly WAITING_FOR_REVIEW (no action needed). Fixed Talli's corrupted submission: an earlier stale build run had accidentally submitted v2.4.4 (a downgrade from v3.5.2) to Apple review; cancelled it and re-shipped correct v3.5.3. Caught Inkpress's pending review (v1.0.1) was missing a dark-mode fix already sitting in an uploaded, unsubmitted build; cancelled v1.0.1's review and submitted v1.0.2 with the fix instead. All three apps now WAITING_FOR_REVIEW: Talli v3.5.3, Echo v1.3.3, Inkpress v1.0.2.
 - Portfolio (nulljosh.github.io): added left-to-right underline sweep animation on link hover for polished, animated link interactions.
 
