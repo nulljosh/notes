@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday final).
+All notes in one place. Updated 2026-07-08 (nightly wrap, Wednesday).
 
 ---
 
@@ -8,8 +8,8 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday final).
 
 ### Ship Now
 - [x] epiphany: iOS 2.5.2 Waiting for Review (TestFlight + App Store submission, 2026-07-06)
-- [x] talli: v2.4.4 Waiting for Review (TestFlight + App Store submission, replaced stale v2.4.2, 2026-07-06)
-- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.2 iOS build in progress to TestFlight (EntryDetailView styled-content fix: NSAttributedString HTML rendering now wraps content in CSS for system font/heading sizes/paragraph spacing)
+- [x] talli: v3.5.1 Waiting for Review (TestFlight + App Store submission, v2.4.4 stale submission cancelled and replaced with correct v3.5.1, 2026-07-08)
+- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 Waiting for Review (dark-mode CSS fix + CDATA parser fixes, 2026-07-07)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review, case picker clipped-banner fix in production
 - [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC id 6788180394, 9/10 blockers cleared 2026-07-06 nightly, availability pending then submit)
@@ -41,6 +41,9 @@ All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday final).
 | books | Web live at books.heyitsmejosh.com (ML for Dummies chapters 13–20 summary complete), iOS + macOS WKWebView wrapper apps. iOS build fixed (ITMS-90474 iPad-orientation rejection resolved by adding UISupportedInterfaceOrientations to Info.plist); macOS build fixed (App Sandbox entitlement + LSApplicationCategoryType Info.plist issues resolved). Distribution profiles created for both (2026-07-07), builds ready for archive + upload | Archive + upload iOS + macOS builds to TestFlight, then submit |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
+
+### Recent (2026-07-08, nightly wrap)
+- App Store submission verification (2026-07-08): Verified Echo iOS 1.3.3 and Inkpress 1.0.1 both correctly in WAITING_FOR_REVIEW status (no action needed). Fixed Talli's corrupted submission: an earlier stale build run had accidentally submitted v2.4.4 (a downgrade from current v3.5.1) to Apple review. Cancelled v2.4.4 submission and re-shipped correct v3.5.1. All three apps now WAITING_FOR_REVIEW on the App Store.
 
 ### Recent (2026-07-07, nightly wrap — evening update)
 - App Store Connect app icon fixes shipped (2026-07-07 late night): Created + installed 8 missing distribution provisioning profiles across spark/healstack/books bundle IDs (main + widget/extension targets) using asc-signing-setup. Shipped 3 of 5 blocked builds: Healstack v2.3.4 (build VALID on ASC, processed), books-ios (fixed ITMS-90474 iPad-orientation rejection by adding UISupportedInterfaceOrientations to Info.plist, re-uploaded), Books Mac (fixed App Sandbox entitlement + LSApplicationCategoryType Info.plist issues blocking pkg upload, since asc CLI doesn't support .pkg directly). Spark iOS/Mac attempted fix: linked App Group (group.com.jt.spark) to iOS App ID via developer.apple.com's App ID capability config, but entitlement still comes back empty in freshly regenerated provisioning profiles (verified twice via `asc profiles inspect --entitlements` after regenerating twice)—apparently the save didn't persist or backend needs longer propagation. Unresolved, genuinely blocked. Next session: re-verify the App ID's Configure App Groups modal shows group checked, and if it does, wait longer before regenerating profiles, or try re-toggling the capability off/on. Portfolio iOS app icon fixed and pushed (was baking in corner-rounding). Final tally: 4 of 5 broken icons fixed and shipped (Healstack, books-ios, Books Mac, portfolio); Spark iOS/Mac remain blocked.
