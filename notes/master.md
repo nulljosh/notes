@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-08 (nightly wrap, Wednesday).
+All notes in one place. Updated 2026-07-08 (nightly wrap, Wednesday, Inkpress bumped to 1.0.2).
 
 ---
 
@@ -34,7 +34,7 @@ All notes in one place. Updated 2026-07-08 (nightly wrap, Wednesday).
 | healstack (dose) | v2.3.4 build VALID on ASC (2026-07-07), distribution provisioning profile created via asc-signing-setup, iOS + macOS builds shipped and processed. Widget last-dose sync fixed. Ready to submit for review | Submit v2.3.4 for App Store review |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
-| journal | Web automated, iOS app (Inkpress) v1.0.1 b3 resubmitted with dark-mode fix | Monitor iOS review status |
+| journal | Web automated, iOS app (Inkpress) v1.0.2 submitted with dark-mode fix, WAITING_FOR_REVIEW | Monitor iOS review status |
 | casewright (brief renamed) | iOS 1.0.1 Waiting for Review (ASC app 6787857503), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned, case picker bug fix in production (clipped-behind-banner layout resolved) | Monitor review status |
 | inkpress (journal renamed) | iOS v1.0.2 build in progress to TestFlight (EntryDetailView styled-content fix: NSAttributedString HTML parsing now wraps content in CSS style block for proper font/heading sizes/paragraph spacing, app renamed from Journal to avoid Apple collision) | TestFlight validation + App Store submission |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
@@ -43,7 +43,7 @@ All notes in one place. Updated 2026-07-08 (nightly wrap, Wednesday).
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-08, nightly wrap)
-- App Store submission verification (2026-07-08): Verified Echo iOS 1.3.3 and Inkpress 1.0.1 both correctly in WAITING_FOR_REVIEW status (no action needed). Fixed Talli's corrupted submission: an earlier stale build run had accidentally submitted v2.4.4 (a downgrade from current v3.5.1) to Apple review. Cancelled v2.4.4 submission and re-shipped correct v3.5.1. All three apps now WAITING_FOR_REVIEW on the App Store.
+- App Store submission verification (2026-07-08): Verified Echo iOS 1.3.3 correctly WAITING_FOR_REVIEW (no action needed). Fixed Talli's corrupted submission: an earlier stale build run had accidentally submitted v2.4.4 (a downgrade from v3.5.2) to Apple review; cancelled it and re-shipped correct v3.5.3. Caught Inkpress's pending review (v1.0.1) was missing a dark-mode fix already sitting in an uploaded, unsubmitted build; cancelled v1.0.1's review and submitted v1.0.2 with the fix instead. All three apps now WAITING_FOR_REVIEW: Talli v3.5.3, Echo v1.3.3, Inkpress v1.0.2.
 
 ### Recent (2026-07-07, nightly wrap — evening update)
 - App Store Connect app icon fixes shipped (2026-07-07 late night): Created + installed 8 missing distribution provisioning profiles across spark/healstack/books bundle IDs (main + widget/extension targets) using asc-signing-setup. Shipped 3 of 5 blocked builds: Healstack v2.3.4 (build VALID on ASC, processed), books-ios (fixed ITMS-90474 iPad-orientation rejection by adding UISupportedInterfaceOrientations to Info.plist, re-uploaded), Books Mac (fixed App Sandbox entitlement + LSApplicationCategoryType Info.plist issues blocking pkg upload, since asc CLI doesn't support .pkg directly). Spark iOS/Mac attempted fix: linked App Group (group.com.jt.spark) to iOS App ID via developer.apple.com's App ID capability config, but entitlement still comes back empty in freshly regenerated provisioning profiles (verified twice via `asc profiles inspect --entitlements` after regenerating twice)—apparently the save didn't persist or backend needs longer propagation. Unresolved, genuinely blocked. Next session: re-verify the App ID's Configure App Groups modal shows group checked, and if it does, wait longer before regenerating profiles, or try re-toggling the capability off/on. Portfolio iOS app icon fixed and pushed (was baking in corner-rounding). Final tally: 4 of 5 broken icons fixed and shipped (Healstack, books-ios, Books Mac, portfolio); Spark iOS/Mac remain blocked.
