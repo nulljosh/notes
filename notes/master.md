@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-08 (nightly wrap, Tuesday night).
+All notes in one place. Updated 2026-07-07 (nightly wrap, Tuesday).
 
 ---
 
@@ -13,7 +13,7 @@ All notes in one place. Updated 2026-07-08 (nightly wrap, Tuesday night).
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review, case picker clipped-banner fix in production
 - [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC id 6788180394, 9/10 blockers cleared 2026-07-06 nightly, availability pending then submit)
-- [ ] echo: iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0); Mac build + upload pending
+- [ ] echo: iOS 1.3.3 resubmitted after rejection (Guideline 2.1(b)—IAP not bundled); Mac build + upload pending
 - [ ] spark: Mac build 1.0.0 uploaded to App Store Connect & processing, iOS screenshots remaining
 - [ ] healstack: v2.3.3 build 2 valid, awaiting submit
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 macOS validation error remaining
@@ -30,7 +30,7 @@ All notes in one place. Updated 2026-07-08 (nightly wrap, Tuesday night).
 | lexly | Live at lexly.heyitsmejosh.com, v1.1.0 iOS + macOS submitted for review (builds 202607060002 with resource flattening + icon fixes, iOS home screen widget, masterclass courses as normal cards, metadata + screenshots complete) | Monitor review status |
 | portfolio (nulljosh.github.io) | Web live at heyitsmejosh.com (sage.me theme dark mode + perf live), iOS v1.0.0 app (Swift mirror of site, same tokens, 9/10 ASC blockers cleared 2026-07-06 nightly, availability pending then ready to submit to App Review, ASC id 6788180394) | Click availability dashboard toggle, then submit to App Review |
 | talli | v2.4.4 Waiting for Review (TestFlight + App Store submission 2026-07-06, replaced stale v2.4.2); v2.4.5 kicked off (message parsing fix for entries without date prefix, blue color accessibility improvements), blue accent, report/avatar fixes, Swift 6 widget, appearance settings, monthly-report success-detection hardened, entitlements debugging complete, local fastlane workaround deployed for Paid Apps Agreement blocker | Monitor 2.4.4 review, TestFlight 2.4.5 validation |
-| echo | iOS 1.3.3 b8 WAITING_FOR_REVIEW (was rejected 1.3.0), model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar | Mac build + upload |
+| echo | iOS 1.3.3 resubmitted after Guideline 2.1(b) rejection (IAP not bundled); model download hardened (3-retry + watchdog), tokens synced, screenshots + What's New copy updated, Voice Memos import + transcription progress bar; open risk: IAP may need manual inclusion in bundle | Verify IAP included in resubmission; Mac build + upload |
 | healstack (dose) | v2.2.0 live, widget last-dose sync fixed, iOS marketing icon alpha stripped | Mobile nav, health grading |
 | quotable | v1.5.0, 193 entries (movies + music trivia), top nav rebuild, README refresh | Running |
 | notes | Live + iOS | Content refresh |
@@ -43,6 +43,7 @@ All notes in one place. Updated 2026-07-08 (nightly wrap, Tuesday night).
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
 ### Recent (2026-07-07, nightly wrap)
+- Echo: diagnosed iOS 1.3.3 App Store rejection (Guideline 2.1(b) App Completeness)—"Echo Pro" IAP was never submitted for review, leaving dead purchase button. Resubmitted v1.3.3 via ASC CLI and web UI. Open risk: IAP still READY_TO_SUBMIT and may not be bundled into new submission, potential for repeat rejection.
 - Era Context: explored personal finance MCP server platform (read+write access to connected third-party accounts, five capability tiers: See/Organize/Automate/Optimize + future). Completed onboarding questionnaire to unlock pending capabilities. Knowledge module supports facts with optional expiry dates for auto-verification. Platform operates MCP-first with shared agent memory across connected tools.
 - BCGD: web site rethemed to bcgaragedoors.ca brand (light background, teal accent #1B5959, Barlow Condensed headings, Open Sans body), deployed live on Vercel; iOS companion app scaffolded (4-tab SwiftUI with Dashboard/Services/Inventory/Settings tabs, xcodegen for project generation, CoreData local persistence, builds clean); added portfolio vibe-token reference for theme inheritance
 - Epiphany: expanded asset universe with ten major bank stocks (RY, TD, BMO, BNS, CM for Canada; JPM, BAC, WFC, GS, MS for US) added to DEFAULT_SYMBOLS in server, rolling out to iOS/macOS/watchOS; all 397 tests pass, deployed to Vercel; updated TestFlight beta description to real tester-facing copy (was internal QA notes); prepared new App Store screenshot set at ios/fastlane/screenshots/en-US/ (iPhone 11 Pro Max + 14 Plus, 5 screens each) but upload blocked because v2.5.2 WAITING_FOR_REVIEW (ASC locks edits mid-review) — next: cancel submission, upload screenshots, resubmit
