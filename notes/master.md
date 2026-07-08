@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-08 (Lexly masterclass styling fixes: blue hover + feedback-loop reword).
+All notes in one place. Updated 2026-07-08 (Lexly masterclass styling fixes: blue hover + feedback-loop reword; portfolio link hover animation).
 
 ---
 
@@ -53,6 +53,7 @@ All notes in one place. Updated 2026-07-08 (Lexly masterclass styling fixes: blu
 
 ### Recent (2026-07-08, nightly wrap)
 - App Store submission verification (2026-07-08): Verified Echo iOS 1.3.3 correctly WAITING_FOR_REVIEW (no action needed). Fixed Talli's corrupted submission: an earlier stale build run had accidentally submitted v2.4.4 (a downgrade from v3.5.2) to Apple review; cancelled it and re-shipped correct v3.5.3. Caught Inkpress's pending review (v1.0.1) was missing a dark-mode fix already sitting in an uploaded, unsubmitted build; cancelled v1.0.1's review and submitted v1.0.2 with the fix instead. All three apps now WAITING_FOR_REVIEW: Talli v3.5.3, Echo v1.3.3, Inkpress v1.0.2.
+- Portfolio (nulljosh.github.io): added left-to-right underline sweep animation on link hover for polished, animated link interactions.
 
 ### Recent (2026-07-07, nightly wrap — evening update)
 - App Store Connect app icon fixes shipped (2026-07-07 late night): Created + installed 8 missing distribution provisioning profiles across spark/healstack/books bundle IDs (main + widget/extension targets) using asc-signing-setup. Shipped 3 of 5 blocked builds: Healstack v2.3.4 (build VALID on ASC, processed), books-ios (fixed ITMS-90474 iPad-orientation rejection by adding UISupportedInterfaceOrientations to Info.plist, re-uploaded), Books Mac (fixed App Sandbox entitlement + LSApplicationCategoryType Info.plist issues blocking pkg upload, since asc CLI doesn't support .pkg directly). Spark iOS/Mac attempted fix: linked App Group (group.com.jt.spark) to iOS App ID via developer.apple.com's App ID capability config, but entitlement still comes back empty in freshly regenerated provisioning profiles (verified twice via `asc profiles inspect --entitlements` after regenerating twice)—apparently the save didn't persist or backend needs longer propagation. Unresolved, genuinely blocked. Next session: re-verify the App ID's Configure App Groups modal shows group checked, and if it does, wait longer before regenerating profiles, or try re-toggling the capability off/on. Portfolio iOS app icon fixed and pushed (was baking in corner-rounding). Final tally: 4 of 5 broken icons fixed and shipped (Healstack, books-ios, Books Mac, portfolio); Spark iOS/Mac remain blocked.
