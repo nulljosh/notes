@@ -8,8 +8,8 @@ All notes in one place. Updated 2026-07-09 (Epiphany Sign in with X Twitter OAut
 
 ### Ship Now
 - [x] epiphany: iOS 2.5.2 Waiting for Review (TestFlight + App Store submission, 2026-07-06)
-- [x] talli: v3.5.1 Waiting for Review (TestFlight + App Store submission, v2.4.4 stale submission cancelled and replaced with correct v3.5.1, 2026-07-08)
-- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.1 Waiting for Review (dark-mode CSS fix + CDATA parser fixes, 2026-07-07)
+- [x] talli: v3.5.3 Waiting for Review (TestFlight + App Store submission, v2.4.4 stale submission cancelled and replaced with correct v3.5.3, 2026-07-08)
+- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.2 Waiting for Review (dark-mode CSS fix + CDATA parser fixes, styled-content NSAttributedString HTML parsing added, 2026-07-09)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review, case picker clipped-banner fix in production
 - [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC id 6788180394, 9/10 blockers cleared 2026-07-06 nightly, availability pending then submit)
