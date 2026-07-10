@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10 (Echo iOS 1.3.3 build 9 READY_FOR_REVIEW confirmed; Healstack v2.3.4 + books-ios v1.0 builds uploaded with icons live; Echo Mac 1.3.3 shipped. Icon-scaling bug documented; plan to merge Books Mac + books-ios and Spark Mac + Sparkjar. Blocked: Talli/Epiphany Mac exports missing App Group entitlements; Books Mac export blocked; Sparkjar no candidate build).
+All notes in one place. Updated 2026-07-10 (Books typography aligned with portfolio tokens; library tracking updated to July 29, 2026; five outstanding checkouts. Earlier: Echo iOS 1.3.3 build 9 READY_FOR_REVIEW confirmed; Healstack v2.3.4 + books-ios v1.0 builds uploaded with icons live; Echo Mac 1.3.3 shipped. Icon-scaling bug documented. Blocked: Talli/Epiphany Mac exports missing App Group entitlements; Books Mac export blocked; Sparkjar no candidate build).
 
 ---
 
@@ -25,6 +25,9 @@ All notes in one place. Updated 2026-07-10 (Echo iOS 1.3.3 build 9 READY_FOR_REV
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
 
+### Recent (2026-07-10, nightly wrap — Friday)
+- Books: aligned typography with portfolio's shared font tokens—swapped body text from monospace to `--font-body` CSS variable (system sans stack) for improved readability, matching the earlier spark/wiretext/grapher/notes refinement. Updated library tracking page with current due date (July 29, 2026) and removed four returned/owned books, leaving five active checkouts. Journal entry updated with Friday highlights and deployed to Vercel.
+
 ### Recent (2026-07-10, delta wrap)
 - Echo iOS 1.3.3: Build 9 resubmission confirmed (review state READY_FOR_REVIEW). IAP price $7.99→$3.99. Mac build 1.3.3 uploaded with corrected icon margins (824px artwork on 1024px canvas).
 - Healstack v2.3.4: Build uploaded to ASC with icon now live (was placeholder for weeks). Ready to submit for review.
@@ -48,7 +51,7 @@ All notes in one place. Updated 2026-07-10 (Echo iOS 1.3.3 build 9 READY_FOR_REV
 | casewright (brief renamed) | iOS 1.0.1 Waiting for Review (ASC app 6787857503), icon fake-badge removed and all PNGs regenerated (2026-07-10), metadata/pricing/age rating set, privacy policy + landing blurb added, case data scrubbed + git history cleaned, case picker bug fix in production (clipped-behind-banner layout resolved) | Monitor review status |
 | inkpress (journal renamed) | iOS v1.0.2 build in progress to TestFlight (EntryDetailView styled-content fix: NSAttributedString HTML parsing now wraps content in CSS style block for proper font/heading sizes/paragraph spacing, app renamed from Journal to avoid Apple collision) | TestFlight validation + App Store submission |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
-| books | Web live at books.heyitsmejosh.com (ML for Dummies chapters 13–20 summary complete), iOS + macOS WKWebView wrapper apps. iOS build fixed (ITMS-90474 iPad-orientation rejection resolved by adding UISupportedInterfaceOrientations to Info.plist); macOS build fixed (App Sandbox entitlement + LSApplicationCategoryType Info.plist issues resolved). Distribution profiles created for both (2026-07-07), builds ready for archive + upload | Archive + upload iOS + macOS builds to TestFlight, then submit |
+| books | Web live at books.heyitsmejosh.com (ML for Dummies chapters 13–20 summary complete, body font switched to shared --font-body variable 2026-07-10, library tracking updated July 29 due date with five active checkouts), iOS + macOS WKWebView wrapper apps. iOS build fixed (ITMS-90474 iPad-orientation rejection resolved by adding UISupportedInterfaceOrientations to Info.plist); macOS build fixed (App Sandbox entitlement + LSApplicationCategoryType Info.plist issues resolved). Distribution profiles created for both (2026-07-07), builds ready for archive + upload | Archive + upload iOS + macOS builds to TestFlight, then submit |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
