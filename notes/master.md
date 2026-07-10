@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10 (Talli gained CGEB tracking on Status tab with quarterly payment schedule; Braingraph shipped as force-directed memory-graph web app with sage vibe; Nimble Gemma proxy live on Cloudflare Worker; Spark Gemma daily ideas cron deployed; TestFlight internal groups created for 6 apps enabling auto-distribution to phone; 6 App Group assignments remain for Epiphany/Spark Mac shipping).
+All notes in one place. Updated 2026-07-10, Friday late evening — Talli CGEB tracking live, Braingraph shipped, Obsidian vault to iCloud with symlink redirect, Nimble Gemma proxy deployed, Spark auto-ideas cron live, TestFlight internal groups active for 6 apps, 6 App Group assignments remain blocker.
 
 ---
 
@@ -24,6 +24,11 @@ All notes in one place. Updated 2026-07-10 (Talli gained CGEB tracking on Status
 
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
+
+### Recent (2026-07-10, final nightly wrap — Friday evening)
+- Obsidian vault migration completed: moved to Obsidian iCloud container (~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Code) with symlink redirect at old iCloud Drive path for script compatibility; native iOS Obsidian app now syncs properly.
+- Braingraph edge-spring force explosion bug fixed (NaN blank canvas resolved), memory graph viewer + build script shipped, force-directed visualization with sage vibe and Inter typography live.
+- 8 repos touched tonight: braingraph (4 commits), echo (2), journal (1), nimble (1), notes (1), nulljosh.github.io (1), spark (2), talli (2). Total: 14 commits. Journal entry updated and deployed; wiki refreshed.
 
 ### Recent (2026-07-10, nightly wrap — Friday 10 PM)
 - Talli: CGEB (Canada Groceries and Essentials Benefit) tracking added to Status tab with quarterly entitlement amount and payment schedule timeline, pulling from the July 3, 2026 notice. API routes auto-generated profiles for `/api/cgeb-profile` and surfaces quarterly entitlement + amount in uiConfig. Web unified.html updated with new section. Commit 2c91446 pushed.
