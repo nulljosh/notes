@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10 (App Group portal blocker partially cleared: all 3 groups already registered; Talli Mac's 2 App IDs assigned group.com.heyitsmejosh.talli via portal; 6 more assignments remain for Epiphany Mac ×2, Spark ×4 this weekend. Books/Spark typography aligned with portfolio tokens; Braingraph spring-force fix + memory graph viewer; Echo Mac icon corrected; Lexly Stripe Pro scaffolded. Earlier: Echo iOS 1.3.3 build 9 READY_FOR_REVIEW confirmed; Healstack v2.3.4 + books-ios v1.0 builds uploaded with icons live; Echo Mac 1.3.3 shipped. Icon-scaling bug documented. Blocked: 6 remaining App Group assignments; Books Mac export blocked; Sparkjar no candidate build).
+All notes in one place. Updated 2026-07-10 (Nimble Gemma answer proxy deployed live to Cloudflare Worker [gemma-4-31b-it, header auth, thought-part filtering, verified end-to-end]; Spark Gemma daily auto-ideas cron deployed with 6h interval and server-side enrichment fallback, staying within Vercel Hobby 12-fn limit; Spark body font unified to shared --font-body token matching portfolio. Earlier: App Group portal blocker partially cleared—all 3 groups registered, Talli Mac 2 App IDs linked, 6 more remain. Books/Spark typography aligned; Braingraph spring-fix + memory viewer; Echo Mac icon corrected; Lexly Stripe Pro scaffolded. Echo iOS 1.3.3 build 9 READY_FOR_REVIEW; Healstack v2.3.4 + books-ios v1.0 with icons live; Echo Mac 1.3.3 shipped. Blocked: 6 App Group assignments, Books Mac export, Sparkjar build).
 
 ---
 
@@ -24,6 +24,11 @@ All notes in one place. Updated 2026-07-10 (App Group portal blocker partially c
 
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
+
+### Recent (2026-07-10, nightly wrap — Friday late evening)
+- Nimble: Gemma answer proxy deployed live to Cloudflare Worker (gemma-4-31b-it, header-based auth, thought-part filtering, real worker URLs verified working end-to-end). Web app now live with advanced query support via AI.
+- Spark: Gemma daily auto-generated ideas feature shipped with 6-hour cron interval (9am start, staying within Vercel Hobby 12-fn cap) and server-side enrichment fallback. Ideas generated and enriched automatically. Body font refined to use shared --font-body token (system sans stack) matching portfolio's unified typography across Spark iOS + macOS + web.
+- Journal: Friday 2026-07-10 entry updated with evening highlights and deployed to Vercel (aliases to journal.heyitsmejosh.com). Apps summary refreshed with Nimble/Spark ship status.
 
 ### Recent (2026-07-10, nightly wrap — Friday evening)
 - App Groups portal assignment: partially cleared blocker. All three app groups (talli, epiphany, spark) were already registered at Apple. Manually assigned `group.com.heyitsmejosh.talli` to Talli Mac's two App IDs (tally.mac, tally.mac.widgets) via developer.apple.com web UI. Six more assignments remain for this weekend: Epiphany Mac (2 IDs) and Spark (4 IDs) need their respective groups linked. Recipe documented in ~/Documents/Code/roadmap.md line 58 for easy execution.
