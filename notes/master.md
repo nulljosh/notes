@@ -1,13 +1,13 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10 (Braingraph shipped as force-directed memory-graph web app with sage vibe; Obsidian vault migrated to iCloud; Nimble Gemma proxy live on Cloudflare Worker; Spark Gemma daily ideas cron deployed; TestFlight internal groups created for 6 apps enabling auto-distribution to phone; 6 App Group assignments remain for Epiphany/Spark Mac shipping).
+All notes in one place. Updated 2026-07-10 (Talli gained CGEB tracking on Status tab with quarterly payment schedule; Braingraph shipped as force-directed memory-graph web app with sage vibe; Nimble Gemma proxy live on Cloudflare Worker; Spark Gemma daily ideas cron deployed; TestFlight internal groups created for 6 apps enabling auto-distribution to phone; 6 App Group assignments remain for Epiphany/Spark Mac shipping).
 
 ---
 
 ## Roadmap
 
 ### Ship Now
-- [ ] talli: v3.5.4 (icon rebrand to blue #5B9BD5 + alpha channel fix + scraper junk filter hardening, build uploaded to TestFlight 2026-07-09, pending verification); v3.5.3 Waiting for Review
+- [ ] talli: v3.5.4 (icon rebrand to blue #5B9BD5 + alpha channel fix + scraper junk filter hardening, build uploaded to TestFlight 2026-07-09, pending verification; CGEB tracking added to Status tab with quarterly payment schedule 2026-07-10); v3.5.3 Waiting for Review
 - [ ] inkpress (Journal iOS app): v1.0.2 Waiting for Review (dark-mode CSS fix + styled-content NSAttributedString HTML parsing, 2026-07-09)
 - [ ] casewright (Brief iOS app): iOS 1.0.1 Waiting for Review (fake-badge removed from icon, 2026-07-10)
 - [ ] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002, Stripe Pro checkout scaffolded, 2026-07-09)
@@ -24,6 +24,9 @@ All notes in one place. Updated 2026-07-10 (Braingraph shipped as force-directed
 
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
+
+### Recent (2026-07-10, nightly wrap — Friday 10 PM)
+- Talli: CGEB (Canada Groceries and Essentials Benefit) tracking added to Status tab with quarterly entitlement amount and payment schedule timeline, pulling from the July 3, 2026 notice. API routes auto-generated profiles for `/api/cgeb-profile` and surfaces quarterly entitlement + amount in uiConfig. Web unified.html updated with new section. Commit 2c91446 pushed.
 
 ### Recent (2026-07-10, final nightly wrap — Friday late evening)
 - Braingraph: shipped as new memory-graph web app (force-directed canvas visualization of Claude Code memory with sage portfolio vibe and Inter typography, deployed to github.com/nulljosh/braingraph private). Roadmap documented for companion iOS/macOS app.
