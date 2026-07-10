@@ -1,27 +1,26 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10 nightly (Braingraph shipped as force-directed memory-graph web app with sage vibe; Obsidian vault migrated to iCloud; Nimble Gemma proxy live on Cloudflare Worker; Spark Gemma daily ideas cron deployed; all Friday blockers tracked in roadmap; 6 App Group assignments remain for Epiphany/Spark Mac shipping).
+All notes in one place. Updated 2026-07-10 (Braingraph shipped as force-directed memory-graph web app with sage vibe; Obsidian vault migrated to iCloud; Nimble Gemma proxy live on Cloudflare Worker; Spark Gemma daily ideas cron deployed; TestFlight internal groups created for 6 apps enabling auto-distribution to phone; 6 App Group assignments remain for Epiphany/Spark Mac shipping).
 
 ---
 
 ## Roadmap
 
 ### Ship Now
-- [x] epiphany: iOS 2.5.2 Waiting for Review (TestFlight + App Store submission, 2026-07-06)
-- [x] talli: v3.5.4 (icon rebrand to blue #5B9BD5 + alpha channel fix on large icons + scraper junk filter hardening, build uploaded to TestFlight 2026-07-09, pending verification)
-- [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.2 Waiting for Review (dark-mode CSS fix + CDATA parser fixes, styled-content NSAttributedString HTML parsing added, 2026-07-09)
-- [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review (fake-badge removed from icon, all PNGs regenerated, 2026-07-10), case picker clipped-banner fix in production
-- [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
-- [ ] echo: iOS 1.3.3 (READY_FOR_REVIEW, build 9 confirmed 2026-07-10); Mac build 1.3.3 uploaded (icon with proper macOS margins); IAP price $7.99→$3.99
-- [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC id 6788180394, icon full-bleed rescaled 2026-07-10, 10/10 blockers cleared, ready to submit)
-- [ ] spark: Mac build 1.0.0 live v2.1.0 (YC RFS Inspiration feature added 2026-07-09—scrapes ycombinator.com/rfs with 12h in-memory cache, displays in carousel strip linking to full RFP list), iOS screenshots remaining
+- [ ] talli: v3.5.4 (icon rebrand to blue #5B9BD5 + alpha channel fix + scraper junk filter hardening, build uploaded to TestFlight 2026-07-09, pending verification); v3.5.3 Waiting for Review
+- [ ] inkpress (Journal iOS app): v1.0.2 Waiting for Review (dark-mode CSS fix + styled-content NSAttributedString HTML parsing, 2026-07-09)
+- [ ] casewright (Brief iOS app): iOS 1.0.1 Waiting for Review (fake-badge removed from icon, 2026-07-10)
+- [ ] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002, Stripe Pro checkout scaffolded, 2026-07-09)
+- [ ] echo: iOS 1.3.3 READY_FOR_REVIEW (build 9, paywall window-level fix 2026-07-10); Mac build 1.3.3 uploaded (icon corrected); IAP $7.99→$3.99
+- [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC 6788180394, icon full-bleed 2026-07-10, blockers cleared, ready to submit)
+- [x] spark: Mac v2.1.0 live (YC RFS Inspiration, Gemma daily ideas cron 2026-07-10); iOS + 4 screenshots pending
 - [ ] healstack: v2.3.4 build uploaded (ASC icon live 2026-07-10), ready to submit
-- [ ] books: iOS v1.0 build uploaded (ASC icon live 2026-07-10, canvas scaling bug present); macOS export blocked by provisioning profile issue
-- [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 macOS validation error remaining
-- [ ] nimble: macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission + Tahoe SDK MenuBarExtra
-- [x] braingraph: shipped (force-directed memory-graph web app with sage portfolio vibe and Inter typography, github.com/nulljosh/braingraph private; roadmap: companion iOS/macOS app)
-- [ ] bcgd: web retheme live (light theme, teal #1B5959, Barlow/Open Sans), iOS companion app scaffolded (4-tab SwiftUI, xcodegen, local persistence)
-- [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
+- [ ] books: iOS v1.0 build uploaded (ASC icon live, canvas scaling bug); macOS export blocked
+- [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 validation error remaining
+- [ ] nimble: test suite 26/26 passing; blocked on ASC + Tahoe SDK MenuBarExtra
+- [x] braingraph: shipped (force-directed memory-graph web app, sage vibe, github.com/nulljosh/braingraph private; roadmap: iOS/macOS companion apps)
+- [ ] bcgd: web live (light theme, teal #1B5959), iOS companion scaffolded (4-tab SwiftUI)
+- [ ] TestFlight: internal groups created for 6 apps (Casewright, Healstack, books-ios, Portfolio, Lexly, NYC Survive); auto-distribution to phone now live
 
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
