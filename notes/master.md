@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10 (Echo iOS 1.3.3 rejected by App Review — paywall sheet unresponsive over Settings tab. Fixed paywall presentation to window level, build 9 resubmitted; Echo Pro IAP price dropped $7.99→$3.99. Casewright icon fake-badge removed, all PNGs regenerated. Portfolio iOS app icon full-bleed rescaled. Echo Mac icon regenerated with proper macOS margins, build 1.3.3 uploaded. Books iOS archiving to ASC. Blocked: Talli/Epiphany Mac exports missing App Group entitlements in provisioning profiles; Books Mac export blocked; Healstack/Sparkjar no candidate builds).
+All notes in one place. Updated 2026-07-10 (Echo iOS 1.3.3 build 9 READY_FOR_REVIEW confirmed; Healstack v2.3.4 + books-ios v1.0 builds uploaded with icons live; Echo Mac 1.3.3 shipped. Icon-scaling bug documented; plan to merge Books Mac + books-ios and Spark Mac + Sparkjar. Blocked: Talli/Epiphany Mac exports missing App Group entitlements; Books Mac export blocked; Sparkjar no candidate build).
 
 ---
 
@@ -12,11 +12,11 @@ All notes in one place. Updated 2026-07-10 (Echo iOS 1.3.3 rejected by App Revie
 - [x] inkpress (Journal iOS app, renamed 2026-07-06): v1.0.2 Waiting for Review (dark-mode CSS fix + CDATA parser fixes, styled-content NSAttributedString HTML parsing added, 2026-07-09)
 - [x] casewright (Brief iOS app, renamed 2026-07-06): iOS 1.0.1 Waiting for Review (fake-badge removed from icon, all PNGs regenerated, 2026-07-10), case picker clipped-banner fix in production
 - [x] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002 valid, resource flattening + icon fixes complete)
-- [ ] echo: iOS 1.3.3 resubmitted after rejection (Guideline 2.1(b)—paywall sheet now presents over Settings tab, build 9 uploaded 2026-07-10); Mac build 1.3.3 uploaded (icon with proper macOS margins); IAP price $7.99→$3.99
+- [ ] echo: iOS 1.3.3 (READY_FOR_REVIEW, build 9 confirmed 2026-07-10); Mac build 1.3.3 uploaded (icon with proper macOS margins); IAP price $7.99→$3.99
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC id 6788180394, icon full-bleed rescaled 2026-07-10, 10/10 blockers cleared, ready to submit)
 - [ ] spark: Mac build 1.0.0 live v2.1.0 (YC RFS Inspiration feature added 2026-07-09—scrapes ycombinator.com/rfs with 12h in-memory cache, displays in carousel strip linking to full RFP list), iOS screenshots remaining
-- [ ] healstack: v2.3.4 build VALID, awaiting submit
-- [ ] books: iOS archiving + ASC upload in progress (2026-07-10); macOS export blocked by provisioning profile issue
+- [ ] healstack: v2.3.4 build uploaded (ASC icon live 2026-07-10), ready to submit
+- [ ] books: iOS v1.0 build uploaded (ASC icon live 2026-07-10, canvas scaling bug present); macOS export blocked by provisioning profile issue
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 macOS validation error remaining
 - [ ] nimble: macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission + Tahoe SDK MenuBarExtra
 - [ ] bcgd: web retheme live (light theme, teal #1B5959, Barlow/Open Sans), iOS companion app scaffolded (4-tab SwiftUI, xcodegen, local persistence)
@@ -25,13 +25,11 @@ All notes in one place. Updated 2026-07-10 (Echo iOS 1.3.3 rejected by App Revie
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
 
-### Recent (2026-07-10, nightly wrap)
-- Echo iOS 1.3.3: Rejected by App Review (Guideline 2.1(b)—paywall sheet unresponsive over Settings tab). Root cause: paywall sheet attached only to ContentView, couldn't present over other modal contexts. Fixed by moving paywall to window level (now presents regardless of active sheet). Build 9 uploaded and resubmitted for App Review. Echo Pro IAP price dropped from $7.99 to $3.99 for broader accessibility.
-- Echo Mac: Icon regenerated with proper macOS margins (824px artwork on 1024px transparent canvas). Build 1.3.3 uploaded to TestFlight.
-- Casewright icon: Removed fake-looking red "!" badge baked into the artwork design. Regenerated all platform PNG variants.
-- Portfolio iOS: App icon rescaled to full-bleed (removed baked-in corner rounding so iOS applies its own mask). All 10 ASC blockers cleared; ready for App Store submission.
-- Books iOS: Archive + ASC upload in progress.
-- Blocked: Talli Mac + Epiphany Mac exports fail (provisioning profiles missing App Group entitlements); Books Mac export blocked (distribution profile issue); Healstack v2.3.4 + Sparkjar (no candidate builds).
+### Recent (2026-07-10, delta wrap)
+- Echo iOS 1.3.3: Build 9 resubmission confirmed (review state READY_FOR_REVIEW). IAP price $7.99→$3.99. Mac build 1.3.3 uploaded with corrected icon margins (824px artwork on 1024px canvas).
+- Healstack v2.3.4: Build uploaded to ASC with icon now live (was placeholder for weeks). Ready to submit for review.
+- books-ios v1.0: Build uploaded to ASC with icon live. Icon has recurring canvas-scaling bug (artwork too small on tile).
+- Blockers documented in ~/Documents/Code/roadmap.md: Talli Mac + Epiphany Mac exports (missing App Group entitlements), Books Mac export (distribution profile), recurring icon-scaling bug (plan: merge Books Mac + books-ios and Spark Mac + Sparkjar into universal app records).
 
 ### Active Projects
 | Repo | Status | Next |
