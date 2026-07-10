@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-09 (Epiphany v2.6.1 TUI dashboard shipped, Talli v3.5.4 TestFlight uploaded + icon rebrand blue/alpha-fix, Spark v2.1.0 YC RFS Inspiration feature expanded to web + iOS + macOS, books library tracking updated).
+All notes in one place. Updated 2026-07-09 (Epiphany v2.6.1 TUI dashboard shipped, Talli v3.5.4 TestFlight uploaded + icon rebrand blue/alpha-fix, Spark v2.1.0 YC RFS Inspiration feature expanded to web + iOS + macOS, body font rolled out to books/notes as --font-body sans-serif via shared tokens, books library tracking updated).
 
 ---
 
@@ -20,6 +20,9 @@ All notes in one place. Updated 2026-07-09 (Epiphany v2.6.1 TUI dashboard shippe
 - [ ] nimble: macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission + Tahoe SDK MenuBarExtra
 - [ ] bcgd: web retheme live (light theme, teal #1B5959, Barlow/Open Sans), iOS companion app scaffolded (4-tab SwiftUI, xcodegen, local persistence)
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
+
+### Planned (2026-07-10)
+- [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
 
 ### Active Projects
 | Repo | Status | Next |
@@ -44,7 +47,8 @@ All notes in one place. Updated 2026-07-09 (Epiphany v2.6.1 TUI dashboard shippe
 
 ### Recent (2026-07-09, nightly wrap)
 - Epiphany: added ink-based TUI terminal dashboard (`cli/epiphany-tui.mjs`) that live-polls Upstash KV for portfolio data—streams real-time holdings, net worth, and performance metrics to the terminal for quick status checks without opening app or web dashboard. Bumped version 2.6.0 to 2.6.1, updated README.md and CLAUDE.md, committed and pushed (3e89ab7).
-- Spark: YC RFS Inspiration feature expanded to iOS and macOS (web version scrapes ycombinator.com/rfs via type=rfs route with 12h in-memory cache; iOS/macOS add fetchRfs() API method, RFSEntry model, and Inspiration section in IdeaBaseView). Cross-platform feature complete: web + iOS + macOS all display Y Combinator Requests for Startups carousel. Zero additional function cost. Committed and pushed.
+- Spark: YC RFS Inspiration feature expanded to iOS and macOS (web version scrapes ycombinator.com/rfs via type=rfs route with 12h in-memory cache; iOS/macOS add fetchRfs() API method, RFSEntry model, and Inspiration section in IdeaBaseView). Cross-platform feature complete: web + iOS + macOS all display Y Combinator Requests for Startups carousel. Zero additional function cost. Body font refined to use shared --font-body (system sans stack) instead of monospace, matching portfolio typography. Committed and pushed.
+- Books + Notes: rolled out sans-font fix (body font-family switched from monospace to shared --font-body variable, keeping Geist monospace for small badge/label accents only), matching the Spark refinement. Books and notes sites now inherit the unified typography from portfolio tokens.css.
 - Talli: finished icon rebrand to blue #5B9BD5 on #1a1a1a background—regenerated all iOS AppIcon variants (light/dark/tinted) + LaunchIcon PNGs, fixing the brown/orange TestFlight icon + launch/login screens. Hit Apple export rejection on large icons carrying alpha channel (transparent pixels not allowed); flattened AppIcon.png + AppIcon-dark.png to opaque RGB, keeping blue tint without transparency. Re-archived and re-uploaded to App Store Connect. Build uploaded to TestFlight 2026-07-09, pending verification. Hardened scraper by moving JUNK_RX accessibility filter into shared uniqueTrimmed so skip-nav boilerplate ("Skip to main content", "Accessibility Statement") stops leaking into iOS Status Messages / Messages tab. Bumped docs to v3.5.4. All committed and pushed on fix/blue-rebrand-icon-scraper.
 - Epiphany (earlier): re-enabled landscape orientation on iOS (SwiftUI layouts reflow, verified in sim; an earlier same-day revert was undone), and shipped Sign in with X (Twitter) OAuth to web dashboard (complements GitHub + Apple OAuth)
 - Portfolio (nulljosh.github.io): scaffolded Claude Design System project documenting component tokens: color palette, typography scales, link states, list sections, header/bio card — created 5 example component cards authored by hand from tokens-sage.css values (URL importer rejected page as too simple)
