@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-09 (Epiphany terminal dashboard TUI added, Talli v3.5.4 TestFlight pending, Inkpress/Casewright/Lexly Waiting for Review).
+All notes in one place. Updated 2026-07-09 (Epiphany v2.6.1 TUI dashboard shipped, Talli v3.5.4 TestFlight uploaded + icon rebrand blue/alpha-fix, books library tracking updated).
 
 ---
 
@@ -48,6 +48,7 @@ All notes in one place. Updated 2026-07-09 (Epiphany terminal dashboard TUI adde
 - Epiphany (earlier): re-enabled landscape orientation on iOS (SwiftUI layouts reflow, verified in sim; an earlier same-day revert was undone), and shipped Sign in with X (Twitter) OAuth to web dashboard (complements GitHub + Apple OAuth)
 - Portfolio (nulljosh.github.io): scaffolded Claude Design System project documenting component tokens: color palette, typography scales, link states, list sections, header/bio card — created 5 example component cards authored by hand from tokens-sage.css values (URL importer rejected page as too simple)
 - Echo iOS 1.3.3 rejection surfaced: Apple rejected on Jul 7 (Guideline 2.1(b) App Completeness) citing dead "Echo Pro" IAP purchase button; resubmitted same build; need to verify IAP bundling this weekend to ensure repeat rejection doesn't occur
+- Books: library due date updated to July 29, 2026; removed four returned books (Isaac Newton, Machine Learning for Dummies, Agentic AI for Dummies, Exercise Science for Dummies) and PC for Dummies (personal copy, not a checkout); library tracking now reflects five outstanding checkouts
 
 ### Recent (2026-07-07, nightly wrap — Tuesday evening)
 - Epiphany iOS: added native MKLookAroundScene preview to venue detail cards (street-level location view directly in the app, no API key required). Built on top of earlier Markets fixes this week: ticker blank-entry regression fixed, What's New sheet self-sizing (no more half-screen waste), news drawer drag smooth with placeholder icons for missing images, tightened list row padding to match iOS Stocks, precomputed formatted currency in ticker (stops 60fps rebuilding on every animation frame). All fixes pushed and auto-deployed. Portfolio app submission progressing—most blockers cleared. All 90+ venue detail tests passing post-Look Around integration.
