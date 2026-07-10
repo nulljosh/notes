@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10 (Nimble Gemma answer proxy deployed live to Cloudflare Worker [gemma-4-31b-it, header auth, thought-part filtering, verified end-to-end]; Spark Gemma daily auto-ideas cron deployed with 6h interval and server-side enrichment fallback, staying within Vercel Hobby 12-fn limit; Spark body font unified to shared --font-body token matching portfolio. Earlier: App Group portal blocker partially cleared—all 3 groups registered, Talli Mac 2 App IDs linked, 6 more remain. Books/Spark typography aligned; Braingraph spring-fix + memory viewer; Echo Mac icon corrected; Lexly Stripe Pro scaffolded. Echo iOS 1.3.3 build 9 READY_FOR_REVIEW; Healstack v2.3.4 + books-ios v1.0 with icons live; Echo Mac 1.3.3 shipped. Blocked: 6 App Group assignments, Books Mac export, Sparkjar build).
+All notes in one place. Updated 2026-07-10 nightly (Braingraph shipped as force-directed memory-graph web app with sage vibe; Obsidian vault migrated to iCloud; Nimble Gemma proxy live on Cloudflare Worker; Spark Gemma daily ideas cron deployed; all Friday blockers tracked in roadmap; 6 App Group assignments remain for Epiphany/Spark Mac shipping).
 
 ---
 
@@ -19,11 +19,17 @@ All notes in one place. Updated 2026-07-10 (Nimble Gemma answer proxy deployed l
 - [ ] books: iOS v1.0 build uploaded (ASC icon live 2026-07-10, canvas scaling bug present); macOS export blocked by provisioning profile issue
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 macOS validation error remaining
 - [ ] nimble: macOS test suite 26/26 passing, iOS builds clean; blocked on ASC submission + Tahoe SDK MenuBarExtra
+- [x] braingraph: shipped (force-directed memory-graph web app with sage portfolio vibe and Inter typography, github.com/nulljosh/braingraph private; roadmap: companion iOS/macOS app)
 - [ ] bcgd: web retheme live (light theme, teal #1B5959, Barlow/Open Sans), iOS companion app scaffolded (4-tab SwiftUI, xcodegen, local persistence)
 - [ ] upstash redis rotation (epiphany): store email in Keychain, run `/rotate upstash epiphany`
 
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
+
+### Recent (2026-07-10, final nightly wrap — Friday late evening)
+- Braingraph: shipped as new memory-graph web app (force-directed canvas visualization of Claude Code memory with sage portfolio vibe and Inter typography, deployed to github.com/nulljosh/braingraph private). Roadmap documented for companion iOS/macOS app.
+- Obsidian: vault migrated into iCloud container (native Obsidian app now has iOS access).
+- All Friday commits collected and summarized (8 repos touched: braingraph, books, echo, journal, lexly, nimble, notes, spark). App Group portal assignment blocker remains critical (6 assignments pending: Epiphany Mac ×2, Spark ×4) for Spark iOS and Epiphany Mac shipping.
 
 ### Recent (2026-07-10, nightly wrap — Friday late evening)
 - Nimble: Gemma answer proxy deployed live to Cloudflare Worker (gemma-4-31b-it, header-based auth, thought-part filtering, real worker URLs verified working end-to-end). Web app now live with advanced query support via AI.
@@ -65,6 +71,7 @@ All notes in one place. Updated 2026-07-10 (Nimble Gemma answer proxy deployed l
 | inkpress (journal renamed) | iOS v1.0.2 build in progress to TestFlight (EntryDetailView styled-content fix: NSAttributedString HTML parsing now wraps content in CSS style block for proper font/heading sizes/paragraph spacing, app renamed from Journal to avoid Apple collision) | TestFlight validation + App Store submission |
 | nyc | macOS 1.0 valid, iOS 1.0.0 build 3 (App Store rejection fixed), 5 macOS blockers fixed, free pricing set, 1 validation error remaining | Resolve last macOS validation error, submit both platforms |
 | books | Web live at books.heyitsmejosh.com (ML for Dummies chapters 13–20 summary complete, body font switched to shared --font-body variable 2026-07-10, library tracking updated July 29 due date with five active checkouts), iOS + macOS WKWebView wrapper apps. iOS build fixed (ITMS-90474 iPad-orientation rejection resolved by adding UISupportedInterfaceOrientations to Info.plist); macOS build fixed (App Sandbox entitlement + LSApplicationCategoryType Info.plist issues resolved). Distribution profiles created for both (2026-07-07), builds ready for archive + upload | Archive + upload iOS + macOS builds to TestFlight, then submit |
+| braingraph | Shipped: force-directed memory-graph web app visualizing Claude Code memory with sage portfolio vibe and Inter typography (github.com/nulljosh/braingraph, private). Built with memory-graph engine, edge-spring force explosions fixed (NaN blank canvas). Roadmap: companion iOS/macOS app. | Ship iOS/macOS companion apps |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
 
