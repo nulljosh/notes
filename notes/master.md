@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10 (Books typography aligned with portfolio tokens; library tracking updated to July 29, 2026; five outstanding checkouts. Earlier: Echo iOS 1.3.3 build 9 READY_FOR_REVIEW confirmed; Healstack v2.3.4 + books-ios v1.0 builds uploaded with icons live; Echo Mac 1.3.3 shipped. Icon-scaling bug documented. Blocked: Talli/Epiphany Mac exports missing App Group entitlements; Books Mac export blocked; Sparkjar no candidate build).
+All notes in one place. Updated 2026-07-10 (App Group portal blocker partially cleared: all 3 groups already registered; Talli Mac's 2 App IDs assigned group.com.heyitsmejosh.talli via portal; 6 more assignments remain for Epiphany Mac ×2, Spark ×4 this weekend. Books/Spark typography aligned with portfolio tokens; Braingraph spring-force fix + memory graph viewer; Echo Mac icon corrected; Lexly Stripe Pro scaffolded. Earlier: Echo iOS 1.3.3 build 9 READY_FOR_REVIEW confirmed; Healstack v2.3.4 + books-ios v1.0 builds uploaded with icons live; Echo Mac 1.3.3 shipped. Icon-scaling bug documented. Blocked: 6 remaining App Group assignments; Books Mac export blocked; Sparkjar no candidate build).
 
 ---
 
@@ -24,6 +24,14 @@ All notes in one place. Updated 2026-07-10 (Books typography aligned with portfo
 
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
+
+### Recent (2026-07-10, nightly wrap — Friday evening)
+- App Groups portal assignment: partially cleared blocker. All three app groups (talli, epiphany, spark) were already registered at Apple. Manually assigned `group.com.heyitsmejosh.talli` to Talli Mac's two App IDs (tally.mac, tally.mac.widgets) via developer.apple.com web UI. Six more assignments remain for this weekend: Epiphany Mac (2 IDs) and Spark (4 IDs) need their respective groups linked. Recipe documented in ~/Documents/Code/roadmap.md line 58 for easy execution.
+- Books: aligned typography with portfolio's shared font tokens—swapped body text from monospace to `--font-body` CSS variable (system sans stack) for improved readability, matching the earlier spark/wiretext/grapher/notes refinement. Updated library tracking page with current due date (July 29, 2026) and removed four returned/owned books, leaving five active checkouts. Journal entry updated with Friday highlights and deployed to Vercel.
+- Spark: body font switched to sans (--font-body) across iOS + macOS to match portfolio. YC RFS Inspiration feature added to iOS + macOS companions (web version already ships YC RFS carousel).
+- Echo Mac: icon regenerated with proper macOS margins (824px artwork on 1024px transparent canvas) and build 1.3.3 uploaded.
+- Lexly: Stripe Pro checkout and webhook scaffolding added (code committed, awaiting test API key for deployment).
+- Braingraph: fixed edge-spring force explosion bug (NaN causing blank canvas) and added memory graph viewer + build script.
 
 ### Recent (2026-07-10, nightly wrap — Friday)
 - Books: aligned typography with portfolio's shared font tokens—swapped body text from monospace to `--font-body` CSS variable (system sans stack) for improved readability, matching the earlier spark/wiretext/grapher/notes refinement. Updated library tracking page with current due date (July 29, 2026) and removed four returned/owned books, leaving five active checkouts. Journal entry updated with Friday highlights and deployed to Vercel.
