@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123902A4C5D795A79844DB0F /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1999151645B054335761283 /* NotesApp.swift */; };
 		15263467C996F5423B40B05A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C9B4AC217F6C4BE5403C1 /* WebView.swift */; };
+		5091DA7EE0DE2FD014966A1E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C9B4AC217F6C4BE5403C1 /* WebView.swift */; };
 		FE840AD03FD946F1032CE2B2 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1999151645B054335761283 /* NotesApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		616248A62D58552F95E14E7C /* notes.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		676C9B4AC217F6C4BE5403C1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		8F5F04EABC2687D2115FC4C7 /* notes-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "notes-mac.entitlements"; sourceTree = "<group>"; };
 		9FD0544ED26DD78D3492258E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B1999151645B054335761283 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
+		E742A28183CCD7992E57EF7E /* notes-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notes-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		4EE1F3828D8655329786B612 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				E742A28183CCD7992E57EF7E /* notes-mac.app */,
 				616248A62D58552F95E14E7C /* notes.app */,
 			);
 			name = Products;
@@ -31,6 +36,7 @@
 			isa = PBXGroup;
 			children = (
 				9FD0544ED26DD78D3492258E /* Info.plist */,
+				8F5F04EABC2687D2115FC4C7 /* notes-mac.entitlements */,
 				B1999151645B054335761283 /* NotesApp.swift */,
 				676C9B4AC217F6C4BE5403C1 /* WebView.swift */,
 			);
@@ -65,6 +71,23 @@
 			productReference = 616248A62D58552F95E14E7C /* notes.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BC4BDE13CBA0B2F3B4BF1350 /* notes-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DAF1FD9D58E8FBBC4CC09E /* Build configuration list for PBXNativeTarget "notes-mac" */;
+			buildPhases = (
+				52BB8BC6C03E031FDD8D2617 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "notes-mac";
+			packageProductDependencies = (
+			);
+			productName = "notes-mac";
+			productReference = E742A28183CCD7992E57EF7E /* notes-mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -75,6 +98,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					9B7F9BC14619ED7C8056567E = {
+						DevelopmentTeam = QMM486NPYC;
+					};
+					BC4BDE13CBA0B2F3B4BF1350 = {
 						DevelopmentTeam = QMM486NPYC;
 					};
 				};
@@ -94,11 +120,21 @@
 			projectRoot = "";
 			targets = (
 				9B7F9BC14619ED7C8056567E /* notes */,
+				BC4BDE13CBA0B2F3B4BF1350 /* notes-mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		52BB8BC6C03E031FDD8D2617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123902A4C5D795A79844DB0F /* NotesApp.swift in Sources */,
+				5091DA7EE0DE2FD014966A1E /* WebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0E7D48F57D54D91DD78E627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +147,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		06C0F1C2E869107134C39A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sources/notes-mac.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nulljosh.notes.mac;
+				PRODUCT_NAME = notes;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		29E219E788A2FA4CF7FC7B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sources/notes-mac.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nulljosh.notes.mac;
+				PRODUCT_NAME = notes;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
 		342AFF99F08773A5EB7DD3E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -159,11 +231,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.9;
@@ -241,12 +313,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.9;
@@ -278,6 +350,15 @@
 			buildConfigurations = (
 				9F6238923CA95921989DE161 /* Debug */,
 				342AFF99F08773A5EB7DD3E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2DAF1FD9D58E8FBBC4CC09E /* Build configuration list for PBXNativeTarget "notes-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29E219E788A2FA4CF7FC7B40 /* Debug */,
+				06C0F1C2E869107134C39A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

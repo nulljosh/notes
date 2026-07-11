@@ -1,0 +1,6 @@
+{
+  "name": "braingraph",
+  "compatibility_date": "2026-07-11",
+  "assets": { "directory": "." },
+  "routes": [{ "pattern": "brain.heyitsmejosh.com", "custom_domain": true }]
+}

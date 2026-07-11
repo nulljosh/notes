@@ -2,7 +2,14 @@
 v1.1.0
 ## Repo
 - GitHub: github.com/nulljosh/notes (private)
-- Live: notes.heyitsmejosh.com
+- Live: notes.heyitsmejosh.com · brain graph: brain.heyitsmejosh.com (Cloudflare Worker, brain/)
+## Brain graph (brain/)
+- Merged from the old braingraph repo 2026-07-11; that repo is retired.
+- `brain/build.py` regenerates brain/index.html from ~/.claude memory; redacts sensitive memories (blocklist + PII scrub) and self-checks output before it can ship.
+- Deploy: `cd brain && npx wrangler deploy` (assets-only Worker, custom domain brain.heyitsmejosh.com).
+- template.html is the source; index.html is generated. Scroll wheel zooms, drag pans.
+## Obsidian
+- notes/ is plain markdown — open ~/Documents/Code/notes/notes as an Obsidian vault (or "Open folder as vault"). No sync layer needed; git is the sync.
 ## Rules
 - Project purpose: Personal notes repo converted from PDF brain dumps and maintained as markdown
 - Plain markdown, no frontmatter
