@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-11, Saturday evening — 10 repos touched (22 commits): Labs consolidation complete (quotable/wiretext/grapher/etyma/braingraph merged into monorepo, 5 repos archived, GitHub at 15 active). NYC controls finalized (3-pill toolbar, colonist panel, SAVE button removed, FPS debug). Root Wiktionary lookup v1 shipped (web + iOS). Quotable poster/album-art + sage vibe. Newsline RSS v0 (clustering worker + bias-bar frontend). Bank scaffolded (neobank sandbox at heyitsmejosh.com/bank; mock ledger + Alpaca paper trading). Roadmap/active items stashed in Epiphany/Root. Journal deployed. Wiki refreshed.
+All notes in one place. Updated 2026-07-11, Saturday evening — 10 repos touched (22 commits): Labs consolidation complete (quotable/wiretext/grapher/etyma/braingraph merged into monorepo, 5 repos archived, GitHub at 15 active). NYC controls finalized (3-pill toolbar, colonist panel, SAVE button removed, FPS debug). Root Wiktionary lookup v1 shipped (web + iOS). Quotable poster/album-art + sage vibe. Newsline RSS v0 (clustering worker + bias-bar frontend). Bank scaffolded (neobank sandbox at heyitsmejosh.com/bank; mock ledger + Alpaca paper trading). TestFlight debugging: only 4 of 11 apps showing (email-invite-only tester, books-ios has duplicate Internal group). Roadmap/active items stashed in Epiphany/Root. Journal deployed. Wiki refreshed.
 
 ---
 
@@ -23,7 +23,7 @@ All notes in one place. Updated 2026-07-11, Saturday evening — 10 repos touche
 - [ ] bank: neobank sandbox scaffolded at heyitsmejosh.com/bank (mock ledger, Alpaca paper trading, basic web UI with balance/trade form/activity feed); exploratory before real broker integration
 - [ ] root (etyma): Lookup-style v1 live (Wiktionary lookup + etymology chain + word of the day, web + iOS shipped, iOS build ready for App Store submission)
 - [ ] nyc-newsline: RSS v0 shipped (clustering worker + bias-bar frontend, deploy blocked on wrangler auth)
-- [ ] TestFlight: internal groups created for 6 apps (Casewright, Healstack, books-ios, Portfolio, Lexly, NYC Survive); auto-distribution to phone now live
+- [ ] TestFlight: add self as ASC team-user internal tester (permanent fix), resend broken email invites, delete books-ios duplicate Internal group 9ebab47c-52a0-4c23-90af-42af3a73ec79
 
 ### Recent (2026-07-11, nightly wrap — Saturday evening)
 - Labs consolidation finalized: quotable, wiretext, grapher, etyma, braingraph subtree-merged into labs monorepo, 5 old repos archived. Commit history preserved, live Vercel sites (.heyitsmejosh.com) unaffected; repointing remains for internal project auto-deploys. GitHub at 15 active repos.
