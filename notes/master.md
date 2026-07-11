@@ -1,8 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-11, Saturday evening — 10 repos touched (22 commits): Labs consolidation complete (quotable/wiretext/grapher/etyma/braingraph merged into monorepo, 5 repos archived, GitHub at 15 active). NYC controls finalized (3-pill toolbar, colonist panel, SAVE button removed, FPS debug). Root Wiktionary lookup v1 shipped (web + iOS). Quotable poster/album-art + sage vibe. Newsline RSS v0 (clustering worker + bias-bar frontend). Bank scaffolded (neobank sandbox at heyitsmejosh.com/bank; mock ledger + Alpaca paper trading). TestFlight debugging: only 4 of 11 apps showing (email-invite-only tester, books-ios has duplicate Internal group). Roadmap/active items stashed in Epiphany/Root. Journal deployed. Wiki refreshed.
+All notes in one place. Updated 2026-07-11, Saturday night — 10 repos touched (28 commits): morning wrap consolidated labs/NYC/Root/Bank/Newsline; evening update: Epiphany TestFlight beta app description fixed (en-US betaAppLocalization created via asc, only en-CA existed before). Journal + wiki updated and deployed. All 11 apps' TestFlight entitlements confirmed; fix pending for email-invite-only tester status (add self as ASC team-user, resend invites, delete books-ios duplicate Internal group).
 
 ---
+
+## Recent (2026-07-11, nightly wrap — Saturday night)
+- Epiphany TestFlight beta app description fixed: created missing en-US betaAppLocalization record via asc CLI (only en-CA existed previously, causing English testers to see French copy).
+- Morning wrap consolidated: Labs consolidation (quotable/wiretext/grapher/etyma/braingraph subtree-merged, 5 repos archived, 15 active GitHub repos), NYC controls finalized (3-pill toolbar, colonist panel, SAVE button removed, FPS debug), Root Lookup-style v1 shipped (Wiktionary lookup + etymology chain + word of the day, web + iOS), Quotable poster/album-art + sage vibe, Newsline v0 shipped (RSS clustering worker + bias-bar frontend), Bank scaffolded (neobank sandbox at heyitsmejosh.com/bank, mock ledger + Alpaca paper trading).
+- TestFlight tester status debugged: only 4 of 11 apps visible (Echo, Talli, Epiphany, Inkpress) because email-invite beta tester requires per-app manual accept via email link, not auto-appearing like ASC team-user internal testers. Fix: add self as ASC team-user (permanent), resend fresh email invites for 7 missing apps, delete books-ios duplicate Internal group (9ebab47c-52a0-4c23-90af-42af3a73ec79).
+- 10 repos touched, 28 commits total: bank (2), bcgd (2), epiphany (1), journal (7), labs (5), newsline (1), notes (6), nyc (1), quotable (1), root (2). Journal + wiki deployed to Vercel.
 
 ## Roadmap
 
