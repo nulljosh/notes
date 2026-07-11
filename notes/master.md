@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10, Friday late night — 10 repos touched (23 commits): NYC controls simplified (3-pill toolbar, lean colonist panel, SAVE button removed, FPS debug overlay added, iOS+macOS verified in sim). Quotable poster/album-art flash + portfolio vibe polish shipped. Root lookup v1 live. Epiphany/root/labs roadmap stashed. Talli seed-cgeb pagination + CGEB tracking live. Labs finalized (quotable/wiretext/grapher/etyma/braingraph folded, pushed, old repos archived — 15 active repos). Newsline RSS v0 shipped. BCGD iOS verified with screenshots and 1024px icon ready. Braingraph memory-graph app shipped. Nimble Gemma proxy live. Spark Gemma daily ideas + YC RFS + sans-font unified. TestFlight internal groups live (6 apps). Journal deployed. Wiki refreshed.
+All notes in one place. Updated 2026-07-11, Saturday evening — 10 repos touched (22 commits): Labs consolidation complete (quotable/wiretext/grapher/etyma/braingraph merged into monorepo, 5 repos archived, GitHub at 15 active). NYC controls finalized (3-pill toolbar, colonist panel, SAVE button removed, FPS debug). Root Wiktionary lookup v1 shipped (web + iOS). Quotable poster/album-art + sage vibe. Newsline RSS v0 (clustering worker + bias-bar frontend). Bank scaffolded (neobank sandbox at heyitsmejosh.com/bank; mock ledger + Alpaca paper trading). Roadmap/active items stashed in Epiphany/Root. Journal deployed. Wiki refreshed.
 
 ---
 
@@ -20,7 +20,19 @@ All notes in one place. Updated 2026-07-10, Friday late night — 10 repos touch
 - [ ] nimble: test suite 26/26 passing; blocked on ASC + Tahoe SDK MenuBarExtra
 - [x] braingraph: shipped (force-directed memory-graph web app, sage vibe, github.com/nulljosh/braingraph private; roadmap: iOS/macOS companion apps)
 - [ ] bcgd: web live (light theme, teal #1B5959), iOS companion verified in simulator (4-tab SwiftUI: Dashboard/Services/Inventory/Settings, all tabs tested, screenshots in README, 1024px icon asset catalog ready), ASC ship pending—bundle ID registered, awaiting app record creation + archive/upload via asc CLI
+- [ ] bank: neobank sandbox scaffolded at heyitsmejosh.com/bank (mock ledger, Alpaca paper trading, basic web UI with balance/trade form/activity feed); exploratory before real broker integration
+- [ ] root (etyma): Lookup-style v1 live (Wiktionary lookup + etymology chain + word of the day, web + iOS shipped, iOS build ready for App Store submission)
+- [ ] nyc-newsline: RSS v0 shipped (clustering worker + bias-bar frontend, deploy blocked on wrangler auth)
 - [ ] TestFlight: internal groups created for 6 apps (Casewright, Healstack, books-ios, Portfolio, Lexly, NYC Survive); auto-distribution to phone now live
+
+### Recent (2026-07-11, nightly wrap — Saturday evening)
+- Labs consolidation finalized: quotable, wiretext, grapher, etyma, braingraph subtree-merged into labs monorepo, 5 old repos archived. Commit history preserved, live Vercel sites (.heyitsmejosh.com) unaffected; repointing remains for internal project auto-deploys. GitHub at 15 active repos.
+- NYC controls final pass: 3-pill toolbar, colonist panel streamlined, SAVE button dead code removed, FPS debug overlay added. Rollouts verified in macOS + iOS simulators.
+- Root (etyma) Lookup-style v1 shipped: live Wiktionary lookup + etymology chain + word of the day on web + native iOS. iOS build succeeded, ready for App Store submission.
+- Quotable polish: poster/album-art flashing on correct answer + sage portfolio vibe tokens (dropped purple-tint background).
+- Newsline v0 shipped: RSS clustering worker + bias-bar frontend. Deploy blocked on wrangler authentication.
+- Bank scaffolded: new neobank sandbox project at heyitsmejosh.com/bank. Mock ledger + Alpaca paper trading + basic web UI (balance card, trade form, activity feed). Exploratory before real broker integration.
+- 10 repos touched, 22 commits total: bank (2), bcgd (2), epiphany (1), journal (3), labs (5), newsline (1), notes (4), nyc (1), quotable (1), root (2). Journal + wiki deployed to Vercel. Roadmap items stashed.
 
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
