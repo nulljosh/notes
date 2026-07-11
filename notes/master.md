@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-11, Friday night — 12 repos touched (40 commits): Friday morning wrap consolidated labs consolidation (quotable/wiretext/grapher/etyma/braingraph subtree-merged into monorepo, 5 repos archived, 15 active GitHub repos), NYC controls simplification (3-pill toolbar, lean colonist panel, SAVE button removed, FPS debug overlay added), Root Lookup-style v1 shipped (live Wiktionary lookup + etymology chain + word of the day, web + iOS), Newsline v0 shipped (RSS clustering worker + bias-bar frontend), Bank scaffolded (neobank sandbox at heyitsmejosh.com/bank with mock ledger + Alpaca paper trading + basic web UI). Evening update: Braingraph merged into notes as brain/, macOS app target added. Spark sign-in overlay fix (Create form no longer shows through auth panel). Journal updated and deployed to Vercel.
+All notes in one place. Updated 2026-07-11, Saturday night — 13 repos touched (40 commits): Friday morning wrap consolidated labs consolidation (quotable/wiretext/grapher/etyma/braingraph subtree-merged into monorepo, 5 repos archived, 15 active GitHub repos), NYC controls simplification (3-pill toolbar, lean colonist panel, SAVE button removed, FPS debug overlay added), Root Lookup-style v1 shipped (live Wiktionary lookup + etymology chain + word of the day, web + iOS), Newsline v0 shipped (RSS clustering worker + bias-bar frontend), Bank scaffolded (neobank sandbox at heyitsmejosh.com/bank with mock ledger + Alpaca paper trading + basic web UI). Evening update: Braingraph merged into notes as brain/, macOS app target added. Spark sign-in overlay fix (Create form no longer shows through auth panel). Saturday: Epiphany confirmed Interactive Brokers support via SnapTrade v4 (full broker list searchable), updated Settings connect copy to mention IBKR (commit 3c2956b). Journal updated and deployed to Vercel.
 
 ---
 
@@ -40,6 +40,12 @@ All notes in one place. Updated 2026-07-11, Friday night — 12 repos touched (4
 - Newsline v0 shipped: RSS clustering worker + bias-bar frontend. Deploy blocked on wrangler authentication.
 - Bank scaffolded: new neobank sandbox project at heyitsmejosh.com/bank. Mock ledger + Alpaca paper trading + basic web UI (balance card, trade form, activity feed). Exploratory before real broker integration.
 - 10 repos touched, 22 commits total: bank (2), bcgd (2), epiphany (1), journal (3), labs (5), newsline (1), notes (4), nyc (1), quotable (1), root (2). Journal + wiki deployed to Vercel. Roadmap items stashed.
+
+### Recent (2026-07-11, nightly wrap — Saturday night)
+- Epiphany: Confirmed Interactive Brokers support via SnapTrade v4 (full broker list searchable from the start), updated Settings brokerage-connect copy to mention IBKR alongside SnapTrade and Wealthsimple (commit 3c2956b).
+- Healstack: UI polish pass—removed drop shadows from card surfaces and the floating tab bar to simplify the visual hierarchy and improve the minimalist aesthetic. Build verified cleanly (commit 60d4e5d).
+- NYC: Simplified controls pass with 3-pill toolbar, lean colonist panel, dead SAVE button removed, FPS debug overlay added (commit 3a2eb41).
+- 13 repos touched total across Friday + Saturday (40 commits): bank (2), bcgd (2), braingraph (1), epiphany (2), healstack (1), journal (11 incl deploy), labs (5), newsline (1), notes (11 incl deploy), nyc (1), quotable (1), root (2), spark (1). Journal and wiki updated + deployed to Vercel.
 
 ### Planned (2026-07-10)
 - [ ] /vibe design-token audit: full codebase pass with portfolio (nulljosh.github.io/tokens.css) as source of truth; epiphany + brief/casewright to follow spark's lead onto unified token system
