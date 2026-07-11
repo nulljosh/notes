@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-10, Friday evening — GitHub cleanup: quotable/wiretext/grapher/etyma/braingraph subtree-merged into labs (push + Vercel repoint + archiving pending tomorrow). BCGD iOS app verified in simulator with screenshots and 1024px icon asset catalog ready, ASC ship blocked on web login for app record creation. Newsline RSS clustering v0 shipped (deploy blocked on wrangler auth). 8 repos touched: bcgd, journal, labs, newsline, notes, root, talli (17 commits). Talli CGEB tracking live, Braingraph shipped, Root lookup v1 live, Obsidian vault to iCloud, Nimble Gemma proxy deployed, Spark auto-ideas live, TestFlight groups active for 6 apps.
+All notes in one place. Updated 2026-07-10, Friday evening — GitHub cleanup: quotable/wiretext/grapher/etyma/braingraph subtree-merged into labs (push + Vercel repoint + archiving pending tomorrow). BCGD iOS app verified in simulator with screenshots and 1024px icon asset catalog ready, ASC ship blocked on web login for app record creation. Newsline RSS clustering v0 shipped (deploy blocked on wrangler auth). 7 repos touched: bcgd, journal, labs, newsline, notes, root, talli (17 commits). Talli CGEB tracking live, Braingraph shipped, Root lookup v1 live, Obsidian vault to iCloud, Nimble Gemma proxy deployed, Spark auto-ideas live, TestFlight groups active for 6 apps.
 
 ---
 
