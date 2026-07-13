@@ -10,7 +10,9 @@ All notes in one place. Updated 2026-07-12, Sunday evening — 12 repos touched 
 - Echo: added document-in-place support (LSSupportsOpeningDocumentsInPlace key) enabling iOS to hand files directly to Echo instead of making copies; also added "Preparing" phase indicator after model download starts (commit 9be1314).
 - Healstack: complete login branding rename (Dose → Healstack) across web dashboard, iOS, and watchOS target; bundle IDs + internal names unchanged to preserve App Store records (commit 1c78ce9).
 - Lexly: iOS course loader fix—xcodegen had flattened resource folder structure, breaking asset lookups. Fixed with directory-tree fallback in ContentStore that walks subdirs to find course-data.json even when nested; also hardened validator against missing exercise IDs (commit 634e2fc).
-- Grapher + Wiretext: added ASC registration + sim verification TODOs to roadmap sections.
+- Grapher + Wiretext: added ASC registration + sim verification TODOs to roadmap sections; both repos unarchived on GitHub and pushed (back to standalone after labs consolidation).
+- Rejection triage via asc web Resolution Center: Casewright 1.0.1 rejected (SIWA error on iPad + 4 metadata/privacy/support-URL issues, filed in brief/roadmap.md); Lexly 1.1.0 rejected on the course-load bug already fixed in 634e2fc — resubmit as 1.1.1 (filed in lexly/roadmap.md).
+- Meta fork: icon-scaling pipeline permanently fixed via shared make-appicon.sh in books + nulljosh.github.io; project-sync skill created; 17-app ship plan added to wiki at pages/ship-plan.md.
 - 12 repos touched, 19 commits total (batch roadmap imports 12 + Echo 2 + Brief 1 + Healstack 1 + Lexly 2 + Grapher 1 + Wiretext 1 = 20 tracked, mostly routine cleanup with a few targeted fixes). Journal updated with Sunday entry and deployed to Vercel.
 
 ## Recent (2026-07-11, nightly wrap — Friday night)
@@ -25,8 +27,8 @@ All notes in one place. Updated 2026-07-12, Sunday evening — 12 repos touched 
 ### Ship Now
 - [ ] talli: v3.5.4 (icon rebrand to blue #5B9BD5 + alpha channel fix + scraper junk filter hardening, build uploaded to TestFlight 2026-07-09, pending verification; CGEB tracking added to Status tab with quarterly payment schedule 2026-07-10); v3.5.3 Waiting for Review
 - [ ] inkpress (Journal iOS app): v1.0.2 Waiting for Review (dark-mode CSS fix + styled-content NSAttributedString HTML parsing, 2026-07-09)
-- [ ] casewright (Brief iOS app): iOS 1.0.1 Waiting for Review (fake-badge removed from icon, 2026-07-10)
-- [ ] lexly: v1.1.0 submitted for review (iOS + Mac builds 202607060002, Stripe Pro checkout scaffolded, 2026-07-09)
+- [ ] casewright (Brief iOS app): iOS 1.0.1 REJECTED (SIWA error on iPad + 4 metadata/privacy/support-URL issues, details in brief/roadmap.md 2026-07-12)
+- [ ] lexly: v1.1.0 REJECTED on course-load bug (already fixed in 634e2fc); resubmit as 1.1.1 (details in lexly/roadmap.md 2026-07-12)
 - [ ] echo: iOS 1.3.3 READY_FOR_REVIEW (build 9, paywall window-level fix 2026-07-10); Mac build 1.3.3 uploaded (icon corrected); IAP $7.99→$3.99
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC 6788180394, icon full-bleed 2026-07-10, blockers cleared, ready to submit)
 - [x] spark: Mac v2.1.0 live (YC RFS Inspiration, Gemma daily ideas cron 2026-07-10); iOS + 4 screenshots pending
