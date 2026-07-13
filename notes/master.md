@@ -1,8 +1,17 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-11, Saturday night — 13 repos touched (40 commits): Friday morning wrap consolidated labs consolidation (quotable/wiretext/grapher/etyma/braingraph subtree-merged into monorepo, 5 repos archived, 15 active GitHub repos), NYC controls simplification (3-pill toolbar, lean colonist panel, SAVE button removed, FPS debug overlay added), Root Lookup-style v1 shipped (live Wiktionary lookup + etymology chain + word of the day, web + iOS), Newsline v0 shipped (RSS clustering worker + bias-bar frontend), Bank scaffolded (neobank sandbox at heyitsmejosh.com/bank with mock ledger + Alpaca paper trading + basic web UI). Evening update: Braingraph merged into notes as brain/, macOS app target added. Spark sign-in overlay fix (Create form no longer shows through auth panel). Saturday: Epiphany confirmed Interactive Brokers support via SnapTrade v4 (full broker list searchable), updated Settings connect copy to mention IBKR (commit 3c2956b). Journal updated and deployed to Vercel.
+All notes in one place. Updated 2026-07-12, Sunday evening — 12 repos touched (19 commits): batch roadmap imports from three PDF exports (Icons.pdf, Asc.pdf, Apps.pdf) consolidated into git-tracked TODOs across epiphany, grapher, healstack, journal, lexly, spark, talli, wiretext, books, nulljosh.github.io, and brief. Brief got tab-bar safeAreaInset fix (no content overlap). Echo added document-in-place support (LSSupportsOpeningDocumentsInPlace) + model download UX phase indicator. Healstack renamed login branding (Dose → Healstack) across web/iOS/watchOS. Lexly fixed iOS course loader (directory-tree fallback for resource structure, hardened validator). Grapher + wiretext got ASC registration TODOs in roadmap. Journal updated with Sunday entry and deployed to Vercel.
 
 ---
+
+## Recent (2026-07-12, Sunday evening)
+- Batch roadmap cleanup: imported ship-plan items from three PDF exports (Icons.pdf, Asc.pdf, Apps.pdf) into roadmap sections across 12 repos, consolidating visual checklists + ASC registration steps into git-tracked TODOs instead of scattered PDF references. Commits pushed to epiphany, grapher, healstack, journal, lexly, spark, talli, wiretext, books, nulljosh.github.io, and brief (12 repos, 12 commits).
+- Brief: tab-bar positioning fix—was overlaying content below (SafeAreaInset fix, commit 9f6631d).
+- Echo: added document-in-place support (LSSupportsOpeningDocumentsInPlace key) enabling iOS to hand files directly to Echo instead of making copies; also added "Preparing" phase indicator after model download starts (commit 9be1314).
+- Healstack: complete login branding rename (Dose → Healstack) across web dashboard, iOS, and watchOS target; bundle IDs + internal names unchanged to preserve App Store records (commit 1c78ce9).
+- Lexly: iOS course loader fix—xcodegen had flattened resource folder structure, breaking asset lookups. Fixed with directory-tree fallback in ContentStore that walks subdirs to find course-data.json even when nested; also hardened validator against missing exercise IDs (commit 634e2fc).
+- Grapher + Wiretext: added ASC registration + sim verification TODOs to roadmap sections.
+- 12 repos touched, 19 commits total (batch roadmap imports 12 + Echo 2 + Brief 1 + Healstack 1 + Lexly 2 + Grapher 1 + Wiretext 1 = 20 tracked, mostly routine cleanup with a few targeted fixes). Journal updated with Sunday entry and deployed to Vercel.
 
 ## Recent (2026-07-11, nightly wrap — Friday night)
 - Spark: fixed sign-in overlay bug where Create Account form appeared behind auth panel, blocking login flow. Commit a6694bb.
