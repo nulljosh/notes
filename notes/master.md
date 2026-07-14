@@ -1,8 +1,13 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-12, Sunday evening — 12 repos touched (19 commits): batch roadmap imports from three PDF exports (Icons.pdf, Asc.pdf, Apps.pdf) consolidated into git-tracked TODOs across epiphany, grapher, healstack, journal, lexly, spark, talli, wiretext, books, nulljosh.github.io, and brief. Brief got tab-bar safeAreaInset fix (no content overlap). Echo added document-in-place support (LSSupportsOpeningDocumentsInPlace) + model download UX phase indicator. Healstack renamed login branding (Dose → Healstack) across web/iOS/watchOS. Lexly fixed iOS course loader (directory-tree fallback for resource structure, hardened validator). Grapher + wiretext got ASC registration TODOs in roadmap. Journal updated with Sunday entry and deployed to Vercel.
+All notes in one place. Updated 2026-07-13, Monday evening — 2 repos touched (3 commits): continued Pre-Calculus for Dummies book summarization through chapter 13 (cumulative progress: pre-calc foundations through trigonometric identities and complex numbers); committed roadmap update tracking completed chapters. Journal updated with Monday evening entry and deployed to Vercel.
 
 ---
+
+## Recent (2026-07-13, Monday evening)
+- Books: Pre-Calculus for Dummies summarization work continued and committed; chapters 1–13 now fully summarized (pre-calc review through complex numbers and conics). Roadmap updated reflecting completed progress (chapters 14–16 and finale remaining). Commit a6dd66a.
+- Journal: Monday 2026-07-13 entry added and deployed to Vercel (journal.heyitsmejosh.com). Pre-Calc progress summarized.
+- 2 repos touched, 3 commits total (books 1, journal 2). Nightly wrap scheduled for wiki + memory snapshot.
 
 ## Recent (2026-07-12, Sunday evening)
 - Batch roadmap cleanup: imported ship-plan items from three PDF exports (Icons.pdf, Asc.pdf, Apps.pdf) into roadmap sections across 12 repos, consolidating visual checklists + ASC registration steps into git-tracked TODOs instead of scattered PDF references. Commits pushed to epiphany, grapher, healstack, journal, lexly, spark, talli, wiretext, books, nulljosh.github.io, and brief (12 repos, 12 commits).
