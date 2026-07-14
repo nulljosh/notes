@@ -1,12 +1,17 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-14, Monday night.
+All notes in one place. Updated 2026-07-14, Tuesday.
 
-**Latest (2026-07-14 nightly wrap):** Talli widget/app version mismatch fixed (ITMS-90473, commit 46f3eca) — Info.plist now reads from build settings instead of hardcoding to 1.0/1, What's New sheet self-sizing, CI green. Talli 3.5.5 ship-ios workflow archive/upload in flight. Echo Pro IAP verified in review, repeat-rejection risk cleared. Braingraph Worker deployed and live at brain.heyitsmejosh.com. Vault hijack prevention: docs-sync + work + vibe skill repointed to real Obsidian iCloud vault. 8 repos touched tonight with 27 commits (echo, healstack, journal, lexly, nimble, notes, spark, talli). Journal deployed to Vercel.
+**Latest (2026-07-14 Tuesday):** Dotfiles asc-aso-audit skill expanded with an optional Phase 3 that pulls competitor review and chart-rank signals from the AppSigma MCP server, enriching ASO audits with competitive landscape context (commit 0c4ac85).
+
+**Earlier (2026-07-14 nightly wrap):** Talli widget/app version mismatch fixed (ITMS-90473, commit 46f3eca) — Info.plist now reads from build settings instead of hardcoding to 1.0/1, What's New sheet self-sizing, CI green. Talli 3.5.5 ship-ios workflow archive/upload in flight. Echo Pro IAP verified in review, repeat-rejection risk cleared. Braingraph Worker deployed and live at brain.heyitsmejosh.com. Vault hijack prevention: docs-sync + work + vibe skill repointed to real Obsidian iCloud vault. 8 repos touched overnight with 27 commits (echo, healstack, journal, lexly, nimble, notes, spark, talli). Journal deployed to Vercel.
 
 **Earlier 2026-07-14:** Roadmap ingestion from 17 brain-dump PDFs (9 repos: talli, spark, echo, healstack, lexly, books, nyc, nimble, journal). Obsidian vault registry fixed, 9 notes-repo markdown files merged into wiki vault, 11 wiki markdown files de-emoji'd, scottwillsey.com fonts identified. All committed + pushed.
 
 ---
+
+## Recent (2026-07-14, Tuesday)
+- Dotfiles: asc-aso-audit skill added optional Phase 3 for pulling competitor review/chart-rank signals from AppSigma MCP server, enriching ASO audits with competitive landscape insights (commit 0c4ac85).
 
 ## Recent (2026-07-14, Tuesday early AM)
 - Roadmap ingestion: 17 brain-dump PDFs from ~/Downloads processed and ingested into per-repo roadmap.md files across 9 repos (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal). Each roadmap updated with ship-plan items + ASC tasks + todo checklists. Archived processed PDFs to ~/Downloads/processed-20260714 (2026-07-14 batch).
