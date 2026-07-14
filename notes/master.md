@@ -1,15 +1,16 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-13, Monday night — 4 repos touched (12 commits): Pre-Calculus for Dummies FULLY COMPLETE (all 17 chapters), merged to books repo with Summary badge, synced to books.heyitsmejosh.com; journal entry consolidated, extended with cleanup work, and deployed to Vercel; books/lexly/notes cleanup completed (gitignored ~142M ASC artifacts, moved school masterclass HTML to notes, updated links); nightly wrap consolidated and pushed.
+All notes in one place. Updated 2026-07-13, Monday night — 5 repos touched (13 commits): Pre-Calculus for Dummies FULLY COMPLETE (all 17 chapters), merged to books repo with Summary badge, synced to books.heyitsmejosh.com; journal entry consolidated, extended with cleanup work, and deployed to Vercel; books/lexly/notes cleanup completed (gitignored ~142M ASC artifacts, moved school masterclass HTML to notes, updated links); portfolio restyle to fredrika.dev vibe (Geist + Instrument Serif, neutral grayscale, theme toggle); nightly wrap consolidated and pushed.
 
 ---
 
 ## Recent (2026-07-13, Monday night)
 - Books: Pre-Calculus for Dummies COMPLETE — all 17 chapters summarized (ch 1–10 afternoon, 11–13 evening, 14–16 + 17-18 finale: Ten Polar Graphs / Ten Habits before Calculus). Merged into single summary file, roadmap updated, original HEIC photos deleted. Gitignored ASC build artifacts. Commits 6a765aa, a6dd66a, 402fe7c. Live on books.heyitsmejosh.com with Summary badge. Second Dummies book finished after ML for Dummies.
 - Journal: Monday 2026-07-13 entry consolidated and extended with cleanup work summary, deployed to Vercel (journal.heyitsmejosh.com). Nightly wrap entry summarizing evening Pre-Calc completion + repo cleanup. Commits 28ee841, 009d3d1, 3deeb23, 3dc686e, 6aae4e0 (pushed).
-- Lexly: Gitignored ~142M ASC build artifacts, version bumped to 1.1.1, moved school masterclass HTML (Pre-Calc 12, Biology) to notes/pages/ with links updated throughout. Commit 1683aa7.
-- Notes: Absorbed school masterclass pages from lexly at pages/pc12-masterclass.html and pages/biology-masterclass.html, updated school.md links to point at new location, noted repo separation decision (braingraph merged in as brain/, books/lexly stay separate). Commits 309d7cc, 21aebe9, 1803b20.
-- 4 repos touched, 12 commits total (journal 5, books 3, lexly 1, notes 3). Cleaned up technical debt without merging — all three repos streamlined and kept separate. Nightly wrap consolidated and pushed to wiki.
+- Lexly: Gitignored ~142M ASC build artifacts, version bumped to 1.1.1, moved school masterclass HTML (Pre-Calc 12, Biology) to notes/pages/ with links updated throughout. Roadmap updated: parked masterclass-in-list feature, richer icons, Mac submission issue noted. Commits 1683aa7, 54ed2c5, 25ca8f2.
+- Notes: Absorbed school masterclass pages from lexly at pages/pc12-masterclass.html and pages/biology-masterclass.html, updated school.md links to point at new location, noted repo separation decision (braingraph merged in as brain/, books/lexly stay separate). Commits 309d7cc, 21aebe9, 1803b20, b251512.
+- Portfolio (nulljosh.github.io): Restyled to fredrika.dev vibe (neutral grayscale tokens-fredrika.css: #fcfcfc/#0a0a0a, Geist body + Instrument Serif italic h1, footer theme-toggle with localStorage). Previous sage/30s themes retired. No impact on live token exports — spark/wiretext/grapher still import tokens.css live. iOS app + companion readiness unchanged. Commit 4ccd0c4.
+- 5 repos touched, 13 commits total (journal 5, books 3, lexly 3, notes 4, portfolio 1). Cleaned up technical debt without merging — all repos streamlined. Nightly wrap consolidated and pushed to wiki.
 
 ## Recent (2026-07-12, Sunday evening)
 - Batch roadmap cleanup: imported ship-plan items from three PDF exports (Icons.pdf, Asc.pdf, Apps.pdf) into roadmap sections across 12 repos, consolidating visual checklists + ASC registration steps into git-tracked TODOs instead of scattered PDF references. Commits pushed to epiphany, grapher, healstack, journal, lexly, spark, talli, wiretext, books, nulljosh.github.io, and brief (12 repos, 12 commits).
