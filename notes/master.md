@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-14, Tuesday night — spark roadmap ingested with 2026-07-14 updates (app store submission steps parked). Earlier today: 9 repos touched with roadmap ingestion from 17 brain-dump PDFs (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal), Obsidian vault registry fixed, 9 notes-repo markdown files merged into wiki vault, 11 wiki markdown files de-emoji'd, scottwillsey.com fonts identified, journal deployed to Vercel.
+All notes in one place. Updated 2026-07-14, late Tuesday night.
+
+**Latest (2026-07-14 late night):** Echo roadmap stashed speak-back transcription feature (AVSpeechSynthesizer + voice picker + Echo Pro paywall gating). Spark parked App Store submission workflow steps. Talli 3.5.5 ship-ios workflow continues (archive and upload in progress). All roadmap refinements committed + pushed. 8 repos touched tonight (spark, echo, talli, lexly, healstack, nimble, journal, notes).
+
+**Earlier 2026-07-14:** spark roadmap ingested with 2026-07-14 updates (app store submission steps parked). Earlier: 9 repos touched with roadmap ingestion from 17 brain-dump PDFs (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal), Obsidian vault registry fixed, 9 notes-repo markdown files merged into wiki vault, 11 wiki markdown files de-emoji'd, scottwillsey.com fonts identified, journal deployed to Vercel.
 
 ---
 
