@@ -1,10 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-14, late Tuesday night.
+All notes in one place. Updated 2026-07-14, Monday night.
 
-**Latest (2026-07-14 late night):** Echo roadmap stashed speak-back transcription feature (AVSpeechSynthesizer + voice picker + Echo Pro paywall gating). Spark parked App Store submission workflow steps. Talli 3.5.5 ship-ios workflow continues (archive and upload in progress). All roadmap refinements committed + pushed. 8 repos touched tonight (spark, echo, talli, lexly, healstack, nimble, journal, notes).
+**Latest (2026-07-14 nightly wrap):** Talli widget/app version mismatch fixed (ITMS-90473, commit 46f3eca) — Info.plist now reads from build settings instead of hardcoding to 1.0/1, What's New sheet self-sizing, CI green. Talli 3.5.5 ship-ios workflow archive/upload in flight. Echo Pro IAP verified in review, repeat-rejection risk cleared. Braingraph Worker deployed and live at brain.heyitsmejosh.com. Vault hijack prevention: docs-sync + work + vibe skill repointed to real Obsidian iCloud vault. 8 repos touched tonight with 27 commits (echo, healstack, journal, lexly, nimble, notes, spark, talli). Journal deployed to Vercel.
 
-**Earlier 2026-07-14:** spark roadmap ingested with 2026-07-14 updates (app store submission steps parked). Earlier: 9 repos touched with roadmap ingestion from 17 brain-dump PDFs (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal), Obsidian vault registry fixed, 9 notes-repo markdown files merged into wiki vault, 11 wiki markdown files de-emoji'd, scottwillsey.com fonts identified, journal deployed to Vercel.
+**Earlier 2026-07-14:** Roadmap ingestion from 17 brain-dump PDFs (9 repos: talli, spark, echo, healstack, lexly, books, nyc, nimble, journal). Obsidian vault registry fixed, 9 notes-repo markdown files merged into wiki vault, 11 wiki markdown files de-emoji'd, scottwillsey.com fonts identified. All committed + pushed.
 
 ---
 
@@ -53,18 +53,18 @@ All notes in one place. Updated 2026-07-14, late Tuesday night.
 ## Roadmap
 
 ### Ship Now
-- [ ] talli: v3.5.4 build 202607141330 (widget/app versions unified via $(MARKETING_VERSION), fixes ASC ITMS-90473; What's New sheet auto-sizes; CI green after cgeb schema fix 2026-07-14); v3.5.3 Waiting for Review
+- [ ] talli: v3.5.5 ship-ios workflow in progress (archive/upload in flight 2026-07-14). v3.5.4 build uploaded (widget/app versions unified via $(MARKETING_VERSION), fixes ASC ITMS-90473 commit 46f3eca; What's New sheet auto-sizes; CI green after cgeb schema fix); v3.5.3 Waiting for Review
 - [ ] inkpress (Journal iOS app): v1.0.2 Waiting for Review (dark-mode CSS fix + styled-content NSAttributedString HTML parsing, 2026-07-09)
-- [ ] casewright (Brief iOS app): iOS 1.0.1 REJECTED (SIWA error on iPad + 4 metadata/privacy/support-URL issues, details in brief/roadmap.md 2026-07-12)
+- [ ] casewright (Brief iOS app): iOS 1.0.1 Waiting for Review (icon badge removed 2026-07-10; SIWA error on iPad + 4 metadata/privacy/support-URL issues fixed, details in brief/roadmap.md 2026-07-12)
 - [ ] lexly: v1.1.0 REJECTED on course-load bug (already fixed in 634e2fc); resubmit as 1.1.1 (details in lexly/roadmap.md 2026-07-12)
-- [ ] echo: iOS 1.3.3 READY_FOR_REVIEW (build 9, paywall window-level fix 2026-07-10); Mac build 1.3.3 uploaded (icon corrected); IAP $7.99→$3.99; What's New sheet auto-sizes (2026-07-14)
+- [ ] echo: iOS 1.3.3 READY_FOR_REVIEW (build 9, paywall window-level fix 2026-07-10); Mac build 1.3.3 uploaded (icon corrected); IAP $7.99→$3.99; What's New sheet auto-sizes (2026-07-14); Echo Pro IAP verified in review
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC 6788180394, icon full-bleed 2026-07-10, blockers cleared, ready to submit)
 - [x] spark: Mac v2.1.0 live (YC RFS Inspiration, Gemma daily ideas cron 2026-07-10); iOS + 4 screenshots pending
-- [ ] healstack: v2.3.4 build uploaded (ASC icon live 2026-07-10), ready to submit; Vercel deploys failing — Root Directory still "dose" after rename, config fix command handed to Joshua (2026-07-14)
+- [ ] healstack: v2.3.4 build uploaded (ASC icon live 2026-07-10), ready to submit; Vercel deploys failing — Root Directory still "dose" after rename, config fix blocked by permissions (2026-07-14)
 - [ ] books: iOS v1.0 build uploaded (ASC icon live, canvas scaling bug); macOS export blocked
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 validation error remaining
 - [ ] nimble: test suite 26/26 passing; blocked on ASC + Tahoe SDK MenuBarExtra; nimble.heyitsmejosh.com CNAME repointed to Vercel DNS (2026-07-14)
-- [x] braingraph: shipped (force-directed memory-graph web app, sage vibe, github.com/nulljosh/braingraph private; roadmap: iOS/macOS companion apps)
+- [x] braingraph: shipped (merged into notes as brain/; force-directed memory-graph web app with PII redaction, live at brain.heyitsmejosh.com via Cloudflare Worker 2026-07-14)
 - [ ] bcgd: web live (light theme, teal #1B5959), iOS companion verified in simulator (4-tab SwiftUI: Dashboard/Services/Inventory/Settings, all tabs tested, screenshots in README, 1024px icon asset catalog ready), ASC ship pending—bundle ID registered, awaiting app record creation + archive/upload via asc CLI
 - [ ] bank: neobank sandbox scaffolded at heyitsmejosh.com/bank (mock ledger, Alpaca paper trading, basic web UI with balance/trade form/activity feed); exploratory before real broker integration
 - [ ] root (etyma): Lookup-style v1 live (Wiktionary lookup + etymology chain + word of the day, web + iOS shipped, iOS build ready for App Store submission)
