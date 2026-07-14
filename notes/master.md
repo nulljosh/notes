@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-14, Tuesday early AM — 9 repos touched (9 commits): ingested 17 brain-dump PDFs into per-repo roadmap.md files (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal), archived to ~/Downloads/processed-20260714; fixed Obsidian vault registry to point to real iCloud~md~obsidian vault (iOS sync restored); merged 9 notes-repo markdown files into wiki vault under notes/; stripped emojis from 11 wiki markdown files; identified scottwillsey.com fonts (Cartridge + Atkinson Hyperlegible Next); deployed journal to Vercel via ./scripts/deploy.sh.
+All notes in one place. Updated 2026-07-14, Tuesday night — spark roadmap ingested with 2026-07-14 updates (app store submission steps parked). Earlier today: 9 repos touched with roadmap ingestion from 17 brain-dump PDFs (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal), Obsidian vault registry fixed, 9 notes-repo markdown files merged into wiki vault, 11 wiki markdown files de-emoji'd, scottwillsey.com fonts identified, journal deployed to Vercel.
 
 ---
 
