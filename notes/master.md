@@ -1,11 +1,11 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-13, Monday night — 3 repos touched (7 commits): Pre-Calculus for Dummies chapters 1–13 completed and merged to books repo with Summary badge; site synced to books.heyitsmejosh.com; journal entry consolidated and deployed to Vercel; nightly wrap consolidated and pushed.
+All notes in one place. Updated 2026-07-13, Monday night — 3 repos touched (7 commits): Pre-Calculus for Dummies FULLY COMPLETE (all 17 chapters), merged to books repo with Summary badge, synced to books.heyitsmejosh.com; journal entry consolidated and deployed to Vercel; nightly wrap consolidated and pushed.
 
 ---
 
 ## Recent (2026-07-13, Monday night)
-- Books: Pre-Calculus for Dummies summarization completed through chapter 13 (pre-calc review through complex numbers and conics). Chapters 1–10 summarized in afternoon, 11–13 finished evening. Roadmap updated reflecting completed progress (chapters 14–16 and finale remaining). Commits 6a765aa, a6dd66a. Site synced to books.heyitsmejosh.com with Summary badge.
+- Books: Pre-Calculus for Dummies COMPLETE — all 17 chapters summarized (ch 1–10 afternoon, 11–13 evening, 14–16 + 17-18 finale tonight: Ten Polar Graphs / Ten Habits before Calculus). Merged into single summary file, roadmap updated, original HEIC photos deleted. Commits 6a765aa, a6dd66a. Live on books.heyitsmejosh.com with Summary badge. Second Dummies book finished after ML for Dummies.
 - Journal: Monday 2026-07-13 entry consolidated (fixed day heading from Sunday to Monday), deployed to Vercel (journal.heyitsmejosh.com). Nightly wrap entry summarizing evening Pre-Calc completion. Commits 28ee841, 009d3d1, 3deeb23, 3dc686e (pushed).
 - 3 repos touched, 7 commits total (journal 4, books 2, notes 1). Nightly wrap consolidated and pushed to wiki.
 

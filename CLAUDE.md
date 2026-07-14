@@ -39,3 +39,6 @@ v1.1.0
 ```bash
 ./scripts/sync-reminders.sh
 ```
+
+## Repo separation (2026-07-13)
+notes IS the wiki (braingraph merged in). books and lexly stay separate repos; school masterclass HTML moved here from lexly (pages/pc12-masterclass.html, pages/biology-masterclass.html).
