@@ -16,6 +16,8 @@ All notes in one place. Updated 2026-07-14, Tuesday early AM — 9 repos touched
 - Nimble: nimble.heyitsmejosh.com CNAME repointed from GitHub Pages to cname.vercel-dns.com via Cloudflare API (clears Vercel misconfigured-domain warning).
 - Healstack: deploy failure root-caused — Vercel project Root Directory still set to "dose" after rename; config PATCH blocked by permissions, fix command handed to Joshua.
 - Meta: journal skill got stricter prose rules (less changelog-spam); new claude-md-refresh skill created.
+- Echo Pro IAP verified WAITING_FOR_REVIEW on ASC — 1.3.3 resubmission includes it, repeat-rejection risk cleared; roadmap notes updated in echo and lexly (Lexly Mac rejection details blocked on expired Apple web session).
+- Vault-hijack prevention: sync-docs-to-wiki.sh, /work command, and vibe skill repointed from old CloudDocs Code path to the real Obsidian iCloud vault. Wrangler re-authenticated via OAuth; braingraph Worker deploy still pending permission (next session).
 - 11 repos touched tonight (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal, notes + skills), roadmap ingestion + second-wave fixes. All committed + pushed to GitHub.
 
 ## Recent (2026-07-13, Monday night)
