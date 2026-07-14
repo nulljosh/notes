@@ -4,5 +4,5 @@ Moved out for import into personal notes app (2026-07-04). See master.md for any
 
 ## Masterclass pages
 
-- [Pre-Calc 12 Masterclass](pc12-masterclass.html)
-- [Biology 12 Masterclass](biology-masterclass.html)
+- [Pre-Calc 12 Masterclass](https://lexly.heyitsmejosh.com/school/PC12_Masterclass.html)
+- [Biology 12 Masterclass](https://lexly.heyitsmejosh.com/school/Biology_Masterclass.html)
