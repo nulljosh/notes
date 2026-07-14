@@ -58,7 +58,7 @@ All notes in one place. Updated 2026-07-14, Tuesday.
 ## Roadmap
 
 ### Ship Now
-- [ ] talli: v3.5.5 ship-ios workflow in progress (archive/upload in flight 2026-07-14). v3.5.4 build uploaded (widget/app versions unified via $(MARKETING_VERSION), fixes ASC ITMS-90473 commit 46f3eca; What's New sheet auto-sizes; CI green after cgeb schema fix); v3.5.3 Waiting for Review
+- [ ] talli: widget/app version mismatch fixed (ITMS-90473, commit 46f3eca) + second deeper fix — stale Xcode DerivedData was building an old widget binary with mismatched build number (ITMS 90062/90186/90189/90478/90345), resolved via clean DerivedData wipe + archive/export/upload; build 202607141116 (v3.5.4) uploaded, processing on ASC, submission pending confirmation (not yet submitted as of 2026-07-14 late night). v3.5.3 Waiting for Review
 - [ ] inkpress (Journal iOS app): v1.0.2 Waiting for Review (dark-mode CSS fix + styled-content NSAttributedString HTML parsing, 2026-07-09)
 - [ ] casewright (Brief iOS app): iOS 1.0.1 Waiting for Review (icon badge removed 2026-07-10; SIWA error on iPad + 4 metadata/privacy/support-URL issues fixed, details in brief/roadmap.md 2026-07-12)
 - [ ] lexly: v1.1.0 REJECTED on course-load bug (already fixed in 634e2fc); resubmit as 1.1.1 (details in lexly/roadmap.md 2026-07-12)
