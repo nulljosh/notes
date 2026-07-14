@@ -1,13 +1,13 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-13, Monday evening — 2 repos touched (3 commits): continued Pre-Calculus for Dummies book summarization through chapter 13 (cumulative progress: pre-calc foundations through trigonometric identities and complex numbers); committed roadmap update tracking completed chapters. Journal updated with Monday evening entry and deployed to Vercel.
+All notes in one place. Updated 2026-07-13, Monday night — 3 repos touched (7 commits): Pre-Calculus for Dummies chapters 1–13 completed and merged to books repo with Summary badge; site synced to books.heyitsmejosh.com; journal entry consolidated and deployed to Vercel; nightly wrap consolidated and pushed.
 
 ---
 
-## Recent (2026-07-13, Monday evening)
-- Books: Pre-Calculus for Dummies summarization work continued and committed; chapters 1–13 now fully summarized (pre-calc review through complex numbers and conics). Roadmap updated reflecting completed progress (chapters 14–16 and finale remaining). Commit a6dd66a.
-- Journal: Monday 2026-07-13 entry added and deployed to Vercel (journal.heyitsmejosh.com). Pre-Calc progress summarized.
-- 2 repos touched, 3 commits total (books 1, journal 2). Nightly wrap scheduled for wiki + memory snapshot.
+## Recent (2026-07-13, Monday night)
+- Books: Pre-Calculus for Dummies summarization completed through chapter 13 (pre-calc review through complex numbers and conics). Chapters 1–10 summarized in afternoon, 11–13 finished evening. Roadmap updated reflecting completed progress (chapters 14–16 and finale remaining). Commits 6a765aa, a6dd66a. Site synced to books.heyitsmejosh.com with Summary badge.
+- Journal: Monday 2026-07-13 entry consolidated (fixed day heading from Sunday to Monday), deployed to Vercel (journal.heyitsmejosh.com). Nightly wrap entry summarizing evening Pre-Calc completion. Commits 28ee841, 009d3d1, 3deeb23, 3dc686e (pushed).
+- 3 repos touched, 7 commits total (journal 4, books 2, notes 1). Nightly wrap consolidated and pushed to wiki.
 
 ## Recent (2026-07-12, Sunday evening)
 - Batch roadmap cleanup: imported ship-plan items from three PDF exports (Icons.pdf, Asc.pdf, Apps.pdf) into roadmap sections across 12 repos, consolidating visual checklists + ASC registration steps into git-tracked TODOs instead of scattered PDF references. Commits pushed to epiphany, grapher, healstack, journal, lexly, spark, talli, wiretext, books, nulljosh.github.io, and brief (12 repos, 12 commits).
