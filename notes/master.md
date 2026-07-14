@@ -11,7 +11,12 @@ All notes in one place. Updated 2026-07-14, Tuesday early AM — 9 repos touched
 - Wiki cleanup: stripped emoji annotations from 11 wiki markdown files across the vault (removed trailing emojis, kept prose unchanged per project guidelines).
 - Typography audit: identified scottwillsey.com's font pairing (Cartridge for headings, Atkinson Hyperlegible Next for body text) for future reference.
 - Journal: updated Monday 2026-07-13 entry with tonight's work summary and deployed to Vercel via ./scripts/deploy.sh (build + prebuilt deploy, never plain git push).
-- 9 repos touched (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal) with 9 commits total (roadmap ingestion + deployment). All committed + pushed to GitHub.
+- Talli: unified widget/app versions at 3.5.4 build 202607141330 (fixes ASC ITMS-90473; Info.plist now uses $(MARKETING_VERSION)), What's New sheet auto-sizes to content, GitHub Actions Tests fixed (cgeb route added to expected schema) — CI green, pushed.
+- Echo: What's New sheet auto-sizes to content, pushed.
+- Nimble: nimble.heyitsmejosh.com CNAME repointed from GitHub Pages to cname.vercel-dns.com via Cloudflare API (clears Vercel misconfigured-domain warning).
+- Healstack: deploy failure root-caused — Vercel project Root Directory still set to "dose" after rename; config PATCH blocked by permissions, fix command handed to Joshua.
+- Meta: journal skill got stricter prose rules (less changelog-spam); new claude-md-refresh skill created.
+- 11 repos touched tonight (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal, notes + skills), roadmap ingestion + second-wave fixes. All committed + pushed to GitHub.
 
 ## Recent (2026-07-13, Monday night)
 - Books: Pre-Calculus for Dummies COMPLETE — all 17 chapters summarized (ch 1–10 afternoon, 11–13 evening, 14–16 + 17-18 finale: Ten Polar Graphs / Ten Habits before Calculus). Merged into single summary file, roadmap updated, original HEIC photos deleted. Gitignored ASC build artifacts. Commits 6a765aa, a6dd66a, 402fe7c. Live on books.heyitsmejosh.com with Summary badge. Second Dummies book finished after ML for Dummies.
@@ -42,17 +47,17 @@ All notes in one place. Updated 2026-07-14, Tuesday early AM — 9 repos touched
 ## Roadmap
 
 ### Ship Now
-- [ ] talli: v3.5.4 (icon rebrand to blue #5B9BD5 + alpha channel fix + scraper junk filter hardening, build uploaded to TestFlight 2026-07-09, pending verification; CGEB tracking added to Status tab with quarterly payment schedule 2026-07-10); v3.5.3 Waiting for Review
+- [ ] talli: v3.5.4 build 202607141330 (widget/app versions unified via $(MARKETING_VERSION), fixes ASC ITMS-90473; What's New sheet auto-sizes; CI green after cgeb schema fix 2026-07-14); v3.5.3 Waiting for Review
 - [ ] inkpress (Journal iOS app): v1.0.2 Waiting for Review (dark-mode CSS fix + styled-content NSAttributedString HTML parsing, 2026-07-09)
 - [ ] casewright (Brief iOS app): iOS 1.0.1 REJECTED (SIWA error on iPad + 4 metadata/privacy/support-URL issues, details in brief/roadmap.md 2026-07-12)
 - [ ] lexly: v1.1.0 REJECTED on course-load bug (already fixed in 634e2fc); resubmit as 1.1.1 (details in lexly/roadmap.md 2026-07-12)
-- [ ] echo: iOS 1.3.3 READY_FOR_REVIEW (build 9, paywall window-level fix 2026-07-10); Mac build 1.3.3 uploaded (icon corrected); IAP $7.99→$3.99
+- [ ] echo: iOS 1.3.3 READY_FOR_REVIEW (build 9, paywall window-level fix 2026-07-10); Mac build 1.3.3 uploaded (icon corrected); IAP $7.99→$3.99; What's New sheet auto-sizes (2026-07-14)
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC 6788180394, icon full-bleed 2026-07-10, blockers cleared, ready to submit)
 - [x] spark: Mac v2.1.0 live (YC RFS Inspiration, Gemma daily ideas cron 2026-07-10); iOS + 4 screenshots pending
-- [ ] healstack: v2.3.4 build uploaded (ASC icon live 2026-07-10), ready to submit
+- [ ] healstack: v2.3.4 build uploaded (ASC icon live 2026-07-10), ready to submit; Vercel deploys failing — Root Directory still "dose" after rename, config fix command handed to Joshua (2026-07-14)
 - [ ] books: iOS v1.0 build uploaded (ASC icon live, canvas scaling bug); macOS export blocked
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 validation error remaining
-- [ ] nimble: test suite 26/26 passing; blocked on ASC + Tahoe SDK MenuBarExtra
+- [ ] nimble: test suite 26/26 passing; blocked on ASC + Tahoe SDK MenuBarExtra; nimble.heyitsmejosh.com CNAME repointed to Vercel DNS (2026-07-14)
 - [x] braingraph: shipped (force-directed memory-graph web app, sage vibe, github.com/nulljosh/braingraph private; roadmap: iOS/macOS companion apps)
 - [ ] bcgd: web live (light theme, teal #1B5959), iOS companion verified in simulator (4-tab SwiftUI: Dashboard/Services/Inventory/Settings, all tabs tested, screenshots in README, 1024px icon asset catalog ready), ASC ship pending—bundle ID registered, awaiting app record creation + archive/upload via asc CLI
 - [ ] bank: neobank sandbox scaffolded at heyitsmejosh.com/bank (mock ledger, Alpaca paper trading, basic web UI with balance/trade form/activity feed); exploratory before real broker integration
