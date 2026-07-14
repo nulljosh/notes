@@ -71,6 +71,7 @@ All notes in one place. Updated 2026-07-14, Tuesday evening.
 - [ ] nimble: test suite 26/26 passing; blocked on ASC + Tahoe SDK MenuBarExtra; nimble.heyitsmejosh.com CNAME repointed to Vercel DNS (2026-07-14)
 - [x] braingraph: shipped (merged into notes as brain/; force-directed memory-graph web app with PII redaction, live at brain.heyitsmejosh.com via Cloudflare Worker 2026-07-14)
 - [ ] bcgd: web live (light theme, teal #1B5959), iOS companion verified in simulator (4-tab SwiftUI: Dashboard/Services/Inventory/Settings, all tabs tested, screenshots in README, 1024px icon asset catalog ready), ASC ship pending—bundle ID registered, awaiting app record creation + archive/upload via asc CLI
+- [ ] bcgd iOS app: ship to TestFlight/App Store next session. Last known status: ASC app-record creation blocked on web-login as of 2026-07-10, unverified since. Bundle ID com.heyitsmejosh.bcgd (59QBHPL5NS).
 - [ ] bank: neobank sandbox scaffolded at heyitsmejosh.com/bank (mock ledger, Alpaca paper trading, basic web UI with balance/trade form/activity feed); exploratory before real broker integration
 - [ ] root (etyma): Lookup-style v1 live (Wiktionary lookup + etymology chain + word of the day, web + iOS shipped, iOS build ready for App Store submission)
 - [ ] nyc-newsline: RSS v0 shipped (clustering worker + bias-bar frontend, deploy blocked on wrangler auth)
