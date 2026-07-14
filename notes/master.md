@@ -1,8 +1,17 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-13, Monday night — 5 repos touched (13 commits): Pre-Calculus for Dummies FULLY COMPLETE (all 17 chapters), merged to books repo with Summary badge, synced to books.heyitsmejosh.com; journal entry consolidated, extended with cleanup work, and deployed to Vercel; books/lexly/notes cleanup completed (gitignored ~142M ASC artifacts, moved school masterclass HTML to notes, updated links); portfolio restyle to fredrika.dev vibe (Geist + Instrument Serif, neutral grayscale, theme toggle); nightly wrap consolidated and pushed.
+All notes in one place. Updated 2026-07-14, Tuesday early AM — 9 repos touched (9 commits): ingested 17 brain-dump PDFs into per-repo roadmap.md files (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal), archived to ~/Downloads/processed-20260714; fixed Obsidian vault registry to point to real iCloud~md~obsidian vault (iOS sync restored); merged 9 notes-repo markdown files into wiki vault under notes/; stripped emojis from 11 wiki markdown files; identified scottwillsey.com fonts (Cartridge + Atkinson Hyperlegible Next); deployed journal to Vercel via ./scripts/deploy.sh.
 
 ---
+
+## Recent (2026-07-14, Tuesday early AM)
+- Roadmap ingestion: 17 brain-dump PDFs from ~/Downloads processed and ingested into per-repo roadmap.md files across 9 repos (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal). Each roadmap updated with ship-plan items + ASC tasks + todo checklists. Archived processed PDFs to ~/Downloads/processed-20260714 (2026-07-14 batch).
+- Obsidian vault fix: registry issue where iCloud~md~obsidian/Documents/Code vault (the real one with iOS sync) was shadowed by an impostor CloudDocs folder named "Code". Fixed registry to correctly point to the real vault; iPhone Obsidian app now syncs properly again.
+- Notes merge into wiki vault: absorbed 9 markdown files from notes repo into the Obsidian wiki vault under notes/ with cross-links wired from wiki/index.md. Full vault structure now accessible from desktop + iPhone Obsidian app.
+- Wiki cleanup: stripped emoji annotations from 11 wiki markdown files across the vault (removed trailing emojis, kept prose unchanged per project guidelines).
+- Typography audit: identified scottwillsey.com's font pairing (Cartridge for headings, Atkinson Hyperlegible Next for body text) for future reference.
+- Journal: updated Monday 2026-07-13 entry with tonight's work summary and deployed to Vercel via ./scripts/deploy.sh (build + prebuilt deploy, never plain git push).
+- 9 repos touched (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal) with 9 commits total (roadmap ingestion + deployment). All committed + pushed to GitHub.
 
 ## Recent (2026-07-13, Monday night)
 - Books: Pre-Calculus for Dummies COMPLETE — all 17 chapters summarized (ch 1–10 afternoon, 11–13 evening, 14–16 + 17-18 finale: Ten Polar Graphs / Ten Habits before Calculus). Merged into single summary file, roadmap updated, original HEIC photos deleted. Gitignored ASC build artifacts. Commits 6a765aa, a6dd66a, 402fe7c. Live on books.heyitsmejosh.com with Summary badge. Second Dummies book finished after ML for Dummies.
