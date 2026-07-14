@@ -1,13 +1,15 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-13, Monday night — 3 repos touched (7 commits): Pre-Calculus for Dummies FULLY COMPLETE (all 17 chapters), merged to books repo with Summary badge, synced to books.heyitsmejosh.com; journal entry consolidated and deployed to Vercel; nightly wrap consolidated and pushed.
+All notes in one place. Updated 2026-07-13, Monday night — 4 repos touched (12 commits): Pre-Calculus for Dummies FULLY COMPLETE (all 17 chapters), merged to books repo with Summary badge, synced to books.heyitsmejosh.com; journal entry consolidated, extended with cleanup work, and deployed to Vercel; books/lexly/notes cleanup completed (gitignored ~142M ASC artifacts, moved school masterclass HTML to notes, updated links); nightly wrap consolidated and pushed.
 
 ---
 
 ## Recent (2026-07-13, Monday night)
-- Books: Pre-Calculus for Dummies COMPLETE — all 17 chapters summarized (ch 1–10 afternoon, 11–13 evening, 14–16 + 17-18 finale tonight: Ten Polar Graphs / Ten Habits before Calculus). Merged into single summary file, roadmap updated, original HEIC photos deleted. Commits 6a765aa, a6dd66a. Live on books.heyitsmejosh.com with Summary badge. Second Dummies book finished after ML for Dummies.
-- Journal: Monday 2026-07-13 entry consolidated (fixed day heading from Sunday to Monday), deployed to Vercel (journal.heyitsmejosh.com). Nightly wrap entry summarizing evening Pre-Calc completion. Commits 28ee841, 009d3d1, 3deeb23, 3dc686e (pushed).
-- 3 repos touched, 7 commits total (journal 4, books 2, notes 1). Nightly wrap consolidated and pushed to wiki.
+- Books: Pre-Calculus for Dummies COMPLETE — all 17 chapters summarized (ch 1–10 afternoon, 11–13 evening, 14–16 + 17-18 finale: Ten Polar Graphs / Ten Habits before Calculus). Merged into single summary file, roadmap updated, original HEIC photos deleted. Gitignored ASC build artifacts. Commits 6a765aa, a6dd66a, 402fe7c. Live on books.heyitsmejosh.com with Summary badge. Second Dummies book finished after ML for Dummies.
+- Journal: Monday 2026-07-13 entry consolidated and extended with cleanup work summary, deployed to Vercel (journal.heyitsmejosh.com). Nightly wrap entry summarizing evening Pre-Calc completion + repo cleanup. Commits 28ee841, 009d3d1, 3deeb23, 3dc686e, 6aae4e0 (pushed).
+- Lexly: Gitignored ~142M ASC build artifacts, version bumped to 1.1.1, moved school masterclass HTML (Pre-Calc 12, Biology) to notes/pages/ with links updated throughout. Commit 1683aa7.
+- Notes: Absorbed school masterclass pages from lexly at pages/pc12-masterclass.html and pages/biology-masterclass.html, updated school.md links to point at new location, noted repo separation decision (braingraph merged in as brain/, books/lexly stay separate). Commits 309d7cc, 21aebe9, 1803b20.
+- 4 repos touched, 12 commits total (journal 5, books 3, lexly 1, notes 3). Cleaned up technical debt without merging — all three repos streamlined and kept separate. Nightly wrap consolidated and pushed to wiki.
 
 ## Recent (2026-07-12, Sunday evening)
 - Batch roadmap cleanup: imported ship-plan items from three PDF exports (Icons.pdf, Asc.pdf, Apps.pdf) into roadmap sections across 12 repos, consolidating visual checklists + ASC registration steps into git-tracked TODOs instead of scattered PDF references. Commits pushed to epiphany, grapher, healstack, journal, lexly, spark, talli, wiretext, books, nulljosh.github.io, and brief (12 repos, 12 commits).
