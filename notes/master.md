@@ -17,7 +17,7 @@ All notes in one place. Updated 2026-07-14, Tuesday early AM — 9 repos touched
 - Healstack: deploy failure root-caused — Vercel project Root Directory still set to "dose" after rename; config PATCH blocked by permissions, fix command handed to Joshua.
 - Meta: journal skill got stricter prose rules (less changelog-spam); new claude-md-refresh skill created.
 - Echo Pro IAP verified WAITING_FOR_REVIEW on ASC — 1.3.3 resubmission includes it, repeat-rejection risk cleared; roadmap notes updated in echo and lexly (Lexly Mac rejection details blocked on expired Apple web session).
-- Vault-hijack prevention: sync-docs-to-wiki.sh, /work command, and vibe skill repointed from old CloudDocs Code path to the real Obsidian iCloud vault. Wrangler re-authenticated via OAuth; braingraph Worker deploy still pending permission (next session).
+- Vault-hijack prevention: sync-docs-to-wiki.sh, /work command, and vibe skill repointed from old CloudDocs Code path to the real Obsidian iCloud vault. Wrangler re-authenticated via OAuth; braingraph Worker deployed and live at brain.heyitsmejosh.com (blocker since July 11 cleared). Talli 3.5.5 ship-ios workflow kicked off (archive/upload in progress).
 - 11 repos touched tonight (talli, spark, echo, healstack, lexly, books, nyc, nimble, journal, notes + skills), roadmap ingestion + second-wave fixes. All committed + pushed to GitHub.
 
 ## Recent (2026-07-13, Monday night)
