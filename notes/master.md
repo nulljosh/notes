@@ -1,8 +1,8 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-15 Wednesday night (nightly wrap continued).
+All notes in one place. Updated 2026-07-15 Wednesday evening (nightly wrap finalized).
 
-**Final wrap (2026-07-15 Wednesday night, late evening):** Casewright GitHub description fixed (removed "3 legal cases", now "Litigation planning tool"). Brief case document intake in progress (details in private brief/roadmap.md, not repeated here). Journal entry extended and deployed. 3 repos touched tonight: journal (1 commit), newsline (8 commits earlier), notes (wiki updates).
+**Final wrap (2026-07-15 Wednesday evening):** Brief app: added Documents section (web/iOS/macOS) backed by new Supabase table with RLS, migrated mis-filed entry into Documents. Casewright GitHub description fixed (removed "3 legal cases", now "Litigation planning tool"). Journal entry redacted for privacy (removed clinical/case-specific detail, kept engineering summary). 4 repos touched with 16 commits: brief (1), journal (1 + redaction commit), newsline (earlier 8), notes (wiki updates). All deployed and pushed.
 
 **Earlier (2026-07-15 Wednesday night nightly wrap — Newsline repo on GitHub, wrangler OAuth fixed; BCGD iOS 1.0.0 shipped to App Store Connect, Books project COMPLETE):** Newsline RSS-clustering worker deployed live at newsline.trommatic.workers.dev with blindspot detection (identifies stories covered by only one political side), search box for headline/source lookup, and bias-filter tabs to surface left/center/right-leaning sources. Frontend fully integrated with real worker. DNS CNAME for news.heyitsmejosh.com and static Pages hosting for index.html remain pending—roadmap.md updated. Restyled Newsline with portfolio design tokens (@import heyitsmejosh.com/tokens.css) matching Spark/Journal/Wiretext/Grapher shared visual system. Added full repo standard files: README.md (icon + version badge), CLAUDE.md (project instructions), LICENSE (MIT 2026), icon.svg (200×200 dark aesthetic), architecture.svg (node-and-line style). Pushed to GitHub for the first time at github.com/nulljosh/newsline (public). Fixed a long-standing wrangler authentication blocker: a stale CLOUDFLARE_API_TOKEN was hardcoded in ~/.config/fish/secrets.fish, forcing wrangler off OAuth on every session. Renamed it to CLOUDFLARE_DNS_TOKEN so wrangler now stays authenticated via persistent OAuth login; unblocked wrangler deploy commands across multiple projects. 6 commits in newsline (8da2250, 86a3e66, 7d6a114, 907b6ae, 269248c, 83bad8a). Journal updated + deployed.
 
@@ -92,25 +92,21 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 ## Roadmap
 
 ### Ship Now
-- [x] talli: v3.5.4 live on App Store (2026-07-14). Approved by Apple App Review. App Store listing link + approval badge added to README. Widget/app version mismatch fixed (ITMS-90473, commit 46f3eca); portal side-nav message-leak fixed server-side via shared prefix-regex filter on /api/mobile + web (commit 7b23585, live via Vercel). Portal fix live on Vercel but not yet in the shipped iOS build (already accepted into review before fix was deployed). Note: user-reported iOS login-screen text-contrast bug (dark-on-dark title/subtitle) still pending investigation; SwiftUI source looks correct on inspection, root cause unclear.
 - [ ] talli: v3.5.5 draft staged in ASC (2026-07-14 nightly wrap). App Store screenshots regenerated via fastlane snapshot (blue rebrand reflective of 2026-07-09 fix, 10 screenshots uploaded across APP_IPHONE_65 display bucket). No build attached yet, no submission queued — next session: attach build, submit for review.
 - [ ] inkpress (Journal iOS app): v1.0.2 Waiting for Review (dark-mode CSS fix + styled-content NSAttributedString HTML parsing, 2026-07-09)
-- [ ] casewright (Brief iOS app): iOS 1.0.1 Waiting for Review (icon badge removed 2026-07-10; SIWA error on iPad + 4 metadata/privacy/support-URL issues fixed, details in brief/roadmap.md 2026-07-12)
+- [ ] casewright (Brief iOS app): iOS 1.0.1 Waiting for Review (icon badge removed 2026-07-10; SIWA error on iPad + 4 metadata/privacy/support-URL issues fixed, details in brief/roadmap.md 2026-07-12). Documents section added (web/iOS/macOS) with Supabase RLS table backend (2026-07-15).
 - [ ] lexly: v1.1.0 REJECTED on course-load bug (already fixed in 634e2fc); resubmit as 1.1.1. Evening work (2026-07-14): lesson-completion storage hardened against cross-course id collisions (nested map structure, regression test), iOS launch screen wired to AppIcon display, architecture.svg added, roadmap/README cleaned (cross-project landing-page design scoped but deferred)
 - [ ] echo: iOS 1.3.3 READY_FOR_REVIEW (build 9, paywall window-level fix 2026-07-10); Mac build 1.3.3 uploaded (icon corrected); IAP $7.99→$3.99; What's New sheet auto-sizes (2026-07-14); Echo Pro IAP verified in review
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC 6788180394, icon full-bleed 2026-07-10, blockers cleared, ready to submit)
-- [x] spark: Mac v2.1.0 live (YC RFS Inspiration, Gemma daily ideas cron 2026-07-10); iOS + 4 screenshots pending
 - [ ] healstack: v2.3.4 build uploaded (ASC icon live 2026-07-10), ready to submit; Vercel deploys failing — Root Directory still "dose" after rename, config fix blocked by permissions (2026-07-14)
 - [ ] books: iOS v1.0 build uploaded (ASC icon live, canvas scaling bug); macOS export blocked
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, 1 validation error remaining
 - [ ] nimble: test suite 26/26 passing; blocked on ASC + Tahoe SDK MenuBarExtra; nimble.heyitsmejosh.com CNAME repointed to Vercel DNS (2026-07-14)
-- [x] braingraph: shipped (merged into notes as brain/; force-directed memory-graph web app with PII redaction, live at brain.heyitsmejosh.com via Cloudflare Worker 2026-07-14)
 - [ ] bcgd: web live (light theme, teal #1B5959), iOS companion verified in simulator (4-tab SwiftUI: Dashboard/Services/Inventory/Settings, all tabs tested, screenshots in README, 1024px icon asset catalog ready), ASC ship pending—bundle ID registered, awaiting app record creation + archive/upload via asc CLI
 - [ ] bcgd iOS app: ship to TestFlight/App Store next session. Last known status: ASC app-record creation blocked on web-login as of 2026-07-10, unverified since. Bundle ID com.heyitsmejosh.bcgd (59QBHPL5NS).
 - [ ] bank: neobank sandbox scaffolded at heyitsmejosh.com/bank (mock ledger, Alpaca paper trading, basic web UI with balance/trade form/activity feed); exploratory before real broker integration
 - [ ] root (etyma): Lookup-style v1 live (Wiktionary lookup + etymology chain + word of the day, web + iOS shipped, iOS build ready for App Store submission)
-- [ ] nyc-newsline: RSS v0 shipped (clustering worker + bias-bar frontend, deploy blocked on wrangler auth)
-- [x] ai-investing-for-dummies: Book summarization COMPLETE (2026-07-14) — all 16 chapters + 3 appendices summarized, merged, synced, committed+pushed (05b2745), raw HEICs deleted
+- [ ] newsline: RSS-clustering worker live at newsline.trommatic.workers.dev with blindspot detection, search, bias filters. Frontend fully integrated. Pushed to GitHub (2026-07-15). DNS CNAME and static Pages hosting pending.
 - [ ] TestFlight: add self as ASC team-user internal tester (permanent fix), resend broken email invites, delete books-ios duplicate Internal group 9ebab47c-52a0-4c23-90af-42af3a73ec79
 
 ### Recent (2026-07-11, nightly wrap — Saturday evening)
