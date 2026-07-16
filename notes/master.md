@@ -1,6 +1,8 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-15 Wednesday very late night (nightly wrap finalized).
+All notes in one place. Updated 2026-07-15 Wednesday evening (nightly wrap).
+
+**Nightly wrap (2026-07-15 Wednesday evening — Healstack desktop CSS fix):** Fixed a long-standing desktop CSS bug in Healstack where the sidebar nav (.nav-desktop) was missing flex-direction:column, causing nav links to overflow the 260px sidebar and overlap the page title on desktop. Also fixed a related breakpoint mismatch in .sub-tab-header (was offsetting at 768px instead of 641px, the same breakpoint width where the sidebar itself engages). Committed and pushed (cc749f0). Journal updated and deployed to Vercel.
 
 **Nightly wrap (2026-07-15 Wednesday very late night — Spark landing page live):** Spark refactored its index.html into app.html and added a new public-facing marketing landing page at the domain root (lexly-styled design). Updated vercel.json routing and manifest.json start_url accordingly. Pushed to main and Vercel auto-deployed to production (dpl_7ahD2RhzhqoAEEzFf3zSNfe2Lvs6, READY). 5 repos touched (brief, journal, newsline, notes, spark) with 14 commits across the last 12 hours. All deployed and pushed.
 
