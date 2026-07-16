@@ -1,6 +1,8 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-15 Wednesday late evening (nightly wrap finalized).
+All notes in one place. Updated 2026-07-15 Wednesday very late night (nightly wrap finalized).
+
+**Nightly wrap (2026-07-15 Wednesday very late night — Spark landing page live):** Spark refactored its index.html into app.html and added a new public-facing marketing landing page at the domain root (lexly-styled design). Updated vercel.json routing and manifest.json start_url accordingly. Pushed to main and Vercel auto-deployed to production (dpl_7ahD2RhzhqoAEEzFf3zSNfe2Lvs6, READY). 5 repos touched (brief, journal, newsline, notes, spark) with 14 commits across the last 12 hours. All deployed and pushed.
 
 **Nightly wrap (2026-07-15 Wednesday late evening):** Epiphany: investigated stale-holdings bug in brokerage sync (SnapTrade/Wealthsimple). Root cause identified as duplicate/fragmented account reconnects causing endpoint to return 0 positions while app displays week-old cached snapshot. Fix requires manual disconnect+reconnect+force-sync (no code change). Applied two one-time KV admin corrections to Epiphany portfolio debt balances (not recurring). No commits in epiphany repo (personal financial data sensitivity). Brief, journal, newsline, and notes touched in last 12 hours (brief: Documents section + Casewright description fix, journal: Wednesday entry + privacy redaction, newsline: 8 commits, notes: wiki updates). 4 repos with 16+ commits. All deployed and pushed.
 
@@ -108,6 +110,7 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 - [ ] bcgd iOS app: ship to TestFlight/App Store next session. Last known status: ASC app-record creation blocked on web-login as of 2026-07-10, unverified since. Bundle ID com.heyitsmejosh.bcgd (59QBHPL5NS).
 - [ ] bank: neobank sandbox scaffolded at heyitsmejosh.com/bank (mock ledger, Alpaca paper trading, basic web UI with balance/trade form/activity feed); exploratory before real broker integration
 - [ ] root (etyma): Lookup-style v1 live (Wiktionary lookup + etymology chain + word of the day, web + iOS shipped, iOS build ready for App Store submission)
+- [ ] spark: Landing page split live at spark.heyitsmejosh.com (2026-07-15 late night) — refactored feed app into app.html, added new lexly-styled marketing landing page at domain root, updated vercel.json routing and manifest.json start_url. iOS screenshots + metadata remain.
 - [ ] newsline: RSS-clustering worker live at newsline.trommatic.workers.dev with blindspot detection, search, bias filters. Frontend fully integrated. Pushed to GitHub (2026-07-15). DNS CNAME and static Pages hosting pending.
 - [ ] TestFlight: add self as ASC team-user internal tester (permanent fix), resend broken email invites, delete books-ios duplicate Internal group 9ebab47c-52a0-4c23-90af-42af3a73ec79
 
