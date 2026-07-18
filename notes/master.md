@@ -389,6 +389,8 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 - [ ] cadence, charters (deleted accidentally, Vercel live — recover)
 - [ ] Supabase free tier maxed (2/2) — upgrade to Pro or pause epiphany if inactive
 - [ ] labs repos (roost, canlii-app) — publish changes via nulljosh/labs
+- [ ] ElevenLabs (voiceover) + HeyGen/hyperframes (AI avatar video gen) — no current project needs these; note for if a YouTube/content-automation project starts
+- [ ] Apple Developer Support call needed 2026-07-17: App Store Connect banking issue, rejecting Wealthsimple/RBC voided cheque for payout setup. Call 1-800-633-2152 next week.
 
 ---
 
