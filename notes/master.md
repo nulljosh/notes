@@ -1,6 +1,21 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-18 Saturday night (Spinelist app naming resolved — app record live in ASC).
+All notes in one place. Updated 2026-07-18 Saturday late evening (session wrap: backlog documented for next session).
+
+## Backlog (Next Session)
+
+**App Store Connect infrastructure:**
+- Spinelist (books/spine app, ASC id 6792376485, bundle com.heyitsmejosh.spine): iOS archive export failed due to `ExportOptions.plist` referencing manual signing profile "Books iOS App Store" (doesn't exist for new bundle ID). Fix: switch to automatic signing in ExportOptions.plist, re-archive+export+upload so the ASC icon tile shows instead of blank placeholder.
+- Sparkjar (spark iOS) app icon shows old purple in ASC grid. Root cause: pre-existing iOS App Group provisioning profile blocker (tracked in spark/CLAUDE.md roadmap). Once the App Group issue is resolved and a new iOS build uploads, the grid icon will auto-update.
+- Portfolio (Joshua Trommel app) icon was fixed+uploaded, but ASC apps-grid tile may still show old icon. Fix: attach the new build to the app's iOS version record in ASC so it becomes current.
+- Talli Mac merge + icon recolor: merge Talli Mac into Talli iOS (unify bundle ID, same pattern as spark/books consolidation done tonight), recolor Mac icon orange→blue to match iOS (both icons are already correct in source; likely same hand-exported-PNG-drift bug as spark/portfolio/books).
+
+**App Store review rejections (not yet investigated):**
+- Lexly iOS 1.1.0 Rejected — run `asc web review show --app <id>` to read rejection reason, fix, resubmit.
+- Lexly Mac 1.1.0 Rejected — same flow as iOS.
+- Inkpress iOS 1.0.2 Rejected — same flow.
+- Casewright iOS 1.0.1 Rejected — same flow.
+All four show unread rejection badges in ASC apps grid but reasons haven't been read/triaged yet.
 
 **NIGHTLY WRAP (2026-07-18 Saturday late evening — fifth round: Spinelist app record LIVE in App Store Connect):** Switched from slow browser-click-and-check to the asc-name-creator skill's direct API approach (PATCH appInfoLocalizations via curl, reading the DUPLICATE error code instead of taking ASC UI screenshots). Much faster iteration. Tried Spinely, Bindr, Colophon, Stackt, Tsundoku, Marginalia, Coverleaf, Booknook, Shelfmark, Pageturn, and Bookwyrm—all taken by other developers. Finally "Spinelist" succeeded (API returned success with status 200). The app is now named "Spinelist" in App Store Connect (id 6792376485, bundle com.heyitsmejosh.spine), with both iOS and macOS platforms registered. No build has been uploaded yet—that's the next step whenever the project resumes. Spine→Spinelist rename is now COMPLETE: bundle ID registered, Xcode project + targets + sources + entitlements renamed, site CNAME + domain + GitHub repo all updated 2026-07-18, and ASC app record now created with unique name.
 
