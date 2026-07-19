@@ -1,8 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-18 Saturday late evening (nightly wrap: AeroSpace + SketchyBar setup, 21 commits across 6 repos, app naming resolved).
+All notes in one place. Updated 2026-07-18 Saturday night (nightly wrap: AeroSpace + SketchyBar installation + glyph icon fix, 22 commits across 6 repos).
 
 ## Backlog (Next Session)
+
+**FINAL NIGHTLY WRAP (2026-07-18 Saturday night):** AeroSpace tiling window manager and SketchyBar custom menu bar installed and configured via Homebrew. SketchyBar launched and registered as login service for auto-start on boot. Granted Accessibility permissions in System Settings for both. Fixed missing icon glyphs (chevron, clock, volume, battery) by installing Nerd Font; set up Ice (menu bar manager) to handle real macOS menu icons hidden behind SketchyBar's overlay bar. Applied icon animation polish across multiple SketchyBar widgets. OS/tooling setup session (no git commits in codebase repos, pure macOS environment configuration). Journal deployed to Vercel post-session.
 
 **NIGHTLY WRAP (2026-07-18 Saturday late evening — final: AeroSpace + SketchyBar setup):** Installed AeroSpace (tiling window manager for macOS) and SketchyBar (custom macOS menu bar) via Homebrew. Set up default configurations for both tools, with SketchyBar registered as a login service so it starts on system boot. Granted Accessibility permissions in System Settings and started SketchyBar, but AeroSpace setup remains in progress—Accessibility permission grant is pending user action in System Settings. Both tools inspired by a recent tweet showing a well-configured desktop using SketchyBar + AeroSpace together. 6 repos touched with 21 commits total (books 4, journal 7, notes 6, nulljosh.github.io 1, spark 3, talli 1). App Store Connect app naming consolidated: Spinelist (formerly Books/Spine) app record created (id 6792376485, bundle com.heyitsmejosh.spine); Spark icon restyle shipped (dark-navy #0c1220); GitHub repo renamed (nulljosh/books → nulljosh/spine), Cloudflare DNS updated (spine.heyitsmejosh.com CNAME). Spine→Spinelist rename now COMPLETE. Journal updated with evening work and deployed to Vercel. Wiki updated. Commits pushed to all repos. AeroSpace configuration pending user Accessibility permission grant.
 
