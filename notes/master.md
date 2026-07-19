@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-18 Saturday night (nightly wrap: AeroSpace + SketchyBar installation + glyph icon fix, 22 commits across 6 repos).
+All notes in one place. Updated 2026-07-18 Saturday night (nightly wrap: AeroSpace + SketchyBar installation + glyph icon fix, Spinelist app naming resolved, Spark icon restyle, portfolio iOS icon fix, ASC consolidation complete, Books→Spine rename, GitHub repo rename, Cloudflare DNS for Spine, Books export signing fix documented. 25 commits across 7 repos).
 
 ## Backlog (Next Session)
 
