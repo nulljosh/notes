@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-18 Saturday late night (Tooling infra: skill consolidation [goodnight/goodbye merged into night], vibe skill stale example fixed, SwiftLint research + config [SPM plugin trial failed, CLI setup persisted], RevenueCat evaluation scoped, swiftlint/periphery installed. 3 commits: dotfiles 2, journal 1).
+All notes in one place. Updated 2026-07-18 Saturday night (Tooling infra: skill consolidation [goodnight/goodbye merged into night], vibe skill stale example fixed, SwiftLint fix completed [SPM plugin works with -skipPackagePluginValidation flag], build-verified on Epiphany + Talli, rolled to 4 more apps as WIP. SwiftLint live on Epiphany+Talli, convention documented in CLAUDE.md. 5 commits: dotfiles 2, epiphany 1, talli 1, spark/lexly/healstack/brief WIP, journal 1 + deploy).
 
 ## Backlog (Next Session)
 
