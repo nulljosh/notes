@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-18 Saturday night (Tooling infra: skill consolidation [goodnight/goodbye merged into night], vibe skill stale example fixed, SwiftLint fix completed [SPM plugin works with -skipPackagePluginValidation flag], build-verified on Epiphany + Talli, rolled to 4 more apps as WIP. SwiftLint live on Epiphany+Talli, convention documented in CLAUDE.md. 5 commits: dotfiles 2, epiphany 1, talli 1, spark/lexly/healstack/brief WIP, journal 1 + deploy).
+All notes in one place. Updated 2026-07-18 Saturday night — final wrap (Nimble accessibility audit via swiftui-pro skill: caught VoiceOver gaps on icon-only buttons, replaced onTapGesture with Button for proper keyboard nav, gated repeatForever animation behind Reduce Motion. Fixed and shipped. 1 commit: nimble. Plus tooling infra pass from earlier evening: skill consolidation, SwiftLint SPM plugin fix with -skipPackagePluginValidation flag, build-verified Epiphany+Talli live, rolled to Spark/Lexly/Healstack/Brief as WIP. 12 repos touched in last 12 hours, 64+ commits total).
 
 ## Backlog (Next Session)
 
