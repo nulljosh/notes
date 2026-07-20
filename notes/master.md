@@ -199,7 +199,7 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 - [ ] portfolio (nulljosh.github.io): iOS app v1.0.0 (ASC 6788180394, icon full-bleed 2026-07-10, blockers cleared, ready to submit); web: animated Memoji avatar shipped to header (2026-07-17, chroma-keyed face + CSS gradient bubble with bob-and-tilt animation)
 - [ ] healstack: v2.3.4 build uploaded (ASC icon live 2026-07-10), App Store metadata prepped via asc CLI (2026-07-19), ready to submit. Vercel deploys previously failing — Root Directory still "dose" after rename (2026-07-14).
 - [ ] nyc: macOS 1.0 validates, iOS 1.0.0 build 3, App Store metadata prepped via asc CLI (2026-07-19), 1 validation error remaining
-- [ ] books (app renamed Spinelist 2026-07-18, folder/repo unchanged): iOS v1.0 build uploaded (ASC icon live, canvas scaling bug); macOS export blocked
+- [ ] spine (app renamed Spinelist→Spine 2026-07-19; local folder still `books`, GitHub repo `spine`): site live at spine.heyitsmejosh.com; iOS v1.0 build uploaded (ASC icon live, canvas scaling bug); macOS export blocked
 - [ ] sparkjar (renamed from spark 2026-07-18): Landing page split live (2026-07-15 late night) — refactored feed app into app.html, added lexly-styled marketing landing page at domain root. iOS screenshots + metadata remain. Ship workflow fixed (2026-07-19) to handle app rename properly.
 - [ ] nimble: test suite 26/26 passing; blocked on ASC + Tahoe SDK MenuBarExtra; nimble.heyitsmejosh.com CNAME repointed to Vercel DNS (2026-07-14)
 - [ ] bcgd: web live (light theme, teal #1B5959), iOS companion verified in simulator (4-tab SwiftUI: Dashboard/Services/Inventory/Settings, all tabs tested, screenshots in README, 1024px icon asset catalog ready), ASC ship pending—bundle ID registered, awaiting app record creation + archive/upload via asc CLI
@@ -269,7 +269,32 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 - books-ios v1.0: Build uploaded to ASC with icon live. Icon has recurring canvas-scaling bug (artwork too small on tile).
 - Blockers documented in ~/Documents/Code/roadmap.md: Talli Mac + Epiphany Mac exports (missing App Group entitlements), Books Mac export (distribution profile), recurring icon-scaling bug (plan: merge Books Mac + books-ios and Spark Mac + Sparkjar into universal app records).
 
-### Active Projects
+### Active Projects (refreshed 2026-07-19; names match repos — Newsline, Inkpress, Sparkjar, Litigate, Spine)
+| Repo (app) | Status | Next |
+|---|---|---|
+| epiphany | v2.6.1+ live on web + App Store (id6779522175). Commodity/crypto enrichment shipped 2026-07-19; Yelp venue reviews + Pro gating live; Twitter OAuth env vars set 2026-07-18 | Monitor; RevenueCat eval for IAP gating |
+| talli | v3.5.5 SUBMITTED 2026-07-19 (Xcode Cloud SwiftLint fix, build 97); v3.5.4 live | Monitor review; Mac 1.0 unprepped |
+| echo | iOS 1.3.3 SUBMITTED 2026-07-19; Universal Purchase merge underway (mac bundle ID → com.nulljosh.echo) | Monitor; Mac 1.0 blocked on pricing (dashboard) |
+| lexly (was lingo/parlay) | iOS + macOS v1.1.1 in App Review 2026-07-19; Pro un-paywalled, courses free | Monitor; Apple support ticket to delete old Lexly Mac record |
+| litigate (renamed from casewright 2026-07-18, originally brief) | v1.0.1 resubmitted for review 2026-07-19; CanLII case-law tab merged in; domain litigate.heyitsmejosh.com | Monitor review; app availability (dashboard-only) |
+| journal (app: Inkpress, GitHub repo inkpress) | Web journal automated at journal.heyitsmejosh.com; iOS rebuilt as multi-feed RSS reader after 4.2 rejection, resubmitted 2026-07-19 | Monitor review |
+| books (app: Spine, GitHub repo spine) | Site live at spine.heyitsmejosh.com (moved from books.heyitsmejosh.com 2026-07-19); ML + Pre-Calc + Steve Jobs summaries done | Archive + upload iOS/macOS wrappers |
+| sparkjar (renamed from spark 2026-07-18) | v2.2.0 web live; iOS build uploaded to ASC 2026-07-19, ship workflow fixed; homepage DNS fixed | Bundle-ID rename + screenshots/metadata |
+| newsline | v0.2.0 live: 15-outlet RSS reader, Latest feed + per-source filter, cache v2; feeds /news skill | Content/outlet tuning as needed |
+| healstack (folder healstack, was dose) | v2.3.4 build valid on ASC; metadata prepped via asc CLI 2026-07-19 | Screenshots, availability (dashboard), demo account, then submit |
+| nyc | macOS 1.0 validates; iOS build 3; metadata prepped 2026-07-19 | Resolve last validation error, submit |
+| portfolio (nulljosh.github.io) | Web live at heyitsmejosh.com; iOS v1.0.0 ready to submit (ASC 6788180394) | Availability + privacy publish (dashboard), submit |
+| nimble | Gemma+Qwen3 via Cloudflare Workers AI; tests 26/26 | ASC + Tahoe SDK MenuBarExtra blocked |
+| bcgd | Web live; iOS verified in sim, bundle ID registered | ASC app record + archive/upload |
+| root (app: etyma, GitHub repo etyma) | Lookup v1 live (Wiktionary + etymology chain), web + iOS | App Store submission |
+| bank | Neobank sandbox scaffolded (mock ledger, Alpaca paper) | Alpaca keys + Supabase |
+| notes | Wiki live at notes.heyitsmejosh.com; brain graph at brain.heyitsmejosh.com (braingraph repo merged + retired 2026-07-11) | Content refresh |
+| abraham (client) | SEO/GBP retainer + email bot; gated on contract signature + first payment | Contract; Clay MCP eval |
+| labs | Monorepo (roost, missing-pets, canlii-app frozen, byo-*, capu, quotable) | — |
+| life | Local therapy doc, 32 sections | — |
+
+<details><summary>Previous table (pre-2026-07-19 refresh, historical)</summary>
+
 | Repo | Status | Next |
 |---|---|---|
 | abraham (client) | Client subcontracting project: SEO/Google Business Profile retainer + cold email bot under single contract. Public GitHub repo (github.com/nulljosh/abraham, Apache-2.0). Built from merged repos (abraham-seo-engagement + abraham-email-bot). Comprehensive README, CLAUDE.md playbook, GitHub Pages landing page (index.html with seo-content-autopilot demo showing HVAC content-plan example), transcribed 3 reference YouTube videos to transcripts.pdf, email bot scaffolding (leads/writer/sender, not wired to data yet). Contract rewritten in plain language, pricing-context appendix added, client's real name + sensitive history scrubbed from public repo (contract.pdf, plan.pdf, detailed guide kept locally gitignored). Gated on contract signature + first payment. **HTTPS cert fix (2026-07-15):** abraham.heyitsmejosh.com was serving fallback `*.github.io` wildcard cert instead of dedicated cert despite correct CNAME. Fixed by unsetting then re-setting custom domain via `gh api` to force fresh Let's Encrypt issuance (state: "new", pending approval, recheck in ~1 hour). **Clay MCP integration path (2026-07-15):** reviewed Claude Code + Clay lead-gen workflow video as potential alternative to manual leads.py/sender.py. Clay's MCP orchestrates full lead sourcing + enrichment + verified contact info, potentially replacing sourcing/sending scope once Abraham provides real lead/brand inputs. Documented in abraham/CLAUDE.md as future evaluation option. | Contract signature + first payment; evaluate Clay MCP path for cold-email-bot if sourcing/sending scope is manual bottleneck; wire email bot to real data pipeline |
@@ -291,6 +316,8 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 | braingraph | Shipped: force-directed memory-graph web app visualizing Claude Code memory with sage portfolio vibe and Inter typography (github.com/nulljosh/braingraph, private). Built with memory-graph engine, edge-spring force explosions fixed (NaN blank canvas). Roadmap: companion iOS/macOS app. | Ship iOS/macOS companion apps |
 | life | Local | 32 sections |
 | etyma | Live at etyma.heyitsmejosh.com, iOS scaffold builds, Wiktionary pipeline v0 | Full dump parse |
+
+</details>
 
 ### Recent (2026-07-09, nightly wrap)
 - Epiphany: added ink-based TUI terminal dashboard (`cli/epiphany-tui.mjs`) that live-polls Upstash KV for portfolio data—streams real-time holdings, net worth, and performance metrics to the terminal for quick status checks without opening app or web dashboard. Bumped version 2.6.0 to 2.6.1, updated README.md and CLAUDE.md, committed and pushed (3e89ab7).
