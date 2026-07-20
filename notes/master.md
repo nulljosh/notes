@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-19 Sunday late night — Local LLM swap: Gemma→qwen2.5-coder:14b on Ollama, aider removed, opencode 1.18.3 integrated with Claude Code/VS Code Continue (benchmark guide reviewed). /cleanup skill built with mole (30 GB freed, 11→41 GB). Saturday: Talli v3.5.6 shipped, iOS login/splash + What's New truncation fix across 8 apps. 78 commits total, 30 repos touched this wrap.
+All notes in one place. Updated 2026-07-20 Sunday late night — Local LLM swap: Gemma→qwen2.5-coder:14b on Ollama, aider removed, opencode 1.18.3 integrated with Claude Code/VS Code Continue (benchmark guide reviewed). /cleanup skill built with mole (30 GB freed, 11→41 GB). Tested qwen for agentic tool-use via opencode: reliably picks the right code/tool call but prints it as JSON text instead of invoking it, so files never get written — a `tool_call: true` capability flag didn't fix it. Verdict: qwen/opencode good for chat + code you paste yourself, not yet reliable for autonomous file-editing. `/qwen-overnight` + `/overnight-review` skills built but parked until this is resolved. Saturday: Talli v3.5.6 shipped, iOS login/splash + What's New truncation fix across 8 apps. 78 commits total, 30 repos touched this wrap.
 
 ### Recent (2026-07-19, Saturday evening)
 
