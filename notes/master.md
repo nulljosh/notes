@@ -555,4 +555,5 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 - Cloudflare API token: `source ~/.openclaw/.openclaw.bak/.secure/cloudflare.env`
 - Supabase: 2 projects (spark + epiphany), free tier maxed
 - OpenClaw: iMessage → Claude routing at `~/.openclaw/`
+- code-meta (2026-07-19): Version-controlled git repo tracking ~/Documents/Code root (CLAUDE.md, roadmap.md, PROGRESS.md via allowlist .gitignore) — index repo at github.com/nulljosh/code-meta
 - Security rotations pending: Upstash Redis (epiphany)
