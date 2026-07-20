@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-19 Saturday evening — iOS login/splash screen fix for Talli (dark background rendering unreadable UI), What's New truncation fix rolled across 8 apps (epiphany, echo, litigate, sparkjar, lexly, nimble, healstack, echo). Talli v3.5.6 shipped via asc workflow (replacing 3.5.5 submission), includes Status Messages section removal and dynamic CRA payment dates helper ($174.50 labeled amount). 16 commits, 9 repos touched.
+All notes in one place. Updated 2026-07-19 Sunday late night — Local LLM swap: Gemma→qwen2.5-coder:14b on Ollama, aider removed, opencode 1.18.3 integrated with Claude Code/VS Code Continue (benchmark guide reviewed). /cleanup skill built with mole (30 GB freed, 11→41 GB). Saturday: Talli v3.5.6 shipped, iOS login/splash + What's New truncation fix across 8 apps. 78 commits total, 30 repos touched this wrap.
 
 ### Recent (2026-07-19, Saturday evening)
 
@@ -18,6 +18,11 @@ Rolled What's New fixedSize fix across 8 apps in coordinated pass: epiphany, ech
 ### Recent (2026-07-19, Sunday evening/night)
 - Epiphany: Updated USER_DEBT configuration—merged "$175 passport" debt into existing Mom/Dad entry (now $450 total: $275 + $175 passport), and restored Bell ($1000) and Visa ($5000, in collections) debts from backlog. Test suite passes (398 passed), committed, and pushed to main.
 - Lexly: Un-paywalled all course categories—5 categories that were locked behind Stripe checkout (which never worked) are now free and unlocked. Pro tier reframed as optional perks (unlimited streak freezes to start, heart refills future) instead of paid content. Added iOS Settings view with Sign Out moved into it. Fixed age-rating declaration (added missing Social Media Age Restricted fields) via asc CLI. iOS v1.1.1 resubmitted for App Review. Added native macOS platform to existing Lexly app record (via App Store Connect web UI—no API), archived fresh macOS build, attached to v1.1.1 iOS submission as multi-platform release. Screenshots automation hit ambiguous "Sign In" element match, blocking final macOS submission. Lexly Mac standalone app (6783501927) kept around pending review completion—deletion deferred. Memory files updated reflecting Pro pivot + iOS resubmit + Mac platform merge.
+
+### Recent (2026-07-19, Sunday late night — local LLM setup + /cleanup skill)
+- Local model swap: replaced Gemma with qwen2.5-coder:14b on Ollama for improved small-context reasoning. Tried aider but found it clunky, swapped for opencode 1.18.3 instead (configured to local ollama/qwen2.5-coder:14b). Integrated new engine into Claude Code's qlaude fish function and VS Code Continue. Downloaded local-LLM benchmark guide comparing qwen vs Claude model performance.
+- Built new `/cleanup` Claude skill that runs mole recursive deep-clean: freed 30 GB of disk overnight (11 GB → 41 GB free) by clearing cargo builds, node_modules, Xcode DerivedData, and xcarchive artifacts across ~/Documents/Code tree. Surfaces what was removed so nothing critical vanishes accidentally.
+- Previous nightly wrap (Saturday evening): Talli v3.5.6 shipped via asc workflow (replacing 3.5.5 submission), iOS login/splash dark-bg fix, What's New truncation fix rolled across 8 apps (epiphany, echo, litigate, sparkjar, lexly, nimble, healstack, echo). Status Messages section removed, dynamic CRA payment dates helper added ($174.50 labeled amount). 78 commits across 30 repos touched, journal + wiki deployed, all changes pushed to GitHub.
 
 ## Backlog (Next Session)
 
