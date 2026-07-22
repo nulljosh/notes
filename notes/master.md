@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Tuesday night — Echo iOS bug fixed (Unlock button stuck on network hiccup during review, added retry logic + shipped fully unlocked for v1). Echo Mac confirmed unified with iOS (6782604262, not separate orphan). BC Garage Doors age-rating field fixed via ASC API. Healstack, Sparkjar, Inkpress RSS reader all already WAITING_FOR_REVIEW. Echo iOS re-submit blocked by Apple's transient lock on rejected submission, retrying tomorrow. Journal updated and deployed. Previous: Four app merges completed earlier Tuesday evening (Epiphany Mac 2.5.2, Echo Mac resubmitted correctly, Sparkjar Mac 1.0, Talli iOS 3.5.7 submitted). Widget fixes, Twitter OAuth live, Healstack v1.0 submitted, Litigate iOS 1.0.1 resubmitted. 5 repos touched earlier Tuesday (31+ commits). Earlier morning: wiki-refresh infrastructure fixed (8 repos, 21 commits).
+All notes in one place. Updated 2026-07-22 Wednesday late — README staleness sweep: Litigate README still branded "Brief" (old domain) 4 days post-rename, plus stale version badges on Talli/Echo/Lexly/Healstack. Alpaca broker decision consolidated in epiphany README (no conflicting sections: Wealthsimple/SnapTrade confirmed read-only, Alpaca default execution path, IBKR only if Canadian equities). Root roadmap.md logged sweep complete. Earlier evening: Autotrading research + journal update. Earlier Tuesday night: Echo iOS retry logic (network timeout on purchase), Mac unified (6782604262), BCGD age-rating fixed. Previous: Four app merges Tuesday evening (Epiphany Mac 2.5.2, Echo/Sparkjar Mac, Talli iOS 3.5.7 submitted).
 
 ### Recent (2026-07-22, Tuesday night)
 
@@ -9,6 +9,10 @@ Echo iOS 1.3.3 fix: network-timeout bug in purchase flow caused the "Unlock Echo
 BC Garage Doors age-rating declaration was missing one of Apple's new regulatory fields (added in recent iOS updates). Tracked down the specific field via ASC web API docs and fixed it without needing the dashboard. Build ready to submit.
 
 Verified Healstack (v1.0 WAITING_FOR_REVIEW, medical device declaration cleared via ASC web CLI earlier), Sparkjar (Mac 1.0 WAITING_FOR_REVIEW), and Inkpress iOS (v1.0.2 WAITING_FOR_REVIEW, availability pending) are all in review — no additional work needed there for now.
+
+### Recent (2026-07-22, Wednesday late — README staleness sweep)
+
+Ran a codebase-wide README freshness pass across all 34 repos. Found Litigate's README was still branded "Brief" with the old `brief.heyitsmejosh.com` domain from before the 2026-07-18 rename to Litigate — a 4-day lag that slipped through undetected. Fixed title, domain (now `litigate.heyitsmejosh.com`), and added status line (iOS 1.0.1 submitted 2026-07-21, CanLII case-law tab merged 2026-07-19). Also bumped stale version badges: Talli (3.5.6 → 3.5.7 to match submitted build), Echo (1.3.2 → 1.3.3), Lexly (1.1.0 → 1.1.1), and Healstack (2.1.1 → 2.3.4). Verified no drift on Sparkjar, Inkpress, Journal, Spine, Newsline, BCGD, NYC, Nimble, or portfolio. Consolidated the conflicting "autopilot broker decision" sections in epiphany's README into one clear statement: Wealthsimple and SnapTrade confirmed as read-only (no trade-execution APIs), Alpaca is the default path forward, IBKR only if Canadian/TSX equities needed later, RBC dead end. Logged the entire sweep as complete in the root codebase roadmap.md.
 
 ### Recent (2026-07-22, Wednesday)
 
