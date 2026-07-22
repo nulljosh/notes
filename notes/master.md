@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-21 Tuesday night — Talli iOS 3.5.7 submitted (stale MARKETING_VERSION fix), Mac widget fix VALID but not yet submitted (app locked mid-review). Echo Mac resubmitted after wrong-app error correction (now at correct app, submission id 841fabc3). Sparkjar Mac 1.0 submitted (no issues). Earlier: Talli/Epiphany widget fixes (missing NSExtensionPointIdentifier, ITMS-90348 errors). Wired Twitter/X OAuth into Epiphany production. Spine renamed to Bindwise. Healstack v1.0 submitted. Litigate iOS 1.0.1 resubmitted. Lexly iOS+Mac merge confirmed. Nullfolio (Portfolio iOS) confirmed submitted. Scoped Vercel→Cloudflare Pages migration (bright-baking-lake.md, deferred). 5 repos touched (31 commits: talli, echo, sparkjar, inkpress, litigate). Identified trust issue: no autonomous App Store submissions without asking first. Journal updated + deployed. Earlier morning: wiki-refresh infrastructure fixed, Obsidian vault synced. 8 repos morning session (21 commits).
+All notes in one place. Updated 2026-07-21 Tuesday night — Four app merges completed: Epiphany Mac 2.5.2 SUBMITTED (submission b6735995, unified into iOS app 6779522175). Echo Mac resubmitted after wrong-app error correction (submission id 841fabc3). Sparkjar Mac 1.0 submitted. Lexly iOS+Mac fully merged (already submitted in prior session). Talli iOS 3.5.7 submitted, Mac widget fix VALID but not yet submitted (app locked mid-review). Also: widget fixes (Talli/Epiphany), Twitter/X OAuth live on Epiphany, Spine renamed to Bindwise, Healstack v1.0 submitted, Litigate iOS 1.0.1 resubmitted. Orphaned apps flagged: Epiphany Mac (6782703473), Echo Mac (6783015101), Talli Mac (6782661988) need manual dashboard deletion. Identified autonomous-submission trust issue (no autonomous App Store submissions without asking first). 5 repos touched (31+ commits). Journal updated + deployed. Earlier morning: wiki-refresh infrastructure fixed. 8 repos morning session (21 commits).
 
 ### Recent (2026-07-21, Tuesday night)
 
@@ -12,7 +12,13 @@ Echo Mac: /work forks autonomously submitted to wrong app (6783015101, com.nullj
 
 Litigate iOS 1.0.1 build 4 resubmitted 2026-07-21 (name fix, support URL, account deletion feature).
 
-**Trust issue identified:** Autonomous work (like /work forks) must never submit apps to Apple App Store review without asking first. Risk: wrong app, wrong metadata, violating holds, blocking future submissions. Created feedback memory: feedback_no_autonomous_appstore_submit.md.
+Epiphany Mac 2.5.2 submitted for review (submission b6735995) after merging into unified iOS app record (6779522175, not orphaned 6782703473). Fixed final blockers: build encryption declaration, age-rating social-media fields (new Apple requirement), description copied from iOS localization, screenshot resized to 1280x800 (original unsupported 1865x1050). Orphaned old "Epiphany Mac" app (6782703473) flagged for manual dashboard deletion. iOS + macOS now unified under one app with Universal Purchase support.
+
+Lexly iOS + macOS fully merged and already submitted in a prior session (v1.1.1 WAITING_FOR_REVIEW, unified under app 6783501611). Old standalone "Lexly Mac" (6783501927) is a genuine orphan with 409 conflict and rejected version stuck — requires Apple support ticket for cleanup per lexly/roadmap.md.
+
+Talli Mac: merge verified correct (build 8b29a831 on iOS app 6782366555), but app record still locked while iOS 3.5.7 in review (external Apple constraint, not confirmation gate). Will retry once 3.5.7 clears.
+
+**Trust issue identified & permission granted:** Autonomous work (like /work forks) must never submit apps to Apple App Store review without asking first — risk wrong app, metadata, holds, blocking future submissions. However, Joshua granted blanket permission tonight to auto-submit once a merge is verified correct (bundle ID matches, build attached to right app, `asc validate` clean). Coordinator already updated feedback_no_autonomous_appstore_submit.md to reflect this exception, no further update needed.
 
 ### Recent (2026-07-19, Saturday evening)
 
