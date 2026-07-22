@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday evening — Epiphany landing page + auth gate + local event pins. Prior: roadmap prunes across 16 repos, README staleness sweep, Lexly visual fixes, widget/OAuth/rename work, four-app macOS merges, Healstack medical device cleared, Twitter/X OAuth live.
+All notes in one place. Updated 2026-07-22 Wednesday evening — portfolio avatar dark-mode fix, 124 commits across 18 repos, roadmap sweep. Prior: Epiphany landing page + auth gate + local event pins, README staleness sweep, widget/OAuth work, macOS app merges.
+
+### Recent (2026-07-22, Wednesday evening — avatar dark-mode halo fix)
+
+Debugged a finicky dark-mode rendering bug on the portfolio site. The memoji avatar had a faint white halo ring visible in Chrome but not Safari, caused by non-premultiplied alpha on PNG transparent edges. When the browser downscales the image, light RGB values on the transparent pixels blend against the dark background, creating a visible glow. Fixed by premultiplying the PNG's alpha channel so transparent pixels store (0,0,0,0) instead of (255,255,255,0). Pushed to main and auto-deployed via GitHub Pages. Collected git activity across 18 repos: 124 commits in the last 12 hours, mostly roadmap-prune work across the codebase. Epiphany landed 17 commits (landing page fixes, auth gate, local pins), Echo 8 commits (font swap, Mac submission), and infrastructure updates (wiki-refresh fixes, roadmap sync). Updated journal and wiki with current app states.
 
 ### Recent (2026-07-22, Wednesday evening — Epiphany landing page + auth gate + local event pins)
 
