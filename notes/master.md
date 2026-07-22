@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-21 Tuesday late — Portfolio Animoji avatar dark-mode halo fixed (alpha channel erode), roadmap pruning complete across 16 repos. Prior: Talli avatar async loading, multiple Mac merges, widget fixes, Healstack medical device cleared, Twitter/X OAuth live, four-app iOS/macOS unification.
+All notes in one place. Updated 2026-07-22 Wednesday morning — Lexly font fix + masterclass links fixed, roadmap pruned. Prior: Portfolio avatar dark-mode halo, Talli avatar async loading, multiple Mac merges, widget fixes, Healstack medical device cleared, Twitter/X OAuth live, four-app iOS/macOS unification.
+
+### Recent (2026-07-21, Tuesday late — Lexly visual fixes + brain-dump roadmap)
+
+Lexly font and routing fixes: replaced serif Fraunces display font on landing page and app headers with the same sans-serif stack as the body text (user complained it looked too cursive/wrong). Fixed a navigation bug where masterclass cards (Pre-Calc 12 and AP Biology) were redirecting back to landing instead of opening — root cause was relative URL paths in catalog.json that resolve incorrectly from the `/app/` route; switched to absolute paths. Also logged a substantial user brain-dump of UI/feature requests into the roadmap: nav bar clutter, icon color token issues, footer spacing, more courses/content, avatar refresh feature (matching Epiphany's pattern), masterclass reader prominence, and iOS/macOS platform parity gaps (iOS app is missing the masterclass HTML viewer and avatar picker that web has). Roadmap marks these as triaged but not yet built.
 
 ### Recent (2026-07-21, Tuesday late — portfolio Animoji avatar dark-mode fix)
 
