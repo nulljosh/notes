@@ -1,6 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday late — README staleness sweep: Litigate README still branded "Brief" (old domain) 4 days post-rename, plus stale version badges on Talli/Echo/Lexly/Healstack. Alpaca broker decision consolidated in epiphany README (no conflicting sections: Wealthsimple/SnapTrade confirmed read-only, Alpaca default execution path, IBKR only if Canadian equities). Root roadmap.md logged sweep complete. Earlier evening: Autotrading research + journal update. Earlier Tuesday night: Echo iOS retry logic (network timeout on purchase), Mac unified (6782604262), BCGD age-rating fixed. Previous: Four app merges Tuesday evening (Epiphany Mac 2.5.2, Echo/Sparkjar Mac, Talli iOS 3.5.7 submitted).
+All notes in one place. Updated 2026-07-21 Tuesday late — Portfolio Animoji avatar dark-mode halo fixed (alpha channel erode), roadmap pruning complete across 16 repos. Prior: Talli avatar async loading, multiple Mac merges, widget fixes, Healstack medical device cleared, Twitter/X OAuth live, four-app iOS/macOS unification.
+
+### Recent (2026-07-21, Tuesday late — portfolio Animoji avatar dark-mode fix)
+
+Fixed dark-mode halo artifact on the Animoji avatar in nulljosh.github.io. Root cause: white-matte anti-aliasing fringe baked into the exported PNG images (partial-alpha near-white pixels at the edges). Eroded the alpha channel 1.5px on both avatar PNGs to strip the fringe, verified clean in both light and dark mode previews, pushed live to heyitsmejosh.com.
+
+### Recent (2026-07-21, Tuesday night — avatar async loading)
+
+Fixed Talli's header avatar cold-start blocking: the `AppState.init()` was doing a synchronous Core Graphics draw to generate the node-graph avatar on cache miss (first launch or missing disk cache), freezing the main thread for hundreds of milliseconds before the letter placeholder could even render. Moved the generation into a background Task, so now the letter placeholder appears instantly and the full avatar swaps in once ready—feels instant on startup.
 
 ### Recent (2026-07-22, Tuesday night)
 
