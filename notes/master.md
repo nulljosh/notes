@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-07-21 Tuesday night — roadmap prunes across 16 repos, README staleness sweep, Lexly visual fixes, widget/OAuth/rename work, four-app macOS merges. Prior: Healstack medical device cleared, Twitter/X OAuth live, Echo/Talli/Epiphany/Sparkjar iOS/macOS unification, Litigate rename complete.
 
+### Recent (2026-07-21, Tuesday late night — Echo landing page font fix)
+
+Echo's marketing landing page (echo.heyitsmejosh.com) had a Fraunces serif italic font on display headings, the same issue corrected on Lexly's landing page earlier this week. Swapped it to DM Sans to match the body text and maintain consistency across the app's typography. Dropped the Fraunces Google Fonts import entirely. Vercel auto-deployed live (commit 6019394).
+
 ### Recent (2026-07-21, Tuesday late — Lexly visual fixes + brain-dump roadmap)
 
 Lexly font and routing fixes: replaced serif Fraunces display font on landing page and app headers with the same sans-serif stack as the body text (user complained it looked too cursive/wrong). Fixed a navigation bug where masterclass cards (Pre-Calc 12 and AP Biology) were redirecting back to landing instead of opening — root cause was relative URL paths in catalog.json that resolve incorrectly from the `/app/` route; switched to absolute paths. Also logged a substantial user brain-dump of UI/feature requests into the roadmap: nav bar clutter, icon color token issues, footer spacing, more courses/content, avatar refresh feature (matching Epiphany's pattern), masterclass reader prominence, and iOS/macOS platform parity gaps (iOS app is missing the masterclass HTML viewer and avatar picker that web has). Roadmap marks these as triaged but not yet built. Confirmed: old lingo.heyitsmejosh.com redirect was already stale (DNS record deleted 2026-07-18) — Cloudflare Pages migration doesn't need to port it.
