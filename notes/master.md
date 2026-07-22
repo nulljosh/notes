@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday evening final — Litigate Mac uploaded, universal iOS+Mac live. Prior: archive succeeds, provisioning profile CLI-created.
+All notes in one place. Updated 2026-07-22 Wednesday nightly wrap — 84 commits across 17 repos, wiki refreshed, roadmap sweeps complete.
+
+### Recent (2026-07-22, Wednesday nightly wrap — 84 commits, wiki refresh complete)
+
+Final nightly wrap completed: 84 commits across 17 repos in the last 12 hours. Major work: Epiphany landing page polish (hero headline + drawer drag fixes + news refinement), Lexly font corrections (Fraunces→DM Sans serif swap matching Echo's display typography), Litigate xcode-level Brief→Litigate rename (project/targets/schemes/entitlements in both ios/ and macos/ directories, builds verified passing, pushed). All other repos received roadmap-prune passes to strip checked-off items back to open-only state. Wiki (master.md and Obsidian vault) refreshed to match current app statuses; no stale memory files needed updates. Journal deployed to journal.heyitsmejosh.com. All changes committed and pushed to GitHub.
 
 ### Recent (2026-07-22, Wednesday evening final — Litigate Mac uploaded, universal iOS+Mac on one record)
 
