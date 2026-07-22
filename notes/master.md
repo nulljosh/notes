@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-21 Tuesday night — roadmap prunes across 16 repos, README staleness sweep, Lexly visual fixes, widget/OAuth/rename work, four-app macOS merges. Prior: Healstack medical device cleared, Twitter/X OAuth live, Echo/Talli/Epiphany/Sparkjar iOS/macOS unification, Litigate rename complete.
+All notes in one place. Updated 2026-07-22 Wednesday evening — Epiphany landing page + auth gate + local event pins. Prior: roadmap prunes across 16 repos, README staleness sweep, Lexly visual fixes, widget/OAuth/rename work, four-app macOS merges, Healstack medical device cleared, Twitter/X OAuth live.
+
+### Recent (2026-07-22, Wednesday evening — Epiphany landing page + auth gate + local event pins)
+
+Wrapped up the evening finalizing Epiphany's landing page and feature gates. Wired the paid-tier CTA button to a real Stripe checkout flow so users can now actually subscribe (no more placeholder button). Fixed a viewport issue in the venue detail modal where the photo gallery was getting cut off due to incorrect ScrollView frame constraints. Started expanding the local event pins on the map — added schools to the OSM (OpenStreetMap) query to diversify the POI coverage beyond just transit, and disabled Apple's native map pin annotations so we have full control over what users see instead of Apple's generic POIs overlapping ours. Auth-gated the Portfolio tab and Register button to require login. Enabled Sign in with Apple on the production app record (com.heyitsmejosh.epiphany, ASC app ID 8QHAV87C9U) via the `asc bundle-ids capabilities add` endpoint — this is a live change to the Apple Developer account's entitlements, not just code.
 
 ### Recent (2026-07-21, Tuesday late night — Echo landing page font fix)
 
