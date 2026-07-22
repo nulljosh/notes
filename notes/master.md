@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday late night — Echo iOS submitted, Mac app deletions, Litigate/Healstack universal. Prior: App Store merges verified, Nullfolio + BCGD icons.
+All notes in one place. Updated 2026-07-22 Wednesday evening end — Litigate Mac archive succeeds, provisioning profile created, upload in flight. Prior: Echo iOS submitted, Mac deletions, Litigate/Healstack universal.
+
+### Recent (2026-07-22, Wednesday evening end — Litigate Mac archive succeeds, provisioning profile CLI-created)
+
+Litigate Mac archive now succeeds after shared AccountSheetView fix. Generated the macOS App Store provisioning profile entirely via CLI (`asc signing fetch --create-missing`) with no dashboard login needed. Build upload retry is in flight at session end — if it processes successfully, Litigate becomes a unified iOS+macOS app on a single ASC record (com.nulljosh.litigate).
 
 ### Recent (2026-07-22, Wednesday late night — Echo iOS submitted, Mac deletions, Litigate/Healstack universal)
 
