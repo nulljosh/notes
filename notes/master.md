@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday evening — portfolio avatar dark-mode fix, 124 commits across 18 repos, roadmap sweep. Prior: Epiphany landing page + auth gate + local event pins, README staleness sweep, widget/OAuth work, macOS app merges.
+All notes in one place. Updated 2026-07-22 Wednesday night — App Store merges verified, Nullfolio + BCGD icons, queued Mac builds. Prior: avatar dark-mode fix, 124 commits across 18 repos, Epiphany landing page + auth gate.
+
+### Recent (2026-07-22, Wednesday night — App Store merges verified, Nullfolio + BCGD icons)
+
+Verified a major structural win from prior sessions: the iOS/macOS App Store unification is solid. Talli, Echo, Lexly, and Epiphany's main ASC app records already each carry their macOS version in review; the four orphaned duplicate "* Mac" records (com.heyitsmejosh.talli.mac, com.nulljosh.echo.mac, etc.) just need manual dashboard deletion (blocked on interactive Apple web login). Fixed Nullfolio's stale app icon submission — it was showing an old generic orange N because the build artifact was outdated from 07-18, predating the new icon design. Cancelled that version and resubmitted with the fresh 07-21 build; now processing. Redesigned BC Garage Doors' app icon: the old one was near-black and illegible on ASC thumbnails, so refreshed it as bright safety-orange with a garage-door theme, matching our app's safety-focused brand. Pushed live with age-rating baked in. Roadmap next: Mac builds for Litigate, Healstack, Inkpress, BCGD to complete platform coverage; Spine renamed to Bindwise with fresh icon pending; full app-icon personality audit across all 20+ projects to ensure cohesion and readability.
 
 ### Recent (2026-07-22, Wednesday evening — avatar dark-mode halo fix)
 
