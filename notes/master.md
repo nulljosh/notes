@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday morning — Lexly font fix + masterclass links fixed, roadmap pruned. Prior: Portfolio avatar dark-mode halo, Talli avatar async loading, multiple Mac merges, widget fixes, Healstack medical device cleared, Twitter/X OAuth live, four-app iOS/macOS unification.
+All notes in one place. Updated 2026-07-21 Tuesday night — roadmap prunes across 16 repos, README staleness sweep, Lexly visual fixes, widget/OAuth/rename work, four-app macOS merges. Prior: Healstack medical device cleared, Twitter/X OAuth live, Echo/Talli/Epiphany/Sparkjar iOS/macOS unification, Litigate rename complete.
 
 ### Recent (2026-07-21, Tuesday late — Lexly visual fixes + brain-dump roadmap)
 
