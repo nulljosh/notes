@@ -1,14 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday evening end — Litigate Mac archive succeeds, provisioning profile created, upload in flight. Prior: Echo iOS submitted, Mac deletions, Litigate/Healstack universal.
+All notes in one place. Updated 2026-07-22 Wednesday evening final — Litigate Mac uploaded, universal iOS+Mac live. Prior: archive succeeds, provisioning profile CLI-created.
 
-### Recent (2026-07-22, Wednesday evening end — Litigate Mac archive succeeds, provisioning profile CLI-created)
+### Recent (2026-07-22, Wednesday evening final — Litigate Mac uploaded, universal iOS+Mac on one record)
 
-Litigate Mac archive now succeeds after shared AccountSheetView fix. Generated the macOS App Store provisioning profile entirely via CLI (`asc signing fetch --create-missing`) with no dashboard login needed. Build upload retry is in flight at session end — if it processes successfully, Litigate becomes a unified iOS+macOS app on a single ASC record (com.nulljosh.litigate).
+Litigate Mac build uploaded successfully to the App Store record. Fixed App Sandbox entitlement and LSApplicationCategoryType on the macOS target. Generated the provisioning profile entirely via CLI (`asc signing fetch --create-missing`) with no dashboard login needed. Renamed Xcode project/target/scheme/entitlements from Brief→Litigate in both ios/ and macos/ directories; both builds verified passing and pushed to main. Litigate is now a unified iOS+macOS app on a single ASC record (internal bundle ID remains com.nulljosh.brief, Apple-locked post-creation).
 
 ### Recent (2026-07-22, Wednesday late night — Echo iOS submitted, Mac deletions, Litigate/Healstack universal)
 
-Echo iOS 1.3.3 cleared Apple's transient review lock and submitted successfully. Talli Mac (6782661988, com.heyitsmejosh.talli.mac) and Epiphany Mac (6782703473, com.heyitsmejosh.epiphany.mac) orphaned app records deleted via asc web CLI — those duplicates are gone. Echo Transcribe Mac (6783015101) and Lexly Mac (6783501927) remain blocked by 409 conflicts (rejected versions locked in state, dashboard-only deletion path). Shifted to universal purchase consolidation: Litigate and Healstack macOS targets repointed to share their iOS bundle IDs (com.nulljosh.litigate and com.heyitsmejosh.healstack respectively, no more .mac suffixes). Healstack Mac Release build verified clean and ready to attach as a second platform. Litigate Mac bundle adjustment merged code (AccountSheetView now cross-platform), archive expected to succeed next attempt.
+Echo iOS 1.3.3 cleared Apple's transient review lock and submitted successfully. Talli Mac (6782661988, com.heyitsmejosh.talli.mac) and Epiphany Mac (6782703473, com.heyitsmejosh.epiphany.mac) orphaned app records deleted via asc web CLI — those duplicates are gone. Echo Transcribe Mac (6783015101) and Lexly Mac (6783501927) remain blocked by 409 conflicts (rejected versions locked in state, dashboard-only deletion path). Shifted to universal purchase consolidation: Litigate and Healstack macOS targets repointed to share their iOS bundle IDs (com.nulljosh.brief and com.heyitsmejosh.healstack respectively, no more .mac suffixes). Healstack Mac Release build verified clean and ready to attach as a second platform. Litigate Mac bundle adjustment merged code (AccountSheetView now cross-platform), archive expected to succeed next attempt.
 
 ### Recent (2026-07-22, Wednesday night — App Store merges verified, Nullfolio + BCGD icons)
 
