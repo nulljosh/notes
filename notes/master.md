@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — App Store merges verified, Nullfolio + BCGD icons, queued Mac builds. Prior: avatar dark-mode fix, 124 commits across 18 repos, Epiphany landing page + auth gate.
+All notes in one place. Updated 2026-07-22 Wednesday late night — Echo iOS submitted, Mac app deletions, Litigate/Healstack universal. Prior: App Store merges verified, Nullfolio + BCGD icons.
+
+### Recent (2026-07-22, Wednesday late night — Echo iOS submitted, Mac deletions, Litigate/Healstack universal)
+
+Echo iOS 1.3.3 cleared Apple's transient review lock and submitted successfully. Talli Mac (6782661988, com.heyitsmejosh.talli.mac) and Epiphany Mac (6782703473, com.heyitsmejosh.epiphany.mac) orphaned app records deleted via asc web CLI — those duplicates are gone. Echo Transcribe Mac (6783015101) and Lexly Mac (6783501927) remain blocked by 409 conflicts (rejected versions locked in state, dashboard-only deletion path). Shifted to universal purchase consolidation: Litigate and Healstack macOS targets repointed to share their iOS bundle IDs (com.nulljosh.litigate and com.heyitsmejosh.healstack respectively, no more .mac suffixes). Healstack Mac Release build verified clean and ready to attach as a second platform. Litigate Mac bundle adjustment merged code (AccountSheetView now cross-platform), archive expected to succeed next attempt.
 
 ### Recent (2026-07-22, Wednesday night — App Store merges verified, Nullfolio + BCGD icons)
 
