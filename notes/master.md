@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday evening — Inkpress 1.0.2 approved and live, splash screen fixed.
+All notes in one place. Updated 2026-07-22 Wednesday night — Talli iOS 3.5.8 submitted, What's New sheet fixed.
+
+### Recent (2026-07-22, Wednesday night — Talli 3.5.8 What's New sheet fix)
+
+Fixed a bottom-clipping bug in Talli's "What's New" sheet that was cutting off the last line of text on iPhones with home indicators. Root cause: the sheet was sizing its content from a GeometryReader but forgot to account for the safe-area inset at the bottom. Adjusted the presentationDetents calculation to include the bottom safe area, bumped the version from 3.5.7 to 3.5.8, built and archived, and submitted for Apple Review (build 202607221915, submission 66a27d56-a5cb-4bc0-abe3-046587e38bb1). Metadata copied from 3.5.7. Pushed to main.
 
 ### Recent (2026-07-22, Wednesday late evening — Inkpress 1.0.2 approved + live, splash screen fixed)
 
