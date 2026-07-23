@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — roadmap clarification (grapher/wiretext WKWebView intentional), 9 commits across grapher/wiretext/journal/notes.
+All notes in one place. Updated 2026-07-22 Wednesday night — books folder cleanup, IBS For Dummies summary start, usage limits reached (95%+).
+
+### Recent (2026-07-22, Wednesday late night — IBS For Dummies summary + Books cleanup)
+
+Wrapped the evening with cleanup and a fresh start on the book summarization pipeline. Deleted 9 already-synced book folders from iCloud (all now live on spine.heyitsmejosh.com), refreshed the Books roadmap.md, and removed the old standalone `summarize.sh` script since the `summarize-books` Claude Code skill has fully replaced it. Started on IBS For Dummies — read and summarized the Introduction plus Chapter 1 (13 of ~323 pages) before hitting weekly usage limits (95%+). Approximately 163 more photographed pages of IBS remain unread for a future session with more usage headroom.
 
 ### Recent (2026-07-22, Wednesday night — roadmap clarification: grapher/wiretext WKWebView intentional)
 
