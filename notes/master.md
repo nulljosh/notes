@@ -1,10 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — Lexly App Store rejection fix + repo consolidation.
+All notes in one place. Updated 2026-07-22 Wednesday night — Calculus for Dummies summary complete.
 
-### Recent (2026-07-22, Wednesday night — Lexly App Store rejection fix)
+### Recent (2026-07-22, Wednesday night — Calculus for Dummies summary complete)
 
-Addressed Lexly's App Store rejection on two fronts. Apple wanted confirmation that the app has no paywalls or IAP—it's entirely free with all content accessible. Second, the app was forcing sign-in before showing the free quiz content, which violates App Review guidelines about gatekeeping core features behind authentication. Removed the login gate from the select-subject flow so the course catalog and quiz questions are always visible without an account. Replies sent to Apple via Resolution Center. Both iOS and macOS builds verified passing. Next step: upload the fixed build (1.1.2+) and resubmit for review.
+Finished the Calculus for Dummies book summary pipeline. All 22 chapters photographed and processed through the summarize-books automation across four batches (chapters 1-9, 10, 11-14, and 15-22 as photos arrived from iCloud throughout the week), merged into a single calculus-for-dummies-summary.md, synced to the spine site via sync-summaries.sh, and added a Summary badge to the book entry in index.html. Committed and pushed to nulljosh/spine (commit c9070b3). The calculus book is now complete on the reading tracker.
+
+### Recent (2026-07-22, Wednesday night — Lexly App Store rejection reply)
+
+Addressed Lexly's App Store rejection on Guideline 2.1(b). Apple asked for written clarification about the business model (confirming the app has no paywalls or IAP—it's entirely free with all content accessible). Reply drafted and sent to Apple via Resolution Center explaining the free-course model with optional Pro perks. No code changes required for this rejection; awaiting Apple's response after clarification review.
 
 ### Recent (2026-07-22, Wednesday night — GitHub repo consolidation)
 
@@ -32,7 +36,7 @@ Echo iOS 1.3.3 cleared Apple's transient review lock and submitted successfully.
 
 ### Recent (2026-07-22, Wednesday night — App Store merges verified, Nullfolio + BCGD icons)
 
-Verified a major structural win from prior sessions: the iOS/macOS App Store unification is solid. Talli, Echo, Lexly, and Epiphany's main ASC app records already each carry their macOS version in review; the four orphaned duplicate "* Mac" records (com.heyitsmejosh.talli.mac, com.nulljosh.echo.mac, etc.) just need manual dashboard deletion (blocked on interactive Apple web login). Fixed Nullfolio's stale app icon submission — it was showing an old generic orange N because the build artifact was outdated from 07-18, predating the new icon design. Cancelled that version and resubmitted with the fresh 07-21 build; now processing. Redesigned BC Garage Doors' app icon: the old one was near-black and illegible on ASC thumbnails, so refreshed it as bright safety-orange with a garage-door theme, matching our app's safety-focused brand. Pushed live with age-rating baked in. Roadmap next: Mac builds for Litigate, Healstack, Inkpress, BCGD to complete platform coverage; Spine renamed to Bindwise with fresh icon pending; full app-icon personality audit across all 20+ projects to ensure cohesion and readability.
+Verified a major structural win from prior sessions: the iOS/macOS App Store unification is solid. Talli, Echo, Lexly, and Epiphany's main ASC app records already each carry their macOS version in review; the four orphaned duplicate "* Mac" records (com.heyitsmejosh.talli.mac, com.nulljosh.echo.mac, etc.) just need manual dashboard deletion (blocked on interactive Apple web login). Fixed Nullfolio's stale app icon submission — it was showing an old generic orange N because the build artifact was outdated from 07-18, predating the new icon design. Cancelled that version and resubmitted with the fresh 07-21 build; now processing. Redesigned BC Garage Doors' app icon: the old one was near-black and illegible on ASC thumbnails, so refreshed it as bright safety-orange with a garage-door theme, matching our app's safety-focused brand. Pushed live with age-rating baked in. Roadmap next: Mac builds for Litigate, Healstack, Inkpress, BCGD to complete platform coverage; Spinework (formerly Spine, renamed from Bindwise due to App Store availability) needs fresh icon design; full app-icon personality audit across all 20+ projects to ensure cohesion and readability.
 
 ### Recent (2026-07-22, Wednesday evening — avatar dark-mode halo fix)
 
