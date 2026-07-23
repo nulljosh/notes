@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — GitHub repo consolidation + Talli dynamic version reading.
+All notes in one place. Updated 2026-07-22 Wednesday night — Lexly App Store rejection fix + repo consolidation.
+
+### Recent (2026-07-22, Wednesday night — Lexly App Store rejection fix)
+
+Addressed Lexly's App Store rejection on two fronts. Apple wanted confirmation that the app has no paywalls or IAP—it's entirely free with all content accessible. Second, the app was forcing sign-in before showing the free quiz content, which violates App Review guidelines about gatekeeping core features behind authentication. Removed the login gate from the select-subject flow so the course catalog and quiz questions are always visible without an account. Replies sent to Apple via Resolution Center. Both iOS and macOS builds verified passing. Next step: upload the fixed build (1.1.2+) and resubmit for review.
 
 ### Recent (2026-07-22, Wednesday night — GitHub repo consolidation)
 
