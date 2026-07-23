@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — Talli 3.5.8 dynamic version reading added.
+All notes in one place. Updated 2026-07-22 Wednesday night — GitHub repo consolidation + Talli dynamic version reading.
+
+### Recent (2026-07-22, Wednesday night — GitHub repo consolidation)
+
+Folded four old one-off standalone GitHub repos into the `labs` monorepo: `abraham`, `video-speed-ext`, `bank`, and `code-meta`. Deleted the archived `braingraph` repo entirely (already merged into notes back in July). Toggled `newsline` and `quotable` as temporarily archived for dependency audit, then restored them with no changes. Net result: repo count dropped from 27 to 22 active repositories via gh CLI consolidation.
 
 ### Recent (2026-07-22, Wednesday night — Talli What's New dynamic version fix)
 
