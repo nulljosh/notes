@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-07-22 Wednesday night — app status refresh, Talli 3.5.8 + Inkpress live, security-sweep clean.
 
+### Recent (2026-07-22, Wednesday night — Spine library reading order)
+
+Organized the Spine app's library reading order by adding the four books I checked out this week at the top of the "Out From The Library" section with numbered ranks (1-4): IBS for Dummies, Sobriety for Dummies, Statistics for Dummies, and Physics I for Dummies. This makes the current checkout visible at a glance and keeps track of reading priorities. Pushed to nulljosh/spine (commit b4dd36f).
+
 ### Recent (2026-07-22, Wednesday night — Calculus for Dummies summary complete)
 
 Finished the Calculus for Dummies book summary pipeline. All 22 chapters photographed and processed through the summarize-books automation across four batches (chapters 1-9, 10, 11-14, and 15-22 as photos arrived from iCloud throughout the week), merged into a single calculus-for-dummies-summary.md, synced to the spine site via sync-summaries.sh, and added a Summary badge to the book entry in index.html. Committed and pushed to nulljosh/spine (commit c9070b3). The calculus book is now complete on the reading tracker.
