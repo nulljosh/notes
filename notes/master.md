@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — Spine native SwiftUI rewrite, app status refresh, Talli 3.5.8 + Inkpress live.
+All notes in one place. Updated 2026-07-22 Wednesday night — roadmap clarification (grapher/wiretext WKWebView intentional), 9 commits across grapher/wiretext/journal/notes.
+
+### Recent (2026-07-22, Wednesday night — roadmap clarification: grapher/wiretext WKWebView intentional)
+
+Corrected an earlier roadmap audit that had flagged Grapher and Wiretext as candidates for native SwiftUI conversion, modeling them after the Books app rewrite. Discovered both repos' own CLAUDE.md explicitly document the WKWebView shell as intentional ("app has no native API needs") — not an oversight like Books was, but a deliberate design choice. Updated both grapher/roadmap.md and wiretext/roadmap.md to reflect this and clarify that native conversion is only worth revisiting if these apps ever genuinely need a native API (e.g. share sheet, widgets) that the web shell can't provide. Committed and pushed to grapher and wiretext repositories.
 
 ### Recent (2026-07-22, Wednesday night — Spine native SwiftUI rewrite)
 
