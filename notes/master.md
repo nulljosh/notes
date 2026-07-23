@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — app status refresh, Talli 3.5.8 + Inkpress live, security-sweep clean.
+All notes in one place. Updated 2026-07-22 Wednesday night — Spine native SwiftUI rewrite, app status refresh, Talli 3.5.8 + Inkpress live.
+
+### Recent (2026-07-22, Wednesday night — Spine native SwiftUI rewrite)
+
+Rewrote the Spine app as a real native SwiftUI application instead of a WebView wrapper. The original wrapper had the layout weirdly centered instead of left-aligned and the markdown in book summaries (headers, bullet lists) was rendering as raw text instead of properly styled. Built it as a true native app with SwiftUI views, bundled the site's JSON and markdown data directly into the app resources so it doesn't need a backend connection, and fixed both the layout and markdown rendering bugs. Updated the sync-summaries.sh script to automatically keep the bundled data in sync as the spine.heyitsmejosh.com site updates. Verified both Mac and iOS builds compile clean. Pushed two commits to main.
 
 ### Recent (2026-07-22, Wednesday night — Spine library reading order)
 
