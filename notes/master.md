@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — Talli iOS 3.5.8 submitted, What's New sheet fixed.
+All notes in one place. Updated 2026-07-22 Wednesday night — Talli 3.5.8 dynamic version reading added.
+
+### Recent (2026-07-22, Wednesday night — Talli What's New dynamic version fix)
+
+Circled back and fixed a hardcoded version string in Talli's What's New sheet that was showing 3.5.6 despite the app being 3.5.8. Changed it to read the bundle version dynamically at runtime so it never drifts again, no matter what version is submitted. Build verified and pushed to main (commit c8f2e3e).
 
 ### Recent (2026-07-22, Wednesday night — Talli 3.5.8 What's New sheet fix)
 
