@@ -1,10 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday nightly wrap — 84 commits across 17 repos, wiki refreshed, roadmap sweeps complete.
+All notes in one place. Updated 2026-07-22 Wednesday evening — Inkpress 1.0.2 approved and live, splash screen fixed.
 
-### Recent (2026-07-22, Wednesday nightly wrap — 84 commits, wiki refresh complete)
+### Recent (2026-07-22, Wednesday late evening — Inkpress 1.0.2 approved + live, splash screen fixed)
 
-Final nightly wrap completed: 84 commits across 17 repos in the last 12 hours. Major work: Epiphany landing page polish (hero headline + drawer drag fixes + news refinement), Lexly font corrections (Fraunces→DM Sans serif swap matching Echo's display typography), Litigate xcode-level Brief→Litigate rename (project/targets/schemes/entitlements in both ios/ and macos/ directories, builds verified passing, pushed). All other repos received roadmap-prune passes to strip checked-off items back to open-only state. Wiki (master.md and Obsidian vault) refreshed to match current app statuses; no stale memory files needed updates. Journal deployed to journal.heyitsmejosh.com. All changes committed and pushed to GitHub.
+Fixed Inkpress's blank splash screen by setting a proper native UILaunchScreen background color (no design assets needed, just correcting the launch configuration). Build verified locally and pushed to main. Confirmed that Inkpress v1.0.2 was approved by Apple App Review and is now live, eligible for distribution across the App Store. Major structural win: the iOS/macOS App Store unified purchase model is working across all key apps — Echo, Lexly, Litigate, and Epiphany already merged to single records. Talli Mac build VALID and ready. 84 commits across 17 repos in the last 12 hours are accounted for. Wiki and master.md updated to reflect all current app statuses. All changes deployed and pushed to GitHub.
 
 ### Recent (2026-07-22, Wednesday evening final — Litigate Mac uploaded, universal iOS+Mac on one record)
 
