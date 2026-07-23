@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — books folder cleanup, IBS For Dummies summary start, usage limits reached (95%+).
+All notes in one place. Updated 2026-07-22 Wednesday night — books folder cleanup, IBS For Dummies 1-10 folder fully summarized (94 images/pages 1-160), remainder pending.
+
+### Recent (2026-07-22, Wednesday late night — IBS For Dummies 1-10 folder complete)
+
+Finished the entire 1-10 folder of IBS For Dummies (94 images, pages 1–160, Introduction through Chapter 10) with full validation. About 85 more photographed pages are still waiting in the remainder folder, paused due to usage limits again.
 
 ### Recent (2026-07-22, Wednesday late night — IBS For Dummies summary + Books cleanup)
 
