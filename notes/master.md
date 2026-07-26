@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — Spine ASC submission remediated (34→2 errors), fastlane screenshot pipeline set up, Living Well summary completed (all 175 tips), sync-summaries.sh nested-folder bug fixed.
+All notes in one place. Updated 2026-07-26 Sunday night — What's New sheet detent fix across 5 apps (content-measured height), Talli 3.5.9 submitted, Healstack v2.3.3 TestFlight uploaded with CFBundleDisplayName fix.
+
+### Recent (2026-07-26, Sunday late night — What's New sheet content-measured fix across 5 apps)
+
+Discovered a recurring bug affecting the "What's New" sheet in five apps: Lexly, Litigate, Healstack, Nimble, and Sparkjar all used a hardcoded `.presentationDetents([.medium])` that forced a fixed half-screen height, leaving excess whitespace when update notes were short. Replaced the static detent with a content-measured approach using GeometryReader and PreferenceKey — the same pattern already shipped in Talli 3.5.8. Built and verified both Lexly and Litigate to confirm the fix works correctly; Healstack, Nimble, and Sparkjar received identical mechanical edits but were not built due to session usage constraints at 94%+ capacity. All five changes committed and pushed as source-only updates — not yet built into new shipped app versions.
 
 ### Recent (2026-07-26, Sunday late night — pre-submission ship cleanup)
 
