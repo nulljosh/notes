@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — Talli v3.5.9 submitted for review (version-train rejection recovery), Healstack v2.3.3 TestFlight build uploaded, portfolio avatar fix, NYC autoplay leak fixed, journal deploy-hook automation wired up, book summaries extended.
+All notes in one place. Updated 2026-07-26 Sunday late night — pre-submission cleanup across Talli/Healstack/Lexly (login item removal, CFBundleDisplayName fix, Support URL added + demo creds verified).
+
+### Recent (2026-07-26, Sunday late night — pre-submission ship cleanup)
+
+Cleaned up the pre-submission backlogs across three apps. Removed a stale "login broken" roadmap item from Talli (confirmed the stored credentials still work fine), and generated a QR code sticker asset linking to talli.heyitsmejosh.com. For Healstack, pruned old ship-notes since v1.0 is already in review waiting for screenshots and availability settings. On Lexly, tackled the Guideline 1.5 rejection — the Support URL was pointing to the marketing homepage with zero actual help content. Built and deployed a real support.html page covering account setup, password reset, and privacy details, then updated the App Store Connect listing. Also verified the demo login credentials Apple said failed: tested them directly via API and they work fine, so that part of the rejection isn't bad credentials. It's either a real macOS sign-in bug or a one-off fluke. Flagged the Mac sign-in path for a live device test before Lexly's next submission. All three roadmaps updated and pruned.
 
 ### Recent (2026-07-26, Sunday evening — Talli 3.5.9 App Store submission)
 
