@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-07-26 Sunday — dotfiles work (`/work` command overhaul, Notes pipeline fixes, ingest skill improvements). Saturday: visual verification found real UI bugs, DNS apex and avatar resolved, disk cleanup (27GB freed).
 
+### Recent (2026-07-26, Sunday night — journal deploy hook fix)
+
+Discovered that journal posts had silently stopped auto-deploying after commit. Entries were getting written and committed but never going live — the deploy.sh script existed but was only wired into manual workflow, not the git hook chain. Fixed it permanently by adding a post-commit hook at ~/.git-hooks/post-commit that watches for changes to _posts/ in the journal repo and auto-runs deploy.sh right after the commit succeeds. Tested end-to-end, verified working, cleaned up test files and pushed. This makes it impossible for new entries to silently stall and not publish again.
+
 ### Recent (2026-07-26, Sunday evening — spine book summaries extended + queue discovery)
 
 Extended the "Living Well in a Down Economy For Dummies" summary from tips 1-27 through tip 40 — added everything from leaving your job and side hustles, through financial records, filing systems, finding an insurance agent, balanced insurance, and permanent versus term life insurance. Badge was already live, so this shipped immediately. More significantly: discovered the book-summarization queue is far from empty (prior notes incorrectly claimed it was). Spotted roughly 594 unsummarized images across three books still waiting (Down Economy 208 left, Sobriety 297, IBS remainder 85). The blocker is real — raw HEICs run 1.5–2.8MB each and exceed the Read tool's 256KB ceiling, so they need pre-conversion to ~100–160KB JPEG using ImageMagick (`sips -s format jpeg -s formatOptions 40 -Z 1200`). Cleared 17 files after summarizing and updated the real tracker (~/Library/Mobile Documents/com~apple~CloudDocs/Documents/Misc/Books/ROADMAP.md) with the resume point (41–60 folder) and the sips gotcha for future runs.
