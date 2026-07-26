@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-25 Saturday night — built ingest skill to automate Notes.app filing into project roadmaps, filed 22 notes across 12 repos + wiki pages, disclosed known git incident during run.
+All notes in one place. Updated 2026-07-25 Saturday night — polish pass across 8 repos (navbar/nav/icon/footer/avatar fixes), DNS apex repointed, Animoji outline closed out, disk cleanup (27GB freed).
 
 ### Recent (2026-07-25, Saturday night — Notes.app ingest automation)
 
@@ -405,7 +405,7 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 - books-ios v1.0: Build uploaded to ASC with icon live. Icon has recurring canvas-scaling bug (artwork too small on tile).
 - Blockers documented in ~/Documents/Code/roadmap.md: Talli Mac + Epiphany Mac exports (missing App Group entitlements), Books Mac export (distribution profile), recurring icon-scaling bug (plan: merge Books Mac + books-ios and Spark Mac + Sparkjar into universal app records).
 
-### Active Projects (refreshed 2026-07-22; names match repos — Newsline, Inkpress, Sparkjar, Litigate, Spinework)
+### Active Projects (refreshed 2026-07-25; names match repos — Newsline, Inkpress, Sparkjar, Litigate, Spinework)
 | Repo (app) | Status | Next |
 |---|---|---|
 | epiphany | v2.6.1+ live on web + App Store (id6779522175). Commodity/crypto enrichment shipped 2026-07-19; Yelp venue reviews + Pro gating live; Twitter OAuth env vars set 2026-07-18 | Monitor; RevenueCat eval for IAP gating |
