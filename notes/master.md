@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — portfolio avatar transparent-eye fix, NYC autoplay leak fixed, journal deploy-hook automation wired up, book summaries extended.
+All notes in one place. Updated 2026-07-26 Sunday night — Healstack v2.3.3 TestFlight build uploaded, portfolio avatar fix, NYC autoplay leak fixed, journal deploy-hook automation wired up, book summaries extended.
+
+### Recent (2026-07-26, Sunday night — Healstack v2.3.3 TestFlight build + upload)
+
+Built and uploaded Healstack v2.3.3 to App Store Connect/TestFlight now that the Home Screen display name bug was fixed. The app had been stuck showing "Dose" as the icon label because ios/Info.plist never had a CFBundleDisplayName entry — it only lived in project.yml, which doesn't override a missing plist key. Added it directly to the plist, built, archived, and pushed build 202607261112 to TestFlight. Home Screen now correctly shows "Healstack". App Store submission still blocked on screenshots and dashboard-only availability settings.
 
 ### Recent (2026-07-26, Sunday late night — portfolio avatar transparent-eye fix)
 
