@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-25 Saturday night — polish pass across 8 repos (navbar/nav/icon/footer/avatar fixes), DNS apex repointed, Animoji outline closed out, disk cleanup (27GB freed).
+All notes in one place. Updated 2026-07-25 Saturday night — wiki index cleanup and 12-repo ingest pass, app polish across 8 repos, DNS apex and avatar fixes, disk cleanup (27GB freed).
+
+### Recent (2026-07-25, Saturday late night — wiki index streamline)
+
+Simplified the wiki index from 726 to ~300 words by consolidating every entry into a tight `[[page-name]] — one-line description` format, dropping all status/version/date/review state details since they live on the entity pages already. Collapsed the unwieldy 30-entry Sources wall into a single-line Sources entry. Updated wiki/CLAUDE.md to formally document the index format rule: descriptions say what a thing *is*, nothing more. No parentheticals, no review states, no date creep. Gives the index back to readers instead of using it as a changelog. This cleanup let the Obsidian vault's index serve as an actual table of contents again.
 
 ### Recent (2026-07-25, Saturday night — Notes.app ingest automation)
 
