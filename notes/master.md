@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — Healstack v2.3.3 TestFlight build uploaded, portfolio avatar fix, NYC autoplay leak fixed, journal deploy-hook automation wired up, book summaries extended.
+All notes in one place. Updated 2026-07-26 Sunday night — Talli v3.5.9 submitted for review (version-train rejection recovery), Healstack v2.3.3 TestFlight build uploaded, portfolio avatar fix, NYC autoplay leak fixed, journal deploy-hook automation wired up, book summaries extended.
+
+### Recent (2026-07-26, Sunday evening — Talli 3.5.9 App Store submission)
+
+Talli v3.5.8 hit an unusual rejection from App Store Connect: version train was closed because 3.5.8 was already the live/READY_FOR_SALE version. Turns out the build had shipped as live without an intermediate step, so Apple wouldn't accept the same version number again even though we were trying to resubmit for a different reason. Bumped to v3.5.9, archived the same exact build content (no code changes, just a version bump), uploaded it to ASC, created a new version record, attached the build, and submitted for review via asc CLI. Submission ID 32660788-1736-42da-8028-6ac5b8d7a89f, now WAITING_FOR_REVIEW. Updated talli/roadmap.md to reflect the correct status and timing.
 
 ### Recent (2026-07-26, Sunday night — Healstack v2.3.3 TestFlight build + upload)
 
