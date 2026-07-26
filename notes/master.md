@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-25 Saturday night — visual verification found real UI bugs (quotable grid, talli settings clip), fixed both. Polish across 8 repos, DNS apex and avatar resolved, disk cleanup (27GB freed).
+All notes in one place. Updated 2026-07-26 Sunday — dotfiles work (`/work` command overhaul, Notes pipeline fixes, ingest skill improvements). Saturday: visual verification found real UI bugs, DNS apex and avatar resolved, disk cleanup (27GB freed).
+
+### Recent (2026-07-26, Sunday — dotfiles infrastructure: /work overhaul + ingest improvements)
+
+Overhauled the `/work` command that routes to specific repos. Previously it required `start|stop|dump` as the first word and only worked within a git root or cwd, making it impossible to target a project from the home directory. Rewrote it to accept a project name directly (`/work epiphany` or `/work talli fix-spinner`) and resolve that name against ~/Documents/Code or an alias table in CLAUDE.md, then make that the working scope. Fixed a real data-loss bug in the Notes export pipeline: notes were deleted *before* content was filed into the roadmap, which would have destroyed content if a note didn't parse. Changed the sequence so notes delete only after durable file writes succeed. Eliminated the duplicate headless-Chrome PDF export path and switched to plaintext reads via notes-list.sh. Ported the filename case trap (roadmap.md == ROADMAP.md on macOS) and git hygiene rules from the ingest skill into /work so both commands handle the same edge cases consistently. Updated ingest skill: added dedupe before appending to roadmap, documented the `/ingest <folder>` pattern, and fixed notes-list.sh crashing on one locked/attachment-only note that broke the whole run. Graded /work from B- to A, ingest from B+ to A. Remaining nit: filing rules documented in three places.
 
 ### Recent (2026-07-25, Saturday late night — visual verification delta)
 
