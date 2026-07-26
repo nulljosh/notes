@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday late night — pre-submission cleanup across Talli/Healstack/Lexly (login item removal, CFBundleDisplayName fix, Support URL added + demo creds verified).
+All notes in one place. Updated 2026-07-26 Sunday night — Spine ASC submission remediated (34→2 errors), fastlane screenshot pipeline set up, Living Well summary completed (all 175 tips), sync-summaries.sh nested-folder bug fixed.
 
 ### Recent (2026-07-26, Sunday late night — pre-submission ship cleanup)
 
