@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-22 Wednesday night — books folder cleanup, IBS For Dummies 1-10 folder fully summarized (94 images/pages 1-160), remainder pending.
+All notes in one place. Updated 2026-07-25 Saturday night — built ingest skill to automate Notes.app filing into project roadmaps, filed 22 notes across 12 repos + wiki pages, disclosed known git incident during run.
+
+### Recent (2026-07-25, Saturday night — Notes.app ingest automation)
+
+Built a new `ingest` skill that sweeps through Notes.app, files each note into the matching project's roadmap based on content, and clears the backlog by deleting notes. Ran the first full pass tonight and processed 22 notes across Litigate, Healstack, Echo, Lexly, Talli, Epiphany, BCGD, Spine, Inkpress, Quotable, the portfolio, and Sparkjar repos, plus general notes on education plans and wiki ideas that went into the Obsidian vault. Disclosed a known incident mid-run: while fixing a self-inflicted bug, a git checkout operation accidentally discarded uncommitted changes to one app's config file. It's a version-control-level mistake, not code logic, and unrecoverable via git alone (Time Machine may have it). Patched the skill afterwards to guard against recurrence: it now validates diffs before any git operations and always matches existing roadmap filename case exactly instead of assuming variants. 12 repos touched tonight, all with the same "Ingest: file Notes.app items into roadmap" commit.
 
 ### Recent (2026-07-22, Wednesday late night — IBS For Dummies 1-10 folder complete)
 
