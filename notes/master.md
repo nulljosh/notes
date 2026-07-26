@@ -1,6 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday — dotfiles work (`/work` command overhaul, Notes pipeline fixes, ingest skill improvements). Saturday: visual verification found real UI bugs, DNS apex and avatar resolved, disk cleanup (27GB freed).
+All notes in one place. Updated 2026-07-26 Sunday night — portfolio avatar transparent-eye fix, NYC autoplay leak fixed, journal deploy-hook automation wired up, book summaries extended.
+
+### Recent (2026-07-26, Sunday late night — portfolio avatar transparent-eye fix)
+
+Fixed a creepy avatar bug on the portfolio site. The old background-removal script had accidentally punched transparent holes straight through the memoji's eyes and glasses, leaving them hollow and staring into the void. Regenerated the image correctly using edge-flood-fill instead and killed the tongue-sticking-out animation that had gotten glitchy. Avatar is back to looking friendly. Pushed to nulljosh.github.io (commit f969c41), updated the journal entry, and deployed.
+
+### Recent (2026-07-26, Sunday late night — NYC colonist autoplay leak patched)
+
+Found a stray autoplay bug in the NYC web port that had reintroduced the auto-reassignment behavior supposedly deleted back on 2026-07-02. The directive engine was removed from the native macOS/iOS app, and the web port had the directive bar UI stripped on 2026-07-16, but a deeper layer remained unguarded: jobTick in web/js/systems.js was running unconditionally every tick and calling assignRandomGatherTarget on completion, trapping colonists in a self-assignment loop after finishing a job. Removed the unguarded reassignment logic entirely — colonists now properly idle after finishing a job and wait for explicit player input. Updated the project memory file to clarify that both JavaScript and Swift codebases need independent enforcement of the same rule (no auto-assignment at any layer). Pushed to main (commit f0bb2b0).
 
 ### Recent (2026-07-26, Sunday night — journal deploy hook fix)
 
