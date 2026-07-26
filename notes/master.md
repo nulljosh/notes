@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-25 Saturday night — wiki index cleanup and 12-repo ingest pass, app polish across 8 repos, DNS apex and avatar fixes, disk cleanup (27GB freed).
+All notes in one place. Updated 2026-07-25 Saturday night — visual verification found real UI bugs (quotable grid, talli settings clip), fixed both. Polish across 8 repos, DNS apex and avatar resolved, disk cleanup (27GB freed).
+
+### Recent (2026-07-25, Saturday late night — visual verification delta)
+
+Ran a visual pass on tonight's UI changes after the build verification passed. Found two real bugs the builds had hidden entirely. Quotable's earlier whitespace fix didn't work — the answer grid produced 3 columns for 4 answers, leaving an orphan row and dead space below. Re-fixed with a responsive grid (minmax) and changed justify-content from center to flex-start, which was the root cause. Also fixed a standing-rule violation: the scifi genre badge was straight purple (#9b5de5), swapped to cyan. Talli's Settings tab had a layout issue — content sat behind the FloatingTabBar capsule, clipping the keychain footnote and Log Out button. Settings was the only tab missing the 90pt bottom safeAreaInset its siblings already had. Fixed it. Lexly's subject nav scroll fix confirmed working: scrollHeight 43 ≤ clientHeight 43 (vertical scrolling gone) and scrollWidth 730 > clientWidth 358 (horizontal still works). School dashboard link now returns 200 instead of 404. Two items left open: Talli Settings fix builds clean but visual re-confirmation still pending (usage cap hit), and Quotable still has ~90px unexplained dead space below answers. Roadmap notes recorded in each app under "Visual verification 2026-07-25".
 
 ### Recent (2026-07-25, Saturday late night — wiki index streamline)
 
