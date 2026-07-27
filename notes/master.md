@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Monday night — BCGD leads pipeline built (Supabase anon INSERT, was discarding via alert), 11 service + 12 area pages generated, Cloudflare Pages deploy gotcha documented (vercel --prod silently fails). Dashboard: Supabase auth, Today view, inventory deductions on job completion. Earlier: web font audit (Echo, Spine, Sparkjar), YC parser fix, Spine To Read section, Epiphany flights/statements/Pro gating, iOS applesignin. All builds passing, no blockers.
+All notes in one place. Updated 2026-07-27 Sunday evening — Portfolio avatar background removed (blue circle via border flood-fill), work list split into Journal (web) and Inkpress (iOS app). Recent wraps: BCGD leads pipeline (Supabase anon INSERT, was discarding via alert), 11 service + 12 area pages, Cloudflare Pages deployment gotcha. Earlier: web font audit (Echo, Spine, Sparkjar), YC parser fix, Spine To Read section, Epiphany flights/statements/Pro gating, iOS applesignin. All builds passing, no blockers.
+
+### Recent (2026-07-27, Sunday evening — Portfolio avatar + work-list split)
+
+Fixed the portfolio's Memoji avatar tonight—the solid blue circle background had been a week-long frustration. Previous attempts to remove it via color-key masking failed because I needed to preserve the blue in the eyes and glasses. Switched to border flood-fill approach, which let me strip just the background circle while keeping the eye color intact. Also split the portfolio work list into two separate entries: "Journal — weekly writing" (web) and "Inkpress — RSS reader" (iOS app on App Store), since they're now completely unrelated projects. Renamed Spark to Sparkjar throughout the list to match the recent domain change.
 
 ### Recent (2026-07-27, Monday night — BCGD leads pipeline + URL structure)
 
