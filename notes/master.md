@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Sunday night — Web tier font audit (Echo, Spine, Sparkjar, Epiphany) switched from external fonts (Google Fonts, Fraunces) to system font stacks. Spine added To Read section and IBS For Dummies summary (ch. 1-15). Epiphany flights bbox fixed (4-degree bug from half-span mistake), statements refetch loop fixed, People tab and Daily Brief gated behind Pro tier.
+All notes in one place. Updated 2026-07-27 Monday afternoon — Web tier font audit complete (Echo, Spine, Sparkjar, Epiphany) with external fonts removed and system stacks deployed. Sparkjar YC Requests for Startups parser fixed. Spine added To Read section and IBS For Dummies summary (ch. 1-15). Epiphany flights bbox fixed (4-degree bug from half-span mistake), statements refetch loop fixed, People tab and Daily Brief gated behind Pro tier. All builds passing, tests green, no remaining blockers.
+
+### Recent (2026-07-27, Monday afternoon — Font audit & parser fixes complete)
+
+All font audit work from Sunday night tested and verified. Sparkjar's YC Requests for Startups scraper fixed: the regex was anchoring on `</a></span>` but YC bylines have trailing text after that, causing the capture to spill into adjacent entries. Re-anchored to `</span>` only; all 13 RFS entries now parse cleanly. Font changes across Echo, Spine, Sparkjar, and Epiphany all building clean. npm test passed on sparkjar (34 passed, 6 skipped). All changes committed, deployed, and pushed. Updated wiki and CLAUDE.md.
 
 ### Recent (2026-07-27, Sunday night — Spine To Read section and IBS For Dummies summary)
 
