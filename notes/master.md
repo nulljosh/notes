@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Monday night — portfolio work expanded (Newsline, Etyma, Labs source added to work list); litigate security audit discovered case files publicly accessible pre-auth on live site (P0 logged to roadmap); Lexly icon redesign and font cleanup landed. Recent: Talli iOS v3.5.11 SUBMITTED, web restyled; BCGD leads pipeline built; portfolio avatar fixed and work list expanded; font audit (Echo, Spine, Sparkjar, Lexly); Epiphany flights/Pro gating; iOS applesignin. All builds passing, no blockers except litigate auth remediation.
+All notes in one place. Updated 2026-07-27 Monday night — plan project created (SFU CS + Beedie finance minor tracked); portfolio work expanded (Newsline, Etyma, Labs source added to work list); litigate security audit discovered case files publicly accessible pre-auth on live site (P0 logged to roadmap); Lexly icon redesign and font cleanup landed. Recent: Talli iOS v3.5.11 SUBMITTED, web restyled; BCGD leads pipeline built; portfolio avatar fixed and work list expanded; font audit (Echo, Spine, Sparkjar, Lexly); Epiphany flights/Pro gating; iOS applesignin. All builds passing, no blockers except litigate auth remediation.
+
+### Recent (2026-07-27, Monday night — plan project created)
+
+Crystallized the school/career roadmap as a tracked project. Migrated from a loose spreadsheet in Downloads to a proper GitHub repository with README, CLAUDE.md, roadmap.md, and architecture diagram. The plan encodes: SFU Computer Science degree (Burnaby campus) with a Beedie Finance minor, plus an optional MSc Finance track at Beedie after 1–2 years working. This supersedes the earlier UVic CS plan and the older Capilano paralegal track. Main admission blocker is Pre-Calculus 12 (KPU MATQ free upgrading in progress). Repository is private because it contains transcript details and personal financial constraints. Memory file updated to reflect the SFU path; Obsidian vault seeded with an entity page for the project.
 
 ### Recent (2026-07-27, Monday night — litigate security audit and Lexly icon/fonts)
 
