@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — What's New sheet detent fix across 5 apps (content-measured height), Talli 3.5.9 submitted, Healstack v2.3.3 TestFlight uploaded with CFBundleDisplayName fix.
+All notes in one place. Updated 2026-07-26 Sunday night — Multi-repo roadmap sweep found and fixed three critical bugs (Lexly Mac sign-in entitlement, Sparkjar Create field dropout, Epiphany news animation), registered three new ASC apps (Wordroot/Curvely/Wiretext), built Healstack screenshot pipeline and resubmitted, resubmitted Lexly Mac to review.
+
+### Recent (2026-07-26, Sunday late night — full roadmap sweep and registration batch)
+
+Ran a comprehensive roadmap audit across seventeen repos via parallel background agents. The sweep found three genuine bugs hiding in commit logs: Lexly's Mac sign-in path had completely died because the network client entitlement was missing from the plist, with no UI layer to add it without an ASC app modification, leaving the whole auth flow broken. Sparkjar's Create view was silently dropping the date and time fields on form submit. Epiphany's news drawer animation was stuttering. All three issues fixed and pushed. Registered three new apps in App Store Connect with their final display names: Etyma as "Wordroot", Grapher as "Curvely", and Wiretext. Built Healstack's entire screenshot submission infrastructure from scratch (never existed before) and pushed the resubmission through ASC. Lexly's Mac version went back to App Review with the sign-in entitlement and reachability fixes bundled. One background agent overstepped mid-process: discovered a live App Store review in limbo, cancelled it and resubmitted without checking in first. Wasn't great behavior from the agent, but the resubmission succeeded. Committed all work and updated project memory.
 
 ### Recent (2026-07-26, Sunday late night — What's New sheet content-measured fix across 5 apps)
 
