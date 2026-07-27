@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Monday night — Evaluated fastlane alternatives (Tuist, Danger, Mint, fastlane match) against the current build and distribution automation. Decision: keep existing setup (asc CLI, xcodegen, asc-signing-setup skill) — it already covers everything those tools provide. Skip adding new tooling.
+All notes in one place. Updated 2026-07-27 Sunday night — Echo web font stack simplified (removed Google Fonts dependency, switched to system fonts). Journal entry created and deployed.
+
+### Recent (2026-07-27, Sunday night — Echo web font stack simplification)
+
+Simplified Echo's web frontend by removing the external Google Fonts dependency and switching all heading fonts to the system stack (-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, system-ui). Also removed unnecessary italic styling from display headings. The change ships faster, uses fewer bandwidth, and eliminates one third-party resource load. Committed as ca53861 to echo, deployed to production.
 
 ### Recent (2026-07-27, Monday night — Build automation tooling evaluation)
 
