@@ -1,12 +1,16 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Monday night — litigate security audit discovered case files publicly accessible pre-auth on live site (P0 logged to roadmap); Lexly icon redesign and font cleanup landed. Recent: Talli iOS v3.5.11 SUBMITTED, web restyled; BCGD leads pipeline built; portfolio avatar fixed; font audit (Echo, Spine, Sparkjar, Lexly); Epiphany flights/Pro gating; iOS applesignin. All builds passing, no blockers except litigate auth remediation.
+All notes in one place. Updated 2026-07-27 Monday night — portfolio work expanded (Newsline, Etyma, Labs source added to work list); litigate security audit discovered case files publicly accessible pre-auth on live site (P0 logged to roadmap); Lexly icon redesign and font cleanup landed. Recent: Talli iOS v3.5.11 SUBMITTED, web restyled; BCGD leads pipeline built; portfolio avatar fixed and work list expanded; font audit (Echo, Spine, Sparkjar, Lexly); Epiphany flights/Pro gating; iOS applesignin. All builds passing, no blockers except litigate auth remediation.
 
 ### Recent (2026-07-27, Monday night — litigate security audit and Lexly icon/fonts)
 
 Attempted to open-source the litigate app tonight and discovered a critical security exposure: the live site (litigate.heyitsmejosh.com) was serving the actual court documents and case dossier to unauthenticated users. The auth overlay was CSS-only, so the full case data was already in the served HTML — curl returned 42 matches on real party names from the Trommel litigation. The repo itself never went public, but the deployed site leaked everything. Logged as P0 to the roadmap with a link to the remediation plan. The structured brief data is safe in Supabase; just need to remove the static prose from the bundle and implement server-side auth checks before serving content. Also untracked `.env.vercel` (expired token) and the `.asc/artifacts/` build directory.
 
 Finished the evening redesigning Lexly's icon from outline strokes (nearly invisible at any size) to a solid white speech bubble on blue background for much better legibility. Regenerated all iOS/macOS icon variants. While in the Lexly codebase, cleaned up the fonts: removed Google Fonts links for Fraunces and DM Sans, dropped `font-style: italic` from both the landing page and app headers, and switched to the system font stack (SF Pro / Helvetica). Caught that screenshots were stale—showing "Lingo" title instead of "Lexly"—so re-shot fresh iOS screenshots from simulators (iPhone 11 Pro Max and 14 Plus) using the current 6.5" and 6.7" resolution specs. Re-shot macOS screenshot too and staged both to the rejected v1.1.1 localization. Assets are current; builds still pending before next submission.
+
+### Recent (2026-07-27, Monday afternoon — Portfolio work entries expanded)
+
+Added two new standalone entries to the portfolio's work section: Newsline (RSS news reader) and Etyma (word origin lookup tool), both as individual projects rather than embedded in a monorepo. Also linked a Labs source to highlight five subprojects that have now graduated to their own GitHub repos: bank (neobank sandbox), braingraph (neural graph visualization), code-meta (codebase analysis), video-speed-ext (video playback controller), and abraham (video scraper). These were previously undocumented side projects living in the labs monorepo — surfacing them in the work list makes the portfolio more accurate as a career snapshot.
 
 ### Recent (2026-07-27, Sunday night — Talli web restyled and iOS v3.5.11 submitted)
 
