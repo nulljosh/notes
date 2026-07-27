@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — Fixed low-contrast Epiphany app icon (nodes nearly invisible in TestFlight screenshot), regenned variants with white nodes/higher opacity lines, changed background to Olive (#3D9970). Recolored Litigate/Lexly/Talli/Echo icons to distinct brand colors and submitted all five for review. After batch submission, redesigned Echo icon from teal snowman-circle to clean mic glyph on clrs.cc blue (v1.3.5 pending after v1.3.4 review). Fixed stale Litigate workflow.json ASC reference.
+All notes in one place. Updated 2026-07-26 Sunday night — Fixed recurring Xcode Cloud build failures on Talli caused by version.yml/pbxproj drift in xcodegen config (MARKETING_VERSION hardcoded to old value). Redesigned Talli icon from amber to bold clrs.cc blue with centered white tally marks. Also: fixed low-contrast Epiphany app icon, recolored five apps to distinct brand colors, redesigned Echo to clean mic glyph, fixed stale Litigate workflow.json ASC reference.
+
+### Recent (2026-07-26, Sunday night — Talli version drift fix and blue icon redesign)
+
+Discovered the root cause of the weekend's recurring Xcode Cloud build failures on Talli: xcodegen was regenerating the Xcode project on every build with a hardcoded MARKETING_VERSION pointing to an old value, causing version train collisions that made the build fail. Fixed the version.yml/pbxproj drift. Also redesigned the Talli app icon from amber (which looked washed out) to a bold clrs.cc blue background with centered high-contrast white tally marks. Icon is much sharper and better on-brand now. Committed fixes and pushed.
 
 ### Recent (2026-07-26, Sunday late night — Epiphany app icon contrast fix)
 
