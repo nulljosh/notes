@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — Fixed recurring Xcode Cloud build failures on Talli caused by version.yml/pbxproj drift in xcodegen config (MARKETING_VERSION hardcoded to old value). Redesigned Talli icon from amber to bold clrs.cc blue with centered white tally marks. Also: fixed low-contrast Epiphany app icon, recolored five apps to distinct brand colors, redesigned Echo to clean mic glyph, fixed stale Litigate workflow.json ASC reference.
+All notes in one place. Updated 2026-07-27 Monday night — Evaluated fastlane alternatives (Tuist, Danger, Mint, fastlane match) against the current build and distribution automation. Decision: keep existing setup (asc CLI, xcodegen, asc-signing-setup skill) — it already covers everything those tools provide. Skip adding new tooling.
+
+### Recent (2026-07-27, Monday night — Build automation tooling evaluation)
+
+Spent the evening researching build and distribution automation alternatives to see if anything would improve the app release workflow. Evaluated Tuist, Danger, Mint, and fastlane match against the current stack. Conclusion: the existing tooling (asc CLI for build/test/archive/export, xcodegen for project generation, and the asc-signing-setup skill) already handles everything those alternatives provide. No value in adding new dependencies; keeping the current setup as-is.
 
 ### Recent (2026-07-26, Sunday night — Talli v3.5.11 build uploaded, blocked on version train)
 
