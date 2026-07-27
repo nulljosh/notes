@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-07-26 Sunday night — Fixed recurring Xcode Cloud build failures on Talli caused by version.yml/pbxproj drift in xcodegen config (MARKETING_VERSION hardcoded to old value). Redesigned Talli icon from amber to bold clrs.cc blue with centered white tally marks. Also: fixed low-contrast Epiphany app icon, recolored five apps to distinct brand colors, redesigned Echo to clean mic glyph, fixed stale Litigate workflow.json ASC reference.
 
+### Recent (2026-07-26, Sunday night — Talli v3.5.11 build uploaded, blocked on version train)
+
+Bumped Talli iOS to v3.5.11 (MARKETING_VERSION 3.5.10 → 3.5.11), verified xcodegen generate + local build clean. Ran the ship-ios workflow: archive + export succeeded and the build uploaded successfully to App Store Connect (build 202607262107, build ID b6b62f42-32c8-43c4-9256-b7c0a569546a, processingState VALID). The workflow's own publish step then failed as a quirk (expects a local .ipa, but the export uploaded directly to ASC). Tried to manually attach + submit via `asc release stage`, but it failed: "You cannot create a new version of the App in the current state" because 3.5.10 (this morning's amber-icon build) is still in its own review/waiting state. Same version-train restriction class as the original weekend bug. Build is safely uploaded and valid, just can't attach until 3.5.10 clears. Resume: check `asc versions list --app 6782366555` for 3.5.10's state, retry release stage once it clears. Logged in talli/roadmap.md.
+
 ### Recent (2026-07-26, Sunday night — Talli version drift fix and blue icon redesign)
 
 Discovered the root cause of the weekend's recurring Xcode Cloud build failures on Talli: xcodegen was regenerating the Xcode project on every build with a hardcoded MARKETING_VERSION pointing to an old value, causing version train collisions that made the build fail. Fixed the version.yml/pbxproj drift. Also redesigned the Talli app icon from amber (which looked washed out) to a bold clrs.cc blue background with centered high-contrast white tally marks. Icon is much sharper and better on-brand now. Committed fixes and pushed.
