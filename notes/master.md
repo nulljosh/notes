@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — Recolored app icons for Litigate, Lexly, Epiphany, Talli, Echo from monochrome black to distinct brand colors; all five versions (1.0.2, 1.1.2, 2.5.3, 3.5.10, 1.3.4 respectively) submitted for review. Fixed stale Litigate workflow.json ASC reference.
+All notes in one place. Updated 2026-07-26 Sunday night — Fixed low-contrast Epiphany app icon (nodes nearly invisible in TestFlight screenshot), regenned variants with white nodes/higher opacity lines, changed background to Olive (#3D9970). Also recolored Litigate/Lexly/Talli/Echo icons; all five versions submitted for review. Fixed stale Litigate workflow.json ASC reference.
+
+### Recent (2026-07-26, Sunday late night — Epiphany app icon contrast fix)
+
+Fixed Epiphany's TestFlight screenshot showing the node-graph icon nearly invisible against the background. The nodes and lines were too close in color to the background, making them nearly impossible to see. Fixed contrast by making nodes white and increasing line opacity across ios/icon.svg, macos/icon.svg, and the root icon.svg. Regenerated all icon variants, stripped alpha channels per App Store requirements, and changed the background to Olive (#3D9970) from clrs.cc for both readability and personality. Committed as two separate changes: "fix low-contrast app icon" and "icon bg -> clrs.cc OLIVE (#3D9970)".
 
 ### Recent (2026-07-26, Sunday late night — app icon recolor palette batch + five submissions)
 
