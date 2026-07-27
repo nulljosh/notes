@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — Multi-repo roadmap sweep found and fixed three critical bugs (Lexly Mac sign-in entitlement, Sparkjar Create field dropout, Epiphany news animation), registered three new ASC apps (Wordroot/Curvely/Wiretext), built Healstack screenshot pipeline and resubmitted, resubmitted Lexly Mac to review.
+All notes in one place. Updated 2026-07-26 Sunday night — Recolored app icons for Litigate, Lexly, Epiphany, Talli, Echo from monochrome black to distinct brand colors; all five versions (1.0.2, 1.1.2, 2.5.3, 3.5.10, 1.3.4 respectively) submitted for review. Fixed stale Litigate workflow.json ASC reference.
+
+### Recent (2026-07-26, Sunday late night — app icon recolor palette batch + five submissions)
+
+Recolored app icons for five shipping apps from monochrome black to distinct brand colors. Litigate shifted to deep navy (#1c3d5a), Lexly to sky blue (#2e86de), Epiphany to emerald green (#1a936f), Talli to amber (#d68910), and Echo to teal (#16a394). Regenerated all iOS/macOS icon variants, uploaded to App Store Connect, and bumped versions: Litigate 1.0.2, Lexly 1.1.2, Epiphany 2.5.3, Talli 3.5.10, Echo 1.3.4. All five submitted for review. Fixed a stale reference in Litigate's `.asc/workflow.json` that was still pointing to the old "Brief" and "Casewright" project names from before the 2026-07-18 rename to Litigate. Journal entry added and deployed (commit b253eda).
 
 ### Recent (2026-07-26, Sunday late night — full roadmap sweep and registration batch)
 
