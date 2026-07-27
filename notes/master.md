@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Sunday night — Echo web font stack simplified (removed Google Fonts dependency, switched to system fonts). Discovered Echo landing page lives on Cloudflare Pages with manual wrangler deploy (not Vercel auto-deploy).
+All notes in one place. Updated 2026-07-27 Sunday night — Web tier font audit (Echo, Spine, Sparkjar, Epiphany) switched from external fonts (Google Fonts, Fraunces) to system font stacks. Epiphany flights bbox fixed (4-degree bug from half-span mistake), statements refetch loop fixed, People tab and Daily Brief gated behind Pro tier.
+
+### Recent (2026-07-27, Sunday night — Web tier font audit and Epiphany bug fixes)
+
+Ran a comprehensive web font audit across four projects (Echo, Spine, Sparkjar, Epiphany), replacing external typeface dependencies with system font stacks. Google Fonts and Fraunces imports removed; switched to Geist for body text and system fonts (SF Pro, Helvetica) for display. Results: faster rendering, reduced bundle size, fewer third-party connections. Committed across all four. Also discovered Echo's web frontend is hosted on Cloudflare Pages without git auto-deploy — requires manual `npx wrangler pages deploy` after pushes. Fixed two long-standing Epiphany bugs: the Flights panel's bboxFromCenter function was using a 2-degree parameter as a full span instead of half-span, causing 4-degree queries that the flights API rejects; now clamps to 2 degrees around map center. Also fixed Portfolio's "Could not load saved statements" infinite refetch loop by holding the callback in a ref instead of recreating it on every portfolio change. Put the People tab and Daily Brief behind the Pro subscription tier (gates both client and server). Updated the wiki and journal with the changes.
 
 ### Recent (2026-07-27, Sunday night — Echo web font stack simplification + Cloudflare Pages deployment discovery)
 
