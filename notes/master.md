@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-26 Sunday night — Fixed low-contrast Epiphany app icon (nodes nearly invisible in TestFlight screenshot), regenned variants with white nodes/higher opacity lines, changed background to Olive (#3D9970). Also recolored Litigate/Lexly/Talli/Echo icons; all five versions submitted for review. Fixed stale Litigate workflow.json ASC reference.
+All notes in one place. Updated 2026-07-26 Sunday night — Fixed low-contrast Epiphany app icon (nodes nearly invisible in TestFlight screenshot), regenned variants with white nodes/higher opacity lines, changed background to Olive (#3D9970). Recolored Litigate/Lexly/Talli/Echo icons to distinct brand colors and submitted all five for review. After batch submission, redesigned Echo icon from teal snowman-circle to clean mic glyph on clrs.cc blue (v1.3.5 pending after v1.3.4 review). Fixed stale Litigate workflow.json ASC reference.
 
 ### Recent (2026-07-26, Sunday late night — Epiphany app icon contrast fix)
 
@@ -9,6 +9,10 @@ Fixed Epiphany's TestFlight screenshot showing the node-graph icon nearly invisi
 ### Recent (2026-07-26, Sunday late night — app icon recolor palette batch + five submissions)
 
 Recolored app icons for five shipping apps from monochrome black to distinct brand colors. Litigate shifted to deep navy (#1c3d5a), Lexly to sky blue (#2e86de), Epiphany to emerald green (#1a936f), Talli to amber (#d68910), and Echo to teal (#16a394). Regenerated all iOS/macOS icon variants, uploaded to App Store Connect, and bumped versions: Litigate 1.0.2, Lexly 1.1.2, Epiphany 2.5.3, Talli 3.5.10, Echo 1.3.4. All five submitted for review. Fixed a stale reference in Litigate's `.asc/workflow.json` that was still pointing to the old "Brief" and "Casewright" project names from before the 2026-07-18 rename to Litigate. Journal entry added and deployed (commit b253eda).
+
+### Recent (2026-07-26, Sunday late night — Echo icon redesign to mic glyph)
+
+After submitting the batch of recolored icons, went back to Echo and redesigned it entirely. The teal snowman-circle pattern didn't read as a voice app at all. Replaced it with a clean microphone glyph on clrs.cc blue (cleaner, more on-brand, instantly recognizable as audio input). Regenerated all iOS and macOS icon variants. Echo v1.3.4 is already in App Store review with the old teal icon; v1.3.5 will ship with the new mic glyph after that review clears. Committed as "Icon: redesign to clean mic glyph on clrs.cc blue, replacing teal snowman-circle design" (commit e477141).
 
 ### Recent (2026-07-26, Sunday late night — full roadmap sweep and registration batch)
 
