@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Sunday night — Web tier font audit (Echo, Spine, Sparkjar, Epiphany) switched from external fonts (Google Fonts, Fraunces) to system font stacks. Epiphany flights bbox fixed (4-degree bug from half-span mistake), statements refetch loop fixed, People tab and Daily Brief gated behind Pro tier.
+All notes in one place. Updated 2026-07-27 Sunday night — Web tier font audit (Echo, Spine, Sparkjar, Epiphany) switched from external fonts (Google Fonts, Fraunces) to system font stacks. Spine added To Read section and IBS For Dummies summary (ch. 1-15). Epiphany flights bbox fixed (4-degree bug from half-span mistake), statements refetch loop fixed, People tab and Daily Brief gated behind Pro tier.
+
+### Recent (2026-07-27, Sunday night — Spine To Read section and IBS For Dummies summary)
+
+Added a new "To Read" section to Spine backed by a `toRead` array in the bundled library.json. Started with How to Cheat at Everything and Hackers & Painters. Finished summarizing chapters 11–15 of IBS For Dummies from iCloud HEIC photos (pp. 161–225), merged with existing ch. 1–10 summary, synced to spine.heyitsmejosh.com, and added the Summary badge to the web entry. Added index entry to iOS app's summaries-index.json and verified build passing. Committed and pushed.
 
 ### Recent (2026-07-27, Sunday night — Web tier font audit and Epiphany bug fixes)
 
