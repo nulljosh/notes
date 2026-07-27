@@ -1,10 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Sunday night — Echo web font stack simplified (removed Google Fonts dependency, switched to system fonts). Journal entry created and deployed.
+All notes in one place. Updated 2026-07-27 Sunday night — Echo web font stack simplified (removed Google Fonts dependency, switched to system fonts). Discovered Echo landing page lives on Cloudflare Pages with manual wrangler deploy (not Vercel auto-deploy).
 
-### Recent (2026-07-27, Sunday night — Echo web font stack simplification)
+### Recent (2026-07-27, Sunday night — Echo web font stack simplification + Cloudflare Pages deployment discovery)
 
-Simplified Echo's web frontend by removing the external Google Fonts dependency and switching all heading fonts to the system stack (-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, system-ui). Also removed unnecessary italic styling from display headings. The change ships faster, uses fewer bandwidth, and eliminates one third-party resource load. Committed as ca53861 to echo, deployed to production.
+Simplified Echo's web frontend by removing the external Google Fonts dependency and switching all heading fonts to the system stack (-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, system-ui). Also removed unnecessary italic styling from display headings. Committed as ca53861 to echo. Discovered the Echo landing page is hosted on Cloudflare Pages (not Vercel like other projects) with no git auto-deploy — requires manual `npx wrangler pages deploy web/ --project-name=echo --branch=main` after each push to ship changes to production. Font changes now live on echo.heyitsmejosh.com after running the wrangler deploy command.
 
 ### Recent (2026-07-27, Monday night — Build automation tooling evaluation)
 
