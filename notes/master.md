@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Monday afternoon — Web tier font audit complete (Echo, Spine, Sparkjar) with external fonts removed and system stacks deployed. Sparkjar YC Requests for Startups parser fixed. Spine added To Read section and IBS For Dummies summary (ch. 1-15). Epiphany flights bbox fixed (4-degree bug from half-span mistake), statements refetch loop fixed, People tab and Daily Brief gated behind Pro tier, iOS applesignin entitlement fix (xcodegen properties block). All builds passing, tests green, no remaining blockers.
+All notes in one place. Updated 2026-07-27 Monday night — BCGD leads pipeline built (Supabase anon INSERT, was discarding via alert), 11 service + 12 area pages generated, Cloudflare Pages deploy gotcha documented (vercel --prod silently fails). Dashboard: Supabase auth, Today view, inventory deductions on job completion. Earlier: web font audit (Echo, Spine, Sparkjar), YC parser fix, Spine To Read section, Epiphany flights/statements/Pro gating, iOS applesignin. All builds passing, no blockers.
+
+### Recent (2026-07-27, Monday night — BCGD leads pipeline + URL structure)
+
+Spent the evening fixing BCGD's booking form—it had been silently discarding customer leads via alert() with zero persistence. Built a real Supabase pipeline with anon INSERT-only RLS and wired the dashboard to poll them in as jobs. Rebuilt the entire site URL structure: generated 11 service pages, 12 service-area pages, proper sitemap, JSON-LD schema, and a 404 handler so search engines can index the site instead of treating it as one #anchor dump. Dashboard: Supabase email/password auth (replaced 4-digit PIN gate), Today view shows pending jobs, completion deducts from inventory. Discovered BCGD is hosted on Cloudflare Pages with no git auto-deploy—`vercel --prod` silently reports success but ships nothing, which explains the phantom deploy situation. Found two mistakes while testing: a Today view component written to an orphaned Dashboard.jsx (never imported, dead code), and wasted debugging time on the fake deploy path. Both fixed and live on Cloudflare Pages.
 
 ### Recent (2026-07-27, Monday afternoon — Font audit & parser fixes complete)
 
