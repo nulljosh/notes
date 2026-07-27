@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-07-27 Sunday evening — Portfolio avatar background removed (blue circle via border flood-fill), work list split into Journal (web) and Inkpress (iOS app). Recent wraps: BCGD leads pipeline (Supabase anon INSERT, was discarding via alert), 11 service + 12 area pages, Cloudflare Pages deployment gotcha. Earlier: web font audit (Echo, Spine, Sparkjar), YC parser fix, Spine To Read section, Epiphany flights/statements/Pro gating, iOS applesignin. All builds passing, no blockers.
+All notes in one place. Updated 2026-07-27 Sunday night — Talli web restyled (white backgrounds, SF Pro/Helvetica system fonts), iOS v3.5.11 SUBMITTED for App Store review. Recent wraps: portfolio avatar background removed (blue circle via border flood-fill), BCGD leads pipeline (Supabase anon INSERT), web font audit (Echo, Spine, Sparkjar), Epiphany flights/statements/Pro gating, iOS applesignin. All builds passing, no blockers.
+
+### Recent (2026-07-27, Sunday night — Talli web restyled and iOS v3.5.11 submitted)
+
+Finished rebranding Talli's web tier tonight. Dropped all off-white backgrounds (#faf7f4) in favor of pure white, removed external typeface dependencies (DM Sans, Fraunces) entirely, and switched to the system font stack (SF Pro on macOS, Helvetica on other platforms) across landing, login, unified auth, privacy, and DCA pages. Updated design-tokens.css and portfolio-tokens.css to match. Icons were already updated to the new blue tally mark, so no asset changes needed. Talli iOS v3.5.11 submitted to the App Store (build 202607262107 from 2026-07-26) with the redesigned blue icon — v3.5.10's release train cleared earlier, so submission ran clean. Should clear review tomorrow.
 
 ### Recent (2026-07-27, Sunday evening — Portfolio avatar + work-list split)
 
