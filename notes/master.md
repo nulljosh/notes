@@ -6,6 +6,10 @@ All notes in one place. Updated 2026-07-29 Wednesday night (late) — Tonight: S
 
 Packaged Epiphany's KV admin skill directly into the repo so anyone can edit portfolio data (holdings, debt tracker, budget) through Claude Code without logging into the app. Moved the README's roadmap inline content out to ROADMAP.md since it was drifting out of sync living in the main doc. Commit 04bc06c.
 
+### Recent (2026-07-29, Wednesday night — Grapher renamed to Curvely + Spine library sync)
+
+Renamed the Grapher app and GitHub repo to Curvely, resolving the months-old naming conflict that had left an orphaned "Curvely" entry in App Store Connect. Updated the remote URL, local folder, and project references across the board. Commit 47bfb4e. Also synced Spine's library checkout status: fixed the stale web display (was showing 07-29 instead of the actual 08-18 due date) and ingested a few roadmap items from reading notes.
+
 ### Recent (2026-07-29, Wednesday late night — ASC app queue review + deletion wall discovery)
 
 Reviewed the full App Store Connect dashboard across ~20 apps in the portfolio. Punch list: icon personality pass pending for Epiphany, Lexly, Wiretext, Wordroot, Nullfolio, and NYC Survive (all visually weak or placeholder). BC Garage Doors needs a macOS app build. Two duplicate app records (Lexly Mac 6783501927 and Echo Transcribe Mac 6783015101) that should have been deleted as part of the iOS/macOS merge now stuck with a hard wall: both have REJECTED versions attached, and ASC refuses to remove an app with only a rejected version (no API, web-session, or dashboard UI workaround). Called Apple Support (case 102949489427, rep Phillipe) and confirmed the unblock path: each rejected build needs an appeal submitted through the ASC Resolution Center (dashboard-only, no CLI) to clear the rejection state, then "Remove App" becomes available again. Next session: open each dup record, find the Resolution Center appeal thread for the rejected build, submit an appeal, wait for Apple to clear, then delete.
