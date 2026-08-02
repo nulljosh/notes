@@ -6,6 +6,10 @@ All notes in one place. Updated 2026-08-01 Friday evening — Litigate CASE-0001
 
 Received two RCMP letters responding to the ATIP request regarding the August 2021 psychiatric apprehension case (Charter case filed in Litigate as CASE-0001). Documents confirm that no body-worn camera footage exists for the incident (RCMP didn't have BWC technology deployed at that time) and the 911 dispatch tape was destroyed per standard retention policy. Saved the letter scans to ~/Documents/Legal/CASE-0001/ and updated the Litigate case record in Supabase (spark project, brief_data table): appended both findings to CASE-0001's FACTS and WITNESSES arrays, documenting the evidence gap. Planning a follow-up ATIP request for the use-of-force report, CAD/dispatch log, and officer memo book notes, which were not included in this response batch.
 
+### Recent (2026-08-01, Friday night — Trakt.tv API skill built)
+
+Built a reusable Trakt.tv API skill (scripts/trakt_client.py + ~/.claude/skills/trakt/SKILL.md). The client is stdlib-only (urllib/json for HTTP, hashlib for SHA1 verification) and implements OAuth device code flow, covers search, watchlist (list/add/remove), watch history, ratings, and user profile endpoints. Not a full Trakt clone—just a wrapper tailored for future integration across projects (Epiphany market data, Talli history enrichment, whatever else). Blocked on user registering an app at trakt.tv/oauth/applications and setting TRAKT_CLIENT_ID and TRAKT_CLIENT_SECRET environment variables.
+
 ### Recent (2026-08-01, Friday night — nightly wrap session: journal/wiki updates, roadmap refresh)
 
 Build 139 for Talli iOS v3.5.12 was rejected because App Store Connect had already closed the pre-release training window for that version. Fixed by bumping the MARKETING_VERSION in ios/project.yml from 3.5.12 to 3.5.13, regenerating the Xcode project via xcodegen, and pushing to the main branch to trigger a new Xcode Cloud build. The existing v3.5.12 remains valid for distribution (iOS 3.5.12 SHIPPED 2026-07-28); v3.5.13 is the next pre-release candidate pending build completion and review.
