@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-08-02 Saturday night (nightly wrap) — Ingested 21 Apple Notes PDFs into project roadmaps and Obsidian wiki across 8 apps. Tackled App Store firefighting: Wiretext and Wordroot "blank icon" complaints were false alarms (stale ASC thumbnails), Lexly and Sparkjar were stuck in rejections due to orphaned in-app-purchase references from old submissions (cleaned both up, resubmitted, now WAITING_FOR_REVIEW). BCGD macOS build finally attached to 1.0 version record with encryption metadata set via CLI; needs pricing/availability and screenshots before shipping. Sparkjar Vercel function slots freed: merged DELETE + vote endpoints into dispatcher, now 8/12 used (was 10/12). Voxprint dup record deletion still blocked on Apple support (case 102949489427). Earlier same evening: i18n pipeline wiring in Talli and Quotable complete, file system consolidation pass, BCGD merge doc complete, Lexly profile panel redesigned, Feng Shui rebuilt, Litigate CASE-0001 ATIP response filed. Earlier 2026-07-29: git-sweep cleanup, Voxprint rename finalized, ASC portfolio audit. All builds passing.
 
+### Recent (2026-08-02, Sunday — journal cleanup + portfolio auto-sync)
+
+Cleaned up fragmented/duplicate journal entries: merged three same-day posts from Jul 21 into one, deleted a Jul 24 post that fully duplicated Jul 25-27's content, and fixed a duplicate "Saturday" heading bug in the Jul 29 post. Built `journal/scripts/sync-portfolio.sh`, wired into `deploy.sh`, so the portfolio's Writing list regenerates from the latest posts automatically instead of being hand-typed HTML that drifted out of sync. Both repos committed and pushed, journal redeployed.
+
 ### Recent (2026-08-02, Saturday night delta — Sparkjar API function consolidation)
 
 Merged Sparkjar's DELETE and vote API endpoints into the posts dispatcher using query-param routing (commit 15d059e). Consolidated three separate function handlers into one, freeing 2 Vercel function slots. Sparkjar now uses 8 of 12 available slots (was 10/12), giving more headroom for the next feature batch. Roadmap already marked complete.
