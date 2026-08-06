@@ -8,7 +8,7 @@ Refreshed Sparkjar's landing page layout: moved the screenshot section from the 
 
 ### Recent (2026-08-06, Thursday night — Portfolio avatar reverted)
 
-Quick UI fix tonight: reverted the portfolio's home-page avatar from a terrifying SVG silhouette back to the original Animoji PNG. The SVG experiment didn't work out. Commit: fd6af02.
+Quick UI fix tonight: reverted the portfolio's home-page avatar from a terrifying SVG silhouette back to the original Animoji PNG. The SVG experiment didn't work out.
 
 ### Recent (2026-08-05, night wrap — Epiphany v2.5.4 build 9 submitted)
 
