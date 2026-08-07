@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-07 night wrap (Epiphany bank-statement upload fixed: private Blob store provisioned after discovering the public store couldn't handle sensitive statements; deploy pipeline verified live end-to-end. Earlier today: Bookrank app renamed from Uprighty: GitHub repo + domain + iOS/macOS display names + portfolio link all synced). Earlier 2026-08-06 night wrap (Voxprint macOS 1.3.6 shipped live; Inkpress icon redesigned for contrast + loading indicator + landing page shipped; Healstack migrated to Cloudflare Pages; Lexly masterclass integration deployed (15 book summaries); Litigate light mode + gavel icon + Brief→Litigate sign-in text fix; 7 new skills added to dotfiles: mail-sweep, wrapup, architecture-svg, duolingo, git-sweep, localization-sweep, trakt).
+All notes in one place. Updated 2026-08-07 night wrap (Epiphany bank-statement upload fixed: private Blob store provisioned after discovering the public store couldn't handle sensitive statements; deploy pipeline verified live end-to-end. Bookrank app renamed from Uprighty: GitHub repo + domain + iOS/macOS display names + portfolio link all synced. Apple Notes inbox cleared: filed family-ledger note into wiki personal-accounts, Lexly Mac OS issues note expanded into roadmap). Earlier 2026-08-06 night wrap (Voxprint macOS 1.3.6 shipped live; Inkpress icon redesigned for contrast + loading indicator + landing page shipped; Healstack migrated to Cloudflare Pages; Lexly masterclass integration deployed (15 book summaries); Litigate light mode + gavel icon + Brief→Litigate sign-in text fix; 7 new skills added to dotfiles: mail-sweep, wrapup, architecture-svg, duolingo, git-sweep, localization-sweep, trakt).
+
+### Recent (2026-08-07, night wrap — Apple Notes inbox cleared)
+
+Cleared the complete Apple Notes inbox by filing two stray notes into the system: a personal note about money owed with Mom moved to the wiki's personal-accounts page, and a vague "Lexly Mac OS Issues" note expanded with details and logged to Lexly's roadmap. Inbox now empty.
 
 ### Recent (2026-08-07, night wrap — Epiphany bank-statement upload fixed)
 
