@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-10 Monday night — Infra migration complete: journal/nimble/cadence/fengshui migrated to Cloudflare Pages; lexly/litigate deployed live on Cloudflare. Newsline v0.3.0 published as MCP server to official registry (API filtering + security docs + CDN/parser bugs fixed). Messages pagination fixed (talli: 10→23), sparkjar provisioning profiles created (both ACTIVE). Voxprint iOS released, healstack/cadence roadmaps corrected. Dead-code cleanup verified across 7 apps + archived 2 legacy directories. Email-verification + password-recovery flows now complete on lexly/litigate/sparkjar/epiphany/healstack/bcgd; talli still needs both.
+All notes in one place. Updated 2026-08-10 Monday night — Infra migration complete (journal/nimble/cadence/fengshui/lexly/litigate on Cloudflare). Newsline v0.3.0 MCP server published. Dead-code cleanup verified across 7 apps + 2 legacy directories archived. Messages pagination fixed (talli: 10→23), sparkjar provisioning ACTIVE. asc-login workflow unblocked end-to-end (2FA verified, authenticated with team 129029900). 17 repos with commits tonight.
+
+### Recent (2026-08-10, Monday night late — asc-login fix verified end-to-end)
+
+Tracked down the root cause of asc-login's multi-day failure: the macOS Keychain held two conflicting `asc-web-password` entries. One from June stored a stale password (force-fed to asc via an `ASC_WEB_PASSWORD` env var by the wrapper script); the other from early August held the current password after the Apple ID password changed around Aug 3. The wrapper kept overriding asc's correct saved password with the stale one, causing the "srp login failed: signin complete failed with status 401" errors. Deleted the stale keychain item, rewrote `~/.local/bin/asc-login` to let asc read its own credential store (self-healing across future password changes). Verified end-to-end with a fresh login through a 2FA code; `asc web auth status` now returns `authenticated:true` with team 129029900. App Store Connect web workflows unblocked.
 
 ### Recent (2026-08-10, Monday night — Infrastructure migrations complete: Cloudflare Pages deployed for journal/nimble/cadence/fengshui, lexly/litigate live on Cloudflare)
 
