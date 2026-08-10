@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-10 Monday night — Infra migration complete (journal/nimble/cadence/fengshui/lexly/litigate on Cloudflare). Newsline v0.3.0 MCP server published. Dead-code cleanup verified across 7 apps + 2 legacy directories archived. Messages pagination fixed (talli: 10→23), sparkjar provisioning ACTIVE. asc-login workflow unblocked end-to-end (2FA verified, authenticated with team 129029900). 17 repos with commits tonight.
+All notes in one place. Updated 2026-08-10 Monday night — GUIDELINE 5.6 SUSPENSION: Four apps (Curvely, Wiretext, NYC Survive, Transcriptly) frozen from review until 2026-08-18 after hitting Guideline 5.6 Developer Code of Conduct violations on 08-09. Root cause: all four had reviewers unable to authenticate. No resubmission before 08-18. Infra migration complete (journal/nimble/cadence/fengshui/lexly/litigate on Cloudflare). Newsline v0.3.0 MCP server published. Dead-code cleanup verified across 7 apps + 2 legacy directories archived. Messages pagination fixed (talli: 10→23), sparkjar provisioning ACTIVE. asc-login workflow unblocked end-to-end (2FA verified, authenticated with team 129029900). 17 repos with commits tonight.
+
+### Recent (2026-08-10, Monday night late — Guideline 5.6 suspension: Curvely/Wiretext/NYC/Transcriptly frozen until Aug 18)
+
+Pulled the complete rejection reasons for Curvely, Wiretext, NYC Survive, and Transcriptly from the App Store Connect Resolution Center late tonight. All four got Guideline 5.6 Developer Code of Conduct review suspensions on August 9, issued within 90 seconds of each other. Apple says no resubmission before August 18. The language about account removal is standard boilerplate about future behavior, not an existing penalty — my Developer Program membership is active and seven apps remain live and selling (Epiphany, Voxprint, Talli, Lexly, Litigate, Inkpress, Bookrank). The underlying pattern: all four submissions had reviewers who couldn't authenticate into the apps. That same auth breakage shows up as separate Guideline 2.1(a) rejections for Sparkjar, Healstack, and Lexly too. Fixing production authentication flows before August 18 is the highest-leverage work to unblock resubmissions.
 
 ### Recent (2026-08-10, Monday night late — asc-login fix verified end-to-end)
 
