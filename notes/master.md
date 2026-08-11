@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-10 Monday night wrap — Talli payment history, avatar, messages, pay dates all fixed (4 bugs, 177 tests pass). Epiphany blob-handling reordered (put-then-delete, 5 new tests, user's photo unrecoverable). Healstack auth verified live, demo account Supabase NULL columns fixed, version aligned 2.3.4. Sparkjar landing screenshot width capped. Lexly off-by-one test fixture verified non-production. App Store submission freeze in place until 2026-08-18.
+All notes in one place. Updated 2026-08-10 Monday night wrap — Talli payment history, avatar, messages, pay dates all fixed (4 bugs, 177 tests pass). Epiphany blob-handling reordered (put-then-delete, 5 new tests, generated avatar can be regenerated). Healstack auth verified live, demo account Supabase NULL columns fixed, version aligned 2.3.4. Sparkjar landing screenshot width capped. Lexly off-by-one test fixture verified non-production. App Store submission freeze in place until 2026-08-18.
 
 ### Recent (2026-08-10, Monday late night — Epiphany polish pass: ticker/statements/flat UI)
 
