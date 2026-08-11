@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-10 Monday late night — Epiphany polish pass: ticker scope fixed (was filtering to favorites only when a watchlist was set), statement upload card visibility fixed (was hiding itself after 3+ synced months, exactly when it became useful), flat-UI pass (60 lines removed: shadows, glows, gradients; readability blur on map kept). Debt rows consolidated to Telus + Family in Upstash KV and config. Epiphany news thumbnails fixed (GDELT HTTP-200-plaintext-error bug + quoted-ticker rejection). Litigate deploy.sh config scrape removed. Inkpress v1.0.3 NOW LIVE ON APP STORE (APPROVED 2026-08-10), v1.0.4 READY with blank-article fix. Bookrank: The Optimist chapters 3-7 completed and shipped (ch. 1-7 badge now live).
+All notes in one place. Updated 2026-08-10 Monday night wrap — Talli payment history, avatar, messages, pay dates all fixed (4 bugs, 177 tests pass). Epiphany blob-handling reordered (put-then-delete, 5 new tests, user's photo unrecoverable). Healstack auth verified live, demo account Supabase NULL columns fixed, version aligned 2.3.4. Sparkjar landing screenshot width capped. Lexly off-by-one test fixture verified non-production. App Store submission freeze in place until 2026-08-18.
 
 ### Recent (2026-08-10, Monday late night — Epiphany polish pass: ticker/statements/flat UI)
 
