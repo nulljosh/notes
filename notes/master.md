@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-10 Monday late night — Epiphany polish pass: ticker scope fixed (was filtering to favorites only when a watchlist was set), statement upload card visibility fixed (was hiding itself after 3+ synced months, exactly when it became useful), flat-UI pass (60 lines removed: shadows, glows, gradients; readability blur on map kept). Debt rows consolidated to Telus + Family in Upstash KV and config. Tests + builds pass, shipped to Vercel production. Also tonight: Epiphany news thumbnails fixed (GDELT HTTP-200-plaintext-error bug + quoted-ticker rejection), sourceUrl field added + centralized fallback rule; Litigate deploy.sh config scrape removed (fail-loudly instead of silent breakage). Inkpress v1.0.3 NOW LIVE ON APP STORE (APPROVED 2026-08-10, build 202608092030), v1.0.4 READY with blank-article fix (WKWebView rendering, not submitted due to 5.6 freeze).
+All notes in one place. Updated 2026-08-10 Monday late night — Epiphany polish pass: ticker scope fixed (was filtering to favorites only when a watchlist was set), statement upload card visibility fixed (was hiding itself after 3+ synced months, exactly when it became useful), flat-UI pass (60 lines removed: shadows, glows, gradients; readability blur on map kept). Debt rows consolidated to Telus + Family in Upstash KV and config. Epiphany news thumbnails fixed (GDELT HTTP-200-plaintext-error bug + quoted-ticker rejection). Litigate deploy.sh config scrape removed. Inkpress v1.0.3 NOW LIVE ON APP STORE (APPROVED 2026-08-10), v1.0.4 READY with blank-article fix. Bookrank: The Optimist chapters 3-7 completed and shipped (ch. 1-7 badge now live).
 
 ### Recent (2026-08-10, Monday late night — Epiphany polish pass: ticker/statements/flat UI)
 
@@ -9,6 +9,10 @@ Fixed two invisible bugs on Epiphany that appeared exactly when the features sta
 Fixed Epiphany's news thumbnails that were all showing a shared placeholder image. The root cause: GDELT, the upstream news source carrying per-article images, returns HTTP 200 with plaintext error messages instead of JSON — our code called r.json() which threw, and we logged nothing. Also found GDELT rejects quoted short tickers like "AAPL" in queries. Fixed both issues and added sourceUrl from the RSS feed's <source url> tag (Google News links are opaque redirects, so RSS sourceUrl is a useful fallback). Centralized the thumbnail rule in src/utils/newsThumbnail.js + NewsArticle.thumbnailURL, applied across web/iOS/macOS, with fallback to publisher favicon.
 
 Removed Litigate's deploy.sh fallback that curled the live site to scrape an injected APP_CONFIG block — it would fail silently and break the build with no error message. Config now comes from environment variables or .env, with a clear error if both are missing.
+
+### Recent (2026-08-10, Monday late night — Bookrank: The Optimist chapters 3-7 completed)
+
+Finished chapters 3–7 of The Optimist (Keach Hagey's Sam Altman biography): "Making OpenAI", "Godfather of AI", "The Scaling Hypothesis", "Exponential", and "Altman's Moment". Processed photographed pages from iCloud (chapter summaries pre-written and merged into the-optimist-summary.md, 34 raw HEICs deleted), ran sync-summaries.sh, and bumped the site badge from "ch. 1-2" to "ch. 1-7". Shipped to bookrank.heyitsmejosh.com.
 
 ### Recent (2026-08-10, Monday late night — Inkpress v1.0.4: blank-article rendering fixed with WKWebView)
 
