@@ -1,6 +1,12 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-12 night wrap — Deleted the nested labs/ clone (freed ~1GB), audited all 8 App Store rejections from Resolution Center, corrected Ship Status entries that were wrong nearly everywhere, fixed Wiretext's entitlements configuration, and diagnosed why the sign-in rejections happened (demo accounts missing/created after review, old DNS in binaries). App Store submission freeze until 2026-08-18 across all 17 apps.
+All notes in one place. Updated 2026-08-12 night wrap (delta) — Healstack iOS 2.3.4 build 202608121022 was archived, exported, and uploaded to App Store Connect (now VALID, waiting only on Aug 18 freeze); fixed ship-ios workflow with --overwrite and -skipPackagePluginValidation. Sparkjar iOS upload blocked on version mismatch (ios/project.yml says 2.2.0, ASC has 1.0). App Store submission freeze until 2026-08-18 across all 17 apps.
+
+### Recent (2026-08-12 night wrap, delta — Healstack build uploaded + valid, Sparkjar version blocker found)
+
+Later tonight after the full Wednesday wrap: got healstack actually built. v2.3.4 was ready since 2026-08-11 but hadn't been compiled yet. Fixed the ship-ios workflow (archive/export now pass `--overwrite` to discard stale Jul 26 artifacts that were preventing the run, and `-skipPackagePluginValidation` to skip the SwiftLint SPM plugin on headless builds). Built successfully, exported to IPA, and uploaded to App Store Connect — v2.3.4 build 202608121022 is now VALID and just waiting for the Guideline 5.6 freeze to lift on 2026-08-18 before `asc review submissions-submit` can proceed.
+
+Attempted the same flow for Sparkjar iOS, but discovered a version mismatch: ios/project.yml declares MARKETING_VERSION 2.2.0 (the web app's version), but App Store Connect's Sparkjar record only has v1.0 on file. ASC rejected the archive with a version error. Diagnosed the root cause and documented the exact fix steps in sparkjar/roadmap.md (correct ios/project.yml back to 1.0.0, then rebuild/export/upload).
 
 ### Recent (2026-08-12, Wednesday night wrap — App Store rejection triage + codebase consolidation)
 
