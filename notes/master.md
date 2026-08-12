@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-12 night wrap — Portfolio restyled to Fez-inspired theme (parchment #f6ead0 day / deep blue #141f33 night, burnt-orange/gold hovers, square corners, pixelated avatar). Healstack iOS 2.3.4 build 202608121022 valid on ASC (waiting Aug 18 freeze). Sparkjar iOS blocked on version mismatch (ios/project.yml says 2.2.0, ASC has 1.0). App Store submission freeze until 2026-08-18 across all 17 apps.
+All notes in one place. Updated 2026-08-12 delta wrap — Sparkjar iOS 1.0 (202608121456) and macOS 1.0 (202608121459) both built, VALID, and attached to ASC (awaiting Aug 18 freeze lift for submission). Sign in with Apple server-side verified 7/7. iPad screenshots blocker identified (universal app needs iPad screenshots, none exist yet). Healstack iOS 2.3.4 build 202608121022 valid on ASC. Portfolio Fez-inspired theme deployed. App Store submission freeze until 2026-08-18 across all 17 apps.
+
+### Recent (2026-08-12 delta — Sparkjar v1.0 builds built and uploaded, both VALID)
+
+Fixed all four config blockers for Sparkjar and built v1.0 for both iOS and macOS. The version mismatch in ios/project.yml (claiming 2.2.0 instead of 1.0) was a red herring—the real issues were: iOS provisioning profile pointed at nonexistent "Spark iOS App Store" instead of the valid "Sparkjar iOS App Store 20260810" (CY2V3B846P, needed to be installed locally first); ExportOptions.plist was set to automatic signing, causing export to re-derive a profile without Sign in with Apple entitlement; UITests weren't excluded from the app target, so PreviewScreenshot.swift compiled into the archive and failed; and macOS export produces .pkg (not .ipa) but ship-mac always used --ipa-path flag. Built iOS 202608121456 and macOS 202608121459, both uploaded to ASC and marked VALID. Verified Sign in with Apple server-side (node api/_lib/auth/apple.selfcheck.js, 7/7 token verification tests passed). Found a real submission blocker: Sparkjar is a universal app (TARGETED_DEVICE_FAMILY "1,2"), so Apple requires iPad screenshots which don't exist yet — none of the Snapfile infrastructure exists (Fastfile/SnapshotHelper.swift/.env.accounts.local missing). Deferred while awaiting the August 18 freeze lift anyway.
 
 ### Recent (2026-08-12, Wednesday evening — Portfolio Fez-inspired restyle)
 
