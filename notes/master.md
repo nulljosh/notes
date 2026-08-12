@@ -1,6 +1,18 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-11 night wrap — Ran `/work start` to ingest 17 Apple Notes into 10 project roadmaps across the wiki (notes cleared to zero). Attempted to parallelize 9 forks to tackle imported work, but the machine got laggy and token budget burned ~70% in minutes, so killed mid-flight. Lesson: cap parallel forks at 2–3, not 9. Partial wip commits landed locally but will stay unpushed until reviewed. Real work that shipped: Newsline and Nimble got marketing landing pages deployed. App Store submission freeze until 2026-08-18.
+All notes in one place. Updated 2026-08-12 night wrap — Deleted the nested labs/ clone (freed ~1GB), audited all 8 App Store rejections from Resolution Center, corrected Ship Status entries that were wrong nearly everywhere, fixed Wiretext's entitlements configuration, and diagnosed why the sign-in rejections happened (demo accounts missing/created after review, old DNS in binaries). App Store submission freeze until 2026-08-18 across all 17 apps.
+
+### Recent (2026-08-12, Wednesday night wrap — App Store rejection triage + codebase consolidation)
+
+Ran a full inventory of App Store rejections tonight: deleted the nested labs/ clone that was sitting inside ~/Documents/Code itself (same repo duplicated, zero unique commits, ~1GB stale). Found and rescued three client files (contract.pdf, plan.pdf, operating guide) that only existed in the nested copy. Also dropped the stale pre-rename directory copies (braingraph, etyma, grapher) that had been left over from earlier renames. This closed Phase 1 of the codebase-consolidation roadmap.
+
+Then read all eight App Store rejection reasons directly from the Resolution Center after running asc-login. Four apps (Curvely, Wiretext, NYC Survive, Transcriptly) hit a blanket Guideline 5.6 Developer Code of Conduct review suspension—the entire Developer Program account is frozen from resubmitting anything until August 18. No app-specific defect, just thin/unfinished apps. Three other apps (Healstack, Sparkjar, Lexly Mac) failed Guideline 2.1(a) because their sign-in flows were broken at review time. One Lexly Mac record failed Guideline 5.2.5 for trademark misuse (the word "Mac" in the app name). Copied the verbatim rejection text into each app's roadmap so the path forward is clear.
+
+Found the recorded state was wrong everywhere. Had four apps marked "waiting for review" that were actually rejected. Ran `asc versions list` on all 17 app records and corrected the Ship Status section in the main CLAUDE.md, then updated nine separate roadmaps, five memory files, and the wiki's blocked-on-joshua page to match the live state. Also diagnosed why the sign-in rejections happened: Sparkjar and Healstack's demo accounts either didn't exist or had database corruption at review time, and Sparkjar's old binary hardcoded a dead domain that no longer resolves. Both fixes now exist in production (Healstack's demo account row fixed, Sparkjar's production DNS updated, appreview demo account created), but never rebuilt and uploaded.
+
+Wired up Wiretext's missing entitlements configuration. The ios/Wiretext.entitlements file existed since August 3, but project.yml never told the build system to load it, so every build shipped TestFlight-ineligible while looking fixed. Fixed that.
+
+**Apps.** Curvely, NYC, Wiretext, Healstack, Sparkjar, Lexly, Talli, Litigate, and BCGD all got roadmap and wiki status updates reflecting the real state. No new features shipped, but the submission strategy is much clearer now.
 
 ### Recent (2026-08-11, Tuesday evening wrap — Notes ingest + fork-cap lesson)
 
