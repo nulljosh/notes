@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-12 night wrap (delta) — Healstack iOS 2.3.4 build 202608121022 was archived, exported, and uploaded to App Store Connect (now VALID, waiting only on Aug 18 freeze); fixed ship-ios workflow with --overwrite and -skipPackagePluginValidation. Sparkjar iOS upload blocked on version mismatch (ios/project.yml says 2.2.0, ASC has 1.0). App Store submission freeze until 2026-08-18 across all 17 apps.
+All notes in one place. Updated 2026-08-12 night wrap — Portfolio restyled to Fez-inspired theme (parchment #f6ead0 day / deep blue #141f33 night, burnt-orange/gold hovers, square corners, pixelated avatar). Healstack iOS 2.3.4 build 202608121022 valid on ASC (waiting Aug 18 freeze). Sparkjar iOS blocked on version mismatch (ios/project.yml says 2.2.0, ASC has 1.0). App Store submission freeze until 2026-08-18 across all 17 apps.
+
+### Recent (2026-08-12, Wednesday evening — Portfolio Fez-inspired restyle)
+
+Restyled the portfolio (heyitsmejosh.com) with a Fez-inspired color palette: parchment tones on light mode (#f6ead0) and deep Fez blue (#141f33) on dark, burnt-orange and gold for link hovers. Built tokens-fez.css with square corners (`--radius: 0`), replaced the Geist pastels, and added a pixelated memoji avatar (deliberate pixel-art style, no webfont). Updated theme-color meta tags to track the new palette across devices. Deliberate constraint: avoided purple and teal (standing house rule) and pixel-art fonts. Deployed two commits.
 
 ### Recent (2026-08-12 night wrap, delta — Healstack build uploaded + valid, Sparkjar version blocker found)
 
