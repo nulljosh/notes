@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-13 night wrap — Long autonomous session across 11 repos (litigate, sparkjar, talli, epiphany, healstack, curvely, lexly, newsline, bcgd, bookrank, + codebase root). Eight production bugs found and fixed, none on any roadmap: litigate dark-mode bootstrap, sparkjar account-deletion 500, talli wedged sync reporting, epiphany statement overwrites + debt-free calc, healstack encryption exemption, curvely asymptote stripping, lexly sign-in modal dismiss, newsline zombie feeds, bcgd orphaned service pages. Five repos had roadmaps claiming incomplete work that was actually shipped months ago. App Store freeze continues until 2026-08-18.
+All notes in one place. Updated 2026-08-13 wrapup delta — skill consolidation (night→wrapup absorption, deleted /night, rewired roadmap-prune and wiki-refresh skills, made wrapup time-agnostic). Plus earlier today: 11 repos with 8 production bug fixes, roadmap audits, 39 commits total.
+
+### Recent (2026-08-13 wrapup delta — Skill consolidation)
+
+Consolidated the `/night` skill (nightly wrap) into `/wrapup` (session wrap), absorbing a byte-identical duplicate that only differed in docstring framing. Deleted `~/.claude/skills/night/SKILL.md`, rewrote wrapup's description and steps to be time-indiscriminate (removed all "tonight"/"nightly" language and added /goodnight and /goodbye as trigger aliases alongside /wrapup). Updated `roadmap-prune/SKILL.md` and `wiki-refresh/SKILL.md` to reference /wrapup instead of /night, and fixed the `/work` command (step 11) which still called the deleted /night skill. The wrap workflow is now truly agnostic to when it runs. Committed to dotfiles: 1 commit (consolidate: absorb /night skill into /wrapup). Journal appended with consolidation note.
 
 ### Recent (2026-08-13 night wrap — Production bug sweep and roadmap stale-claim audit)
 
