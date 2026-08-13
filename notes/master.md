@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-08-13 wrapup delta — skill consolidation (night→wrapup absorption, deleted /night, rewired roadmap-prune and wiki-refresh skills, made wrapup time-agnostic). Plus earlier today: 11 repos with 8 production bug fixes, roadmap audits, 39 commits total.
 
+### Recent (2026-08-13 wrapup session — Books backlog audit)
+
+Final session pass: audited the Bookrank backlog to verify "100% complete" claim. Found ~465 unprocessed photos still in the library. Macros Tahoe For Dummies chapters 3–24 (~223 photos), AI in Business For Dummies chapters 3–17 (~150), The Optimist chapters 15–17 (~30), plus 1 stray Trading photo. The live site only has chapter 2 complete for the first two titles. Appended the full audit to bookrank/roadmap.md with detection command, render gotchas (photos rotated 90°, -Z 700 produces illegible text), and the exact sips invocation for future processing. Deliberately skipped processing ~465 page reads at 90% weekly token usage; queued for next session starting with The Optimist (cheapest, completes a book). Committed bookrank roadmap audit. Journal appended and deployed. Memory file already fixed by main session (project_books_state.md rewritten + MEMORY.md synced).
+
 ### Recent (2026-08-13 wrapup delta — Skill consolidation)
 
 Consolidated the `/night` skill (nightly wrap) into `/wrapup` (session wrap), absorbing a byte-identical duplicate that only differed in docstring framing. Deleted `~/.claude/skills/night/SKILL.md`, rewrote wrapup's description and steps to be time-indiscriminate (removed all "tonight"/"nightly" language and added /goodnight and /goodbye as trigger aliases alongside /wrapup). Updated `roadmap-prune/SKILL.md` and `wiki-refresh/SKILL.md` to reference /wrapup instead of /night, and fixed the `/work` command (step 11) which still called the deleted /night skill. The wrap workflow is now truly agnostic to when it runs. Committed to dotfiles: 1 commit (consolidate: absorb /night skill into /wrapup). Journal appended with consolidation note.
