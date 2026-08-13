@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-12 delta wrap — Sparkjar iOS 1.0 (202608121456) and macOS 1.0 (202608121459) both built, VALID, and attached to ASC (awaiting Aug 18 freeze lift for submission). Sign in with Apple server-side verified 7/7. iPad screenshots blocker identified (universal app needs iPad screenshots, none exist yet). Healstack iOS 2.3.4 build 202608121022 valid on ASC. Portfolio Fez-inspired theme deployed. App Store submission freeze until 2026-08-18 across all 17 apps.
+All notes in one place. Updated 2026-08-12 night wrap — Root-cause analysis: the three sign-in rejections (Healstack/Sparkjar/Lexly) each have unrelated causes (Healstack corrupted Supabase row / Sparkjar dead domain / Lexly unknown), not one shared bug as roadmaps claimed. Healstack v2.3.4 (202608121022) built & VALID. Sparkjar iOS/macOS v1.0 (202608121456/1459) both built & VALID. Sign in with Apple server-side verified 7/7. Key blocker found: Apple OAuth provider disabled on shared spark Supabase project (dashboard-only setting for Joshua). iPad screenshots missing (Sparkjar is universal app). Lexly Mac needs investigation. App Store submission freeze until 2026-08-18 across all 17 apps.
 
 ### Recent (2026-08-12 delta — Sparkjar v1.0 builds built and uploaded, both VALID)
 
