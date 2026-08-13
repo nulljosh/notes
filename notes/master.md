@@ -1,10 +1,22 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-12 night wrap — Root-cause analysis: the three sign-in rejections (Healstack/Sparkjar/Lexly) each have unrelated causes (Healstack corrupted Supabase row / Sparkjar dead domain / Lexly unknown), not one shared bug as roadmaps claimed. Healstack v2.3.4 (202608121022) built & VALID. Sparkjar iOS/macOS v1.0 (202608121456/1459) both built & VALID. Sign in with Apple server-side verified 7/7. Key blocker found: Apple OAuth provider disabled on shared spark Supabase project (dashboard-only setting for Joshua). iPad screenshots missing (Sparkjar is universal app). Lexly Mac needs investigation. App Store submission freeze until 2026-08-18 across all 17 apps.
+All notes in one place. Updated 2026-08-13 night wrap — Long autonomous session across 11 repos (litigate, sparkjar, talli, epiphany, healstack, curvely, lexly, newsline, bcgd, bookrank, + codebase root). Eight production bugs found and fixed, none on any roadmap: litigate dark-mode bootstrap, sparkjar account-deletion 500, talli wedged sync reporting, epiphany statement overwrites + debt-free calc, healstack encryption exemption, curvely asymptote stripping, lexly sign-in modal dismiss, newsline zombie feeds, bcgd orphaned service pages. Five repos had roadmaps claiming incomplete work that was actually shipped months ago. App Store freeze continues until 2026-08-18.
 
-### Recent (2026-08-12 delta — Sparkjar v1.0 builds built and uploaded, both VALID)
+### Recent (2026-08-13 night wrap — Production bug sweep and roadmap stale-claim audit)
 
-Fixed all four config blockers for Sparkjar and built v1.0 for both iOS and macOS. The version mismatch in ios/project.yml (claiming 2.2.0 instead of 1.0) was a red herring—the real issues were: iOS provisioning profile pointed at nonexistent "Spark iOS App Store" instead of the valid "Sparkjar iOS App Store 20260810" (CY2V3B846P, needed to be installed locally first); ExportOptions.plist was set to automatic signing, causing export to re-derive a profile without Sign in with Apple entitlement; UITests weren't excluded from the app target, so PreviewScreenshot.swift compiled into the archive and failed; and macOS export produces .pkg (not .ipa) but ship-mac always used --ipa-path flag. Built iOS 202608121456 and macOS 202608121459, both uploaded to ASC and marked VALID. Verified Sign in with Apple server-side (node api/_lib/auth/apple.selfcheck.js, 7/7 token verification tests passed). Found a real submission blocker: Sparkjar is a universal app (TARGETED_DEVICE_FAMILY "1,2"), so Apple requires iPad screenshots which don't exist yet — none of the Snapfile infrastructure exists (Fastfile/SnapshotHelper.swift/.env.accounts.local missing). Deferred while awaiting the August 18 freeze lift anyway.
+Autonomous work session: 11 repos, 39 commits total. Uncovered a pattern: five repos had roadmap notes claiming unfinished work that was actually shipped and live — this meant the live bugs were completely off any list. Found and deployed eight production fixes:
+
+1. **Litigate**: dark mode never worked. Theme CSS bootstrapped in `<head>` where `document.body` was null, so every rule failed silently. Fixed by moving injection into useEffect after render.
+2. **Sparkjar**: account deletion threw HTTP 500. Auth handler filtered by bigint `id` instead of text `user_id`. A Guideline 5.1.1 compliance blocker.
+3. **Talli**: scrape job wedged for months but reported fresh sync times (timestamp set before run, not after). All timestamps from past three months are stale.
+4. **Epiphany**: statement upload overwrote June with July (card cycles span two months). Debt-free panel claimed success when payoff math was unknowable.
+5. **Healstack**: never declared encryption exemption, blocking every ASC upload. Added ITSAppUsesNonExemptEncryption = true.
+6. **Curvely**: asymptote singularities drawn as full-height strokes instead of breaking. Visible on tan(x).
+7. **Lexly**: sign-in success stopped spinner without dismissing modal. Build cut two minutes after sign-in added, before cleanup passed.
+8. **Newsline**: two zombie feeds (CNN frozen April 2023, WSJ dead host) returned 200 with valid XML. CNN dropped; WSJ repointed. Added recency check.
+9. **BCGD**: 12 production service pages orphaned because all nav pills pointed to `#services` anchor instead of routes.
+
+All deployed to production. Journal published (2026-08-13-silent.md). Roadmaps pruned for all 11 repos.
 
 ### Recent (2026-08-12, Wednesday evening — Portfolio Fez-inspired restyle)
 
