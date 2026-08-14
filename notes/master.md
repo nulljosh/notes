@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-13 wrapup delta — skill consolidation (night→wrapup absorption, deleted /night, rewired roadmap-prune and wiki-refresh skills, made wrapup time-agnostic). Plus earlier today: 11 repos with 8 production bug fixes, roadmap audits, 39 commits total.
+All notes in one place. Updated 2026-08-14 wrapup — rebuilt Lexly macOS with sign-in fix (build 202608141030 VALID), unified version 1.1.3, now PREPARE_FOR_SUBMISSION. Verified the three "broken sign-in" rejections had three unrelated causes, not one shared root cause: Sparkjar baseURL dead domain (rebuilt 08-12), Healstack Supabase config missing (rebuilt 08-12), Lexly macOS nil session read (rebuilt 08-14). All three staged; none submitted (freeze to 08-18).
+
+### Recent (2026-08-14 afternoon — Lexly macOS rebuild + rejection-reason audit)
+
+The Lexly macOS sign-in fix was committed on 2026-08-13 but never actually built until today. Rebuilt macOS with the fix (silent nil `sessionRead` in AuthStore.signIn), unified version 1.1.1 → 1.1.3 to match iOS, uploaded build 202608141030 to App Store Connect. Build validated VALID and attached to the submission, now PREPARE_FOR_SUBMISSION. Corrected a stale note in ~/Documents/Code/CLAUDE.md claiming the "single shared root cause" of the three sign-in rejections — all three apps had completely unrelated bugs: Sparkjar's dead baseURL (spark.heyitsmejosh.com no longer resolves), Healstack's missing Supabase Info.plist config (fatalError on load), Lexly's silent nil session read. Same surface symptom (sign-in fails), three separate failure paths. Updated memory files (project_lingo_parlay_state.md, project_asc_rejection_reasons.md) with verified root causes. Journal appended (2026-08-13-silent.md extended with Friday entry). All changes committed.
 
 ### Recent (2026-08-13 wrapup session — Books backlog audit)
 
