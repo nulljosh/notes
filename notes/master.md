@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-14 wrapup — rebuilt Lexly macOS (build 202608141030 VALID, PREPARE_FOR_SUBMISSION), drained Apple Notes inbox (6 items filed to roadmaps, Telus phone bill added to Epiphany KV). Verified the three "broken sign-in" rejections had three unrelated causes, not one shared root cause: Sparkjar baseURL dead domain (rebuilt 08-12), Healstack Supabase config missing (rebuilt 08-12), Lexly macOS nil session read (rebuilt 08-14). All three staged; none submitted (freeze to 08-18).
+All notes in one place. Updated 2026-08-15 wrapup — high token usage (94% weekly), ship queue frozen until 2026-08-18 per Guideline 5.6 suspension. No code work this session; ran full wrapup routine (git collect, journal append, wiki update, memory check). Wrapped early to preserve weekly context before usage reset.
+
+### Recent (2026-08-15 — Session wrap at 94% usage)
+
+Wrapped the session at 94% weekly token usage rather than starting another work run. The entire ship queue is frozen until August 18 per the Guideline 5.6 Developer Code of Conduct review suspension affecting four apps (Curvely, Wiretext, Transcriptly, NYC Survive) — submitting any app during the freeze window violates Apple's Developer Program License Agreement and risks account-level removal. Eight apps await the freeze lift: Sparkjar, Healstack, Lexly macOS, Wordroot, BCGD, Newsline, Bookrank, Curvely (all staged with fixes or submission-ready). Ran the full wrapup routine: collected git commits from ~/Documents/Code (none in past 12 hours), appended to journal (2026-08-13-silent.md Saturday entry), deployed via Cloudflare Pages, updated master.md and Obsidian vault, checked memory files for staleness. No fixes, no code changes — just wrapping to preserve the week's context before token reset. Journal deployed to journal.heyitsmejosh.com.
 
 ### Recent (2026-08-14 afternoon — Notes inbox cleared + Epiphany debt tracker updated)
 
