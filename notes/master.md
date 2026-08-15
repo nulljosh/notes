@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-14 wrapup — rebuilt Lexly macOS with sign-in fix (build 202608141030 VALID), unified version 1.1.3, now PREPARE_FOR_SUBMISSION. Verified the three "broken sign-in" rejections had three unrelated causes, not one shared root cause: Sparkjar baseURL dead domain (rebuilt 08-12), Healstack Supabase config missing (rebuilt 08-12), Lexly macOS nil session read (rebuilt 08-14). All three staged; none submitted (freeze to 08-18).
+All notes in one place. Updated 2026-08-14 wrapup — rebuilt Lexly macOS (build 202608141030 VALID, PREPARE_FOR_SUBMISSION), drained Apple Notes inbox (6 items filed to roadmaps, Telus phone bill added to Epiphany KV). Verified the three "broken sign-in" rejections had three unrelated causes, not one shared root cause: Sparkjar baseURL dead domain (rebuilt 08-12), Healstack Supabase config missing (rebuilt 08-12), Lexly macOS nil session read (rebuilt 08-14). All three staged; none submitted (freeze to 08-18).
+
+### Recent (2026-08-14 afternoon — Notes inbox cleared + Epiphany debt tracker updated)
+
+Drained the Apple Notes app inbox of six pending items. Five were feature requests: Inkpress needs a landing page (reference: Bookrank/NYC design level), NYC Survive needs an automated full-playthrough test (should never self-play), Sparkjar needs a landing page UI refresh with a screenshot to fill dead space, portfolio background rendering in blue (was orange-yellow earlier, suspect tokens-fez.css), Epiphany needs Duolingo stock additions (DUOL) plus widget support iOS/macOS. Filed each into its matching repo's roadmap.md. The sixth note was a Telus phone bill screenshot ($730.20, due Aug 26 for the current phone line), which I added to Epiphany's KV debt array, replacing two stale overlapping entries ("Phone (device)" $780 and "Telus (current month)" $400) with one accurate entry. Verified the KV write. Deleted all six notes from Notes.app. Committed roadmap updates across five repos (epiphany, inkpress, nulljosh.github.io, nyc, sparkjar) and pushed. Memory file added: project_telus_phone_bill.md with full debt details.
 
 ### Recent (2026-08-14 afternoon — Lexly macOS rebuild + rejection-reason audit)
 
