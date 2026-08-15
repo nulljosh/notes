@@ -1,12 +1,16 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-15 wrapup — high token usage (94% weekly), ship queue frozen until 2026-08-18 per Guideline 5.6 suspension. No code work this session; ran full wrapup routine (git collect, journal append, wiki update, memory check). Wrapped early to preserve weekly context before usage reset.
+All notes in one place. Updated 2026-08-15 evening wrapup — critical token usage (96% weekly), ship queue frozen until 2026-08-18 per Guideline 5.6 suspension. Minimal session: ran /git-sweep (pushed 5 repos), skipped work start to preserve usage, ran full wrapup routine.
 
-### Recent (2026-08-15 — Toolchain maintenance + wrapup at high usage)
+### Recent (2026-08-15 afternoon — Git-sweep + wrap at critical usage)
+
+Checked weekly token usage at 96% CRITICAL and decided to hold off starting another work session. The entire ship queue is frozen until August 18 per the Guideline 5.6 Developer Code of Conduct review suspension anyway — eight apps are submission-ready but ineligible (Sparkjar, Healstack, Lexly macOS, Wordroot, BCGD, Newsline, Bookrank, Curvely). Ran `/git-sweep` to push pending commits accumulated in five repos: bcgd, healstack, litigate, newsline, and notes (one small commit each, mostly from earlier wrap/roadmap-prune work). Followed up by running the full wrapup routine: collected git commits from ~/Documents/Code, appended session summary to journal (2026-08-13-silent.md Saturday entry), deployed via Cloudflare Pages, verified memory files for staleness. Journal deployed to journal.heyitsmejosh.com. Weekly usage should reset before the Aug 18 freeze lift, giving a fresh budget for the post-freeze submission push.
+
+### Recent (2026-08-15 morning — Toolchain maintenance + initial wrapup at high usage)
 
 Ran `/update` this morning to refresh brew, Node, Python, and system packages. A race condition surfaced during `brew install go` — brew tried to link python@3.14 while it was still being written in parallel, leaving the keg in a broken state. Fixed it with `brew cleanup` followed by a fresh install, then verified the entire toolchain: python, node, xcodebuild, asc, wrangler, and vercel all respond to --version. One outstanding item: the local Ollama daemon needs a restart before the next session, but that's non-blocking. Documented the race condition in a new memory file so future concurrent-brew sessions know to expect and skip it.
 
-Session wrapped at 94% weekly token usage rather than starting another work run. The entire ship queue is frozen until August 18 per the Guideline 5.6 Developer Code of Conduct review suspension — eight apps await the freeze lift (Sparkjar, Healstack, Lexly macOS, Wordroot, BCGD, Newsline, Bookrank, Curvely). Ran the full wrapup routine: collected git commits from ~/Documents/Code (one in journal), appended to journal (2026-08-13-silent.md Saturday entry), deployed via Cloudflare Pages, updated master.md and Obsidian vault, verified memory files. Journal deployed to journal.heyitsmejosh.com.
+Restarted ollama daemon (0.32.7 → 0.32.13), reconfigured Continue in VS Code (pulled qwen2.5-base:1.5b for autocomplete to avoid per-keystroke stalls, left 14b for chat/edit). Session wrapped at high weekly token usage rather than starting another work run. Ran the full wrapup routine: collected git commits from ~/Documents/Code (one in journal), appended to journal (2026-08-13-silent.md Saturday entry), deployed via Cloudflare Pages, updated master.md and Obsidian vault, verified memory files.
 
 ### Recent (2026-08-14 afternoon — Notes inbox cleared + Epiphany debt tracker updated)
 
