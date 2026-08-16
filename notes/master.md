@@ -1,6 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-15 evening wrapup — critical token usage (96% weekly), ship queue frozen until 2026-08-18 per Guideline 5.6 suspension. Minimal session: ran /git-sweep (pushed 5 repos), skipped work start to preserve usage, ran full wrapup routine.
+All notes in one place. Updated 2026-08-16 evening wrapup — multi-repo autonomous session (6 forks). Half the work was already live (litigate deploy since Aug 13, roadmaps were stale). Auth verified healthy (lexly, healstack). Fixed latent bug (lexly signUp idempotent upsert). Sparkjar migrated Vercel→Cloudflare Pages (preview live). Epiphany color sweep (teal/cyan/purple purged, 28 hex literals + regression check). DUOL added (symbol cap 50→60). Commits pushed across 5 repos.
+
+### Recent (2026-08-16 evening — Multi-fork session: stale roadmaps, latent bugs, color sweep, Sparkjar migration)
+
+Ran a full multi-repo autonomous session across six forks. The honest story: half the work turned out to be already done and the roadmaps were lying about it. Litigate's deploy had been live since Aug 13; verified against production and closed the stale roadmap claim. Lexly and Healstack showed healthy auth in production — dug deeper and found Lexly had a latent bug where `AuthStore.signUp` stopped writing rows, leaving new users stranded on confirmation. Fixed with idempotent upsert that self-heals. Healstack had a stuck submission waiting for 2FA; auth verified (real tokens, demo row 400s). Sparkjar had two threads: the dead mailer wasn't the rejection cause (hardcoded baseURL, already fixed), but migrated the whole thing to Cloudflare Pages to match the 12 repos already there. Found three unrelated bugs broken on Vercel (session per-instance, user store in /tmp, JWT_SECRET at module load).
+
+Epiphany got full color sweep: purged teal/cyan/purple at Palette definition, then discovered 28 raw hex literals the palette grep missed (map pins, Pro badge, avatar picker). Scanned by hue angle instead. Kept nine corporate brand hexes (FedEx, Accenture, Cisco) as data. Added DUOL to stock universe which exposed a trap: default symbol list sat exactly on API's 50-symbol cap, raised to 60.
+
+Added regression scripts: scripts/check-auth-live.sh (healstack), scripts/check-no-teal-purple.py (epiphany). Journal updated with Sunday session recap. All commits pushed.
 
 ### Recent (2026-08-15 afternoon — Git-sweep + wrap at critical usage)
 
