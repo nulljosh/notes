@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 delta run — Ship-prep (Sparkjar encryption fixed, Healstack verified, Lexly/Wordroot blocked on specific prerequisites) plus landing pages + migration verification (Inkpress, Litigate, Voxprint). Only Sparkjar + Wordroot truly submission-ready for Aug 18. Healstack version-blocked, Lexly dashboard-blocked, Voxprint draft-blocked. All frozen until 2026-08-18 per Guideline 5.6 suspension.
+All notes in one place. Updated 2026-08-17 evening wrap — Portfolio theme corrected, journal updated, wiki synced. 1 commit (nulljosh.github.io ec98203).
+
+### Recent (2026-08-17 evening wrap — Portfolio theme fix)
+
+Fixed portfolio background rendering. The site had been linked to tokens-fez.css (parchment theme from 2026-08-12) when the actual design system is tokens-fredrika.css (off-white light, near-black dark). Switched stylesheet link in index.html and updated both theme-color meta tags. Committed ec98203, deployed journal entry.
 
 ### Recent (2026-08-17 full session — Seven repos: ship-prep, landing pages, blockers diagnosed)
 
