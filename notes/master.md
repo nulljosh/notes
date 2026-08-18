@@ -1360,3 +1360,10 @@ Earlier: Investigated stuck GitHub Pages HTTPS certificate for abraham.heyitsmej
 - OpenClaw: iMessage → Claude routing at `~/.openclaw/`
 - code-meta (2026-07-19): Version-controlled git repo tracking ~/Documents/Code root (CLAUDE.md, roadmap.md, PROGRESS.md via allowlist .gitignore) — index repo at github.com/nulljosh/code-meta
 - Security rotations pending: Upstash Redis (epiphany)
+
+**Next Vercel exits assessed (commit 035f96a)**: Three remaining projects (talli, epiphany, missing-pets) with different migration complexities:
+- **missing-pets**: Easy, ~20 min. 408K, Next.js + Supabase, zero functions, 2 env vars only. Deploy to Pages, flip DNS A record to proxied CNAME, delete project.
+- **talli**: Blocked on architecture. Requires Cloudflare Browser Rendering API (puppeteer-core + @sparticuz/chromium won't run on Workers), plus @vercel/blob → R2 and dropping express. Own session.
+- **epiphany**: Hardest. 91 functions, 1.3G, better-sqlite3 (native, Workers-incompatible) + @vercel/blob. Flagship app, plan before touching.
+
+**Recurring gotcha**: compatibility_date before 2025-04-01 means nodejs_compat does NOT populate process.env; bindings read undefined and env assignments silently no-op. See cadence/functions/_adapter.js for globalThis workaround, or bump the date.
