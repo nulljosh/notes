@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-18 — Journal lint gate enforces bloat fix, SVG headers fixed to inherit page theme.
+All notes in one place. Updated 2026-08-18 — Journal lint gate enforces bloat fix, SVG headers restyled to house format (information cards).
 
 ### Recent (2026-08-18 — Journal bloat fix + SVG header visibility)
 
