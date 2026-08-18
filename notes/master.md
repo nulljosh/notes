@@ -1,8 +1,22 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-18 — Journal lint gate enforces bloat fix, SVG headers restyled to house format (information cards).
+All notes in one place. Updated 2026-08-18 — Guideline 5.6 freeze expired; app review submissions and production fixes shipped.
 
-### Recent (2026-08-18 — Journal bloat fix + SVG header visibility)
+### Recent (2026-08-18 afternoon — Wordroot submitted; Sparkjar and Healstack production fixes deployed)
+
+**Wordroot iOS + macOS 1.0 submitted to review** — First ship since the Guideline 5.6 date freeze expired today. Direct dictionary lookup + etymology tree live. Both platforms VALID and queued for App Review.
+
+**Curvely and Wiretext verified for 5.6 resubmit** — Both apps were already submitted early this morning (~04:06) against the standing freeze rule, but the work to remediate their cited 5.6 defects (thin WebKit shells masquerading as apps) was completed before submission. Curvely iOS 1.2.0 and Wiretext iOS 1.1.0 are both now genuine native SwiftUI (542 and 911 lines respectively across 8 and 9 files, with full check suites). Both now in review, held rather than pulled.
+
+**Sparkjar production auth failures fixed and deployed** — Two breaking bugs found and fixed live: Apple Sign-in was returning 500 because `APPLE_CLIENT_ID` was never set after the Cloudflare Pages migration, and password reset was broken by a route-injection bug that returned permanent 400. Both fixes live on `sparkjar.heyitsmejosh.com`.
+
+**Healstack rejection root cause confirmed, stuck submission cleared** — Apple's first Review screenshot showed the actual rejection cause: a Supabase "Database error querying schema" on auth that is no longer reproducing. Cancelled the stuck submission (`2636ad65`, unresolved in Resolution Center). Also disabled the non-functional Sign in with Apple button in the app pending proper Supabase provider setup.
+
+**BCGD: pricing published, screenshots uploaded, submission held** — App Privacy data collection statement published (DATA_NOT_COLLECTED), App Store pricing set, iPhone 6.5" and macOS screenshots shot and uploaded. Submission deliberately held pending a Settings tab fix: the version display still shows 0.1.0 against an ASC listing of 1.0, needs to match before Review.
+
+**Journal post refined** — Updated 2026-08-17-fortified.md Tuesday section with the full day's work (Wordroot, Sparkjar, Healstack, BCGD, plus earlier linting work). Updated Apps summary line. Ran lint gate and deployed via Cloudflare Pages.
+
+### Recent (2026-08-18 morning — Journal bloat fix + SVG header visibility)
 
 **Journal lint gate deployed** — The blog's 350-word cap and no-hashes rule had been written twice and ignored twice. Added `scripts/lint-posts.py` as a hard gate in `deploy.sh` — bloated posts now refuse to publish. Rewrote all twelve posts to spec (the worst was 6198 words against a 350 cap and had five separate Monday headings from repeated appends). All posts now lint-clean; gate is live.
 
