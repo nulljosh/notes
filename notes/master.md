@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 evening — Security sweep across 29 repos found and fixed two critical issues (lexly auth bypass, nimble rate-limiting). Journal deployed.
+All notes in one place. Updated 2026-08-17 evening — LECSS Pre-Calculus 12 Section 53 registration complete; profile documents submitted. Security sweep and Vercel migration complete. Journal deployed.
+
+### Recent (2026-08-17 evening — LECSS Pre-Calculus 12 registration)
+
+**Registered for LECSS Pre-Calculus 12 Section 53** (online, Sep 14 2026 – Jun 23 2027) — Registration is now pending office review. Completed profile setup: filled a blank Graduated Student Learning Plan PDF programmatically (pypdf + reportlab overlay) with name Joshua Adam Trommel, DOB 1999-08-05, phone 778-201-4533, email jatrommel@gmail.com, program goal "Bachelor of Computing Science at SFU (Beedie finance minor) → software engineer / fintech developer", and expiry Aug 1 2027. Converted HEIC photos to JPG and uploaded BC driver's licence front/back for residency verification and Canadian passport for citizenship verification via Claude in Chrome. All document warnings cleared 2026-08-17. Section 53 chosen over Section 55 based on instructor preference (same course, different instructor + class size: 16 vs 43 spots). Learning plan expires Aug 1 2027. Updates: ~/Documents/Code/CLAUDE.md (Current-state) and memory files (project_plan.md, project_school_folder.md).
 
 ### Recent (2026-08-17 evening — Security sweep session)
 
