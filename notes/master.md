@@ -1,6 +1,12 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 night — Homeward (missing-pets) migrated to Cloudflare Pages and renamed across web/iOS. Epiphany API ported to Cloudflare Workers. Vercel shrunk to 2 projects from 18.
+All notes in one place. Updated 2026-08-18 — Journal lint gate enforces bloat fix, SVG headers fixed to inherit page theme.
+
+### Recent (2026-08-18 — Journal bloat fix + SVG header visibility)
+
+**Journal lint gate deployed** — The blog's 350-word cap and no-hashes rule had been written twice and ignored twice. Added `scripts/lint-posts.py` as a hard gate in `deploy.sh` — bloated posts now refuse to publish. Rewrote all twelve posts to spec (the worst was 6198 words against a 350 cap and had five separate Monday headings from repeated appends). All posts now lint-clean; gate is live.
+
+**SVG headers fixed** — Every inline post header was invisible. Root cause: colors defined only inside `prefers-color-scheme` blocks with no base definition, so shapes fell back to `stroke: none` on a dark page and text fell back to black-on-dark. Fixed by deleting all style blocks, switching shapes to `currentColor`, and inlining the headers (they were formerly embedded with `<img>`, which can't see the page's theme toggle). All twelve headers now inherit the page's text color and follow the light/dark toggle.
 
 ### Recent (2026-08-17 night — Homeward migration + Epiphany Workers port)
 
