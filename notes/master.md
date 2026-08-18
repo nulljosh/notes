@@ -1,16 +1,18 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 evening — Vercel stale-domain cleanup (15 domains detached, 13 empty projects deleted, Vercel down to 5 projects). Memory files updated (project_spark_fn_cap, project_nyc_web_port). Journal deployed. Earlier: roadmap burn-down (Six ship workflows fixed, four production bugs patched, 12 apps smoke-tested clean).
+All notes in one place. Updated 2026-08-17 evening — Vercel stale-domain cleanup complete (15 domains detached, 14 empty projects deleted including cadence, Vercel down to 4 projects). Cadence Cloudflare migration finished (two API bugs fixed, DNS flipped, Pages Functions live). Memory files updated (project_spark_fn_cap, project_nyc_web_port, project_cadence_state). Journal deployed.
 
 ### Recent (2026-08-17 evening — Vercel stale-domain cleanup)
 
 **Cleared "15 domains need configuration" Vercel alert** — DNS had already migrated to Cloudflare during the Pages migration. Vercel was holding 15 stale domain attachments to projects that no longer needed them. Verified each domain with `curl -sI | grep server` before detaching (found three still genuinely served by Vercel and deliberately left them: talli, epiphany, pets). Removed 15 stale attachments via REST API, then deleted 13 now-empty projects: sparkjar, healstack, wiretext, etyma, grapher, bcgd, echo-landing, nyc-web, dashboard, brief, charters, life, nulljosh.github.io. Vercel account now down to 5 projects (talli, epiphany, missing-pets, web, cadence).
 
-**Verification**: Curled all 18 domains (heyitsmejosh.com estate + 17 app domains) — all return 200 or appropriate status. Found and resolved orphan DNS record: life.heyitsmejosh.com was a proxied CNAME pointing at a deleted Cloudflare Pages project (life-84y.pages.dev, causing error 1014). Deleted the orphan record via Cloudflare API; abandoned project fully cleaned.
+**Verification**: Curled all 18 domains (heyitsmejosh.com estate + 17 app domains) — all return 200 or appropriate status. Found and resolved two orphans:
+- **life.heyitsmejosh.com** — proxied CNAME pointing at deleted Cloudflare Pages project (life-84y.pages.dev, error 1014). Deleted via Cloudflare API; abandoned project fully cleaned.
+- **cadence.heyitsmejosh.com** — A record to Vercel IP (76.76.21.21), being served from stale Vercel edge cache. The cadence Vercel project had no custom domain attached (half-finished Pages migration). Completed the migration: fixed two API bugs (GraphQL variable type mismatch on `/api/projects`, and `process.env` undefined because compatibility_date was pinned before 2025-04-01 when `nodejs_compat` auto-populates env), deployed to Cloudflare Pages Functions, flipped DNS to proxied CNAME, attached custom domain to Pages project, and deleted the Vercel project. All three API endpoints return 200. Committed 0493852 to cadence repo.
 
-**Secondary orphan flagged for later review** (not fixed): cadence.heyitsmejosh.com is an A record to 76.76.21.21 (Vercel IP) and returns 200, but the cadence Vercel project has no custom domain attached — similar orphan class worth investigating later. pets.heyitsmejosh.com uses same IP but is still legitimately on Vercel.
+**Vercel account now 4 projects** (down from 5): talli, epiphany, missing-pets, web. All live domains verified.
 
-**Memory updates** (project_spark_fn_cap.md, project_nyc_web_port.md) — Marked as obsolete/migrated since Sparkjar and NYC web no longer on Vercel.
+**Memory updates** (project_spark_fn_cap.md, project_nyc_web_port.md, project_cadence_state.md) — Marked obsolete/migrated for Sparkjar, NYC web, and cadence (all on Cloudflare now).
 
 ### Recent (2026-08-17 roadmap burn-down — Ship workflows fixed, production bugs patched, 12 apps smoke-tested)
 
