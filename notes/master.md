@@ -1,6 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 evening — LECSS Pre-Calculus 12 Section 53 registration complete; profile documents submitted. Security sweep and Vercel migration complete. Journal deployed.
+All notes in one place. Updated 2026-08-17 night — Homeward (missing-pets) migrated to Cloudflare Pages and renamed across web/iOS. Epiphany API ported to Cloudflare Workers. Vercel shrunk to 2 projects from 18.
+
+### Recent (2026-08-17 night — Homeward migration + Epiphany Workers port)
+
+**Missing-pets renamed Homeward and moved to Cloudflare Pages** — Static export with every page `"use client"` against Supabase. Dynamic route segment `/listing/[id]` became `/listing?id=` because static exports need `generateStaticParams` to work (not worthwhile for a small dataset). Kept old `pets.heyitsmejosh.com` domain as an alias so links don't break. iOS app renamed: folder `ios/Homeward/`, main file `HomewardApp.swift`, bundle ID com.nulljosh.homeward. The iOS build was never run, flagged as an open item.
+
+**Epiphany API migrated to Cloudflare Workers** — Deployed to `epiphany.trommatic.workers.dev` for verification; production DNS still on Vercel (not cut over yet). Earlier assessment was wrong: Epiphany is one serverless function dispatching routes, not 91, so it was feasible to port. Swapped jsdom for linkedom to shrink bundle from 95% to reasonable (~2.1MB gzip). Replaced `node:dns` and `node:net` with Cloudflare's DoH and regex guards. Mirrored Vercel's blob storage in Workers KV (serves at `/api/blob/<key>`). Crons deliberately left disarmed (Vercel still runs real broker trades). Sampled 14 route pairs show parity with production. Three upstream APIs block Cloudflare egress IPs (CoinGecko, CNN returning 418), added fallbacks: Kraken for crypto, Coinbase for spot, KV stale cache + graceful empty for fear-greed. Production safety check: two Vercel env secrets were corrupted by `vercel env pull` (newline escaping), decoded and re-uploaded after scanning all nine.
+
+**Vercel shrunk to 2 projects** (talli, epiphany) from 18 at session start. Remaining work: parallel-run diff on talli before DNS flip (it's the API base for shipped iOS/macOS apps).
 
 ### Recent (2026-08-17 evening — LECSS Pre-Calculus 12 registration)
 
