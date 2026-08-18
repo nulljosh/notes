@@ -1,7 +1,22 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 final session — Both Guideline 5.6 wrapper apps (Wiretext, Curvely) rewritten to native SwiftUI. 5 commits total (wiretext 878bdb4 + 2c82ed5, curvely ed5c5d2 + 59a861b, nyc 8cd9430), memory updated, journal+wiki synced.
+All notes in one place. Updated 2026-08-17 roadmap burn-down — Six ship workflows fixed, four production bugs patched, 12 apps smoke-tested clean, 2 CLAUDE.md corrections, Wiretext + Curvely review notes set. 7 commits (lexly 0b9594c, litigate ec3d887, healstack d465edb, wiretext/curvely review notes, code-meta build smoke test, CLAUDE.md 0c4b5e1), memory clean, journal+wiki synced.
 
+### Recent (2026-08-17 roadmap burn-down — Ship workflows fixed, production bugs patched, 12 apps smoke-tested)
+
+**Ship workflows fixed** (lexly, litigate, inkpress, voxprint, talli, epiphany) — Added `--overwrite` flag to `asc xcode archive`/`export` steps. These were refusing to clobber existing artifacts on reruns. `asc workflow validate` now passes in all 8 repos. Also corrected code-meta's stale claim that workflows still used `--pkg-path` — that was already fixed.
+
+**Wiretext + Curvely review notes written and set** (details 79348adb, b9dead75) via `asc review details-update`. Describes the native SwiftUI rewrites for the 5.6 resubmit. Version records are blocked: `asc versions create` returns "You cannot create a new version... in the current state" for both (their only versions are REJECTED and they're inside the 5.6 suspension). Fallback recorded in roadmaps (edit the existing rejected version's version string).
+
+**Four production bugs fixed:** Litigate's biometric lock screen read "BRIEF" (commit ec3d887). Healstack's manual SwiftUI Bindings had index-capture bugs in lab panels (commit d465edb, 113 new asserts, iOS+macOS both build). Lexly's completion count was dabbling-in-courses, relabelled to "courses started" (commit 0b9594c); real completion needs per-pack lesson totals (roadmap decision). 
+
+**Build smoke test:** All 12 shippable iOS apps (wiretext, curvely, litigate, healstack iOS+macOS, lexly, inkpress, voxprint, newsline, bookrank, wordroot, sparkjar, talli) build clean. Recorded two scripting gotchas (sparkjar/talli's first alphabetical scheme is watchOS; healstack's iOS scheme is still named `Dose`).
+
+**CLAUDE.md corrections** (commit 0c4b5e1): SwiftLint's build-tool-plugin wiring does NOT exist anywhere (note claimed four apps had it, unverified). Litigate VoiceOver finding was a misdiagnosis — the Unlock button reads fine; the real defect was branding (above).
+
+**Blocker flagged for Joshua:** Vercel project `etyma` builds from ~/Documents/Code itself, redeploys on every push. Source deleted 2026-08-11 (commit 3e65d942); project has sent failed-deploy emails for six days. Nothing depends on it. Options: delete project or disconnect Git. Recorded in code-meta/roadmap.md (not actionable without Joshua's decision).
+
+### Recent (2026-08-17 final session — Curvely SwiftUI rewrite ships; both 5.6 wrapper apps now native)
 ### Recent (2026-08-17 final session — Curvely SwiftUI rewrite ships; both 5.6 wrapper apps now native)
 
 **Curvely (iOS) rewritten to native SwiftUI** (commits ed5c5d2 + 59a861b) — Second and last of the two Guideline 5.6 wrapper apps. Replaced mathjs with a recursive-descent parser for the exact grammar (precedence, ^, unary minus, implicit multiplication, 20 functions, pi/e/tau). Validated against 3,636 expression/x pairs from real mathjs — matches perfectly except `x(x+1)` (mathjs rejects as "x is not a function", Swift accepts as multiplication; strictly more permissive). Graph.jsx ported to SwiftUI Canvas (grid, axes, asymptote breaks, pinch zoom). Equations persist to Application Support; graphs export as PNG. 73 assert checks + 16 web tests pass. Version 1.1.0 → 1.2.0. Verified on iPad Pro 11.
