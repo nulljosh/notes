@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 evening — Vercel stale-domain cleanup complete (15 domains detached, 14 empty projects deleted including cadence, Vercel down to 4 projects). Cadence Cloudflare migration finished (two API bugs fixed, DNS flipped, Pages Functions live). Memory files updated (project_spark_fn_cap, project_nyc_web_port, project_cadence_state). Journal deployed.
+All notes in one place. Updated 2026-08-17 evening — Security sweep across 29 repos found and fixed two critical issues (lexly auth bypass, nimble rate-limiting). Journal deployed.
+
+### Recent (2026-08-17 evening — Security sweep session)
+
+**Security audit across 29 repositories** — Ran a comprehensive scan to find issues that hadn't made it onto any roadmap. Found two critical vulnerabilities: lexly's `/school` gate was forging authentication via an HTTP cookie (fixed with Basic auth, now denies when SCHOOL_PASSWORD is unset), and nimble's public Workers AI proxy had no authentication or rate-limiting (added per-IP 20 requests/minute limit in wrangler.jsonc, deployed). Everything else verified clean: sparkjar and healstack auth solid, all Cloudflare Pages sites running healthy. Gotcha recorded: lexly's Cloudflare Pages project has no git integration, only scripts/deploy.sh handles deployments (bypassing the usual git→Pages automation, but this is intentional).
 
 ### Recent (2026-08-17 evening — Vercel stale-domain cleanup)
 
