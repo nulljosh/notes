@@ -1,6 +1,12 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 delta session — Wiretext iOS rewritten to native SwiftUI; NYC review notes written; Healstack validated; CoreSimulator updated. 2 commits (wiretext 878bdb4 + 2c82ed5, nyc 8cd9430), memory updated, journal+wiki synced.
+All notes in one place. Updated 2026-08-17 final session — Both Guideline 5.6 wrapper apps (Wiretext, Curvely) rewritten to native SwiftUI. 5 commits total (wiretext 878bdb4 + 2c82ed5, curvely ed5c5d2 + 59a861b, nyc 8cd9430), memory updated, journal+wiki synced.
+
+### Recent (2026-08-17 final session — Curvely SwiftUI rewrite ships; both 5.6 wrapper apps now native)
+
+**Curvely (iOS) rewritten to native SwiftUI** (commits ed5c5d2 + 59a861b) — Second and last of the two Guideline 5.6 wrapper apps. Replaced mathjs with a recursive-descent parser for the exact grammar (precedence, ^, unary minus, implicit multiplication, 20 functions, pi/e/tau). Validated against 3,636 expression/x pairs from real mathjs — matches perfectly except `x(x+1)` (mathjs rejects as "x is not a function", Swift accepts as multiplication; strictly more permissive). Graph.jsx ported to SwiftUI Canvas (grid, axes, asymptote breaks, pinch zoom). Equations persist to Application Support; graphs export as PNG. 73 assert checks + 16 web tests pass. Version 1.1.0 → 1.2.0. Verified on iPad Pro 11.
+
+**Both Guideline 5.6 apps done:** Wiretext (1.0.2 → 1.1.0, commits 878bdb4 + 2c82ed5 earlier tonight) and Curvely (1.1.0 → 1.2.0, commits ed5c5d2 + 59a861b just now) are both now genuinely native SwiftUI. Neither is resubmitted yet — gated on Aug 18 freeze lift plus new ASC version records (Wiretext 1.1.0, Curvely 1.2.0) and review notes describing each rewrite.
 
 ### Recent (2026-08-17 delta session — Wiretext SwiftUI rewrite + NYC review notes + Healstack validation + environment update)
 
