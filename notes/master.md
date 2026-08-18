@@ -1,6 +1,16 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 evening wrap — Portfolio theme corrected, journal updated, wiki synced. 1 commit (nulljosh.github.io ec98203).
+All notes in one place. Updated 2026-08-17 delta session — Wiretext iOS rewritten to native SwiftUI; NYC review notes written; Healstack validated; CoreSimulator updated. 2 commits (wiretext 878bdb4 + 2c82ed5, nyc 8cd9430), memory updated, journal+wiki synced.
+
+### Recent (2026-08-17 delta session — Wiretext SwiftUI rewrite + NYC review notes + Healstack validation + environment update)
+
+**Wiretext (iOS) rewritten to native SwiftUI** (commits 878bdb4 + 2c82ed5) — Direct fix for Guideline 5.6 quality finding. Ported engine.js + presets.js to Swift (Engine.swift + Presets.swift), drew grid with SwiftUI Canvas (one Text per row), added local persistence, share sheet, Cmd-Z/Shift-Cmd-Z undo/redo. 174 assert checks + 26 original JS tests pass. Verified on iPad Pro 11 simulator. Version bumped 1.0.2 → 1.1.0. Awaiting Aug 18 freeze lift to create 1.1.0 ASC version record and upload.
+
+**NYC Survive review notes written** (commit 8cd9430) — Detailed App Review notes for 5.6 resubmit, set on both iOS and macOS versions via `asc review details-update`. Memory said both empty; iOS had one line (macOS actually was blank). Notes explain the 3,600-line GKGridGraph pathfinding game to separate from thin-app batch.
+
+**Healstack validation clean** — `asc validate --app 6785764864 --version 2.3.4 --platform IOS` returns 0 errors / 0 blocking. What's New cannot be set on first release (dashboard-only block, not required). Only prerequisite: App Privacy published (dashboard-only, unverifiable via CLI). Ready for resubmit.
+
+**Environment update** — Ran `sudo xcodebuild -runFirstLaunch` (CoreSimulator 1051.54 → 1051.55, iOS 26.5 runtime available), clearing the XCTest blocker from 2026-08-10. Curvely still blocked on mathjs→Swift decision.
 
 ### Recent (2026-08-17 evening wrap — Portfolio theme fix)
 
