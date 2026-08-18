@@ -1,6 +1,16 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-17 roadmap burn-down — Six ship workflows fixed, four production bugs patched, 12 apps smoke-tested clean, 2 CLAUDE.md corrections, Wiretext + Curvely review notes set. 7 commits (lexly 0b9594c, litigate ec3d887, healstack d465edb, wiretext/curvely review notes, code-meta build smoke test, CLAUDE.md 0c4b5e1), memory clean, journal+wiki synced.
+All notes in one place. Updated 2026-08-17 evening — Vercel stale-domain cleanup (15 domains detached, 13 empty projects deleted, Vercel down to 5 projects). Memory files updated (project_spark_fn_cap, project_nyc_web_port). Journal deployed. Earlier: roadmap burn-down (Six ship workflows fixed, four production bugs patched, 12 apps smoke-tested clean).
+
+### Recent (2026-08-17 evening — Vercel stale-domain cleanup)
+
+**Cleared "15 domains need configuration" Vercel alert** — DNS had already migrated to Cloudflare during the Pages migration. Vercel was holding 15 stale domain attachments to projects that no longer needed them. Verified each domain with `curl -sI | grep server` before detaching (found three still genuinely served by Vercel and deliberately left them: talli, epiphany, pets). Removed 15 stale attachments via REST API, then deleted 13 now-empty projects: sparkjar, healstack, wiretext, etyma, grapher, bcgd, echo-landing, nyc-web, dashboard, brief, charters, life, nulljosh.github.io. Vercel account now down to 5 projects (talli, epiphany, missing-pets, web, cadence).
+
+**Verification**: Curled all 18 domains (heyitsmejosh.com estate + 17 app domains) — all return 200 or appropriate status. Found and resolved orphan DNS record: life.heyitsmejosh.com was a proxied CNAME pointing at a deleted Cloudflare Pages project (life-84y.pages.dev, causing error 1014). Deleted the orphan record via Cloudflare API; abandoned project fully cleaned.
+
+**Secondary orphan flagged for later review** (not fixed): cadence.heyitsmejosh.com is an A record to 76.76.21.21 (Vercel IP) and returns 200, but the cadence Vercel project has no custom domain attached — similar orphan class worth investigating later. pets.heyitsmejosh.com uses same IP but is still legitimately on Vercel.
+
+**Memory updates** (project_spark_fn_cap.md, project_nyc_web_port.md) — Marked as obsolete/migrated since Sparkjar and NYC web no longer on Vercel.
 
 ### Recent (2026-08-17 roadmap burn-down — Ship workflows fixed, production bugs patched, 12 apps smoke-tested)
 
@@ -14,7 +24,7 @@ All notes in one place. Updated 2026-08-17 roadmap burn-down — Six ship workfl
 
 **CLAUDE.md corrections** (commit 0c4b5e1): SwiftLint's build-tool-plugin wiring does NOT exist anywhere (note claimed four apps had it, unverified). Litigate VoiceOver finding was a misdiagnosis — the Unlock button reads fine; the real defect was branding (above).
 
-**Blocker flagged for Joshua:** Vercel project `etyma` builds from ~/Documents/Code itself, redeploys on every push. Source deleted 2026-08-11 (commit 3e65d942); project has sent failed-deploy emails for six days. Nothing depends on it. Options: delete project or disconnect Git. Recorded in code-meta/roadmap.md (not actionable without Joshua's decision).
+**Etyma Git disconnect decided:** Vercel project `etyma` decision made (disconnect Git integration, do NOT delete). Only execution pending: Vercel MCP has no disconnect tool, needs one dashboard click (vercel.com/nulljosh-9577/etyma → Settings → Git → Disconnect) or REST token. Source was deliberately deleted 2026-08-11 (commit 3e65d942); nothing depends on the project.
 
 ### Recent (2026-08-17 final session — Curvely SwiftUI rewrite ships; both 5.6 wrapper apps now native)
 ### Recent (2026-08-17 final session — Curvely SwiftUI rewrite ships; both 5.6 wrapper apps now native)
