@@ -12,7 +12,7 @@ All notes in one place. Updated 2026-08-18 — Guideline 5.6 freeze expired; app
 
 **Submission line held** — Deliberately did not submit the six staged versions. Ten submissions on day one off a Code of Conduct suspension matches the exact volume pattern Apple cautioned against. Following the rule: one app submitted, one verdict received, then the next. The four in-flight (Curvely, Wiretext, Wordroot, Healstack) are held pending their review outcomes before any of the six staged versions move to submission.
 
-**Documentation cleanup** — Un-rotted thirteen roadmap.md files that had paragraphs marked "BLOCKED until 2026-08-18" (the freeze date), now that the freeze has expired. Updated all roadmaps to record what shipped and what remains held, committed + pushed across bcgd, sparkjar, lexly, wordroot, healstack, curvely, wiretext, nyc, talli, litigate, inkpress, bookrank, and nulljosh.github.io (roadmap-only commits).
+**Documentation cleanup** — Un-rotted thirteen roadmap.md files that had paragraphs marked "BLOCKED until 2026-08-18" (the freeze date), now that the freeze has expired. Updated all roadmaps to record what shipped and what remains held, committed + pushed across bcgd, sparkjar, lexly, wordroot, healstack, curvely, wiretext, nyc, talli, litigate, inkpress, bookrank, and nulljosh.github.io (roadmap-only commits). **Note:** roadmap-prune skill (~/.claude/skills/roadmap-prune/scripts/prune.py) not available on this machine; completed `- [x]` items remain in roadmaps and will need manual pruning later (history lives in git log, so the roadmap file should only show open items).
 
 ### Recent (2026-08-18 afternoon — Wordroot submitted; Sparkjar and Healstack production fixes deployed)
 
