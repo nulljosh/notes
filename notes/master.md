@@ -2,6 +2,18 @@
 
 All notes in one place. Updated 2026-08-18 — Guideline 5.6 freeze expired; app review submissions and production fixes shipped.
 
+### Recent (2026-08-18 evening — Audit pass: six apps validated, encryption fix, stray submissions flagged)
+
+**ASC validation audit across six staged versions** — Sparkjar iOS + macOS, BCGD iOS + macOS, Wordroot macOS, Lexly macOS all ran through `asc validate` clean (0 errors, 0 blocking). Caught a critical blocker nobody had noticed: BCGD's iOS and macOS builds both had missing encryption declaration (`build.encryption.missing`) — a real blocking error that would have caused rejection. Fixed via `asc builds update --uses-non-exempt-encryption=false` on both, matching the pattern used on every other app (HTTPS-only, exempt from reporting requirement). All six now VALID.
+
+**Stray empty review submissions found** — Discovered two apps with orphaned `READY_FOR_REVIEW` submissions (zero items, no submittedDate): Curvely (`2dc7aedd-0dee-4696-8491-f8e21304b93e`) and BCGD (`59cef0f7-188d-4ab8-bb6b-6c4c3f37239b`). `asc review submissions-cancel` refuses both ("Resource is not in cancellable state"). No CLI path — blocked on Joshua to clear via App Store Connect dashboard. BCGD's must be cleared BEFORE its first submission.
+
+**Metadata fixes** — Filled Sparkjar's empty App Store subtitle ("Share ideas, vote the best up").
+
+**Submission line held** — Deliberately did not submit the six staged versions. Ten submissions on day one off a Code of Conduct suspension matches the exact volume pattern Apple cautioned against. Following the rule: one app submitted, one verdict received, then the next. The four in-flight (Curvely, Wiretext, Wordroot, Healstack) are held pending their review outcomes before any of the six staged versions move to submission.
+
+**Documentation cleanup** — Un-rotted thirteen roadmap.md files that had paragraphs marked "BLOCKED until 2026-08-18" (the freeze date), now that the freeze has expired. Updated all roadmaps to record what shipped and what remains held, committed + pushed across bcgd, sparkjar, lexly, wordroot, healstack, curvely, wiretext, nyc, talli, litigate, inkpress, bookrank, and nulljosh.github.io (roadmap-only commits).
+
 ### Recent (2026-08-18 afternoon — Wordroot submitted; Sparkjar and Healstack production fixes deployed)
 
 **Wordroot iOS + macOS 1.0 submitted to review** — First ship since the Guideline 5.6 date freeze expired today. Direct dictionary lookup + etymology tree live. Both platforms VALID and queued for App Review.
