@@ -1,6 +1,14 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-18 — Guideline 5.6 freeze expired; app review submissions and production fixes shipped.
+All notes in one place. Updated 2026-08-19 — Lexly macOS resubmitted, Talli PWD amounts fixed, NYC tutorial restored.
+
+### Recent (2026-08-19 evening — Lexly macOS submitted, Talli real amounts live, NYC tutorial fixed)
+
+**Lexly macOS stuck submission resolved and resubmitted** — Lexly macOS v1.1.3 was blocked in PREPARE_FOR_SUBMISSION behind an unresolved review submission from 2026-08-02. The ASC dashboard showed it as resolved, but the API couldn't proceed. Used `asc review doctor` to find it buried in UNRESOLVED_ISSUES; properly resolved it and resubmitted. Now WAITING_FOR_REVIEW. Also refreshed landing page screenshots (old images showed pre-2026-07-28 category layout). Landing page deploy.sh script fixed to verify marketing images and cache-bust.
+
+**Talli PWD/CDB amounts now real** — Found a major data bug: Talli web/unified.html was fetching real PWD and CDB amounts from the API, then immediately discarding both in favour of hardcoded constants ($1,450 PWD + $200 CDB). Switched it to use actual per-user values with the current rates as fallback. This corrects the display of entitlements across all three benefit dashboard cards.
+
+**NYC tutorial skip fixed** — New games were skipping the tutorial because an earlier "disable autoplay" commit had left a `state.tutorialStep = null` line in `freshWorld()`. That path is now just the NEW GAME button (auto-start no longer exists), so every new game skipped the tutorial. Removed the line and added a regression test.
 
 ### Recent (2026-08-18 evening — Apple PLA accepted, Voxprint branding fixed)
 
