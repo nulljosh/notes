@@ -1,8 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-19 — Bookrank iOS live, macOS in review.
+All notes in one place. Updated 2026-08-19 — Stripe audit completed; bank account rejection is the IAP blocker.
 
-### Recent (2026-08-19 evening — Bookrank iOS live, macOS in review)
+### Recent (2026-08-19 evening — Stripe audit, bank account rejection confirmed as IAP blocker)
+
+**Payments infrastructure audit completed** — Probed production across all repos and found four Stripe integrations already live with working keys (epiphany, healstack, sparkjar, talli), so the roadmap's "Stripe reauthorization needed" claim was false and stale notes. The actual IAP blocker is external: Apple is rejecting the bank account during payout enrollment. This gates all IAP revenue across every app. Next step is reading Apple's exact rejection reason (check ASC web UI), then determining if CRA business number involvement is required (uncertain for sole-proprietor Canadian developer). Phone queue to CRA has been unresolved for weeks. Voxprint's paywall is fully built and priced at $7.99, but hardcoded unlocked (`isPro = true` in StoreManager.swift) pending the bank account enrollment. Epiphany pricing confirmed at $1 one-time for now.
 
 **Bookrank iOS 1.0.1 went live on the App Store** — After 2026-08-18's listing fix (category pills + screenshots refresh), iOS went through review and is now READY_FOR_SALE. The site already serves 16 complete book summaries (ML, Pre-Calc, Steve Jobs, Calculus, IBS, Sobriety, Statistics, Good Feng Shui, The Optimist 1-10, AI Business, Accounting, macOS Tahoe, Data Science). Bookrank macOS 1.0.1 build submitted with encryption declared false (DVN8S77P7J profile confirmed active, ExportOptionsMac.plist pinned to manual signing); now waiting for review.
 
