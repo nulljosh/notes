@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-19 — Bookrank summaries secured in Supabase with per-user auth; library page live.
+All notes in one place. Updated 2026-08-19 — Notes app ingested, business-number research complete (SIN sufficient for sole proprietor), roadmap sketched across 15 repos.
+
+### Recent (2026-08-19 afternoon — Notes ingest, business-number research, roadmap rewrite)
+
+**Roadmap planning session** — Ingested fourteen Apple Notes (mix of handwritten photos and voice memos) into actionable roadmap items filed across fifteen repositories. Researched whether App Store Connect requires a Canadian business number for individual developers: confirmed it does not. The IRS W-8BEN foreign tax ID for a Canadian sole proprietor under $30k annually is the SIN alone (not a business number). This closes a two-week chase with CRA that was blocking perceived IAP enrollment. Bank account configuration in the developer portal is the real upstream blocker, not document signing. Rewrote the root-level roadmap at `~/Documents/Code/roadmap.md` to map four cross-codebase sweeps: splash screens on every iOS app, landing pages for every project website, shipped-apps audit (verify every app is actually on the App Store), and design-system alignment (pick one project as the source of truth, sync tokens across all others).
 
 ### Recent (2026-08-19 evening — Bookrank summaries behind private Supabase accounts)
 
