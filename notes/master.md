@@ -2,6 +2,12 @@
 
 All notes in one place. Updated 2026-08-18 — Guideline 5.6 freeze expired; app review submissions and production fixes shipped.
 
+### Recent (2026-08-18 evening — Apple PLA accepted, Voxprint branding fixed)
+
+**Apple Developer Program License Agreement accepted** — ASC write operations unblocked. Earlier sessions had all submissions frozen pending PLA acceptance; that blocker is now resolved. Memory file reference_asc_pla_blocks_submissions.md remains valid as a lesson (an unaccepted PLA is invisible to `asc validate`).
+
+**Voxprint "Echo Pro" branding leak diagnosed and fixed** — The live App Store listing showed old "Echo Pro" branding on two screenshots (3-paywall.png, 4-settings.png, dated Jul 3 pre-rename). Root cause was not bad screenshots alone but a test trap: UITests/PreviewScreenshot.swift had silent `waitForExistence()` guards that skipped screenshot captures on failure instead of failing loudly, leaving outdated files in place while the test run exited 0. Rewrote guards to `XCTAssertTrue`, now failures will be loud. Also renamed the in-app purchase from "Echo Pro" to "Voxprint Pro" via a new ASC IAP version (version 2, since APPROVED records are immutable). Screenshot regeneration via `scripts/update_screenshots.sh` pending a 1.3.7 version + build (v1.3.6 is READY_FOR_SALE with locked screenshots).
+
 ### Recent (2026-08-18 evening — Healstack landing page dark mode fixed)
 
 **Healstack landing page dark mode restored** — The Cloudflare Pages build had stale code with hardcoded white backgrounds (rgba(255,255,255,0.85)) that didn't adapt to dark mode. The local source already had the fix (`var(--glass-bg)`), so I rebuilt and deployed the current code to Pages. Also fixed CTA buttons that were using hardcoded white (#fff) on a cream background, which made them invisible in dark mode — changed to `var(--bg)` so they follow the theme. Verified the live site now serves the correct CSS and responds to theme changes.
