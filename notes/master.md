@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-19 — LEC student portal scaffolded; Stripe audit bottleneck confirmed.
+All notes in one place. Updated 2026-08-19 — Bookrank summaries secured in Supabase with per-user auth; library page live.
+
+### Recent (2026-08-19 evening — Bookrank summaries behind private Supabase accounts)
+
+**Bookrank summaries secured in Supabase** — Chapter summaries of purchased/library books were living as public files in the GitHub repo and bundled into the iOS/macOS apps, creating privacy risk. Moved them behind per-user Supabase accounts: created `bookrank_summaries` table on the shared `spark` project with owner-only row security (verified anon reads 0 rows), built `library.html` with email/password signup/signin and markdown editor/preview, and imported all 20 existing summaries (2.54 MB) into the owner's account. Purged summaries from git history via `git filter-repo` and force-pushed (pre-purge backup kept outside the repo). Updated `rankings.html` to point the 26 Summary badges at the library page instead of the deleted `summary.html`. Removed summaries from the iOS/macOS app bundles: deleted `Resources/summaries/` and `summaries-index.json`, zeroed `DataStore.summaryIndex`, and removed the Summaries section from `LibraryView`. Both platforms build clean. The library page now lets anyone register and write their own summaries. App Store listing still advertises bundled offline summaries, which is flagged for the next update.
 
 ### Recent (2026-08-19 afternoon — LEC portal scaffolding)
 
