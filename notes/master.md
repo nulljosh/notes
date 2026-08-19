@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-08-18 — Guideline 5.6 freeze expired; app review submissions and production fixes shipped.
 
+### Recent (2026-08-18 evening — Healstack landing page dark mode fixed)
+
+**Healstack landing page dark mode restored** — The Cloudflare Pages build had stale code with hardcoded white backgrounds (rgba(255,255,255,0.85)) that didn't adapt to dark mode. The local source already had the fix (`var(--glass-bg)`), so I rebuilt and deployed the current code to Pages. Also fixed CTA buttons that were using hardcoded white (#fff) on a cream background, which made them invisible in dark mode — changed to `var(--bg)` so they follow the theme. Verified the live site now serves the correct CSS and responds to theme changes.
+
 ### Recent (2026-08-18 evening — Landing page refactors: Sparkjar + Talli hero layouts)
 
 **Sparkjar and Talli landing pages refactored for viewport width** — Both sites were hiding critical content below the fold on modern displays. Sparkjar's `index.html` moved the app screenshot from below-the-fold into a right-hand hero column (two-column grid for screens 900px wide). Talli's `landing.html` widened the page shell from 640px to 1040px and restructured the hero with a two-column layout putting copy and a payment preview card side by side. Both changes deployed and verified live.
