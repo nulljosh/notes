@@ -1,5 +1,11 @@
 # Master Note
 
+All notes in one place. Updated 2026-08-19 — Bookrank iOS live, macOS pending.
+
+### Recent (2026-08-19 evening — Bookrank iOS live, macOS uploading)
+
+**Bookrank iOS 1.0.1 went live on the App Store** — After 2026-08-18's listing fix (category pills + screenshots refresh), iOS went through review and is now READY_FOR_SALE. The site already serves 16 complete book summaries (ML, Pre-Calc, Steve Jobs, Calculus, IBS, Sobriety, Statistics, Good Feng Shui, The Optimist 1-10, AI Business, Accounting, macOS Tahoe, Data Science). Bookrank macOS 1.0.1 is now uploading to Test Flight (DVN8S77P7J profile confirmed active, ExportOptionsMac.plist pinned to manual signing with the correct Mac App Store profile).
+
 All notes in one place. Updated 2026-08-19 — Lexly macOS resubmitted, Talli PWD amounts fixed, NYC tutorial restored.
 
 ### Recent (2026-08-19 evening — Lexly macOS submitted, Talli real amounts live, NYC tutorial fixed)
