@@ -10,6 +10,10 @@ All notes in one place. Updated 2026-08-19 — Lexly macOS resubmitted, Talli PW
 
 **NYC tutorial skip fixed** — New games were skipping the tutorial because an earlier "disable autoplay" commit had left a `state.tutorialStep = null` line in `freshWorld()`. That path is now just the NEW GAME button (auto-start no longer exists), so every new game skipped the tutorial. Removed the line and added a regression test.
 
+**Apple SRP endpoint recovered; NYC rejection confirmed** — Apple's SRP signin endpoint recovered from a 503, allowing re-authentication and reading the NYC rejection text from the Resolution Center (submission 9338674e). The rejection is the already-known Guideline 5.6 Developer Code of Conduct suspension, not a separate defect — NYC resubmit remains gated only by the one-app-at-a-time rule (Curvely, Wiretext, Wordroot iOS, Healstack all still WAITING_FOR_REVIEW).
+
+**Orphan review submissions cancelled** — Both orphaned app records' in-flight review submissions have been cancelled via CLI (`asc review submissions-update --canceled=true --confirm`). This clears the IN_FLIGHT_REVIEW_SUBMISSIONS half of the deletion blocker for both Transcriptly (6783015101) and Lexly Mac orphan (6783501927). The STATE_ERROR.CANNOT_REMOVE_WITH_APP_STORE_AVAILABILITY blocker requires Josh removing them from sale in the dashboard (Pricing and Availability → remove from all territories).
+
 ### Recent (2026-08-18 evening — Apple PLA accepted, Voxprint branding fixed)
 
 **Apple Developer Program License Agreement accepted** — ASC write operations unblocked. Earlier sessions had all submissions frozen pending PLA acceptance; that blocker is now resolved. Memory file reference_asc_pla_blocks_submissions.md remains valid as a lesson (an unaccepted PLA is invisible to `asc validate`).
