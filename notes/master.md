@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-19 — Stripe audit completed; bank account rejection is the IAP blocker.
+All notes in one place. Updated 2026-08-19 — LEC student portal scaffolded; Stripe audit bottleneck confirmed.
+
+### Recent (2026-08-19 afternoon — LEC portal scaffolding)
+
+**LEC student portal client started** — Began building a Swift client for the `lecss.registerbc.ca` enrollment system. Created a shared LECKit package with actor-based HTTP networking (Async/Await, URLSession), entity models for courses/sections/enrollment, and scaffolded iOS and macOS SwiftUI views (stubs only). Wired two unit tests that pass. The portal API is auth-gated with endpoints discovered by reverse-engineering (`login`, `courses`, `sections`, `enroll` patterns guessed from the browser). Real blocker is capturing network traffic from the logged-in session to build the true endpoint map and authentication flow, since credentials are redacted in browser dev tools.
 
 ### Recent (2026-08-19 evening — Stripe audit, bank account rejection confirmed as IAP blocker)
 
