@@ -2,11 +2,13 @@
 
 All notes in one place. Updated 2026-08-18 — Guideline 5.6 freeze expired; app review submissions and production fixes shipped.
 
-### Recent (2026-08-18 evening — Audit pass: six apps validated, encryption fix, stray submissions flagged)
+### Recent (2026-08-18 evening — Audit pass: six apps validated, encryption fix, stray submissions cleared, Bookrank fixed)
 
 **ASC validation audit across six staged versions** — Sparkjar iOS + macOS, BCGD iOS + macOS, Wordroot macOS, Lexly macOS all ran through `asc validate` clean (0 errors, 0 blocking). Caught a critical blocker nobody had noticed: BCGD's iOS and macOS builds both had missing encryption declaration (`build.encryption.missing`) — a real blocking error that would have caused rejection. Fixed via `asc builds update --uses-non-exempt-encryption=false` on both, matching the pattern used on every other app (HTTPS-only, exempt from reporting requirement). All six now VALID.
 
-**Stray empty review submissions found** — Discovered two apps with orphaned `READY_FOR_REVIEW` submissions (zero items, no submittedDate): Curvely (`2dc7aedd-0dee-4696-8491-f8e21304b93e`) and BCGD (`59cef0f7-188d-4ab8-bb6b-6c4c3f37239b`). `asc review submissions-cancel` refuses both ("Resource is not in cancellable state"). No CLI path — blocked on Joshua to clear via App Store Connect dashboard. BCGD's must be cleared BEFORE its first submission.
+**Stray review submissions cleared** — Two orphaned review submissions (Curvely `2dc7aedd-0dee-4696-8491-f8e21304b93e`, BCGD `59cef0f7-188d-4ab8-bb6b-6c4c3f37239b`, both zero items, no submittedDate) were deleted via the App Store Connect dashboard. Root cause finally understood: they were **draft submissions started by the API**, not cancellable review submissions, which is why `asc review submissions-cancel` always returned "Resource is not in cancellable state". The dashboard exposes a "Delete Submission" action the CLI does not. Curvely's live 1.2.0 verified still WAITING_FOR_REVIEW after deletion. BCGD now has zero submissions pending first submit.
+
+**Bookrank listing corrected** — The live 1.0 listing said "Uprighty" and linked to dead spine.heyitsmejosh.com. Created new 1.0.1 version rows on iOS and macOS, applied corrected description + supportUrl (https://bookrank.heyitsmejosh.com) + What's New. Blocked on archive+upload since all existing builds were consumed by 1.0.
 
 **Metadata fixes** — Filled Sparkjar's empty App Store subtitle ("Share ideas, vote the best up").
 
