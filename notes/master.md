@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-08-18 — Guideline 5.6 freeze expired; app review submissions and production fixes shipped.
 
+### Recent (2026-08-18 evening — Landing page refactors: Sparkjar + Talli hero layouts)
+
+**Sparkjar and Talli landing pages refactored for viewport width** — Both sites were hiding critical content below the fold on modern displays. Sparkjar's `index.html` moved the app screenshot from below-the-fold into a right-hand hero column (two-column grid for screens 900px wide). Talli's `landing.html` widened the page shell from 640px to 1040px and restructured the hero with a two-column layout putting copy and a payment preview card side by side. Both changes deployed and verified live.
+
 ### Recent (2026-08-18 evening — Audit pass: six apps validated, encryption fix, stray submissions cleared, Bookrank fixed)
 
 **ASC validation audit across six staged versions** — Sparkjar iOS + macOS, BCGD iOS + macOS, Wordroot macOS, Lexly macOS all ran through `asc validate` clean (0 errors, 0 blocking). Caught a critical blocker nobody had noticed: BCGD's iOS and macOS builds both had missing encryption declaration (`build.encryption.missing`) — a real blocking error that would have caused rejection. Fixed via `asc builds update --uses-non-exempt-encryption=false` on both, matching the pattern used on every other app (HTTPS-only, exempt from reporting requirement). All six now VALID.
