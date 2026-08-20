@@ -1,6 +1,8 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED (Processing), both US tax forms Active, Paid Apps Agreement still Pending User Info, GST/HST Form 506 (BN+RT) remains the sole confirmed blocker. Whitepapers + README links complete.
+All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED (Processing), both US tax forms Active, Paid Apps Agreement still Pending User Info, GST/HST Form 506 (BN+RT) remains the sole confirmed blocker. Whitepapers + README links complete. Epiphany landing-page redesign sketched (live demo as hero, flip to interactive after signup).
+
+**Epiphany landing-page redesign (2026-08-19 evening)** — Sketched UI change: replace static hero background image with live, non-interactive demo of the real app (mock data, pointer-events:none), then flip to interactive after signup while hiding marketing chrome (Log in / Get Epiphany buttons). Flagged as large redesign for dedicated session. Roadmap item added.
 
 **Whitepapers and documentation pass (2026-08-19 evening)** — Refreshed Epiphany's whitepaper with current shipping versions (web, iOS, macOS). Wrote three new whitepapers from scratch: Cadence (time-tracking API + dashboard), Fengshui (reading app), Portfolio (nulljosh.github.io site). Added "## Whitepaper" link sections to 21 READMEs across the fleet (bcgd, bookrank, cadence, curvely, fengshui, healstack, inkpress, journal, lexly, litigate, newsline, nimble, notes, nulljosh.github.io, nyc, quotable, sparkjar, talli, uprighty, voxprint, wiretext, wordroot). Diagnosed Epiphany's stale icon issue: repo is correct (blue on dark), but live iOS build 2.5.4 uploaded 6 hours before the icon fix landed, so carries previous slate icon. Needs rebuild+resubmit to refresh; deferred past usage ceiling.
 
