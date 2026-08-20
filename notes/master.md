@@ -1,6 +1,6 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED to Apple (Processing status), BN + RT + W-8BEN are the remaining IAP blockers.
+All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED (Processing), both US tax forms Active, Paid Apps Agreement still Pending User Info, GST/HST Form 506 (BN+RT) remains the sole confirmed blocker.
 
 ### Recent (2026-08-19 afternoon — Apple bank account submitted, GST/HST registration + W-8BEN forms next)
 
