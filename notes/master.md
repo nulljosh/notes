@@ -2,6 +2,15 @@
 
 All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED (Processing), both US tax forms Active, Paid Apps Agreement still Pending User Info, GST/HST Form 506 (BN+RT) remains the sole confirmed blocker.
 
+**Roadmap sweep 2026-08-19 (10 items closed, 5 repos)**
+- voxprint: `update_screenshots.sh` no longer reports success on a failed run — it stamps a marker before `fastlane snapshot` and asserts all five PNGs exist and are newer, exiting 1 first. Also `fastlane/metadata/en-US/name.txt` still read "Echo Transcription"; a metadata push would have renamed the live app. Now Voxprint. Bundle ids and the Xcode scheme left alone.
+- talli: removed the teal accent in `MacBenefitsView` (reuses `Color.bcLight`); splash icon/tagline now size against the container instead of a fixed 88pt. The "switch to San Francisco" item was a non-issue — `.system()` already is. iOS + macOS build clean.
+- quotable: header logo lettering was ~4px by construction (icon.svg sets font-size 24 in a 200px viewBox), so the header now carries a real HTML wordmark; `CLAUDE.md`'s old "no wordmark" note corrected. ~80px of stacked bottom padding removed. Down to 1 open item.
+- curvely: canvas now redraws on system appearance change (`matchMedia` listener) instead of holding the old background until a pan/zoom.
+- nyc: title-screen branding drift verified already fixed — no code change, item closed.
+
+Not started: the lexly course-completion correctness bug (completion is awarded without correct answers). Stopped because weekly usage hit 93%.
+
 **Notes.app inbox cleared (2026-08-19)** — All 4 remaining notes filed into the Obsidian wiki and deleted; inbox at 0.
 - `wiki/pages/personal-accounts.md` — bank form exact field format (name must match legal name exactly; RBC 003 + 5-digit transit + account, no punctuation; Wealthsimple often rejected outright), and the CRA shortcut: the BN lives in My Business Account not My Account, and Business Registration Online issues BN + RT together, which is what Form 506 needs. Do not wait on mail or fax.
 - `wiki/pages/ship-plan.md` — full 17-app ASC status table snapshot, plus ASC's new "Social Media Questions on Age Ratings" prompt affecting every app's App Information section. Open review-issue banners on Lexly, Sparkjar, NYC Survive, Nullfolio.
