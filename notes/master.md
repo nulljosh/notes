@@ -1,6 +1,10 @@
 # Master Note
 
-All notes in one place. Updated 2026-08-19 — Notes app ingested, business-number research complete (SIN sufficient for sole proprietor), roadmap sketched across 15 repos.
+All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED to Apple (Processing status), BN + RT + W-8BEN are the remaining IAP blockers.
+
+### Recent (2026-08-19 afternoon — Apple bank account submitted, GST/HST registration + W-8BEN forms next)
+
+**Apple Paid Apps Agreement + bank account — BREAKING THROUGH** — Months of ASC bank form frustration resolved in a live session 2026-08-19 afternoon. The Transit Number field (labeled as a bank form field, no helpful link) actually wanted the full 9-digit routing number, not just transit code. Entering transit-only (02900) validated with a green checkmark and silently suggested UBS Bank branches instead, making it look like Apple rejected the account while the form was silently rejecting the bad number. Bank account (RBC 000302900) successfully submitted, ASC Business section now shows `rbc (8640) / Canada / CAD / Processing` (Apple says 24h to finalize, banking locked until then). **Remaining work:** (a) U.S. Form W-8BEN (foreign tax ID form, needs SIN) + U.S. Certificate of Foreign Status; (b) **Canadian GST/HST registration via CRA Business Registration Online** (not the fax request from earlier) to obtain Business Number + RT code (Apple's Canada tax form treats GST/HST hard-required, no small-supplier exemption despite under $30k threshold). Note: the earlier Roadmap Planning entry was incomplete — SIN is correct for Developer Program enrollment + W-8BEN FTIN, but Form 506 (Canada tax) requires both BN and RT. Paid Apps Agreement presently reads "Pending User Info" and may flip to Active upon W-8BEN submission alone (worth testing before GST registration if that's the path).
 
 ### Recent (2026-08-19 afternoon — Notes ingest, business-number research, roadmap rewrite)
 
