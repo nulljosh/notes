@@ -2,6 +2,12 @@
 
 All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED (Processing), both US tax forms Active, Paid Apps Agreement still Pending User Info, GST/HST Form 506 (BN+RT) remains the sole confirmed blocker.
 
+**Build artifacts untracked, 9 repos (2026-08-19)** — ~224 MB of signed binaries, dSYMs and .xcarchive bundles were committed across voxprint (144 MB), epiphany (52 MB), bcgd (14 MB), sparkjar (8.3 MB), inkpress (4.0 MB), wiretext (1.7 MB), talli, healstack, litigate.
+- Root cause was not missing gitignore rules — most repos had them. **gitignore has no effect on already-tracked paths**, so rules added after the first commit never took. bcgd's pattern also pointed at `src/.asc/` when the real path is `src/ios/.asc/`; wiretext had no rule.
+- Fix: canonical ignore block (root + `**/` variants) plus `git rm -r --cached` scoped to `artifacts|runs|release|reports` only. `workflow.json`, ExportOptions plists, all 20 `web-review` rejection screenshots and inkpress's store screenshots verified preserved. Files kept on disk. All pushed.
+- **Still open:** this does not shrink the repos, the blobs remain in history. Reclaiming needs `git filter-repo` + force-push per repo — filed in code-meta/roadmap.md.
+- `~/Documents/Code` is itself the `labs` repo and `code-meta/` is a plain directory inside it, not its own clone. Explains why `git -C code-meta` commands resolve to the parent.
+
 **Roadmap cleanup 2026-08-19** — 417 open items across 24 repos. Pruned 16 leftover completed items from 8 roadmaps (code-meta, sparkjar, lexly, healstack, litigate, inkpress, bcgd; all pushed).
 - **`~/Documents/Code/uprighty` is a stale duplicate clone of the bookrank repo** (same remote, `nulljosh/bookrank.git`, 155 commits behind with divergent unpushed local commits including an unreviewed wip commit). Its prune was backed out rather than pushed. Treat `bookrank` as the only live copy; rescue the wip commit before deleting the dir.
 - **bcgd tracks Xcode build artifacts** — `src/ios/.asc/artifacts/BCGD.xcarchive/**` (binaries, dSYMs, Assets.car) shows up dirty on every build. Should be gitignored; only `roadmap.md` was committed.
