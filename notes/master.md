@@ -2,6 +2,12 @@
 
 All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED (Processing), both US tax forms Active, Paid Apps Agreement still Pending User Info, GST/HST Form 506 (BN+RT) remains the sole confirmed blocker.
 
+**Lexly lesson-completion gating fixed + deployed (2026-08-19)** — `js/lingo-app.js`. Two holes let a lesson be crowned with zero correct answers: `skipQuestion()` only advanced (no heart cost, no SRS penalty), so skipping all ten questions hit the results screen with full hearts; and the crown condition was `hearts > 0` alone. Short packs failed the same way (two questions, both wrong, hearts left over).
+- Skip now routes through `checkAnswer()`, which already resolves an empty input as incorrect. Crown uses `lessonPassed()` with `LESSON_PASS_RATIO = 0.6`, chosen to match the existing heart economy (5 hearts / 10 questions means a survivor already has >= 6/10), so only short packs change.
+- That change exposed a second hazard: the Skip button stays enabled after answering, so a second press would re-score the same question — another heart lost, or duplicate XP on a correct one. Questions now resolve once via a `gameState.answered` guard.
+- `completed_subjects` deliberately untouched — it is a "courses started" list the profile stat and `firstLesson` achievement both read that way; tracked as its own roadmap decision.
+- Guarded by `node scripts/check-lesson-gate.mjs` (verified it fails on a deliberate regression). Deployed to Cloudflare Pages and confirmed live.
+
 **Build artifacts untracked, 9 repos (2026-08-19)** — ~224 MB of signed binaries, dSYMs and .xcarchive bundles were committed across voxprint (144 MB), epiphany (52 MB), bcgd (14 MB), sparkjar (8.3 MB), inkpress (4.0 MB), wiretext (1.7 MB), talli, healstack, litigate.
 - Root cause was not missing gitignore rules — most repos had them. **gitignore has no effect on already-tracked paths**, so rules added after the first commit never took. bcgd's pattern also pointed at `src/.asc/` when the real path is `src/ios/.asc/`; wiretext had no rule.
 - Fix: canonical ignore block (root + `**/` variants) plus `git rm -r --cached` scoped to `artifacts|runs|release|reports` only. `workflow.json`, ExportOptions plists, all 20 `web-review` rejection screenshots and inkpress's store screenshots verified preserved. Files kept on disk. All pushed.
