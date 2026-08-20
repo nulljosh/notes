@@ -2,6 +2,10 @@
 
 All notes in one place. Updated 2026-08-19 — Bank account SUBMITTED (Processing), both US tax forms Active, Paid Apps Agreement still Pending User Info, GST/HST Form 506 (BN+RT) remains the sole confirmed blocker.
 
+**Roadmap cleanup 2026-08-19** — 417 open items across 24 repos. Pruned 16 leftover completed items from 8 roadmaps (code-meta, sparkjar, lexly, healstack, litigate, inkpress, bcgd; all pushed).
+- **`~/Documents/Code/uprighty` is a stale duplicate clone of the bookrank repo** (same remote, `nulljosh/bookrank.git`, 155 commits behind with divergent unpushed local commits including an unreviewed wip commit). Its prune was backed out rather than pushed. Treat `bookrank` as the only live copy; rescue the wip commit before deleting the dir.
+- **bcgd tracks Xcode build artifacts** — `src/ios/.asc/artifacts/BCGD.xcarchive/**` (binaries, dSYMs, Assets.car) shows up dirty on every build. Should be gitignored; only `roadmap.md` was committed.
+
 **Roadmap sweep 2026-08-19 (10 items closed, 5 repos)**
 - voxprint: `update_screenshots.sh` no longer reports success on a failed run — it stamps a marker before `fastlane snapshot` and asserts all five PNGs exist and are newer, exiting 1 first. Also `fastlane/metadata/en-US/name.txt` still read "Echo Transcription"; a metadata push would have renamed the live app. Now Voxprint. Bundle ids and the Xcode scheme left alone.
 - talli: removed the teal accent in `MacBenefitsView` (reuses `Color.bcLight`); splash icon/tagline now size against the container instead of a fixed 88pt. The "switch to San Francisco" item was a non-issue — `.system()` already is. iOS + macOS build clean.
