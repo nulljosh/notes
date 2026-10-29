@@ -33,7 +33,8 @@ v1.1.0
 - assets/js/: Shared scripts and theme toggle
 - assets/img/: Visuals
 - scripts/simplify.sh: Repo cleanup command
-- notes/master.md: All notes consolidated, viewable at pages/master.html
+- notes/master.md: current state (projects, Ship Now), viewable at pages/master.html. Edit in place, never stack Updated lines; the old log is private in the vault
+- scripts/sync.sh: notes -> Obsidian vault -> brain. One way. /save runs it
 - notes/reminders.md: Synced from Apple Reminders via scripts/sync-reminders.sh
 ## Sync Reminders
 ```bash
