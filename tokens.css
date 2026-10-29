@@ -1,0 +1,50 @@
+/* notes tokens. Matches the Jaybulb portfolio (nulljosh.github.io/brand/tokens.css):
+   bulb yellow, black ink, white paper, system font. Edit here, nowhere else. */
+:root {
+  --bulb: #ffca30;
+  --bulb-light: #ffe48a;
+  --ink-warm: #6b5a2e;
+
+  --bg: #fff;
+  --bg2: #fafafa;
+  --text: #000;
+  --text2: #555;
+  --text3: #999;
+  --border: #eee;
+  --border2: #f5f5f5;
+
+  --accent: var(--bulb);
+  --accent-dot: var(--bulb);
+  --blue: var(--bulb);            /* old name, kept so pages don't break */
+  --blue-light: var(--ink-warm);  /* accent text: gold on paper reads, yellow doesn't */
+  --blue-rgb: 255, 202, 48;
+  --green: var(--ink-warm);
+  --link: var(--text);
+
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-code: ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 28px rgba(0,0,0,0.10);
+
+  --spring: cubic-bezier(0.34,1.56,0.64,1);
+  --ease: cubic-bezier(0.16,1,0.3,1);
+}
+
+[data-theme="dark"] {
+  --bg: #111;
+  --bg2: #1a1a1a;
+  --text: #fff;
+  --text2: rgba(255,255,255,0.62);
+  --text3: rgba(255,255,255,0.34);
+  --border: rgba(255,255,255,0.10);
+  --border2: rgba(255,255,255,0.05);
+  --blue-light: var(--bulb);
+  --link: var(--text);
+}

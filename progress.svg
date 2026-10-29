@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="474" height="200" viewBox="0 0 474 200"><style>
+  :root { --ink: #111111; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #ececec; } }
+  text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: var(--ink); }
+  line, polyline { stroke: var(--ink); fill: none; }
+  .g { stroke-dasharray: 1 4; }
+</style><text x="44" y="11" font-size="10">Lines of real code</text><line x1="44" y1="26" x2="464" y2="26" class="g"/><text x="40" y="29" font-size="9" text-anchor="end">2749</text><line x1="44" y1="97" x2="464" y2="97" class="g"/><text x="40" y="100" font-size="9" text-anchor="end">1374</text>
+<line x1="44" y1="26" x2="44" y2="166"/><line x1="44" y1="166" x2="464" y2="166"/>
+<polyline points="44,162 50,151 56,149 63,147 69,124 75,123 82,122 88,120 94,119 101,118 107,116 114,115 120,114 126,111 133,109 139,104 145,101 152,97 158,96 164,94 171,97 177,98 184,97 190,97 196,97 203,97 209,97 215,97 222,97 228,97 234,96 241,97 247,96 254,96 260,96 266,94 273,92 279,85 285,77 292,77 298,76 304,76 311,75 317,59 324,26 330,43 336,75 343,73 349,69 355,68 362,68 368,68 374,68 381,68 387,68 394,68 400,68 406,68 413,67 419,67 425,67 432,66 438,66 444,68 451,70 457,77 464,85" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="44" y="182" font-size="10">Jun 28</text><text x="464" y="182" font-size="10" text-anchor="end">Sep 16</text>
+<text x="44" y="196" font-size="10" font-weight="600">1,608 lines &#183; 100% documented &#183; 1126 commits since Jun 28 2026</text></svg>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - notes</title>
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="tokens.css">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --bg-primary: var(--bg); --text-primary: var(--text); --text-secondary: var(--text2); --text-tertiary: var(--text3); }
+  body {
+    font-family: var(--font);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    text-align: center;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: var(--text-tertiary);
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.45rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  a:hover {
+    color: var(--blue-light);
+    border-color: var(--bulb);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>404</h1>
+  <p>Page not found.</p>
+  <a href="/">Back to notes</a>
+</div>
+<script src="assets/js/theme-toggle.js"></script>
+</body>
+</html>
