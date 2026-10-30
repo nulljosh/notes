@@ -46,8 +46,8 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 - [ ] Eponym: 2.0.0 is WAITING_FOR_REVIEW on iPhone and Mac. The store name moves to Eponym in 2.0.1; probe it in App Store Connect before renaming the listing. The share-sheet action and Watch word of the day ship in 2.0.1 too, on Joshua's yes.
 
-- [ ] Product Hunt: eight launches are scheduled (Machaon Oct 27 through Vancouver Vice Nov 6, see the Updated line above). The Coda and Melete og images need a real PNG. X threads go out on each launch day.
-- [ ] Product Hunt backfill: 18 live apps had no product. Plan is eight launches, one a week from Fri Nov 13: Sighting, Blackcomb, Turing, Seamark, Noema, Gato, Tripwire, Mirage. Sighting's launch kit is in its repo; scheduling waits for the Saturday usage reset. Hermes still shows a Nov 4 Product Hunt date on its wiki page and is not in this plan; confirm before scheduling.
+- [ ] Product Hunt: eight launches are scheduled (Machaon Oct 27 through Vancouver Vice Nov 6, see the Updated line above). The Melete og image needs a real PNG. X threads go out on each launch day.
+- [ ] Product Hunt backfill: three scheduled, four waiting. Sighting Nov 13, Blackcomb Nov 20, Turing Nov 27. Noema, Gato, Tripwire and Mirage wait until Product Hunt opens their dates, since it only schedules 30 days ahead. Seamark is dropped (archived). Turing's maker comment did not save; Joshua pastes it on launch day. Sighting's launch kit is in its repo. Hermes still shows a Nov 4 Product Hunt date on its wiki page and is not in this plan; confirm before scheduling.
 
 - [ ] Horula: iPhone and Mac 6.0.0 are WAITING_FOR_REVIEW. 6.1 (Watch app embedded, Watch shots, native work) ships when 6.0.0 clears, on Joshua's yes.
 
