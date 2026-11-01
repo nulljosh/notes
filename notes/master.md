@@ -80,7 +80,7 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 - [ ] Joshua: App Store seller name to business; Melete and Patois Sign in with Apple checked on a real phone; Mailbag callback added in GCP Web client 1 and Google OAuth verification for Mailbag; Doorstock dashboard steps.
 
-- [ ] Melete: iOS 3.1 was WAITING_FOR_REVIEW (submitted 2026-10-19), and Mac 3.1 was resubmitted 2026-10-25 with the Sign in with Apple entitlement and waits too. 3.2 (simpler feed, lamp splash, Melete name) is built and submits once 3.1 clears, with Joshua's yes. Home is melete.jaybulb.com; thinkpond. and hikko. still serve.
+- [ ] Melete: v3.1.0 is released (2026-11-01). Earlier status: iOS 3.1 was WAITING_FOR_REVIEW (submitted 2026-10-19), and Mac 3.1 was resubmitted 2026-10-25 with the Sign in with Apple entitlement and waits too. 3.2 (simpler feed, lamp splash, Melete name) is built and submits once 3.1 clears, with Joshua's yes. Home is melete.jaybulb.com; thinkpond. and hikko. still serve.
 
 - [ ] Machaon: Mac 2.3.5 was resubmitted 2026-10-25 after the keychain fix (data protection keychain, sandboxed, renamed from Healstack). Waiting for review.
 
