@@ -47,7 +47,7 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 - [ ] Hackrange: public and live at hackrange.jaybulb.com. The first stable release waits on Joshua's yes; the loop handoff is in hackrange/docs/LOOP-HANDOFF.md.
 - [ ] Keyrate: iOS and Mac 2.2.0 are WAITING_FOR_REVIEW. Apple's iOS thread is locked after the resubmit, so the review notes carry the answer; reply only if Apple asks again.
-- [ ] Elah: iOS 2.1.0 and Mac 1.3.0 rejected under 4.3(a) 2026-11-03, reply sent 2026-11-04, no answer yet. 2.0 with reading plans ships with them, on Joshua's yes. Still owed for the major: a Mobbin pass and the opus-ad film. Steps are in elah/docs/LOOP-HANDOFF.md.
+- [ ] Elah: iOS 2.1.0 and Mac 1.3.0 rejected under 4.3(a) 2026-11-03; on 2026-11-07 Apple rejected it again as a spam lookalike, all six threads answered, waiting on Apple. 2.0 with reading plans ships with them, on Joshua's yes. Still owed for the major: a Mobbin pass and the opus-ad film. Steps are in elah/docs/LOOP-HANDOFF.md.
 - [ ] Secretary: test quiet hours by texting "quiet on" then "quiet off" to the Secretary number. Everything in 10.1.2 is verified live.
 - [ ] Secretary: calendar free/busy to fill the availability note, and local events for fun ideas, are the next open lines on its roadmap.
 - [ ] Secretary: move calls to ElevenLabs Agents after the 2026-11-02 refill, per the roadmap's Next section.
@@ -59,7 +59,7 @@ Current state only: what each project is doing and what ships next. Updated 2026
 - [ ] Product Hunt: eight launches are scheduled (Machaon Oct 27 through Vancouver Vice Nov 6, see the Updated line above). The Melete share image shipped 2026-10-30. X threads go out on each launch day.
 - [ ] Product Hunt backfill: three scheduled, four waiting. Sighting Nov 13, Blackcomb Nov 20, Turing Nov 27. Noema, Gato, Tripwire and Mirage wait until Product Hunt opens their dates, since it only schedules 30 days ahead. Seamark is dropped (archived). Turing's maker comment did not save; Joshua pastes it on launch day. Sighting's launch kit is in its repo. Cyllene still shows a Nov 4 Product Hunt date on its wiki page and is not in this plan; confirm before scheduling.
 
-- [ ] Still rejected (2026-11-07): Elah, Co-Stanza, Sighting and Plaintxt on iPhone. Plaintxt needs a new concept from Apple; the queue is in the labs roadmap.
+- [ ] Rejected as spam lookalikes (2026-11-07): Elah, Co-Stanza and Sighting, all six threads answered, waiting on Apple. Plaintxt on iPhone still needs a new concept from Apple; the queue is in the labs roadmap.
 
 - [ ] Horula: iPhone and Mac 6.0.0 are WAITING_FOR_REVIEW. 6.1 (Watch app embedded, Watch shots, native work) ships when 6.0.0 clears, on Joshua's yes.
 
@@ -95,7 +95,7 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 - [ ] Mailbag: iOS and Mac in Apple review since 2026-10-18, and the Mac sign-in crash fix (2026-10-31) is in review too. The next store build carries the new mail-case icon, the Inter-based fonts and the listing name flip. Epiphany needs a new build to ship; Machaon's 2.4.0 build carries the new stethoscope icon.
 
-- [ ] Sighting (ASC 6829546358) and Co-Stanza (ASC 6829546496): 1.0 in App Review on iPhone, iPad and Mac since 2026-11-01. The desktop and Android apps post with an optional photo and the edit link, on jaybulb-api. Co-Stanza 1.1 (follow poets, Following feed, "I read this") is built and ships once 1.0 clears.
+- [ ] Sighting (ASC 6829546358) and Co-Stanza (ASC 6829546496): 1.0 rejected as spam lookalikes on 2026-11-07 (in App Review since 2026-11-01); all six threads answered, waiting on Apple. The desktop and Android apps post with an optional photo and the edit link, on jaybulb-api. Co-Stanza 1.1 (follow poets, Following feed, "I read this") is built and ships once 1.0 clears.
 - [ ] Nimble: iPhone 10.2.0 was approved 2026-11-07. Mac 9.4.3 is still in Apple review. The online grades after 17:00 Pacific are the next real test of the BC numbers, since fresh forms run low offline.
 
 - [ ] Joshua: Coda (ex-Quotestreak) blockers: Google Play, Microsoft Store and Flathub (v36 to v38), Discord (v48), the Stripe Payment Link and IAP (v89), store listings after 1.3.0 clears (v90), and an outside accessibility auditor (v98).
