@@ -58,13 +58,13 @@ Current state only: what each project is doing and what ships next. Updated 2026
 - [ ] Product Hunt: eight launches are scheduled (Machaon Oct 27 through Vancouver Vice Nov 6, see the Updated line above). The Melete share image shipped 2026-10-30. X threads go out on each launch day.
 - [ ] Product Hunt backfill: three scheduled, four waiting. Sighting Nov 13, Blackcomb Nov 20, Turing Nov 27. Noema, Gato, Tripwire and Mirage wait until Product Hunt opens their dates, since it only schedules 30 days ahead. Seamark is dropped (archived). Turing's maker comment did not save; Joshua pastes it on launch day. Sighting's launch kit is in its repo. Cyllene still shows a Nov 4 Product Hunt date on its wiki page and is not in this plan; confirm before scheduling.
 
-- [ ] Still rejected (2026-11-07): Elah, Co-Stanza, Sighting, Oohaah and Plaintxt on iPhone. Plaintxt needs a new concept from Apple; the queue is in the labs roadmap.
+- [ ] Still rejected (2026-11-07): Elah, Co-Stanza, Sighting and Plaintxt on iPhone. Plaintxt needs a new concept from Apple; the queue is in the labs roadmap.
 
 - [ ] Horula: iPhone and Mac 6.0.0 are WAITING_FOR_REVIEW. 6.1 (Watch app embedded, Watch shots, native work) ships when 6.0.0 clears, on Joshua's yes.
 
 - [ ] Headers: 17 App Store headers are WAITING_FOR_REVIEW (epiphany, echo, bugle, melete, machaon, pan, patois, temida, kernel, bcgd, eponym, gastown, nimble, icelus, coda, hamurapi, toroid). Horula, Atlin, Plaintxt, Scrounger, Airwell and Blackcomb have no live iOS version, so their headers go on the store page with the next version. Placing an approved header on the live page is _attic/store-headers/place.py --go, on Joshua's yes.
 
-- [ ] App Review replies: four 4.3 replies are sent (Atlin iOS, Horula iOS, Horula Mac, Oohaah iOS). Cartons, Airwell, Scrounger and Oohaah Mac already replied and wait on Apple. Airwell and Scrounger were resubmitted on 2026-10-31 with new builds. No further reply without Joshua's yes.
+- [ ] App Review replies: three 4.3 replies are sent (Atlin iOS, Horula iOS, Horula Mac). Cartons, Airwell and Scrounger already replied and wait on Apple. Airwell and Scrounger were resubmitted on 2026-10-31 with new builds. No further reply without Joshua's yes.
 
 - [ ] Bugle: iOS 7.18.2 is WAITING_FOR_REVIEW (submitted 2026-10-30, build 202610301039). iOS 7.17.1 and Mac 2.0.0 are live. Next Mac build on Joshua's yes. Store screenshots predate the 7.10 Home redesign and need a retake first. Never cancel a review to swap builds. Still open for Joshua: the App Privacy update and iPad screenshots.
 
@@ -74,7 +74,6 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 - [ ] Cartons: iPhone 1.1.0 was resubmitted 2026-11-07. iOS and Mac 1.0.0 were rejected under guideline 4.3(a), spam; appeals went out 2026-10-25 (Mac) and 2026-10-26 (iPhone). Watch Apple's reply, and nothing goes out without Joshua's yes.
 
-- [ ] Oohaah (ex-Swing, ex-Marmoset, ex-Irisa, ex-Liana): iOS and Mac 1.0.0 were rejected 2026-10-20 and the reasons were still unread on 2026-10-22. The repo moved to nulljosh/oohaah on 2026-10-25 and Apple confirmed the appeal. Read the reasons and fix before any resubmit, on Joshua's yes. TURN live.
 
 - [ ] Joshua: Temida. iPhone and Mac 1.1.0 in review.
 
