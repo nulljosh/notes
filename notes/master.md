@@ -63,7 +63,7 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 - [ ] Tocks: iOS and Mac 6.0.1 are WAITING_FOR_REVIEW (checked 2026-11-08). 6.1 (Watch app embedded, Watch shots, native work) ships on Joshua's yes.
 
-- [ ] Headers: 17 App Store headers are WAITING_FOR_REVIEW (epiphany, echo, bugle, melete, machaon, pan, patois, temida, kernel, bcgd, eponym, gastown, nimble, icelus, coda, hamurapi, toroid). Atlin, Plaintxt, Scrounger, Airwell and Blackcomb have no live iOS version, so their headers go on the store page with the next version. Placing an approved header on the live page is _attic/store-headers/place.py --go, on Joshua's yes.
+- [ ] Headers: 16 App Store headers are WAITING_FOR_REVIEW (epiphany, echo, bugle, melete, machaon, pan, patois, temida, kernel, bcgd, eponym, gastown, nimble, icelus, coda, toroid). Atlin, Plaintxt, Scrounger, Airwell and Blackcomb have no live iOS version, so their headers go on the store page with the next version. Placing an approved header on the live page is _attic/store-headers/place.py --go, on Joshua's yes.
 
 - [ ] App Review replies: three 4.3 replies are sent (Atlin iOS, Tocks iOS, Tocks Mac). Cartons, Airwell and Scrounger already replied and wait on Apple. Airwell and Scrounger were resubmitted on 2026-10-31 with new builds. No further reply without Joshua's yes.
 
