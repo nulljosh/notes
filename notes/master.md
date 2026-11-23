@@ -103,7 +103,7 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 - [ ] Joshua: Coda (ex-Quotestreak) blockers: Google Play, Microsoft Store and Flathub (v36 to v38), Discord (v48), the Stripe Payment Link and IAP (v89), store listings after 1.3.0 clears (v90), and an outside accessibility auditor (v98).
 
-- [ ] Master loop stopped by Joshua. Still open: Patois teach content for the other courses; Atlin and Melete UI rehaul; launch videos; README screenshots; hygiene sweep; Patois Sign in with Apple on a real device.
+- [ ] Master loop stopped by Joshua. Still open: Patois teach content for the other courses; Atlin and Melete UI rehaul; launch videos; hygiene sweep; Patois Sign in with Apple on a real device.
 
 - [ ] Joshua: buy a 1 TB NVMe for the Vancouver Vice Unreal rebuild. The old drive is gone, so the engine and project get reinstalled and rebuilt from the repo scripts.
 
