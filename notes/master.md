@@ -47,6 +47,7 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 ## Ship Now
 
+- [ ] Promo: /promo renders a 16:9 YouTube walkthrough and a 9:16 TikTok ad for ten apps (nimble, echo, elah, machaon, hamurapi, atlin, toroid, epiphany, tocks, plaintxt). Six apps wait for retaken screenshots. Nothing is uploaded; YouTube Studio and TikTok need a sign-in first.
 - [ ] Hackrange: public and live at hackrange.jaybulb.com. The first stable release waits on Joshua's yes; the loop handoff is in hackrange/docs/LOOP-HANDOFF.md.
 - [ ] Keyrate: iOS and Mac 2.2.0 have been WAITING_FOR_REVIEW since 2026-11-06, not rejected. The iOS Resolution Center thread has an unsent reply draft and an empty review draft from the resubmit; clear the stale draft once Apple sign-in is back (Apple outage 2026-11-17). Nothing to resubmit.
 - [ ] Elah: iOS 2.2.0 was rejected again on 2026-11-07 as a spam lookalike, all six threads answered, and resubmitted 2026-11-21 with the Map tab, engravings, new icon and store description. Mac 1.3.0 was rejected under 4.3(a) on 2026-11-03. Still owed for the major: a Mobbin pass and the opus-ad film. Steps are in elah/docs/LOOP-HANDOFF.md.
