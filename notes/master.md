@@ -47,6 +47,7 @@ Current state only: what each project is doing and what ships next. Updated 2026
 
 ## Ship Now
 
+- [ ] Flamingo Map: App Store listing created (ASC 6839451677) on 2026-11-25; no build submitted yet. Landing screenshots retaken from the QA run.
 - [ ] Promo: /promo renders a 16:9 YouTube walkthrough and a 9:16 TikTok ad for ten apps (nimble, echo, elah, machaon, hamurapi, atlin, toroid, epiphany, tocks, plaintxt). Six apps wait for retaken screenshots. Nothing is uploaded; YouTube Studio and TikTok need a sign-in first.
 - [ ] Hackrange: public and live at hackrange.jaybulb.com. The first stable release waits on Joshua's yes; the loop handoff is in hackrange/docs/LOOP-HANDOFF.md.
 - [ ] Keyrate: iOS and Mac 2.2.0 have been WAITING_FOR_REVIEW since 2026-11-06, not rejected. The iOS Resolution Center thread has an unsent reply draft and an empty review draft from the resubmit; clear the stale draft once Apple sign-in is back (Apple outage 2026-11-17). Nothing to resubmit.
